@@ -1,0 +1,177 @@
+@font-face {
+  font-family: IBMPlex;
+  src: url("../assets/IBMPlexMono-Regular.ttf");
+}
+
+/* Fluid Typography stuff */
+
+/* Older browsers */
+html { font-size: 16px; }
+
+/* Modern browsers only need this one */
+
+@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
+/* Safari <8 and IE <11 */
+@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+@media screen and (min-width: 50em){
+
+html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
+/* END source: https://www.smashingmagazine.com/2016/05/fluid-typography/ */
+
+/* Positioning classes */
+.center {
+    padding: 0;        /* gotten this from https://stackoverflow.com/a/7782251 */
+    margin: 0;
+    display: block;
+    padding-top: 1.5vw
+}
+
+.left {
+    top: 50.5vw;
+    left: 2vw;
+    position: relative;
+}
+
+.right {
+    top: 50.5vw;
+    right: -46vw;
+    position: relative;
+}
+
+.topRight {
+    bottom: 30%;
+    left: 4%;
+    position: relative;
+}
+
+.topLeft {
+    top: -11vw;
+    left: 19vw;
+    position: relative;
+}
+
+.chatRight {
+  top: 35vw !important;
+  left: 0 !important;
+  right: 5vw;
+}
+
+/* Character Image Positioning */
+
+.characterImg {
+    width: 25vw;
+    top: -32vw;
+    height: 30vw;
+}
+
+.characterSpeech {
+    position: absolute;
+}
+
+#narration {
+    position: absolute;
+    width: 83vw;
+    height: 19vw;
+    top: -70vw;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+    left: 3vw;
+    right: 0;
+}
+
+/* Chat Windows */
+
+.chatWindowBG {
+    position: absolute;
+    width: 76vw;
+    height: 23vw;
+    background: black;
+    opacity: 0.5;
+    top: 10%;
+}
+
+.chatWindowFG {
+    position: absolute;
+    width: 76vw;
+    height: 23vw;
+    background: black;
+    opacity: 0.5;
+    left: 1%;
+    z-index: 1000;
+    font-family: IBMPlex;
+}
+
+.chatWindowFG p {
+  position: absolute;
+  left: 2vw;
+  color: white;
+  font-size: 2vw;
+  white-space: normal;
+  overflow: hidden;
+}
+
+#narrSpeech {
+  margin: auto;
+  padding-top: 1vw;
+}
+
+#gameContainer {
+    background: black;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+body {
+    background: black;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/*
+* {
+    width: 98.5vw;
+    height: calc((9/16)*175vh);
+}*/
+
+#splashScreen {
+    width: 94vw;
+    height: auto;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+
+#startButton {
+    bottom: 30%;
+    left: 23%;
+    position: absolute;
+    font-size: 24px;
+    font-family: IBMPlex;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    border-color: #f6500f;
+    border-width: 0.4vw;
+    width: 22vw;
+    height: 11vh;
+    transition-duration: 0.6s;
+}
+
+#startButton:hover {
+  background-color: #f6500f;
+  color: white;
+}
+
+button {
+    width: 10vw;
+    height: 3vw;
+}

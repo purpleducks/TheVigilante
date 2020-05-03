@@ -1,0 +1,68 @@
+{
+    "Opening": {
+        "storylines":[
+            {
+                "Opening": {
+                    "content": [
+                        "Every girl wants a normal, happy life. - you know",
+                        "Get married...",
+                        "... have a couple kids ...", 
+                        "... and retire to live happily ever after...",
+                        "... but that's not my life.",
+                        "My life changed forever after mom died. She was my number 1 fan, the only person I really connected to in my life",
+                        "She stood up for me when I got bullied at school",
+                        "and encouraged me to follow my dreams.",
+                        ".....",
+                        "I'll never forget that day.",
+                        "The day the doctor's told us that they couldn't operate on her cancer", 
+                        "because her health insurance was rejected. HealthCorp had branded her as an 'risky' patient and revoked her insurance. Might as well have sentenced her to die.",
+                        "The hospital agreed to palliative care to help with the pain. My older brother, Marcus, and I would visit her everyday after school.",
+                        "Dad tried to go after HealthCorp, sue them for what they had done, even tried to get people together to start a class action",
+                        "But no lawyer in the city would touch the case.",
+                        "'I'm gonna get them back for what they did to you Joyce' he always said, 'and we gonna be back to being a happy family.'",
+                        "It was 2:41AM when we heard.",
+                        "Mom died peacefully in her sleep.",
+                        "None of us where the same after that",
+                        "Especially Dad - he turned to the bottle and just like that Marcus and I ended up losing both parents.",
+                        "After she died, Marcus stepped up and made sure that I stayed in school and eventually I went to college.",
+                        "Now I'm working at Sierra Casinos as a Data Analyst.",
+                        "HealthCorp fucked my family and there was nothing we could do. No one fucked with HealthCorp and anyone who did was ignored or worse - silenced forever.",
+                        "They have everyone in their pocket - a couple Supreme Judges, politicians, police chiefs - all the way down to the fucking parking attendants.",
+                        "They run this town, but that's all about to change."
+                    ],
+                    "images":  [
+                        "",
+                        "black-bride.png",
+                        "baby-being-born.png",
+                        "happy-family.png",
+                        "happy-family-filtered.png",
+                        "black-mom.png",
+                        "bullied-at-school.png",
+                        "classroom.png",
+                        "",
+                        "doctors-office-1.png",
+                        "doctors-office-2.png",
+                        "rejected-insurance.png",
+                        "hospital-room-day.png",
+                        "people-vs-healthcorp.png",
+                        "lawyer-office.png",
+                        "family-photos.png",
+                        "clock-241am.png",
+                        "hospital-room-night.png",
+                        "funeral.png",
+                        "alcoholic-dad.png",
+                        "brother-sister-working.png",
+                        "sierra-casinos.png",
+                        "silenced-people.png",
+                        "handshake.png",
+                        "they-run-this-city.png"
+                    ],
+                    "characters": [
+                    ],
+                    "narration": true
+                }
+            }
+        ]
+                
+    }
+}

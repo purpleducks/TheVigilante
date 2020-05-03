@@ -1,0 +1,1261 @@
+{
+   "Introduction":{
+      "storylines":[
+         {
+            "content":[
+               "It's Sunday - 1PM.",
+               "Nadine wakes up late, gets ready and turns on her computer to see what's going on.",
+               "As usual, she does her daily ritual of searching for stories about HealthCorp and anyone trying to sue them like her father did all those years ago.",
+               "This is when she stumbles upon a blog post; it reads 'HealthCorp are EVIL!!'.",
+               "The blogger talks about how their father had terminal cancer, how HealthCorp did the exact same thing to them as they had done to Nadine's mother and left them to die."
+            ],
+            "link":[
+               "Investigate blog decision"
+            ],
+            "images":[
+               "bedroom.jpg",
+               "bedroom.jpg",
+               "typing.jpg",
+               "blog-post.jpg",
+               "blog-post.jpg"
+            ],
+            "characters":[
+               "Nadine",
+               "Blogger"
+            ],
+            "narration":true,
+            "name":"Opening Speech",
+            "music":"Fresh-Fallen-Snow.mp3"
+         },
+         {
+            "content":[
+               "Every girl wants a normal, happy life - you know?",
+               "Get married...",
+               "... have a couple kids ...",
+               "... and retire to live happily ever after...",
+               "... but that's not my life",
+               "My life changed forever after Mom died. She was the only person I really connected to in my life, no one knew me better than my Mom",
+               "She stood up for me when I got bullied at school",
+               "And she introduced me to the world of computers and programming. After that, I was OBSESSED.",
+               ".....",
+               "I'll never forget that day.",
+               "The day the doctor's told us that they couldn't operate on her cancer",
+               "HealthCorp had rejected her insurance; branded her as a 'risky' patient and revoked her insurance.",
+               "They might as well have sentenced her to die.",
+               "The hospital agreed to palliative care to help with the pain.",
+               "My older brother, Marcus, and I would visit her everyday after school.",
+               "Dad tried to go after HealthCorp, sue them for what they had done, even tried to get people together to start a class action",
+               "But no lawyer in the city would touch the case.",
+               "'I'm gonna get them back for what they did to you Joyce', he always said, 'and we gonna be back to being a happy family or so help me God I'll fight them myself!'",
+               "...... It was about 1AM when we heard.",
+               "Mom died peacefully in her sleep.",
+               "None of us where the same after that .....",
+               "Especially Dad - he turned to the bottle and just like that, Marcus and I ended up losing both parents.",
+               "Ever since, I've vowed to take them down any way I can. No one fucks with HealthCorp and anyone who does are ignored by the world or worse - silenced forever.",
+               "They have everyone in their pocket - a couple Supreme Judges, politicians, police chiefs - all the way down to the fucking parking attendants.",
+               "They run this town, but that's all about to change."
+            ],
+            "images":[
+               "",
+               "black-bride.jpg",
+               "baby-being-born.jpg",
+               "happy-family.jpg",
+               "happy-family-filtered.jpg",
+               "black-mom.jpg",
+               "bullied-at-school.jpg",
+               "classroom.jpg",
+               "",
+               "doctors-office-1.jpg",
+               "doctors-office-2.jpg",
+               "rejected-insurance-claim.jpg",
+               "rejected-insurance-claim.jpg",
+               "hospital-ward-day.jpg",
+               "hospital-ward-day.jpg",
+               "people-vs-healthcorp.jpg",
+               "lawyers-office.jpg",
+               "family-photos.jpg",
+               "clock-1am.jpg",
+               "hospital-room-night.jpg",
+               "funeral.jpg",
+               "alcoholic-dad.jpg",
+               "silenced-people.jpg",
+               "handshake.jpg",
+               "they-run-this-city.jpg"
+            ],
+            "link":[
+               "Opening Speech"
+            ],
+            "cinematic":true,
+            "name":"Opening",
+            "music":"Children-of-MH17-longer.mp3"
+         },
+         {
+            "content":[
+               "It's Sunday - 1PM.",
+               "Nadine wakes up late, gets ready and turns on her computer to see what's going on.",
+               "As usual, she does her daily ritual of searching for stories about HealthCorp and anyone trying to sue them like her father did all those years ago.",
+               "This is when she stumbles upon a blog post; it reads 'HealthCorp are EVIL!!'.",
+               "The blogger talks about how their father had terminal cancer, how HealthCorp did the exact same thing to them as they had done to Nadine's mother and left them to die."
+            ],
+            "link":[
+               "Investigate blog decision"
+            ],
+            "images":[
+               "bedroom.jpg",
+               "bedroom.jpg",
+               "typing.jpg",
+               "blog-post.jpg",
+               "blog-post.jpg"
+            ],
+            "characters":[
+               "Nadine",
+               "Blogger"
+            ],
+            "narration":true,
+            "name":"Opening Speech",
+            "music":"Fresh-Fallen-Snow.mp3"
+         },
+         {
+            "content":[
+               "Does Nadine investigate the blog post further?",
+               "Investigate blog post",
+               "Closes laptop"
+            ],
+            "link":[
+               "Investigate blog post",
+               "Texting Marcus"
+            ],
+            "images":[
+               "blog-post.jpg"
+            ],
+            "decision":true,
+            "characters":[
+               "Nadine"
+            ],
+            "name":"Investigate blog decision",
+            "music":"A-Stranger-Thing.mp3"
+         },
+         {
+            "content":[
+               "Nadine decides to investigate this further and investigate the blogger's story (it was posted late last night)",
+               "After a lot of trawling, she finds the blogger's social media profile and a post to a GoFundMe page, where they're raising money for their dad's treatment"
+            ],
+            "link":[
+               "Investigate blog post decision"
+            ],
+            "images":[
+               "blog-post.jpg",
+               "gofundme-page.jpg"
+            ],
+            "narration":true,
+            "characters":[
+               "Nadine",
+               "Blogger"
+            ],
+            "name":"Investigate blog post",
+            "music":"A-Stranger-Thing.mp3"
+         },
+         {
+            "content":[
+               "Does Nadine hack into the blogger's social media profile?",
+               "Hacks into social media profile",
+               "Leaves it and turns laptop off"
+            ],
+            "link":[
+               "Social media profile hack",
+               "Probably a scam"
+            ],
+            "images":[
+               "blogger-socials.jpg"
+            ],
+            "decision":true,
+            "characters":[
+               "Nadine",
+               "Blogger"
+            ],
+            "name":"Investigate blog post decision",
+            "music":"A-Stranger-Thing.mp3"
+         },
+         {
+            "content":[
+               "Nadine decides that she should just leave it, it was probably a scam anyway."
+            ],
+            "link":[
+               "Texting Marcus"
+            ],
+            "images":[
+               "closed-laptop.jpg"
+            ],
+            "narration":true,
+            "characters":[
+               "Nadine",
+               "Blogger"
+            ],
+            "name":"Probably a scam",
+            "music":"Fresh-Fallen-Snow.mp3"
+         },
+         {
+            "content":[
+               "Nadine decides to launch a dictionary attack on the blogger's social media profile.",
+               "Nadine manages to crack the blogger's password!",
+               "Nadine failed to crack the password and the social media website locked her out."
+            ],
+            "link":[
+               "In bloggers profile",
+               "Probably a scam"
+            ],
+            "images":[
+               "laptop-on-desk.jpg"
+            ],
+            "minigame":true,
+            "characters":[
+               "Nadine",
+               "Blogger"
+            ],
+            "name":"Social media profile hack",
+            "music":"A-Stranger-Thing.mp3"
+         },
+         {
+            "content":[
+               "Nadine sees messages between the blogger and their family talking about their father being in hospital",
+               "The timestamps prove that the blogger wasn't lying about their father being in hospital and there are selfies of their father and them in a hospital bed.",
+               "Nadine is still curious about the blogger."
+            ],
+            "link":[
+               "Blogger email hack"
+            ],
+            "narration":true,
+            "characters":[
+               "Nadine",
+               "Blogger"
+            ],
+            "name":"In bloggers profile",
+            "music":"A-Stranger-Thing.mp3"
+         },
+         {
+            "content":[
+               "Does Nadine hack into the blogger's emails?",
+               "Hack into their email - they're hiding something.",
+               "He's clean, his story checks out."
+            ],
+            "link":[
+               "Blogger email hack",
+               "Texting Marcus"
+            ],
+            "decision":true,
+            "characters":[
+               "Nadine",
+               "Blogger"
+            ],
+            "name":"Bloggers email",
+            "music":"A-Stranger-Thing.mp3"
+         },
+         {
+            "content":[
+               "Nadine decides to hack into the blogger's emails",
+               "Nadine managed to hack into the blogger's email account.",
+               "They have two factor authentication enabled, they'll be surprised to get a random text. Nadine decides against continuing to hack in."
+            ],
+            "link":[
+               "In bloggers email",
+               "Texting Marcus"
+            ],
+            "minigame":true,
+            "characters":[
+               "Nadine",
+               "Blogger"
+            ],
+            "name":"Blogger email hack",
+            "music":"A-Stranger-Thing.mp3"
+         },
+         {
+            "content":[
+               "There are four folders labelled: HealthCorp, Darren, Blog, Hospital. Which one does Nadine pick?",
+               "HealthCorp",
+               "Darren",
+               "Blog",
+               "Hospital"
+            ],
+            "link":[
+               "HealthCorp email",
+               "Darren email",
+               "Blog email",
+               "Hospital email"
+            ],
+            "decision":true,
+            "HackTwoSuccess":true,
+            "name":"In bloggers email",
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine discovers a lot of nasty emails from the HealthCorp legal team dated after he posting his blog post. Nadine gets very angry"
+            ],
+            "link":[
+               "Email intrusion detected"
+            ],
+            "narration":true,
+            "characters":[
+               "Nadine"
+            ],
+            "name":"HealthCorp email",
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine discovers that the blogger is dating a HealthCorp employee called Darren Anderson",
+               "Based on the emails, it looks like Darren works in HealthCorp's sales department. Nadine notes this down just in case ;)"
+            ],
+            "link":[
+               "Email intrusion detected"
+            ],
+            "narration":true,
+            "characters":[
+               "Nadine",
+               "Blogger"
+            ],
+            "name":"Darren email",
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine discovers a lot of messages from other people who say they were screwed over by HealthCorp's tactics too. The blogger even replied to some of them"
+            ],
+            "link":[
+               "Email intrusion detected"
+            ],
+            "narration":true,
+            "characters":[
+               "Nadine"
+            ],
+            "name":"Blog email",
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine discovers a bunch of emails from the hospital about huge medical bills that are overdue. It's pretty heartbreaking."
+            ],
+            "link":[
+               "Email intrusion detected"
+            ],
+            "narration":true,
+            "characters":[
+               "Nadine"
+            ],
+            "name":"Hospital email",
+            "music":""
+         },
+         {
+            "content":[
+               "Naadine decides to download the whole inbox but the blogger must have noticed the intrusion, Nadine's download was interrupted and she only managed to download the folder she was viewing and she loses access."
+            ],
+            "link":[
+               "Texting Marcus"
+            ],
+            "narration":true,
+            "characters":[
+               "Nadine"
+            ],
+            "name":"Email intrusion detected",
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine decides to turn her computer off. The thoughts of her mother are too much for her to deal with right now."
+            ],
+            "link":[
+               "Texting Marcus"
+            ],
+            "narration":true,
+            "characters":[
+               "Nadine"
+            ],
+            "name":"Closes laptop",
+            "music":""
+         },
+         {
+            "content":[
+               "Sunday - 7PM",
+               "Nadine has just finished eating her dinner, when she receives a text from her older brother, Marcus"
+            ],
+            "link":[
+               "Texting Marcus dialogue"
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "images":[
+               "laptop-desk-focus.jpg",
+               "laptop-desk-focus.jpg"
+            ],
+            "name":"Texting Marcus",
+            "narration":true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "content":[
+               "Marcus: 'Hey sis, did you see that post about the blogger? He was going IN on HealthCorp, maybe this is a good sign yknow?'"
+            ],
+            "link":[
+               "NadineReply1"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"Texting Marcus dialogue",
+            "texting":true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "content":[
+               "How does Nadine reply?",
+               "Nadine: 'I looked into him, he's legit. We should reach out.'",
+               "Nadine: 'I looked into him, he's totally a scammer, tryna get money out of folk like us'",
+               "Nadine: 'I saw but it just reminded me too much of Mom, I couldn't read it.'",
+               "(ignores Marcus)"
+            ],
+            "link":[
+               "HackOneSuccess",
+               "ScammerBlogger",
+               "DidntReadBlog",
+               "IgnoresMarcus"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "decision":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"NadineReply1",
+            "texting":true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "content":[
+               "Nadine: 'I looked into him, he's legit. We should reach out.'",
+               "Marcus: 'Ahhh I knew you couldn't resist tryna hack him haha'",
+               "Marcus: 'I thought you stopped all that?'",
+               "Marcus: 'So what'd you find?'"
+            ],
+            "link":[
+               "HackOneSuccessSD"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"HackOneSuccess",
+            "texting":true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "name":"HackOneSuccessSD",
+            "content":[
+               "In bloggers email"
+            ],
+            "link":[
+               "HackTwoSuccess",
+               "HackTwoFail"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "systemDecision":true,
+            "texting": true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "content":[
+               "Nadine: 'I looked into him, he's totally a scammer, tryna get money out of folk like us'",
+               "Marcus: 'Whaaaat? no way, man people these days will do anything for money smh'",
+               "Nadine: 'It's messed up, people taking advantage of people who already got fucked over by HealthCorp, tryna fuck em over again!'",
+               "Nadine: 'sorry it just gets me so mad at how they can get away with this sort of shit everyday.'",
+               "Marcus: 'who HealthCorp?'",
+               "Marcus: 'nobody is gonna go after them, they got everyone in their pocket from Supremes all the way down to the fuckin parking attendants'",
+               "Marcus: 'they're untouchable'",
+               "Nadine: 'yeah that's what they think'",
+               "Nadine: 'nobody's untouchable'",
+               "Marcus: 'what are you talkin about?'"
+            ],
+            "link":[
+               "PaybackDecision"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"ScammerBlogger",
+            "texting":true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "content":[
+               "Nadine: 'I saw but it just reminded me too much of Mom, I couldn't read it.'",
+               "Marcus: 'You thinking about her a lot lately?'"
+            ],
+            "link":[
+               "SadNadine"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "name":"DidntReadBlog",
+            "texting":true,
+            "music":"Emotional.mp3"
+         },
+         {
+            "content":[
+               "Marcus: 'okaaay, guess we'll talk later then, stay safe sis, it's a dangerous world out there'"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"IgnoresMarcus",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Which folder did Nadine read?",
+               "HealthCorp",
+               "Darren",
+               "Blog",
+               "Hospital"
+            ],
+            "link":[
+               "MarcusHealthCorp",
+               "MarcusDarren",
+               "MarcusBlog",
+               "MarcusHospital"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "decision":true,
+            "name":"HackTwoSuccess",
+            "texting":true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "content":[
+               "Nadine: 'Well his story checks out, he's got a GoFundMe page for his dad'",
+               "Nadine: 'and he was talking to his family and friends almost constantly about him'",
+               "Marcus: 'damn, that sounds like how it was with Mom'"
+            ],
+            "link":[
+               "ThinkingAboutMom"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"HackTwoFail",
+            "texting":true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "content":[
+               "Nadine: 'Don't you? I mean what they did to her was so fucked up'",
+               "Nadine: 'It's unforgiveable.'"
+            ],
+            "link":[
+               "SadMarcus"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "name":"SadNadine",
+            "texting":true,
+            "music":"Emotional.mp3"
+         },
+         {
+            "content":[
+               "Marcus: 'Of course I do but you gotta move on with your life Nadine'",
+               "Marcus: 'You can't let this take over ya life.'"
+            ],
+            "link":[
+               "IgnoresMarcus"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"SadMarcus",
+            "texting":true,
+            "music":"Emotional.mp3"
+         },
+         {
+            "content":[
+               "FINISH"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+               "end.jpg"
+            ],
+            "narration":true,
+            "name":"FINISH",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine: 'HealthCorp just won't quit with them, he put up his post about how they treated their dad and within an hour, they were filling up his inbox with cease and desist statements and threatening to sue for defamation'",
+               "Nadine: 'I can't even imagine what that would be like, poor thing'",
+               "Nadine: 'like haven't they been through enough?! man'",
+               "Marcus: 'fuuuck man, that's brutal. why they comin for him like that? he ain't even THAT popular.'",
+               "Marcus: 'they'll just go after anyone who speaks outta line'",
+               "Marcus: 'you better be careful sis, I don't want anything happening to ya'"
+            ],
+            "link":[
+               "MarcusWarning"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"MarcusHealthCorp",
+            "texting":true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "content":[
+               "Nadine: 'turns out our blogger is dating a HealthCorp employee called Darren Anderson'",
+               "Nadine: 'works in sales, probably used them to see what they knew about HealthCorp's tactics'",
+               "Nadine: 'could be a good way into their HQ 👀👀👀'"
+            ],
+            "link":[
+               "MarcusDarren2"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"MarcusDarren",
+            "texting":true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "content":[
+               "Nadine: 'there's a bunch of people in this blogger's inbox talkin about how HealthCorp screwed them over too'",
+               "Nadine: 'I'm glad we weren't the only ones'",
+               "Marcus: 'what does it matter? Moms dead and Dad is... well Dad'",
+               "Marcus: 'doesn't do anything for us Nad'",
+               "Nadine: 'when enough people get mad they can rise up and fight'",
+               "Nadine: 'it means the tide is turning, and HealthCorp are gonna get what they deserve'"
+            ],
+            "link":[
+               "MarcusQuestioningNadine"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"MarcusBlog",
+            "texting":true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "content":[
+               "Nadine: 'they got stuck with thousands of dollars of medical bills after HealthCorp screwed em over'",
+               "Nadine: 'doesn't look like the hospital's cutting em any slack either.'",
+               "Nadine: 'worst still, the GoFundMe is nowhere near close enough to paying it all off. I can't believe they can get away with this sort of shit every day'",
+               "Marcus: 'they gonna keep on doing it until it stops making them money'",
+               "Marcus: 'that's how they make their money, by killing off poor people with crazy medical bills that they never gonna be able to pay'",
+               "Marcus: 'that's how they own you.",
+               "Nadine: 'don't I know it, I never told you how grateful I was to you for pushing me when we was young'",
+               "Marcus: 'that's what I'm here for sis'",
+               "Marcus: 'especially after dad checked out, I gotta look out for my little sister haha'"
+            ],
+            "link":[
+               "RememberingMom"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"MarcusHospital",
+            "texting":true,
+            "music":"Emotional.mp3"
+         },
+         {
+            "content":[
+               "How does Nadine reply?",
+               "Nadine: 'thanks for the warning bro, but I think I got it.'",
+               "Nadine: 'just like they did Mom?'"
+            ],
+            "link":[
+               "TooAggressive",
+               "DeadMom"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "decision":true,
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"MarcusWarning",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "You were too aggressive with Marcus. He'll remember that."
+            ],
+            "link":[
+               "IgnoresMarcus"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "badtrait":true,
+            "narration":true,
+            "name":"TooAggressive",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine: 'just like they did Mom?'",
+               "Marcus: '....yeah, like they did Mom'",
+               "Marcus: 'just don't do anything rash little sister'",
+               "Marcus: 'it's my job to keep you safe remember :')'"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"DeadMom",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Marcus: 'nooo Nadine, don't be saying that'",
+               "Marcus: 'man it's like you wanna get on the wrong side of these people'",
+               "Marcus: 'these aren't people you wanna be playin with sis! these are the most dangerous people in the country'",
+               "Marcus: 'they own Supreme judges, politicians, police chiefs, all the way down to the fuckin parking attendants'",
+               "Marcus: 'they will mess your life up just like they did when Mom died'"
+            ],
+            "link":[
+               "NadineDarrenDecisionOne"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"MarcusDarren2",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "How does Nadine respond?",
+               "Nadine: 'bro, you need to chill.'",
+               "Nadine: 'Fuck you man, you can't talk to me like that.'",
+               "Nadine: 'I know what I'm doing bro, I'm not the same little girl I was when Mom died'"
+            ],
+            "link":[
+               "YouNeedToCalmDown",
+               "FuckYouMan",
+               "ImAPro"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"NadineDarrenDecisionOne",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine: 'bro, you need to chill.'",
+               "Marcus: 'I'm sorry sis but I'm just keepin it real with you'",
+               "Marcus: 'I don't want anything happening to you'"
+            ],
+            "link":[
+               "NadineDarrenDecisionThree"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"YouNeedToCalmDown",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine: 'Fuck you man, you can't talk to me like that.'",
+               "Marcus: 'I'm sorry sis but I'm just keepin it real with you'",
+               "Marcus: 'I don't want anything happening to you'"
+            ],
+            "link":[
+               "TooAggressiveFYM",
+               "NadineDarrenDecisionThree"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"FuckYouMan",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine: 'I know what I'm doing bro, I'm not the same little girl I was when Mom died'",
+               "Marcus: 'I really don't know that yknow'",
+               "Marcus: 'All I know is that you won't move on and leave this when all it's gonna bring you is trouble'"
+            ],
+            "link":[
+               "NadineDarrenDecisionTwo"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"ImAPro",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine: 'I know but I can handle myself'",
+               "(ignores Marcus)"
+            ],
+            "link":[
+               "NadineIsStrong",
+               "MarcusApology"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "decision":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"NadineDarrenDecisionThree",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Marcus: 'yeah you are, guess I gotta treat you like a woman since you all grown'",
+               "Marcus: 'just stay safe sis'",
+               "Marcus: 'and call me if you need anything'",
+               "Nadine: 'I really appreciate that Marcus, stay safe big bro x'"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "goodtrait":true,
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"NadineIsStrong",
+            "texting":true,
+            "music":"Imagefilm-031.mp3"
+         },
+         {
+            "content":[
+               "Marcus: 'look I'm sorry sis, just want you to stay safe okay'",
+               "Marcus: '... call me if you need anything or just wanna talk i guess'"
+            ],
+            "link":[
+               "Ghosted"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"MarcusApology",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Marcus will remember that you ghosted him."
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "badtrait":true,
+            "narration":true,
+            "name":"Ghosted",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "How does Nadine reply?",
+               "Nadine: 'I can handle myself you know?'",
+               "Nadine: 'What, you think I'm dumb? I'm GOOD at what I do okay?'",
+               "(ignores Marcus)"
+            ],
+            "link":[
+               "NadineIsStrongAggy",
+               "YouThinkImDumb",
+               "YouNeedToCalmDown"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "decision":true,
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"NadineDarrenDecisionTwo",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine: 'I can handle myself you know?'",
+               "Marcus: 'you know what, you're right, you can. you don't need me anymore.'",
+               "Marcus: 'so pop off, go hack HealthCorp or whatever'"
+            ],
+            "link":[
+               "TooAggressiveStub"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"NadineIsStrongAggy",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine: 'What, you think I'm dumb? I'm GOOD at what I do okay?'",
+               "Marcus: 'you know what, you're right, you aren't. you're too smart for your own good'",
+               "Marcus: 'so pop off, go hack HealthCorp or whatever'"
+            ],
+            "link":[
+               "TooAggressiveStub"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"YouThinkImDumb",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "That could have been handled better"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "narration":true,
+            "name":"FuckedIt",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "You were too aggressive with Marcus, he'll remember that"
+            ],
+            "link":[
+               "YouNeedToCalmDown"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "badtrait":true,
+            "narration":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"TooAggressiveFYM",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "You were too aggressive with Marcus, he'll remember that"
+            ],
+            "link":[
+               "FuckedIt"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "badtrait":true,
+            "narration":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"TooAggressiveStub",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Marcus: 'how you gonna do that now?'",
+               "Marcus: 'you don't wanna play with these people Nad'",
+               "Marcus: 'these the kind of people that can erase you and no one would know'"
+            ],
+            "link":[
+               "MarcusWarning"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"MarcusQuestioningNadine",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "Nadine: 'yeah everything went to fuck after Mom died, you really kept us all together'",
+               "You were really nice to Marcus, he'll remember that.",
+               "Marcus: 'look I gotta go, but call me if you need anything'",
+               "Marcus: 'and be careful with HealthCorp, those fuckers aren't messing around Nadine'"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "goodtrait":true,
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"RememberingMom",
+            "texting":true,
+            "music":"Emotional.mp3"
+         },
+         {
+            "content":[
+               "How does Nadine reply?",
+               "Nadine: 'Sure does.'",
+               "(ignores Marcus)"
+            ],
+            "link":[
+               "DidntReadBlog",
+               "DidntReadBlog"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"ThinkingAboutMom",
+            "texting":true,
+            "music":""
+         },
+         {
+            "content":[
+               "What does Nadine say?",
+               "Nadine: 'Nothing, don't worry about it'",
+               "Nadine: 'I can get them to hurt like we did when Mom died'"
+            ],
+            "link":[
+               "IgnoresMarcus",
+               "MarcusQuestioningNadine"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "decision":true,
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"PaybackDecision",
+            "texting":true,
+            "music":""
+         }
+      ]
+   }
+}

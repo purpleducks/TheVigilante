@@ -1,0 +1,519 @@
+{
+	"OSINT":{
+		"storylines":[
+			{
+				"name": "NadineAtWork",
+				"content": [
+					"Monday - 11AM",
+					"Nadine is at work at Romero Casinos.",
+					"She's busy working away on a pretty mundane report that corporate want on the new machines they've rolled out when she hears her co-workers conversation."
+				],
+				"link": [
+					"CoWorkerDialogueOne"
+				],
+				"images": [
+				],
+				"cinematic": true
+			},
+			{
+				"name": "CoWorkerDialogueOne",
+				"content": [
+					"Co-worker 1: Did you hear about the new benefits package HR announced?",
+					"Co-worker 2: Ooooh no I didn't, please tell me they gave us more money for gas, these prices lately have been KILLER",
+					"Co-worker 1: Nah, I was mad about that too, but they did switch our health insurance to HealthCorp",
+					"Co-worker 2: Ugh it's about time! MediKare were the worst, I had my gall bladder removed and they took two weeks to pay out. TWO WEEKS. Like I've heard HealthCorp pay out instantly, like no questions asked, they're great.",
+					"Co-worker 1: oh really? thank god, that's honestly the last thing I wanna be worrying about, dread to think how much medical bills cost nowadays."
+				],
+				"link": [
+					"NadineInternalDialogue"
+				],
+				"characters": [
+					"man",
+					"woman1"
+				],
+				"images": [
+					
+				],
+				"dialogue": true
+			},
+			{
+				"name": "NadineInternalDialogue",
+				"content": [
+					"Nadine: If only they knew how bad HealthCorp really are",
+					"Nadine: But no-one really knows what they're capable of",
+					"Nadine: Well......",
+					"Nadine: I guess I could check it out and see if there's any way for me to expose their shady business!"
+				],
+				"link": [
+					"LetsLookAtHC"
+				],
+				"characters": [
+					"Nadine"
+				],
+				"images": [
+				],
+				"dialogue": true
+			},
+			{
+				"name":"LetsLookAtHC",
+				"content": [
+					"Nadine decides to finish up her report and start looking into HealthCorp."
+				],
+				"link": "NadDecisionOne",
+				"images": [
+				],
+				"narration": true
+			},
+			{
+				"name": "NadDecisionOne",
+				"content": [
+					"What does Nadine do first?",
+					"Google HealthCorp",
+					"Text Marcus"
+				],
+				"link": [
+					"GoogleHC",
+					"NadineWasNice"
+				],
+				"images": [
+				],
+				"decision": true
+			},
+			{
+				"name": "NadineWasNice",
+				"link": [
+					"MarcusHasTea",
+					"NadineWasMean"
+				],
+				"condition": [
+					"NadineIsStrong",
+					"RememberingMom"
+				],
+				"images": [
+				],
+				"systemDecision": true
+			},
+			{
+				"name": "NadineWasMean",
+				"link": [
+					"GoogleHC",
+					"MarcusPA"
+				],
+				"condition": [
+					"TooAggressiveFYM",
+					"TooAggressiveStub",
+					"TooAggressive",
+					"Ghosted"
+				],
+				"images": [
+				],
+				"systemDecision": true
+			},
+			{
+				"name": "MarcusPA",
+				"content": [
+					"Nadine: 'hey Marcus, do you know anyone who works at HealthCorp who could, yknow, help us out?'",
+					"Marcus: 'I'll ask around Nad but I don't think I know of anyone.",
+					"Nadine: 'Oh. That's too bad, it's alright, I'll find out more another way. Stay safe bro xx",
+					"Marcus: 'You too'"
+				],
+				"link": [
+					"GoogleHC"
+				],
+			},
+			{
+				"name": "GoogleHC",
+				"content": [
+					"Nadine decides to start googling HealthCorp's headquarters"
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"narration": true
+			},
+			{
+				"name": "MarcusHasTea",
+				"content": [
+					"Nadine: 'hey Marcus, do you know anyone who works at HealthCorp who could, yknow, help us out?'",
+					"Marcus: 'hey sis, I was actually just about to text you. After we talked last night, I reached out to my buddy from college, turns out he works for HealthCorp's R&D department'",
+					"Marcus: 'She knows about all of the crazy shit that HealthCorp be getting up to.'",
+					"Marcus: 'I'll send you her number!'"
+				],
+				"link": [
+					"MarcusSendsNumber"
+				],
+				"characters": [
+					"Nadine",
+					"Marcus"
+				],
+				"images": [
+				],
+				"dialogue": true
+			},
+			{
+				"name": "MarcusSendsNumber",
+				"content": [
+					"Marcus sends Nadine a number for a woman called Danielle.",
+					"Nadine starts to talk to her..."
+				],
+				"link": [
+					"NadDanielleOne"
+				],
+				"images": [
+				],
+				"narration": true
+			},
+			{
+				"name": "NadDanielleOne",
+				"content": [
+					"Nadine: 'hey, it's Nadine, I'm Marcus' sister, he said you could help me?'",
+					"Danielle: 'hey! that's me, Marcus filled me in with the details, you serious about HealthCorp?'"
+				],
+				"link": [
+					"NadDanResponseOne"
+				],
+				"characters": [
+					"Nadine",
+					"Danielle"
+				],
+				"images": [
+				],
+				"dialogue": true
+			},
+			{
+				"name": "NadDanResponseOne",
+				"content": [
+					"What does Nadine say?",
+					"Fuck yeah!",
+					"Duh, bitch 🙄",
+					"I think it's definitely worth a shot"
+				],
+				"link": [
+					"EnthusiasticNadDan",
+					"RudeNadDan",
+					"NeutralNadDan"
+				],
+				"images": [
+				],
+				"decision": true
+			},
+			{
+				"name": "EnthusiasticNadDan",
+				"content": [
+					"Nadine: 'Fuck yeah! I'm the best hacker for the job, best part is no one will suspect me!'",
+					"Danielle: 'That's what I like to hear and true, they always be underestimating us!'"
+				],
+				"link": [
+					"ImpressedDanielle"
+				],
+				"characters": [
+					"Nadine",
+					"Danielle"
+				],
+				"images": [
+				],
+				"dialogue": true
+			},
+			{
+				"name": "RudeNadDan",
+				"content": [
+					"Nadine: 'Duh, why else would I have Marcus reach out? 🙄🙄🙄'"
+				],
+				"link": [
+					"OffendedDanielle"
+				],
+				"characters": [
+					"Nadine",
+					"Danielle"
+				],
+				"images": [
+
+				],
+				"dialogue": true
+			},
+			{
+				"name": "NeutralNadDan",
+				"content": [
+					"Nadine: 'I think I got what it takes to take em down, I'm ready.'",
+					"Danielle: 'That's good to hear, someone needs to stop these guys'",
+					"Danielle: 'Anyways, I think I know a way for you to slip inside without anyone knowing.'",
+					"Nadine: 'Oh really? What is it?'",
+					"Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over'"
+				],
+				"link": [
+					"DanielleSpillsTea"
+				],
+				"characters": [
+					"Nadine",
+					"Danielle"
+				],
+				"images": [
+				],
+				"dialogue": true
+			},
+			{
+				"name": "ImpressedDanielle",
+				"content": [
+					"Danielle likes your attitude."
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"narration": true
+			},
+			{
+				"name": "OffendedDanielle",
+				"content": [
+					"Danielle didn't like that."
+				],
+				"link": [
+					"OffendedDanielleSpeech"
+				],
+				"images": [
+				],
+				"narration": true
+			},
+			{
+				"name": "OffendedDanielleSpeech",
+				"content": [
+					"Danielle: 'Um okay, rude.'",
+					"Danielle: 'Anyways, I think I know a way for you to slip inside without anyone knowing.'",
+					"Nadine: 'Oh really? What is it?'",
+					"Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over.'"
+				],
+				"link": [
+					"DanielleSpillsTea"
+				],
+				"characters": [
+					"Nadine",
+					"Danielle"
+				],
+				"images": [
+				],
+				"dialogue": true
+			},
+			{
+				"name": "ImpressedDanielleSpeech",
+				"content": [
+					"Danielle: 'Anyways, I think I know a way for you to slip inside without anyone knowing.'",
+					"Nadine: 'Oh really? What is it?'",
+					"Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over'"
+				],
+				"link": [
+					"DanielleSpillsTea"
+				],
+				"characters": [
+					"Nadine",
+					"Danielle"
+				],
+				"images": [
+				],
+				"dialogue": true
+			},
+			{
+				"name": "DanielleSpillsTea",
+				"content": [
+					"Danielle: 'Now these new lab techs have access to the R&D department floors as well as the Technical departments floors, because some work across departments.'"
+				],
+				"link": [
+
+				],
+				"characters": [
+					"Nadine",
+					"Danielle"
+				],
+				"images": [
+				],
+				"dialogue": true
+			},
+			{
+				"name": "NadDanielleTwo",
+				"content": [
+					"What does Nadine say?",
+					"Why are you telling me all this?",
+					"Interesting, think you can get me one?"
+				],
+				"link": [
+					"NadDanIsRudeTwo",
+					"NadDanIsNeutral"
+				],
+				"images": [
+				],
+				"decision": true
+			},
+			{
+				"name": "NadDanIsRudeTwo",
+				"content": [
+					"Nadine: 'Okay cool, why are you telling me all this? Are you gonna help me or what?'"
+				],
+				"link": [
+					"NadineOffendedDan"
+				],
+				"characters": [
+					"Nadine"
+				],
+				"dialogue": true
+			},
+			{
+				"name": "NadineOffendedDan",
+				"condition": [
+					"OffendedDanielle"
+				],
+				"link": [
+					"ReallyOffendedDanielle",
+					"OffendedDanielleSpeechTwo"
+				],
+				"images": [
+				],
+				"systemDecision": true
+			},
+			{
+				"name": "ReallyOffendedDanielle",
+				"content": [
+					"Nadine has really pissed off Danielle"
+				],
+				"link": [
+					"ReallyOffendedDanielleSpeech"
+				],
+				"narration": true
+			},
+			{
+				"name": "OffendedDanielleSpeechTwo",
+				"content": [
+					"Danielle: 'Okay rude, I'm trying to help you out here sis.'"
+				],
+				"link": [
+					"DanielleHooksNadUp"
+				],
+				"characters": [
+					"Danielle"
+				],
+				"dialogue": true
+			},
+			{
+				"name": "ReallyOffendedDanielleSpeech",
+				"content": [
+					"Danielle: 'You know what, no I can't. Clearly you think you know what you're doing.'"
+				],
+				"link": [
+					"NadDanTroubleDecision"
+				],
+				"characters": [
+					"Danielle"
+				],
+				"dialogue": true
+			},
+			{
+				"name": "NadDanTroubleDecision",
+				"content": [
+					"What does Nadine say?",
+					"Okay, bye.",
+					"Look I'm sorry, I didn't mean it, I'm just frustrated"
+				],
+				"link": [
+					"NadDanFinalStraw",
+					"NadineTriesToFix"
+				],
+				"images": [
+				],
+				"decision": true
+			},
+			{
+				"name": "NadineTriesToFix",
+				"content": [
+					"Nadine: 'Okay I'm sorry, I'm just really frustrated about this whole situation.",
+					"Nadine: 'Especially since someone who works for the thing I am trying to destroy is helping me.'",
+					"Nadine: 'It's just weird.'",
+					"Danielle: 'I get that but that doesn't let you be rude to me'",
+					"Danielle: 'Like this ain't easy for me either, you have no idea what it's like, you are being watched constantly, they question every move you make and they spend millions in R&D to figure out who is a 'risky' patient and especially in protecting their public image.'",
+					"Danielle: 'So forgive me for getting mad, this ain't the little leagues, these guys mean business.'",
+					"Nadine: 'I know I'm sorry, can we start from scratch?'",
+					"Danielle: 'It's okay, but we gotta work together if we wanna give em the good fight. Deal?'"
+					"Nadine: 'Deal.'"
+				],
+				"link": [
+					"DanielleHooksNadUp"
+				],
+				"characters": [
+					"Nadine",
+					"Danielle"
+				],
+				"dialogue": true
+			},
+			{
+				"name": "NadDanFinalStraw",
+				"content": [
+					"Nadine: 'Yeah you're right I do'",
+					"Danielle: 'Okay, bye then 👋👋'"
+				],
+				"link": [
+					"NadDanRegret"
+				],
+				"characters": [
+					"Nadine",
+					"Danielle"
+				],
+				"dialogue": true
+			},
+			{
+				"name": "NadDanRegret",
+				"content": [
+					"'That could have been handled better', Nadine thought.",
+					"Too late now, let's try and find out what I can on my own."
+				],
+				"link": [
+					"GoogleHC"
+				],
+				"narration":true
+			},
+			{
+				"name": "DanielleHooksNadUp",
+				"content": [
+					"Danielle: 'I think I'll be able to snag you a uniform and a swipe card.'",
+					"Danielle: 'But I'm warning you, the minute you enter the building, you're being watched and even if it looks like you work there, they will question you to see if you actually work there'",
+					"Nadine: 'Oh my god, that would be amazing!'",
+					"Nadine: 'I can deal with people questioning me, been dealing with that my whole life.'",
+					"Danielle: 'Ugh I hear that, I should be able to get everything you'll need to get in.'",
+					"Danielle: 'The server room is on Level 29, in the Technical and R&D department.'",
+					"Danielle: 'Send me your address so I can drop off the stuff you need.'",
+					"Nadine: 'You've been amazing, I can't thank you enough sis!'"
+				],
+				"link": [
+					"NadineSendsAddress"
+				],
+				"characters": [
+					"Nadine",
+					"Danielle"
+				],
+				"dialogue": true
+			},
+			{
+				"name": "NadineSendsAddress",
+				"content": [
+					"Nadine sends her address to Danielle"
+				],
+				"link": [
+					"StickItToEm"
+				],
+				"narration": true
+			},
+			{
+				"name": "StickItToEm",
+				"content": [
+					"Nadine: 'I really appreciate this, how can I repay you?'",
+					"Danielle: 'Take those bastards down and make them pay for what they've done.'"
+				],
+				"link": [
+					"GoogleHC"
+				],
+				"characters": [
+					"Nadine",
+					"Danielle"
+				],
+				"dialogue": true
+			}
+		]
+	}
+} 

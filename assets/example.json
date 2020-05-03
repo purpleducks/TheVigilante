@@ -1,0 +1,26 @@
+{
+    "<scene name>": {
+        "storylines":[
+            {
+                "<object name>": {
+                    "content": [
+
+                    ],
+                    "link": [
+
+                    ],
+                    "images": [
+
+                    ],
+                    "characters": [
+
+                    ],
+                    "narration": true / false,
+                    "decision": true / false,
+                    "systemDecision": true / false,
+                    "dialogue": true / false
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,224 @@
+@font-face {
+  font-family: IBMPlex;
+  src: url("../assets/IBMPlexMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: SourceCodePro;
+    src: url("../assets/SourceCodePro-Regular.ttf");
+}
+
+form.chat *{
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+
+form.chat {
+  margin:0;
+  cursor:default;
+  position:relative;
+  left: 13%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;   
+  height: 70vh;
+  width: 24vw;
+  top: 10%;
+}
+
+form.chat span.spinner{
+  -moz-animation: loading-bar 1s 1;
+  -webkit-animation: loading-bar 1s 1;
+  animation: loading-bar 1s 1;
+  display: block;
+  height: 2px;
+  background-color: #007aff ;
+  position:absolute;
+  top:0; left:0; right:0;
+  z-index:4
+}
+
+form.chat .messages{
+  display:block;
+  overflow: hidden;
+  position:relative;
+  height: 79vh;
+  width: 24.5vw;
+  padding:2% 3%;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+form.chat ::-webkit-scrollbar {width: 3px; height:1px;z-index:10;}
+form.chat ::-webkit-scrollbar-track {background-color: white;}
+form.chat ::-webkit-scrollbar-thumb {
+  background-color: #bec4c8; 
+  border-radius:3px;
+}
+
+form.chat .message{
+  display:block;
+  width:98%;
+  padding:0.5%;
+  z-index: 1;
+}
+
+form.chat .message p{
+  margin:0;
+}
+
+form.chat .myMessage,
+form.chat .fromThem {
+  max-width: 50%;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+
+form.chat .myMessage,.fromThem{
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 25px;
+  clear: both;
+  font: 400 15px 'Open Sans', sans-serif;
+}
+
+form.chat .myMessage {
+  background: #007aff;
+  color:white;
+  float:right;
+  clear:both;
+  border-bottom-right-radius: 20px 0px;
+}
+form.chat .fromThem {
+  background: #E5E5EA;
+  color: black;
+  float: left;
+  clear:both;
+  border-bottom-left-radius: 30px 0px;
+}
+
+form.chat input{
+  font: 400 13px 'Open Sans', sans-serif;
+  border:0;
+  padding:0 15px;
+  height:10%;
+  outline:0;
+}
+
+form.chat input[type='text']{
+  width: 74%;
+  float: left;
+  height: 5%;
+  position: absolute;
+  z-index: 1;
+  left: 2%;
+  top: 90%;
+  padding-top: 1vh;
+}
+
+form.chat input[type='submit']{
+  width:23%;
+  background:transparent;
+  color:#007aff;
+  font-weight:700;
+  text-align:right;
+  float:right;
+  position: absolute;
+  left: 75%;
+  bottom: 1%;
+}
+
+  form.chat .myMessage,form.chat .fromThem{
+    font-size:12px;
+  }
+  
+  form.chat .myMessage,
+  form.chat .fromThem {
+    max-width: 90%;
+  }
+  
+@-moz-keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+  90% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+  90% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+  90% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* DEMO */
+.iphone{
+  width: 34vw;
+  height: 96.5vh;
+  background-image:url('../images/phone-layout.png');
+  background-size:100% 100%;
+  margin: auto;
+  position: relative;
+  top: 1vh;
+}
+
+.border{
+  position:absolute;
+  top:12.3%;
+  right: 11%;
+  left: 14%;
+  bottom: 12%;
+  width: 72%;
+  height: 83%;
+  overflow:hidden;
+  background-color: white;
+}
+
+#bottomOverlay {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 67%;
+  left: 0.104vw;
+}
+
+a.article{
+  position:fixed;
+  bottom:15px;
+  left:15px;
+  display:table;
+  text-decoration:none;
+  color:white;
+  background-color:#007aff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font: 400 15px 'Open Sans', sans-serif;
+}

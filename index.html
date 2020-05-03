@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Vigilante</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/index.js" charset="utf-8"></script>
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  <!-- W3Schools styling -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/opening.css">
+    </head>
+    <body onload="main()">
+        <div id="gameContainer">
+            <div id="gameInfo" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Welcome to the Vigilante!</h2>
+                    <h3>Looks like you're new here! Here's some info to get you started.</h3>
+                    <p>
+                        If you're playing this on a mobile device, please hold it in landscape for the optimal experience.
+                        Please note: The in game music may not load on all browsers. You may need to start it manually. Feel free to refresh to hear this better ;)
+                    <p>
+                </div>
+            </div>
+    
+            <button id="startButton" disabled type="button">START</button>
+            <a onclick="playPauseMusic()">
+                <img src="images/pause-music-icon.png" id="musicControl" style="height: 4.5vh; bottom: 1.8%; left: 45%;"/>
+            </a>
+            <a onclick="showModal()">
+                <img id="showModal" src="images/info.png"/>
+            </a>
+            <h5 style="visibility:hidden" id="musicControlLabel">MUSIC PLAY/PAUSE</h5>
+            <h5 style="visibility:hidden" id="showModalLabel">NEED HELP?</h5>
+            <audio autoplay loop id="musicPlayer"><source src="music/Beam-Me-Up.mp3" type="audio/mpeg"></audio>
+        </div>
+    </body>
+</html>
