@@ -13,7 +13,8 @@
 				],
 				"images": [
 				],
-				"cinematic": true
+				"cinematic": true,
+				"music":""
 			},
 			{
 				"name": "CoWorkerDialogueOne",
@@ -34,7 +35,8 @@
 				"images": [
 					
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "NadineInternalDialogue",
@@ -52,7 +54,8 @@
 				],
 				"images": [
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name":"LetsLookAtHC",
@@ -62,7 +65,8 @@
 				"link": "NadDecisionOne",
 				"images": [
 				],
-				"narration": true
+				"narration": true,
+				"music":""
 			},
 			{
 				"name": "NadDecisionOne",
@@ -72,12 +76,13 @@
 					"Text Marcus"
 				],
 				"link": [
-					"GoogleHC",
+					"SearchHC",
 					"NadineWasNice"
 				],
 				"images": [
 				],
-				"decision": true
+				"decision": true,
+				"music":""
 			},
 			{
 				"name": "NadineWasNice",
@@ -91,12 +96,13 @@
 				],
 				"images": [
 				],
-				"systemDecision": true
+				"systemDecision": true,
+				"music":""
 			},
 			{
 				"name": "NadineWasMean",
 				"link": [
-					"GoogleHC",
+					"SearchHC",
 					"MarcusPA"
 				],
 				"condition": [
@@ -107,7 +113,8 @@
 				],
 				"images": [
 				],
-				"systemDecision": true
+				"systemDecision": true,
+				"music":""
 			},
 			{
 				"name": "MarcusPA",
@@ -118,19 +125,21 @@
 					"Marcus: 'You too'"
 				],
 				"link": [
-					"GoogleHC"
-				],
+					"SearchHC"
+				],,
+				"music":""
 			},
 			{
-				"name": "GoogleHC",
+				"name": "SearchHC",
 				"content": [
-					"Nadine decides to start googling HealthCorp's headquarters"
+					"Nadine decides to start looking for more info about HealthCorp's headquarters."
 				],
 				"link": [
 				],
 				"images": [
 				],
-				"narration": true
+				"narration": true,
+				"music":""
 			},
 			{
 				"name": "MarcusHasTea",
@@ -149,7 +158,8 @@
 				],
 				"images": [
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "MarcusSendsNumber",
@@ -162,7 +172,8 @@
 				],
 				"images": [
 				],
-				"narration": true
+				"narration": true,
+				"music":""
 			},
 			{
 				"name": "NadDanielleOne",
@@ -179,7 +190,8 @@
 				],
 				"images": [
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "NadDanResponseOne",
@@ -196,7 +208,8 @@
 				],
 				"images": [
 				],
-				"decision": true
+				"decision": true,
+				"music":""
 			},
 			{
 				"name": "EnthusiasticNadDan",
@@ -213,7 +226,8 @@
 				],
 				"images": [
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "RudeNadDan",
@@ -230,7 +244,8 @@
 				"images": [
 
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "NeutralNadDan",
@@ -250,7 +265,8 @@
 				],
 				"images": [
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "ImpressedDanielle",
@@ -261,7 +277,8 @@
 				],
 				"images": [
 				],
-				"narration": true
+				"narration": true,
+				"music":""
 			},
 			{
 				"name": "OffendedDanielle",
@@ -273,7 +290,8 @@
 				],
 				"images": [
 				],
-				"narration": true
+				"narration": true,
+				"music":""
 			},
 			{
 				"name": "OffendedDanielleSpeech",
@@ -292,7 +310,8 @@
 				],
 				"images": [
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "ImpressedDanielleSpeech",
@@ -310,7 +329,8 @@
 				],
 				"images": [
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "DanielleSpillsTea",
@@ -326,7 +346,8 @@
 				],
 				"images": [
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "NadDanielleTwo",
@@ -341,7 +362,8 @@
 				],
 				"images": [
 				],
-				"decision": true
+				"decision": true,
+				"music":""
 			},
 			{
 				"name": "NadDanIsRudeTwo",
@@ -354,7 +376,8 @@
 				"characters": [
 					"Nadine"
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "NadineOffendedDan",
@@ -367,7 +390,8 @@
 				],
 				"images": [
 				],
-				"systemDecision": true
+				"systemDecision": true,
+				"music":""
 			},
 			{
 				"name": "ReallyOffendedDanielle",
@@ -377,7 +401,8 @@
 				"link": [
 					"ReallyOffendedDanielleSpeech"
 				],
-				"narration": true
+				"narration": true,
+				"music":""
 			},
 			{
 				"name": "OffendedDanielleSpeechTwo",
@@ -390,7 +415,8 @@
 				"characters": [
 					"Danielle"
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "ReallyOffendedDanielleSpeech",
@@ -403,7 +429,8 @@
 				"characters": [
 					"Danielle"
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "NadDanTroubleDecision",
@@ -418,7 +445,8 @@
 				],
 				"images": [
 				],
-				"decision": true
+				"decision": true,
+				"music":""
 			},
 			{
 				"name": "NadineTriesToFix",
@@ -440,7 +468,8 @@
 					"Nadine",
 					"Danielle"
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "NadDanFinalStraw",
@@ -455,7 +484,8 @@
 					"Nadine",
 					"Danielle"
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "NadDanRegret",
@@ -464,9 +494,10 @@
 					"Too late now, let's try and find out what I can on my own."
 				],
 				"link": [
-					"GoogleHC"
+					"SearchHC"
 				],
-				"narration":true
+				"narration":true,
+				"music":""
 			},
 			{
 				"name": "DanielleHooksNadUp",
@@ -487,7 +518,8 @@
 					"Nadine",
 					"Danielle"
 				],
-				"dialogue": true
+				"dialogue": true,
+				"music":""
 			},
 			{
 				"name": "NadineSendsAddress",
@@ -497,7 +529,8 @@
 				"link": [
 					"StickItToEm"
 				],
-				"narration": true
+				"narration": true,
+				"music":""
 			},
 			{
 				"name": "StickItToEm",
@@ -506,7 +539,7 @@
 					"Danielle: 'Take those bastards down and make them pay for what they've done.'"
 				],
 				"link": [
-					"GoogleHC"
+					"SearchHC"
 				],
 				"characters": [
 					"Nadine",
@@ -514,6 +547,1136 @@
 				],
 				"dialogue": true
 			}
+			{
+				"name": "OSINT-Circular",
+				"content": [
+					"Where does Nadine go from here?",
+					"A popular recruiting and company review site",
+					"Image searches of the HealthCorp headquarters",
+					"A business networking site",
+					"Finished searching"
+				],
+				"images" : [
+				],
+				"link": [
+					"CompanyReviewSite",
+					"ImagesOfHQ",
+					"LinkedIn",
+					"IsNadineDone"
+				],
+				"decision": true,
+				"music":""
+			},
+			{
+				"name": "OSINT-Circular-SysDecision",
+				"content": [
+					"CompanyReviewSite",
+					"ImagesOfHQ",
+					"LinkedIn"
+				],
+				"link": [
+					"NoMoreOptions-OSINT",
+					"OSINT-Circular"
+				],
+				"images": [
+				],
+				"music": "",
+				"systemDecision": true
+			},
+			{
+				"name": "CompanyReviewSite",
+				"content": [
+					"Nadine decides to click on a popular compay review site to start digging up dirt abput HealthCorp"
+				],
+				"images" : [
+				],
+				"link": [
+					"NothingBadToSay"
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "NothingBadToSay",
+				"content": [
+					"Nadine quickly notices that the company doesn't have a single bad review.",
+					"She goes to click on MediKare's review page and she sees fairly mixed reviews but mostly positive."
+				],
+				"images": [
+				],
+				"link": [
+					"CRS-NadineWhatTheHeck"
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name":"CRS-NadineWhatTheHeck",
+				"content": [
+					"Nadine: 'What is going on here?'",
+					"Nadine: 'Are they really that bad of a company? Their staff can't be happy indirectly killing people everyday..."
+				],
+				"images": [
+				],
+				"link": [
+					"OSINT-Circular-SysDecision"
+				],
+				"characters": [
+					"Nadine"
+				],
+				"music": "",
+				"dialogue": true
+			},
+			{
+				"name": "ImagesOfHQ",
+				"content": [
+					"Nadine has decided to look for images of the headquarters",
+					"She pulls up the HealthCorp website and does a quick search on Street View to get a better view"
+				],
+				"link": [
+					"ImagesOfHQ-Decision"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name":"ImagesOfHQ-Decision",
+				"content": [
+					"Where does Nadine look?",
+					"The HealthCorp entrance",
+					"The location of the cameras",
+					"The building's perimeter"
+				],
+				"link": [
+					"HQEntrance",
+					"HQPerimeter",
+					"HQCameras"
+				],
+				"images": [
+				],
+				"music": "",
+				"decision": true
+			},
+			{
+				"name": "HQEntrance",
+				"content": [
+					"Nadine looks at corporate images of the HealthCorp headquarters",
+					"She notes the number of security guards and where they're stationed in the main foyer"
+				],
+				"link": [
+					"HQEntranceNadine"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "HQPerimeter",
+				"content": [
+					"Nadine looks at Street View images of the buildings perimeter and notices an underground car park",
+					"It doesn't look like there's many cameras or security here."
+				],
+				"link": [
+					"HQPerimeterNadine"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "HQCameras",
+				"content": [
+					"Nadine looks at the street images of the HealthCorp headquarters and notes the locations of the external cameras.",
+					"The place is littered with them, hardly surprising. Any protests held outside are usually shut down pretty quickly thanks to them."
+				],
+				"link": [
+					"HQCamerasNadine"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "HQEntranceNadine",
+				"content": [
+					"Nadine: 'Looks like a decent number of security at the entrance, I'll need to be careful.'",
+					"Nadine: 'And looks like they've got security gates, I'll have to find a way around that too.'"
+				],
+				"link": [
+					"DoneSearchingYet-SysDecision"
+				],
+				"images": [
+				],
+				"music": "",
+				"decision": true
+			},
+			{
+				"name": "HQPerimeterNadine",
+				"content": [
+					"Nadine: 'Hmmm with the right credentials, that could be a great way in!'",
+					"Nadine: 'Just need to talk my way past the security guard...'"
+				],
+				"link": [
+					"DoneSearchingYet-SysDecision"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "HQCamerasNadine",
+				"content": [
+					"Nadine: 'Must remember to avoid cameras where I can, don't want to attract any unwanted attention'",
+					"Nadine: 'Or worse, get arrested.'"
+				],
+				"link": [
+					"DoneSearchingYet-SysDecision"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "DoneSearchingYet-SysDecision",
+				"content": [
+					"HQEntrance",
+					"HQCameras",
+					"HQPerimeter"
+				],
+				"link": [
+					"HQ-FullyResearched",
+					"DoneSearchingYet"
+				],
+				"images": [
+				],
+				"music": "",
+				"systemDecision": true
+			},
+			{
+				"name": "DoneSearchingYet",
+				"content": [
+					"Does Nadine want to keep looking into the HQ?"
+					"Yes",
+					"No"
+				],
+				"link": [
+					"ImagesOfHQ-Decision",
+					"OSINT-Circular-SysDecision"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "NoMoreOptions-OSINT",
+				"content": [
+					"Nadine feels confident to go into the HealthCorp HQ, she decides to finish up what she's doing and get back to work.",
+					"HealthCorp aren't gonna know what hit em.",
+					"She hopes........"
+				],
+				"link": [
+					"FINISH"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "HQ-FullyResearched",
+				"content": [
+					"Nadine has done enough research on the HealthCorp HQ",
+					"There's nothing more to find"
+				],
+				"link": [
+					"OSINT-Circular-SysDecision"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name":"FINISH",
+	            "content":[
+	               "FINISH"
+	            ],
+	            "link":[
+	               "FINISH"
+	            ],
+	            "images":[
+	               "end.jpg"
+	            ],
+	            "narration":true,
+	            "music":""
+	        },
+			{
+				"name": "LinkedIn",
+				"content": [
+					"Nadine decides to have a look on a popular professional networking site to see if there is anyone for her to exploit"
+				],
+				"link": [
+					"FirstBloggerSysDecision"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "FirstBloggerSysDecision",
+				"content": [
+					"Blog email"
+				],
+				"link": [
+					"BloggersAnonContact",
+					"SecondBloggerSysDecision"
+				],
+				"images": [
+				],
+				"music": "",
+				"systemDecision": true
+			},
+			{
+				"name": "SecondBloggerSysDecision",
+				"content": [
+					"Darren email"
+				],
+				"link": [
+					"BloggerAndDarren"
+					"ExploitRecruiter"
+				],
+				"images": [
+				],
+				"music": "",
+				"systemDecision": true
+			},
+			{
+				"name": "BloggersAnonContact",
+				"content": [
+					"Nadine searches through a list of HealthCorp on the site when she remembers something. "
+					"Nadine pauses ..........."
+				],
+				"link": [
+					"NadineEpiphany-speech"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "NadineEpiphany-speech",
+				"content": [
+					"Nadine: 'The inbox!!'",
+					"Co-worker: 'Erm, you ok honey?'",
+					"Nadine: 'Sorry! My bad, didn't mean to scare you."
+				],
+				"link": [
+					"NadineEpiphany"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Co-worker"
+				],
+				"music": "",
+				"dialogue": true
+			},
+			{
+				"name": "NadineEpiphany",
+				"content": [
+					"Nadine smiles awkwardly at her confused co-workers, it's pretty awkward.",
+					"Ugh, why am I like this?",
+					"She continues to work at her computer.",
+					"She opens the captured folder and finds the email she remembered",
+					"It came from an anonymous throwaway account and they didn't leave a name or anything.",
+					"Nadine searches for anybody using the email for any accounts but finds nothing, looks pretty suspicious...."
+				],
+				"link": [
+					"AnonChatDecision"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+
+			{
+				"name": "AnonChatDecision",
+				"content": [
+					"Does Nadine attempt to talk to this person?",
+					"Yes",
+					"No"
+				],
+				"link": [
+					"LetsTalkToAStranger"
+					"ExploitRecruiter"
+				],
+				"images": [
+				],
+				"music": "",
+				"decision": true
+			},
+
+			{
+				"name": "LetsTalkToAStranger",
+				"content": [
+					"Nadine decides to talk to them, she starts to read the email to refresh her memory."
+				],
+				"link": [
+					"AnonEmail-1"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+
+			{
+				"name": "AnonEmail-1",
+				"content": [
+					"Anonymous: 'I can't let them get away with it. Not again.'",
+					"Anonymous: 'BOTH of my friend's parents were murdered by HealthCorp. None of them could afford those crazy medical bills'"
+				],
+				"link": [
+					"AnonEmail-2"
+				],
+				"images": [
+				],
+				"characters": [
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"dialogue": true
+			},
+			{
+				"name": "AnonEmail-2",
+				"content": [
+					"Anonymous: 'The rep on the phone didn't even care, she said that 'there was nothing she could do'.'",
+					"Anonymous: 'Dumb bitch didn't even know she was sentencing this man's parents death warrant'"
+				],
+				"link": [
+					"AnonEmail-2"
+				],
+				"images": [
+				],
+				"characters": [
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"dialogue": true
+			},
+			{
+				"name": "AnonEmail-3",
+				"content": [
+					"Anonymous: 'After that, he was real fucked up yknow? That's when he decided to do something about it.'",
+					"Anonymous: 'That's why I'm emailing you, you gotta leak this so other people know what they're capable of'"
+				],
+				"link": [
+					"AnonEmail-NadinesThoughts"
+				],
+				"images": [
+				],
+				"characters": [
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"dialogue": true
+			},
+
+			{
+				"name": "AnonEmail-NadinesThoughts",
+				"content": [
+					"Nadine: 'Damn, Dad was right, they're are others who are trying to fight them.'",
+					"Nadine: 'Wish I listened to him, he might still be here now ...'",
+					"Nadine: 'Let's reach out, but I guess I'll have to pretend to be Sam, but from a different account."
+				],
+				"link": [
+					"AnonEmail-NadineReachesOut-1"
+				],
+				"images": [
+				],
+				"music": "",
+				"dialogue": true
+			},
+			{
+				"name": "AnonEmail-NadineReachesOut-1",
+				"content": [
+					"Nadine makes an email account that looks similar to Sam's email address."
+				],
+				"link": [
+					"AnonEmail-NadineReachesOut-2"
+				],
+				"images": [
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "AnonEmail-NadineReachesOut-2",
+				"content": [
+					"Nadine makes an email account that looks similar to Sam's email address."
+				],
+				"link": [
+					"AnonEmail-NadineReachesOut-3"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine"
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "AnonEmail-NadineReachesOut-3",
+				"content": [
+					"Nadine: 'Hi there! It's Sam, I got your email but I lost access to my inbox, which is why I'm emailing you from this address.'",
+					"Nadine: 'Would you mind texting me instead? I'm easier to reach on there, so here's my number if you want to talk!'",
+					"Nadine: 'Talk soon! Sam.'"
+				],
+				"link": [
+					"AnonEmail-NadineReachesOut-4"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine"
+				],
+				"music": "",
+				"dialogue": true
+			},
+			{
+				"name": "AnonEmail-NadineReachesOut-4",
+				"content": [
+					"Nadine sends the email, she's not optimistic that they'll reply.",
+					" ......... ",
+					"After about 15 minutes, the Anonymous person replies to Nadine's email with just a phone number.",
+					"Nothing else. Nadine is suspicious.",
+					"She opens her phone and introduces herself as Sam to the Anonymous person"
+				],
+				"link": [
+					"AnonEmail-NadineReachesOut-5"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine"
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "AnonEmail-NadineReachesOut-5",
+				"content": [
+					"Nadine: 'hi there! it's Sam, thanks for your email",
+					"Nadine: 'when I got your email, I was so happy, like I knew there had to be others!",
+					"Anonymous: 'my pleasure, and yeah i know it's not my story but I care for my friend yknow?'"
+				],
+				"link": [
+					"AnonEmail-Decision"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "AnonEmail-Decision",
+				"content": [
+					"What does Nadine say to the anonymous sender?",
+					"Don't bother man.",
+					"Why do you even care?",
+					"Share his story on the blog"
+				],
+				"link": [
+					"GiveItUpAnon",
+					"ThisAintYourFightAnon",
+					"ShareAnonsStory"
+				],
+				"images": [
+				],
+				"music": "",
+				"texting":true,
+				"decision": true
+			},
+
+			{
+				"name": "ThisAintYourFightAnon",
+				"content": [
+					"Nadine: 'if this ain't your story, why do you even care? Like HealthCorp didn't do this to you'",
+					"Nadine: 'it was your friend that got hit by this, not you.'"
+				],
+				"link": [
+					"PrettyMeanToAnon"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+
+			{
+				"name": "GiveItUpAnon",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+
+			{
+				"name": "ShareAnonsStory",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+
+			{
+				"name": "PrettyMeanToAnon",
+				"content": [
+					"Nadine was pretty mean to the Anonymous sender."
+				],
+				"link": [
+					"AnonSenderIsMad"
+				],
+				"images": [
+				],
+				"music": "",
+				"badtrait": true,
+				"texting":true,
+				"narration": true
+			},
+
+			{
+				"name": "AnonSenderIsMad",
+				"content": [
+					"Anonymous: 'What's that supposed to mean?!'", 
+					"Anonymous: 'I thought you cared about HealthCorp fucking everyone over, or are you a liar just like them?'"
+				],
+				"link": [
+					"MakeAnonEvenMadder-Decision"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+
+			{
+				"name": "MakeAnonEvenMadder-Decision",
+				"content": [
+					"What does Nadine say?",
+					"I hate them just as much as you do!",
+					"This isn't your fight."
+				],
+				"link": [
+					"BacktrackingOnAnon",
+					"DoublingDownOnAnon"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"decision": true
+			},
+
+			{
+				"name": "BacktrackingOnAnon",
+				"content": [
+					"Nadine: 'Of course I care! I hate them just as much as you do!'",
+					"Nadine: 'Why else would I write an article about them fucking over my family?'",
+					"Nadine: 'Putting my family in thousands of dollars of debt?'",
+					"Nadine: 'I wanna see them pay for what they've done to my family and probably countless others!"
+				],
+				"link": [
+					"RedeemedForAnon"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+
+			{
+				"name": "DoublingDownOnAnon",
+				"content": [
+					"Nadine: 'If you know what's good for you, you'll stay as far away as you can from HealthCorp.'",
+					"Nadine: 'They didn't get you, I'm sorry they got your friend but you need to stay out of this for your own protection'",
+					"Nadine: 'You don't want to end up like your friend.'"
+				],
+				"link": [
+					"YouHaveReallyDoneItNow"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "RedeemedForAnon",
+				"content": [
+					"Anonymous: 'Okay but why are you dismissing me just because I didn't go through the same thing?'", 
+					"Anonymous: 'He was my best friend, we shared everything with each other. Seeing him go through that...'",
+					"Anonymous: 'It was hard to watch him go through that.'"
+				],
+				"link": [
+					"NadineFeelsBadForAnon"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "NadineFeelsBadForAnon",
+				"content": [
+					"Nadine: 'Look I'm sorry, I didn't mean it like that.'",
+					"Nadine: 'I've seen so many blogs in support of HealthCorp, so I get really defensive when it comes to people don't know what it's like to experience that first hand, yknow?.'"
+				],
+				"link": [
+					"AnonLostTrust-RudeNadine"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "AnonLostTrust-RudeNadine",
+				"content": [
+					"Anonymous: 'okay I get that but if you can't trust me, then I can't trust you, sorry.'",
+					"Anonymous: 'But before I do go, I have to ask.'", 
+					"Anonymous: 'Are you serious about revenge on HealthCorp?'"
+				],
+				"link": [
+					"SuspiciousAnon-HealthCorpBreakIn-Decision"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "SuspiciousAnon-HealthCorpBreakIn-Decision",
+				"content": [
+					"What does Nadine say?",
+					"Definitely",
+					"No way man!"
+				],
+				"link": [
+					"NadineBreakIn-Sus",
+					"NadineIsJustABlogger"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"decision": true
+			},
+			{
+				"name": "NadineBreakIn-Sus",
+				"content": [
+					"Nadine: 'Of course!'",
+					"Nadine: 'I wanna see them pay for all the hurt they've caused to people like us.'",
+					"Anonymous: 'Right, well my friend found out that the underground car park wasn't very well guarded when he was doing some 'research' shall we say.'",
+					"Anonymous: 'Apparently, the security guards rotate around 2PM, just after everyone comes back from lunch.'"
+					"Anonymous: 'So if you were thinking about bringing the fight to them, that would be your way in.'",
+					"Anonymous: 'Feel free to publicise his story, people need to know the pure evil that that company is...'"
+				],
+				"link": [
+					"NadineHasFinishedWithAnon"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "NadineIsJustABlogger",
+				"content": [
+					"Nadine: 'No way man! I'm not capable of that kinda shit.'",
+					"Nadine: 'I'm just gonna expose HealthCorp through telling stories like yours on my blog.'", 
+					"Nadine: 'I'm not looking to break in or anything.'",
+					"Anonymous: 'Suit yourself, well you know my story, so feel free to put it on your blog, have a nice life.'",
+					"Nadine: 'You too, stay safe'"
+				],
+				"link": [
+					"NadineHasFinishedWithAnon"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "NadineHasFinishedWithAnon",
+				"content": [
+					"Nadine closes the conversation and returns back to her desktop. Did she just make a big mistake?"
+				],
+				"link": [
+					"OSINT-Circular-SysDecision"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"narration": true
+			},
+			{
+				"name": "YouHaveReallyDoneItNow",
+				"content": [
+					"Nadine has REALLY pised off the Anonymous sender."
+				],
+				"link": [
+					"AnonIsReallyMadNow"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"badtrait": true,
+				"texting":true,
+				"narration": true
+			},
+			{
+				"name": "AnonIsReallyMadNow",
+				"content": [
+					"Anonymous: 'You know what? Fuck you!'",
+					"Anonymous: 'You can't tell me what to do, especially when it comes to getting payback for my friend, who the FUCK do you think you are??'",
+					"Anonymous: 'Forget it man, you know my story now, so you can blog about that if you want. I'm done.'"
+				],
+				"link": [
+					"ThatCouldHaveGoneBetter-Anon"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "ThatCouldHaveGoneBetter-Anon",
+				"content": [
+					"Well, that could have been handled better..."
+				],
+				"link": [
+					"NadineHasFinishedWithAnon"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"narration": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
+			{
+				"name": "EMPTY",
+				"content": [
+				],
+				"link": [
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"dialogue": true
+			},
 		]
 	}
 } 

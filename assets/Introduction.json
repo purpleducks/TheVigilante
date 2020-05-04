@@ -7,7 +7,8 @@
                "Nadine wakes up late, gets ready and turns on her computer to see what's going on.",
                "As usual, she does her daily ritual of searching for stories about HealthCorp and anyone trying to sue them like her father did all those years ago.",
                "This is when she stumbles upon a blog post; it reads 'HealthCorp are EVIL!!'.",
-               "The blogger talks about how their father had terminal cancer, how HealthCorp did the exact same thing to them as they had done to Nadine's mother and left them to die."
+               "Sam talks about how his father had terminal cancer and how HealthCorp cancelled his father's insurance just as he was about to start chemo",
+               "They couldn't keep up with the payments and Sam had to work two jobs and re-mortgage his house just to make the payments."
             ],
             "link":[
                "Investigate blog decision"
@@ -17,11 +18,12 @@
                "bedroom.jpg",
                "typing.jpg",
                "blog-post.jpg",
+               "blog-post.jpg",
                "blog-post.jpg"
             ],
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "narration":true,
             "name":"Opening Speech",
@@ -95,7 +97,8 @@
                "Nadine wakes up late, gets ready and turns on her computer to see what's going on.",
                "As usual, she does her daily ritual of searching for stories about HealthCorp and anyone trying to sue them like her father did all those years ago.",
                "This is when she stumbles upon a blog post; it reads 'HealthCorp are EVIL!!'.",
-               "The blogger talks about how their father had terminal cancer, how HealthCorp did the exact same thing to them as they had done to Nadine's mother and left them to die."
+               "Sam talks about how his father had terminal cancer and how HealthCorp cancelled his father's insurance just as he was about to start chemo",
+               "They couldn't keep up with the payments and Sam had to work two jobs and re-mortgage his house just to make the payments."
             ],
             "link":[
                "Investigate blog decision"
@@ -105,11 +108,12 @@
                "bedroom.jpg",
                "typing.jpg",
                "blog-post.jpg",
+               "blog-post.jpg",
                "blog-post.jpg"
             ],
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "narration":true,
             "name":"Opening Speech",
@@ -137,8 +141,8 @@
          },
          {
             "content":[
-               "Nadine decides to investigate this further and investigate the blogger's story (it was posted late last night)",
-               "After a lot of trawling, she finds the blogger's social media profile and a post to a GoFundMe page, where they're raising money for their dad's treatment"
+               "Nadine decides to investigate this further and investigate Sam's story (it was posted late last night)",
+               "After a lot of trawling, she finds Sam's social media profile and a post to a GoFundMe page, where he was raising money for his dad's treatment"
             ],
             "link":[
                "Investigate blog post decision"
@@ -150,14 +154,14 @@
             "narration":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Investigate blog post",
             "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
-               "Does Nadine hack into the blogger's social media profile?",
+               "Does Nadine hack into Sam's social media profile?",
                "Hacks into social media profile",
                "Leaves it and turns laptop off"
             ],
@@ -171,7 +175,7 @@
             "decision":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Investigate blog post decision",
             "music":"A-Stranger-Thing.mp3"
@@ -189,15 +193,15 @@
             "narration":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Probably a scam",
             "music":"Fresh-Fallen-Snow.mp3"
          },
          {
             "content":[
-               "Nadine decides to launch a dictionary attack on the blogger's social media profile.",
-               "Nadine manages to crack the blogger's password!",
+               "Nadine decides to launch a dictionary attack on Sam's social media profile.",
+               "Nadine manages to crack the Sam's password!",
                "Nadine failed to crack the password and the social media website locked her out."
             ],
             "link":[
@@ -210,16 +214,16 @@
             "minigame":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Social media profile hack",
             "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
-               "Nadine sees messages between the blogger and their family talking about their father being in hospital",
-               "The timestamps prove that the blogger wasn't lying about their father being in hospital and there are selfies of their father and them in a hospital bed.",
-               "Nadine is still curious about the blogger."
+               "Nadine sees messages between Sam and his family talking about his father being in hospital",
+               "The timestamps prove that Sam wasn't lying about his father being in hospital and there are selfies of his father and Sam in a hospital bed.",
+               "Nadine is still curious about Sam, what is he hiding?."
             ],
             "link":[
                "Blogger email hack"
@@ -227,15 +231,15 @@
             "narration":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"In bloggers profile",
             "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
-               "Does Nadine hack into the blogger's emails?",
-               "Hack into their email - they're hiding something.",
+               "Does Nadine hack into Sam's emails?",
+               "Hack into his email - he's hiding something.",
                "He's clean, his story checks out."
             ],
             "link":[
@@ -245,15 +249,15 @@
             "decision":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Bloggers email",
             "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
-               "Nadine decides to hack into the blogger's emails",
-               "Nadine managed to hack into the blogger's email account.",
+               "Nadine decides to hack into Sam's emails",
+               "Nadine managed to hack into Sam's email account.",
                "They have two factor authentication enabled, they'll be surprised to get a random text. Nadine decides against continuing to hack in."
             ],
             "link":[
@@ -263,7 +267,7 @@
             "minigame":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Blogger email hack",
             "music":"A-Stranger-Thing.mp3"
@@ -303,7 +307,7 @@
          },
          {
             "content":[
-               "Nadine discovers that the blogger is dating a HealthCorp employee called Darren Anderson",
+               "Nadine discovers that Sam is dating a HealthCorp employee called Darren Anderson",
                "Based on the emails, it looks like Darren works in HealthCorp's sales department. Nadine notes this down just in case ;)"
             ],
             "link":[
@@ -312,14 +316,14 @@
             "narration":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Darren email",
             "music":""
          },
          {
             "content":[
-               "Nadine discovers a lot of messages from other people who say they were screwed over by HealthCorp's tactics too. The blogger even replied to some of them"
+               "Nadine discovers a lot of messages from other people who say they were screwed over by HealthCorp's tactics too. Sam even replied to some of them"
             ],
             "link":[
                "Email intrusion detected"
@@ -347,7 +351,7 @@
          },
          {
             "content":[
-               "Naadine decides to download the whole inbox but the blogger must have noticed the intrusion, Nadine's download was interrupted and she only managed to download the folder she was viewing and she loses access."
+               "Naadine decides to download the whole inbox but Sam must have noticed the intrusion, Nadine's download was interrupted and she only managed to download the folder she was viewing and she loses access."
             ],
             "link":[
                "Texting Marcus"
@@ -394,7 +398,7 @@
          },
          {
             "content":[
-               "Marcus: 'Hey sis, did you see that post about the blogger? He was going IN on HealthCorp, maybe this is a good sign yknow?'"
+               "Marcus: 'Hey sis, did you see that post about that blogger? He was going IN on HealthCorp, maybe this is a good sign yknow?'"
             ],
             "link":[
                "NadineReply1"
@@ -657,7 +661,7 @@
          },
          {
             "content":[
-               "Nadine: 'HealthCorp just won't quit with them, he put up his post about how they treated their dad and within an hour, they were filling up his inbox with cease and desist statements and threatening to sue for defamation'",
+               "Nadine: 'HealthCorp just won't quit with them, he put up his post about how they treated his dad and within an hour, they were filling up his inbox with cease and desist statements and threatening to sue for defamation'",
                "Nadine: 'I can't even imagine what that would be like, poor thing'",
                "Nadine: 'like haven't they been through enough?! man'",
                "Marcus: 'fuuuck man, that's brutal. why they comin for him like that? he ain't even THAT popular.'",
