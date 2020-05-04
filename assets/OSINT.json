@@ -945,8 +945,8 @@
 			{
 				"name": "AnonEmail-1",
 				"content": [
-					"Anonymous: 'I can't let them get away with it. Not again.'",
-					"Anonymous: 'BOTH of my friend's parents were murdered by HealthCorp. None of them could afford those crazy medical bills'"
+					"Anonymous-Sender: 'I can't let them get away with it. Not again.'",
+					"Anonymous-Sender: 'BOTH of my friend's parents were murdered by HealthCorp. None of them could afford those crazy medical bills'"
 				],
 				"link": [
 					"AnonEmail-2"
@@ -962,8 +962,8 @@
 			{
 				"name": "AnonEmail-2",
 				"content": [
-					"Anonymous: 'The rep on the phone didn't even care, she said that 'there was nothing she could do'.'",
-					"Anonymous: 'Dumb bitch didn't even know she was sentencing this man's parents death warrant'"
+					"Anonymous-Sender: 'The rep on the phone didn't even care, she said that 'there was nothing she could do'.'",
+					"Anonymous-Sender: 'Dumb bitch didn't even know she was sentencing this man's parents death warrant'"
 				],
 				"link": [
 					"AnonEmail-2"
@@ -979,8 +979,8 @@
 			{
 				"name": "AnonEmail-3",
 				"content": [
-					"Anonymous: 'After that, he was real fucked up yknow? That's when he decided to do something about it.'",
-					"Anonymous: 'That's why I'm emailing you, you gotta leak this so other people know what they're capable of'"
+					"Anonymous-Sender: 'After that, he was real fucked up yknow? That's when he decided to do something about it.'",
+					"Anonymous-Sender: 'That's why I'm emailing you, you gotta leak this so other people know what they're capable of'"
 				],
 				"link": [
 					"AnonEmail-NadinesThoughts"
@@ -1081,7 +1081,7 @@
 				"content": [
 					"Nadine: 'hi there! it's Sam, thanks for your email",
 					"Nadine: 'when I got your email, I was so happy, like I knew there had to be others!",
-					"Anonymous: 'my pleasure, and yeah i know it's not my story but I care for my friend yknow?'"
+					"Anonymous-Sender: 'my pleasure, and yeah i know it's not my story but I care for my friend yknow?'"
 				],
 				"link": [
 					"AnonEmail-Decision"
@@ -1139,8 +1139,14 @@
 			{
 				"name": "GiveItUpAnon",
 				"content": [
+					"Nadine: 'I know you got love for your friend but honestly man don't bother.'",
+					"Nadine: 'The amount of letters and emails I get from HealthCorp's legal team about my one post?'",
+					"Nadine: 'It's not worth it, whatever we do isn't gonna change anything, we're little fish in this big ass pond'",
+					"Anonymous-Sender: 'What's that supposed to mean?'"
+					"Anonymous-Sender: 'You don't wanna take them down and get revenge for all of the people that have been fucked over by them?'"
 				],
 				"link": [
+					"IsNadineSerious-Anon"
 				],
 				"images": [
 				],
@@ -1156,8 +1162,12 @@
 			{
 				"name": "ShareAnonsStory",
 				"content": [
+					"Nadine: 'hey, man that's horrible, I can't imagine the amount of pain and suffering that they put him through'",
+					"Nadine: 'how is he doing now? what did he do?'",
+					"Nadine: 'With his permission, I would love to publicise his story on the blog, it's about time we told people what HealthCorp have been up to.'",
 				],
 				"link": [
+					"AnonsFriendArrested"
 				],
 				"images": [
 				],
@@ -1189,8 +1199,8 @@
 			{
 				"name": "AnonSenderIsMad",
 				"content": [
-					"Anonymous: 'What's that supposed to mean?!'", 
-					"Anonymous: 'I thought you cared about HealthCorp fucking everyone over, or are you a liar just like them?'"
+					"Anonymous-Sender: 'What's that supposed to mean?!'", 
+					"Anonymous-Sender: 'I thought you cared about HealthCorp fucking everyone over, or are you a liar just like them?'"
 				],
 				"link": [
 					"MakeAnonEvenMadder-Decision"
@@ -1273,9 +1283,9 @@
 			{
 				"name": "RedeemedForAnon",
 				"content": [
-					"Anonymous: 'Okay but why are you dismissing me just because I didn't go through the same thing?'", 
-					"Anonymous: 'He was my best friend, we shared everything with each other. Seeing him go through that...'",
-					"Anonymous: 'It was hard to watch him go through that.'"
+					"Anonymous-Sender: 'Okay but why are you dismissing me just because I didn't go through the same thing?'", 
+					"Anonymous-Sender: 'He was my best friend, we shared everything with each other. Seeing him go through that...'",
+					"Anonymous-Sender: 'It was hard to watch him go through that.'"
 				],
 				"link": [
 					"NadineFeelsBadForAnon"
@@ -1312,9 +1322,9 @@
 			{
 				"name": "AnonLostTrust-RudeNadine",
 				"content": [
-					"Anonymous: 'okay I get that but if you can't trust me, then I can't trust you, sorry.'",
-					"Anonymous: 'But before I do go, I have to ask.'", 
-					"Anonymous: 'Are you serious about revenge on HealthCorp?'"
+					"Anonymous-Sender: 'okay I get that but if you can't trust me, then I can't trust you, sorry.'",
+					"Anonymous-Sender: 'But before I do go, I have to ask.'", 
+					"Anonymous-Sender: 'Are you serious about revenge on HealthCorp?'"
 				],
 				"link": [
 					"SuspiciousAnon-HealthCorpBreakIn-Decision"
@@ -1355,10 +1365,10 @@
 				"content": [
 					"Nadine: 'Of course!'",
 					"Nadine: 'I wanna see them pay for all the hurt they've caused to people like us.'",
-					"Anonymous: 'Right, well my friend found out that the underground car park wasn't very well guarded when he was doing some 'research' shall we say.'",
-					"Anonymous: 'Apparently, the security guards rotate around 2PM, just after everyone comes back from lunch.'"
-					"Anonymous: 'So if you were thinking about bringing the fight to them, that would be your way in.'",
-					"Anonymous: 'Feel free to publicise his story, people need to know the pure evil that that company is...'"
+					"Anonymous-Sender: 'Right, well my friend found out that the underground car park wasn't very well guarded when he was doing some 'research' shall we say.'",
+					"Anonymous-Sender: 'Apparently, the security guards rotate around 2PM, just after everyone comes back from lunch.'"
+					"Anonymous-Sender: 'So if you were thinking about bringing the fight to them, that would be your way in.'",
+					"Anonymous-Sender: 'Feel free to publicise his story, people need to know the pure evil that that company is...'"
 				],
 				"link": [
 					"NadineHasFinishedWithAnon"
@@ -1379,7 +1389,7 @@
 					"Nadine: 'No way man! I'm not capable of that kinda shit.'",
 					"Nadine: 'I'm just gonna expose HealthCorp through telling stories like yours on my blog.'", 
 					"Nadine: 'I'm not looking to break in or anything.'",
-					"Anonymous: 'Suit yourself, well you know my story, so feel free to put it on your blog, have a nice life.'",
+					"Anonymous-Sender: 'Suit yourself, well you know my story, so feel free to put it on your blog, have a nice life.'",
 					"Nadine: 'You too, stay safe'"
 				],
 				"link": [
@@ -1435,9 +1445,9 @@
 			{
 				"name": "AnonIsReallyMadNow",
 				"content": [
-					"Anonymous: 'You know what? Fuck you!'",
-					"Anonymous: 'You can't tell me what to do, especially when it comes to getting payback for my friend, who the FUCK do you think you are??'",
-					"Anonymous: 'Forget it man, you know my story now, so you can blog about that if you want. I'm done.'"
+					"Anonymous-Sender: 'You know what? Fuck you!'",
+					"Anonymous-Sender: 'You can't tell me what to do, especially when it comes to getting payback for my friend, who the FUCK do you think you are??'",
+					"Anonymous-Sender: 'Forget it man, you know my story now, so you can blog about that if you want. I'm done.'"
 				],
 				"link": [
 					"ThatCouldHaveGoneBetter-Anon"
@@ -1470,10 +1480,23 @@
 				"narration": true
 			},
 			{
-				"name": "EMPTY",
+				"name": "AnonsFriendArrested",
 				"content": [
+					"Anonymous-Sender: 'well......'",
+					"Anonymous-Sender: 'they managed to arrest him.'",
+					"Anonymous-Sender: 'see after his parents died, the crazy fucker decided that he was going to break into their big swanky offices'",
+					"Anonymous-Sender: 'all Robin Hood and shit, yknow steal from the rich and re-distribute it among the poor'",
+					"Anonymous-Sender: 'but somehow they caught wind of what he was doing.'",
+					"Nadine: 'fuuuck, that's wild man.'",
+					"Anonymous-Sender: 'next thing you know the police is kicking his door in and he's serving a 10 year sentence on trumped up charges'",
+					"Nadine: 'I can't even imagine what that would be like, I'm so sorry that you had to go through that.'",
+					"Nadine: 'man fuck HealthCorp, I wish we could do something about them'",
+					"Nadine: 'I have to ask, was your friend working with anyone to break into HealthCorp?'",
+					"Nadine: 'It might really help if someone wanted to carry on from where he left it'",
+					"Anonymous-Sender: 'What are you talking about? Are you telling me that you wanna break into HealthCorp?'",
 				],
 				"link": [
+					"NadineBreakIn-Normal"
 				],
 				"images": [
 				],
@@ -1486,10 +1509,38 @@
 				"dialogue": true
 			},
 			{
-				"name": "EMPTY",
+				"name": "NadineBreakIn-Normal",
 				"content": [
+					"What does Nadine say?",
+					"Yes",
+					"No"
 				],
 				"link": [
+					"HonestNadineBreakIn",
+					"NadineLiesAbtBreakIn"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"decision": true
+			},
+			{
+				"name": "NadineLiesAbtBreakIn",
+				"content": [
+					"Nadine: 'Definitely not!'",
+					"Nadine: 'I'm not looking to be even more on their radar than I already am.'",
+					"Nadine: 'I get enough emails and letters from their Legal team than I'd like'",
+					"Anonymous-Sender: 'Ah what a shame, that's fair I suppose, can't put that on you...",
+					"Anonymous-Sender: 'Well feel free to share his story, people need to know, stay safe man.'",
+					"Nadine: 'Thank you, you too.'"
+				],
+				"link": [
+					"NadineHasFinishedWithAnon"
 				],
 				"images": [
 				],
@@ -1502,10 +1553,16 @@
 				"dialogue": true
 			},
 			{
-				"name": "EMPTY",
+				"name": "HonestNadineBreakIn",
 				"content": [
+					"Nadine: 'If there's a way to break in and fix all the horrible things that they've done, best believe that I'm gonna do it.'",
+					"Anonymous-Sender: 'That's what I like to hear, finally someone willing to take some serious action.'",
+					"Anonymous-Sender: 'I'll send over his plans on one condition'",
+					"Nadine: 'What's that?'",
+					"Anonymous-Sender: 'If you agree to do this, you have to transfer $100 million dollars into an account, the rest is yours to take'"
 				],
 				"link": [
+					"100MillionOrRevenge-Decision"
 				],
 				"images": [
 				],
@@ -1518,10 +1575,36 @@
 				"dialogue": true
 			},
 			{
-				"name": "EMPTY",
+				"name": "MoneyOrRevenge-Decision",
 				"content": [
+					"What does Nadine say?",
+					"Fuck. NO.",
+					"I'm down."
 				],
 				"link": [
+					"NadineHasMorals-Anon",
+					"NadineQuestionableMorals-Anon"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"decision": true
+			},
+			{
+				"name": "NadineHasMorals-Anon",
+				"content": [
+					"Nadine: 'No way! I can't do that, that money belongs to all the people HealthCorp ripped off!'",
+					"Anonymous-Sender: 'You think they don't got enough money for everyone who got screwed by them??'",
+					"Anonymous-Sender: 'Man you're more naive than I thought.'",
+					"Anonymous-Sender: 'If you're too much of a pussy to do that then there's nothing I can do for you. Stay safe man.'"
+				],
+				"link": [
+					"NadineHasFinishedWithAnon"
 				],
 				"images": [
 				],
@@ -1534,10 +1617,16 @@
 				"dialogue": true
 			},
 			{
-				"name": "EMPTY",
+				"name": "NadineQuestionableMorals-Anon",
 				"content": [
+					"Nadine: 'I'm in.'",
+					"Anonymous-Sender: 'Good, and before you think of being smart, if you think about running away with the money, I will expose you and have you arrested.'",
+					"Anonymous-Sender: 'Or worse, I got connections, so don't even THINK about crossing me.'",
+					"Nadine: 'Alright, got it'",
+					"Anonymous-Sender: 'Good, I'll send over a file to your email."
 				],
 				"link": [
+					"NadineHitsTheJackpot-Anon"
 				],
 				"images": [
 				],
@@ -1550,10 +1639,34 @@
 				"dialogue": true
 			},
 			{
-				"name": "EMPTY",
+				"name": "NadineHitsTheJackpot-Anon",
 				"content": [
+					"The anonymous person sends her a ZIP file containing an extensive view into the HealthCorp HQ",
+					"Floor plans, Camera locations, the location of the main server room.",
+					"Nadine is SHOOKETH about the detail of the plans. She's gonna have no trouble getting around the HQ",
+					"But at what cost? She's not sure..."
 				],
 				"link": [
+					"NadineAnon-Closing"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"narration": true
+			},
+			{
+				"name": "NadineAnon-Closing",
+				"content": [
+					"Nadine: 'Wow these plans are really detailed, thank you so much!!'",
+					"Anonymous-Sender: 'No problem, but remember our deal, I'll send over the account details for the transfer. Good luck.'"
+				],
+				"link": [
+					"NadineHasFinishedWithAnon"
 				],
 				"images": [
 				],
@@ -1566,10 +1679,35 @@
 				"dialogue": true
 			},
 			{
-				"name": "EMPTY",
+				"name": "IsNadineSerious-Anon",
 				"content": [
+					"What does Nadine say?",
+					"Of course I do!",
+					"Yeah... but I'm just a blogger"
 				],
 				"link": [
+					"NadineIsAHypocrite-Anon",
+					"NadineIsJustABlogger"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"decision": true
+			},
+			{
+				"name": "NadineIsAHypocrite-Anon",
+				"content": [
+					"Anonymous-Sender: 'Man I don't understand you'", 
+					"Anonymous-Sender: 'You were saying how bad HealthCorp is but you're not doing anything about it?'",
+					"Anonymous-Sender: 'that don't make any sense."
+				],
+				"link": [
+					"NadinesExplanationAnon"
 				],
 				"images": [
 				],
@@ -1582,10 +1720,37 @@
 				"dialogue": true
 			},
 			{
-				"name": "EMPTY",
+				"name": "NadinesExplanationAnon",
 				"content": [
+					"What does Nadine say?",
+					"I'm powerless against them",
+					"My blog is my power",
+					"You know what? I will fight them."
 				],
 				"link": [
+					"NadineIsPowerless-Anon",
+					"JournalismAtItsFinest-Anon",
+					"TakeTheFightToThem-Anon"
+				],
+				"images": [
+				],
+				"characters": [
+					"Nadine",
+					"Anonymous-Sender"
+				],
+				"music": "",
+				"texting":true,
+				"decision": true
+			},
+			{
+				"name": "NadineIsPowerless-Anon",
+				"content": [
+					"Nadine: 'I wanna stop them but how? '",
+					"Nadine: 'There is nothing we can do to stop these people, they've got way too much power, too many people in their pocket and too much money.'",
+					"Nadine: 'All I can hope for is that people read the blog and that it gets more publicity'"
+				],
+				"link": [
+					"UnconvincedAnon"
 				],
 				"images": [
 				],
@@ -1598,10 +1763,13 @@
 				"dialogue": true
 			},
 			{
-				"name": "EMPTY",
+				"name": "JournalismAtItsFinest-Anon",
 				"content": [
+					"Nadine: 'My blog is my voice, I can fight them by exposing all of the stories of the people who HealthCorp have fucked over.'",
+					"Nadine: 'Then no-one can ignore the sheer amount of evidence that I have mounted against them'"
 				],
 				"link": [
+					"UnconvincedAnon"
 				],
 				"images": [
 				],
@@ -1614,10 +1782,16 @@
 				"dialogue": true
 			},
 			{
-				"name": "EMPTY",
+				"name": "TakeTheFightToThem-Anon",
 				"content": [
+					"Nadine: 'You know what you're right. I shouldn't rely on exposing HealthCorp just on my blog'",
+					"Nadine: 'What do you have in mind?'",
+					"Anonymous-Sender: 'Finally, that's what I like to hear! Well if you're serious about breaking in, my buddy sent me a bunch of plans when he was... erm'",
+					"Anonymous-Sender: 'Researching, shall we say?'",
+					"Anonymous-Sender: 'I'll give em to you on one condition. You transfer $250 million to an account of my choosing.'"
 				],
 				"link": [
+					"MoneyOrRevenge-Decision"
 				],
 				"images": [
 				],
@@ -1630,26 +1804,12 @@
 				"dialogue": true
 			},
 			{
-				"name": "EMPTY",
+				"name": "UnconvincedAnon",
 				"content": [
+					"Anonymous-Sender: 'Hm, suit yourself. Good luck with that, hope it works out for you.'"
 				],
 				"link": [
-				],
-				"images": [
-				],
-				"characters": [
-					"Nadine",
-					"Anonymous-Sender"
-				],
-				"music": "",
-				"texting":true,
-				"dialogue": true
-			},
-			{
-				"name": "EMPTY",
-				"content": [
-				],
-				"link": [
+					"NadineHasFinishedWithAnon"
 				],
 				"images": [
 				],
