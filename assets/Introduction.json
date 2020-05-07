@@ -228,6 +228,8 @@
             "link":[
                "Blogger email hack"
             ],
+            "images": [
+            ],
             "narration":true,
             "characters":[
                "Nadine",
@@ -246,6 +248,8 @@
                "Blogger email hack",
                "Texting Marcus"
             ],
+            "images": [
+            ],
             "decision":true,
             "characters":[
                "Nadine",
@@ -263,6 +267,8 @@
             "link":[
                "In bloggers email",
                "Texting Marcus"
+            ],
+            "images": [
             ],
             "minigame":true,
             "characters":[
@@ -286,6 +292,8 @@
                "Blog email",
                "Hospital email"
             ],
+            "images": [
+            ],
             "decision":true,
             "HackTwoSuccess":true,
             "name":"In bloggers email",
@@ -302,6 +310,8 @@
             "characters":[
                "Nadine"
             ],
+            "images": [
+            ],
             "name":"HealthCorp email",
             "music":""
          },
@@ -312,6 +322,8 @@
             ],
             "link":[
                "Email intrusion detected"
+            ],
+            "images": [
             ],
             "narration":true,
             "characters":[
@@ -328,6 +340,8 @@
             "link":[
                "Email intrusion detected"
             ],
+            "images": [
+            ],
             "narration":true,
             "characters":[
                "Nadine"
@@ -341,6 +355,8 @@
             ],
             "link":[
                "Email intrusion detected"
+            ],
+            "images": [
             ],
             "narration":true,
             "characters":[
@@ -356,6 +372,8 @@
             "link":[
                "Texting Marcus"
             ],
+            "images": [
+            ],
             "narration":true,
             "characters":[
                "Nadine"
@@ -369,6 +387,8 @@
             ],
             "link":[
                "Texting Marcus"
+            ],
+            "images": [
             ],
             "narration":true,
             "characters":[
@@ -499,6 +519,7 @@
                "PaybackDecision"
             ],
             "images":[
+               "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg",

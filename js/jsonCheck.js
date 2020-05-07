@@ -1,6 +1,8 @@
 
 function testGameJSON(json) {
 	var gameData = json.OSINT.storylines;
+	var imagelessObjects = [];
+	var quietObjects = [];
 	console.log("IN TEST NOW");
 	for (var i = 0; i < gameData.length; i++) {
 		var speechObject = gameData[i];
@@ -12,8 +14,20 @@ function testGameJSON(json) {
 			console.log("link object is not defined or is empty at " + speechObject.name);
 			return false;
 		}
+		if (speechObject.images == undefined) {
+			console.log("images array doesn't exist at "+ speechObject.name);
+			return false;
+		}
 		else {
 			var hasAFlag = false;
+			if (speechObject.images.length == 0 || (speechObject.images.length != speechObject.content.length && (speechObject.narration || speechObject.dialogue))) {
+				console.log("The object called '"+speechObject.name+"' has no images linked to it!");
+				imagelessObjects.push(speechObject.name);
+			}
+			if (speechObject.music == "") {
+				console.log("The object called '"+speechObject.name+"' has no music on it!");
+				quietObjects.push(speechObject.name);
+			}
 			if (speechObject.dialogue) {
 				hasAFlag = true;
 				var charctrsObjs = speechObject.characters;
@@ -61,7 +75,11 @@ function testGameJSON(json) {
 			}
 		}
 	}
+	console.log("there are "+ imagelessObjects.length + " objects without any images!");
+	console.log("there are "+ quietObjects.length + " objects that have no music!");
 	console.log("success!");
+	console.log(imagelessObjects);
+	console.log(quietObjects);
 	return true;
 }
 

@@ -89,13 +89,13 @@
             "music":""
          },
          {
-            "name":"NadineWasNice'",
+            "name":"NadineWasNice",
             "link":[
                "MarcusHasTea'",
                "NadineWasMean"
             ],
             "content":[
-               "NadineIsStrong'",
+               "NadineIsStrong",
                "RememberingMom"
             ],
             "images":[
@@ -105,19 +105,18 @@
             "music":""
          },
          {
-            "name":"NadineWasMean'",
+            "name":"NadineWasMean",
             "link":[
                "SearchHC'",
                "MarcusPA"
             ],
             "content":[
-               "TooAggressiveFYM'",
-               "TooAggressiveStub'",
+               "TooAggressiveFYM",
+               "TooAggressiveStub",
                "TooAggressive'",
                "Ghosted"
             ],
             "images":[
-
             ],
             "systemDecision":true,
             "music":""
@@ -136,6 +135,8 @@
             "characters":[
                "Nadine",
                "Marcus"
+            ],
+            "images":[
             ],
             "music":"",
             "dialogue":true
@@ -178,7 +179,7 @@
          {
             "name":"MarcusSendsNumber",
             "content":[
-               "Marcus sends Nadine a number for a woman called Danielle.'",
+               "Marcus sends Nadine a number for a woman called Danielle.",
                "Nadine starts to talk to her..."
             ],
             "link":[
@@ -193,8 +194,8 @@
          {
             "name":"NadDanielleOne",
             "content":[
-               "Nadine: 'hey, it's Nadine, I'm Marcus' sister, he said you could help me?'",
-               "Danielle: 'hey! that's me, Marcus filled me in with the details, you serious about HealthCorp?'"
+               "Nadine: 'hey, it's Nadine, I'm Marcus' sister, he said you could help me?",
+               "Danielle: 'hey! that's me, Marcus filled me in with the details, you serious about HealthCorp?"
             ],
             "link":[
                "NadDanResponseOne"
@@ -212,14 +213,14 @@
          {
             "name":"NadDanResponseOne",
             "content":[
-               "What does Nadine say?'",
-               "Fuck yeah!'",
-               "Duh, bitch 🙄'",
+               "What does Nadine say?",
+               "Fuck yeah!",
+               "Duh, bitch 🙄",
                "I think it's definitely worth a shot"
             ],
             "link":[
-               "EnthusiasticNadDan'",
-               "RudeNadDan'",
+               "EnthusiasticNadDan",
+               "RudeNadDan",
                "NeutralNadDan"
             ],
             "images":[
@@ -378,11 +379,11 @@
             "name":"NadDanielleTwo",
             "content":[
                "What does Nadine say?'",
-               "Why are you telling me all this?'",
+               "Why are you telling me all this?",
                "Interesting, think you can get me one?"
             ],
             "link":[
-               "NadDanIsRudeTwo'",
+               "NadDanIsRudeTwo",
                "NadDanIsNeutral"
             ],
             "images":[
@@ -402,16 +403,19 @@
             "characters":[
                "Nadine"
             ],
+            "images":[
+
+            ],
             "dialogue":true,
             "music":""
          },
          {
-            "name":"NadineOffendedDan'",
+            "name":"NadineOffendedDan",
             "content":[
                "OffendedDanielle"
             ],
             "link":[
-               "ReallyOffendedDanielle'",
+               "ReallyOffendedDanielle",
                "OffendedDanielleSpeechTwo"
             ],
             "images":[
@@ -428,6 +432,9 @@
             "link":[
                "ReallyOffendedDanielleSpeech"
             ],
+            "images":[
+
+            ],
             "narration":true,
             "music":""
          },
@@ -441,6 +448,9 @@
             ],
             "characters":[
                "Danielle"
+            ],
+            "images":[
+
             ],
             "dialogue":true,
             "music":""
@@ -456,18 +466,21 @@
             "characters":[
                "Danielle"
             ],
+            "images":[
+
+            ],
             "dialogue":true,
             "music":""
          },
          {
             "name":"NadDanTroubleDecision",
             "content":[
-               "What does Nadine say?'",
-               "Okay, bye.'",
+               "What does Nadine say?",
+               "Okay, bye.",
                "Look I'm sorry, I didn't mean it, I'm just frustrated"
             ],
             "link":[
-               "NadDanFinalStraw'",
+               "NadDanFinalStraw",
                "NadineTriesToFix"
             ],
             "images":[
@@ -496,6 +509,9 @@
                "Nadine",
                "Danielle"
             ],
+            "images":[
+
+            ],
             "dialogue":true,
             "music":""
          },
@@ -512,17 +528,23 @@
                "Nadine",
                "Danielle"
             ],
+            "images":[
+
+            ],
             "dialogue":true,
             "music":""
          },
          {
             "name":"NadDanRegret",
             "content":[
-               "'That could have been handled better', Nadine thought.'",
+               "'That could have been handled better', Nadine thought.",
                "Too late now, let's try and find out what I can on my own."
             ],
             "link":[
                "SearchHC"
+            ],
+            "images":[
+
             ],
             "narration":true,
             "music":""
@@ -546,6 +568,9 @@
                "Nadine",
                "Danielle"
             ],
+            "images":[
+
+            ],
             "dialogue":true,
             "music":""
          },
@@ -556,6 +581,9 @@
             ],
             "link":[
                "StickItToEm"
+            ],
+            "images":[
+
             ],
             "narration":true,
             "music":""
@@ -573,24 +601,27 @@
                "Nadine",
                "Danielle"
             ],
+            "images":[
+
+            ],
             "dialogue":true
          },
          {
             "name":"OSINT-Circular",
             "content":[
-               "Where does Nadine go from here?'",
-               "A popular recruiting and company review site'",
-               "Image searches of the HealthCorp headquarters'",
-               "A business networking site'",
+               "Where does Nadine go from here?",
+               "A popular recruiting and company review site",
+               "Image searches of the HealthCorp headquarters",
+               "A business networking site",
                "Finished searching"
             ],
             "images":[
 
             ],
             "link":[
-               "CompanyReviewSite'",
-               "ImagesOfHQ'",
-               "LinkedIn'",
+               "CompanyReviewSite",
+               "ImagesOfHQ",
+               "LinkedIn",
                "IsNadineDone"
             ],
             "decision":true,
@@ -599,12 +630,12 @@
          {
             "name":"OSINT-Circular-SysDecision",
             "content":[
-               "CompanyReviewSite'",
-               "ImagesOfHQ'",
+               "CompanyReviewSite",
+               "ImagesOfHQ",
                "LinkedIn"
             ],
             "link":[
-               "NoMoreOptions-OSINT'",
+               "NoMoreOptions-OSINT",
                "OSINT-Circular"
             ],
             "images":[
@@ -630,7 +661,7 @@
          {
             "name":"NothingBadToSay",
             "content":[
-               "Nadine quickly notices that the company doesn't have a single bad review.'",
+               "Nadine quickly notices that the company doesn't have a single bad review.",
                "She goes to click on MediKare's review page and she sees fairly mixed reviews but mostly positive."
             ],
             "images":[
@@ -663,7 +694,7 @@
          {
             "name":"ImagesOfHQ",
             "content":[
-               "Nadine has decided to look for images of the headquarters'",
+               "Nadine has decided to look for images of the headquarters",
                "She pulls up the HealthCorp website and does a quick search on Street View to get a better view"
             ],
             "link":[
@@ -678,14 +709,14 @@
          {
             "name":"ImagesOfHQ-Decision",
             "content":[
-               "Where does Nadine look?'",
-               "The HealthCorp entrance'",
-               "The location of the cameras'",
+               "Where does Nadine look?",
+               "The HealthCorp entrance",
+               "The location of the cameras",
                "The building's perimeter"
             ],
             "link":[
-               "HQEntrance'",
-               "HQPerimeter'",
+               "HQEntrance",
+               "HQPerimeter",
                "HQCameras"
             ],
             "images":[
@@ -697,7 +728,7 @@
          {
             "name":"HQEntrance",
             "content":[
-               "Nadine looks at corporate images of the HealthCorp headquarters'",
+               "Nadine looks at corporate images of the HealthCorp headquarters",
                "She notes the number of security guards and where they're stationed in the main foyer"
             ],
             "link":[
@@ -712,7 +743,7 @@
          {
             "name":"HQPerimeter",
             "content":[
-               "Nadine looks at Street View images of the buildings perimeter and notices an underground car park'",
+               "Nadine looks at Street View images of the buildings perimeter and notices an underground car park",
                "It doesn't look like there's many cameras or security here."
             ],
             "link":[
@@ -727,7 +758,7 @@
          {
             "name":"HQCameras",
             "content":[
-               "Nadine looks at the street images of the HealthCorp headquarters and notes the locations of the external cameras.'",
+               "Nadine looks at the street images of the HealthCorp headquarters and notes the locations of the external cameras.",
                "The place is littered with them, hardly surprising. Any protests held outside are usually shut down pretty quickly thanks to them."
             ],
             "link":[
@@ -790,12 +821,12 @@
          {
             "name":"DoneSearchingYet-SysDecision",
             "content":[
-               "HQEntrance'",
-               "HQCameras'",
+               "HQEntrance",
+               "HQCameras",
                "HQPerimeter"
             ],
             "link":[
-               "HQ-FullyResearched'",
+               "HQ-FullyResearched",
                "DoneSearchingYet"
             ],
             "images":[
@@ -812,7 +843,7 @@
                "No"
             ],
             "link":[
-               "ImagesOfHQ-Decision'",
+               "ImagesOfHQ-Decision",
                "OSINT-Circular-SysDecision"
             ],
             "images":[
@@ -824,8 +855,8 @@
          {
             "name":"NoMoreOptions-OSINT",
             "content":[
-               "Nadine feels confident to go into the HealthCorp HQ, she decides to finish up what she's doing and get back to work.'",
-               "HealthCorp aren't gonna know what hit em.'",
+               "Nadine feels confident to go into the HealthCorp HQ, she decides to finish up what she's doing and get back to work.",
+               "HealthCorp aren't gonna know what hit em.",
                "She hopes........"
             ],
             "link":[
@@ -840,7 +871,7 @@
          {
             "name":"HQ-FullyResearched",
             "content":[
-               "Nadine has done enough research on the HealthCorp HQ'",
+               "Nadine has done enough research on the HealthCorp HQ",
                "There's nothing more to find"
             ],
             "link":[
@@ -853,7 +884,7 @@
             "narration":true
          },
          {
-            "name":"FINISH'",
+            "name":"FINISH",
             "content":[
                "FINISH"
             ],
@@ -886,7 +917,7 @@
                "Blog email"
             ],
             "link":[
-               "BloggersAnonContact'",
+               "BloggersAnonContact",
                "SecondBloggerSysDecision"
             ],
             "images":[
@@ -948,11 +979,11 @@
          {
             "name":"NadineEpiphany",
             "content":[
-               "Nadine smiles awkwardly at her confused co-workers, it's pretty awkward.'",
-               "Ugh, why am I like this?'",
-               "She continues to work at her computer.'",
-               "She opens the captured folder and finds the email she remembered'",
-               "It came from an anonymous throwaway account and they didn't leave a name or anything.'",
+               "Nadine smiles awkwardly at her confused co-workers, it's pretty awkward.",
+               "Ugh, why am I like this?",
+               "She continues to work at her computer.",
+               "She opens the captured folder and finds the email she remembered",
+               "It came from an anonymous throwaway account and they didn't leave a name or anything.",
                "Nadine searches for anybody using the email for any accounts but finds nothing, looks pretty suspicious...."
             ],
             "link":[
@@ -967,8 +998,8 @@
          {
             "name":"AnonChatDecision",
             "content":[
-               "Does Nadine attempt to talk to this person?'",
-               "Yes'",
+               "Does Nadine attempt to talk to this person?",
+               "Yes",
                "No"
             ],
             "link":[
@@ -1121,10 +1152,10 @@
          {
             "name":"AnonEmail-NadineReachesOut-4",
             "content":[
-               "Nadine sends the email, she's not optimistic that they'll reply.'",
-               " ......... '",
-               "After about 15 minutes, the Anonymous person replies to Nadine's email with just a phone number.'",
-               "Nothing else. Nadine is suspicious.'",
+               "Nadine sends the email, she's not optimistic that they'll reply.",
+               " ......... ",
+               "After about 15 minutes, the Anonymous person replies to Nadine's email with just a phone number.",
+               "Nothing else. Nadine is suspicious.",
                "She opens her phone and introduces herself as Sam to the Anonymous person"
             ],
             "link":[
@@ -1163,14 +1194,14 @@
          {
             "name":"AnonEmail-Decision",
             "content":[
-               "What does Nadine say to the anonymous sender?'",
-               "Don't bother man.'",
-               "Why do you even care?'",
+               "What does Nadine say to the anonymous sender?",
+               "Don't bother man.",
+               "Why do you even care?",
                "Share his story on the blog"
             ],
             "link":[
-               "GiveItUpAnon'",
-               "ThisAintYourFightAnon'",
+               "GiveItUpAnon",
+               "ThisAintYourFightAnon",
                "ShareAnonsStory"
             ],
             "images":[
@@ -1283,12 +1314,12 @@
          {
             "name":"MakeAnonEvenMadder-Decision",
             "content":[
-               "What does Nadine say?'",
-               "I hate them just as much as you do!'",
+               "What does Nadine say?",
+               "I hate them just as much as you do!",
                "This isn't your fight."
             ],
             "link":[
-               "BacktrackingOnAnon'",
+               "BacktrackingOnAnon",
                "DoublingDownOnAnon"
             ],
             "images":[
@@ -1410,12 +1441,12 @@
          {
             "name":"SuspiciousAnon-HealthCorpBreakIn-Decision",
             "content":[
-               "What does Nadine say?'",
-               "Definitely'",
+               "What does Nadine say?",
+               "Definitely",
                "No way man!"
             ],
             "link":[
-               "NadineBreakIn-Sus'",
+               "NadineBreakIn-Sus",
                "NadineIsJustABlogger"
             ],
             "images":[
@@ -1587,12 +1618,12 @@
          {
             "name":"NadineBreakIn-Normal",
             "content":[
-               "What does Nadine say?'",
-               "Yes'",
+               "What does Nadine say?",
+               "Yes",
                "No"
             ],
             "link":[
-               "HonestNadineBreakIn'",
+               "HonestNadineBreakIn",
                "NadineLiesAbtBreakIn"
             ],
             "images":[
@@ -1656,12 +1687,12 @@
          {
             "name":"MoneyOrRevenge-Decision",
             "content":[
-               "What does Nadine say?'",
-               "Fuck. NO.'",
+               "What does Nadine say?",
+               "Fuck. NO.",
                "I'm down."
             ],
             "link":[
-               "NadineHasMorals-Anon'",
+               "NadineHasMorals-Anon",
                "NadineQuestionableMorals-Anon"
             ],
             "images":[
@@ -1723,9 +1754,9 @@
          {
             "name":"NadineHitsTheJackpot-Anon",
             "content":[
-               "The anonymous person sends her a ZIP file containing an extensive view into the HealthCorp HQ'",
-               "Floor plans, Camera locations, the location of the main server room.'",
-               "Nadine is SHOOKETH about the detail of the plans. She's gonna have no trouble getting around the HQ'",
+               "The anonymous person sends her a ZIP file containing an extensive view into the HealthCorp HQ",
+               "Floor plans, Camera locations, the location of the main server room.",
+               "Nadine is SHOOKETH about the detail of the plans. She's gonna have no trouble getting around the HQ",
                "But at what cost? She's not sure..."
             ],
             "link":[
@@ -1765,12 +1796,12 @@
          {
             "name":"IsNadineSerious-Anon",
             "content":[
-               "What does Nadine say?'",
-               "Of course I do!'",
+               "What does Nadine say?",
+               "Of course I do!",
                "Yeah... but I'm just a blogger"
             ],
             "link":[
-               "NadineIsAHypocrite-Anon'",
+               "NadineIsAHypocrite-Anon",
                "NadineIsJustABlogger"
             ],
             "images":[
@@ -1808,14 +1839,14 @@
          {
             "name":"NadinesExplanationAnon",
             "content":[
-               "What does Nadine say?'",
-               "I'm powerless against them'",
-               "My blog is my power'",
+               "What does Nadine say?",
+               "I'm powerless against them",
+               "My blog is my power",
                "You know what? I will fight them."
             ],
             "link":[
-               "NadineIsPowerless-Anon'",
-               "JournalismAtItsFinest-Anon'",
+               "NadineIsPowerless-Anon",
+               "JournalismAtItsFinest-Anon",
                "TakeTheFightToThem-Anon"
             ],
             "images":[
@@ -1915,8 +1946,8 @@
          {
             "name":"BloggerAndDarren",
             "content":[
-               "Nadine remembers reading about a man the Blogger was talking to called Darren, so she searches for him on the site'",
-               "After a lot of searching, Nadine manages to find him and discovers that he's a Manager in their Sales department.'"
+               "Nadine remembers reading about a man the Blogger was talking to called Darren, so she searches for him on the site",
+               "After a lot of searching, Nadine manages to find him and discovers that he's a Manager in their Sales department."
             ],
             "link":[
                "NadineTalksToDarren"
@@ -1930,8 +1961,8 @@
          {
             "name":"ExploitRecruiter",
             "content":[
-               "Nadine decides to make a fake account on the site that makes it look like she just started working at HealthCorp'",
-               "Nadine makes her account look like she's been working at HealthCorp for a very long time'",
+               "Nadine decides to make a fake account on the site that makes it look like she just started working at HealthCorp",
+               "Nadine makes her account look like she's been working at HealthCorp for a very long time",
                "Nadine finds a HealthCorp recruiter to talk to and starts asking questions."
             ],
             "link":[
@@ -1967,10 +1998,10 @@
          {
             "name":"RecruiterCircular",
             "content":[
-               "What does Nadine say?'",
-               "What technology do they use?'",
-               "What time does everyone start?'",
-               "What's it like to work at HealthCorp?'",
+               "What does Nadine say?",
+               "What technology do they use?",
+               "What time does everyone start?",
+               "What's it like to work at HealthCorp?",
                "I think that's everything!"
             ],
             "link":[
@@ -2084,7 +2115,7 @@
                "RecruiterIsSus-TWO"
             ],
             "link":[
-               "TechInTheDept-Suspicious'",
+               "TechInTheDept-Suspicious",
                "TechInTheDept-Normal"
             ],
             "images":[
@@ -2140,12 +2171,12 @@
          {
             "name":"WLAtHC-Decision",
             "content":[
-               "What does Nadine say?'",
-               "What about yourself?'",
+               "What does Nadine say?",
+               "What about yourself?",
                "*nothing*"
             ],
             "link":[
-               "RecruiterIsSus-ONE'",
+               "RecruiterIsSus-ONE",
                "GhostsRecruiter"
             ],
             "images":[
@@ -2181,8 +2212,8 @@
          {
             "name":"RecruiterCircular-SysDecision",
             "content":[
-               "TechInTheDept-SysDecision'",
-               "WhatTimeDoIStart'",
+               "TechInTheDept-SysDecision",
+               "WhatTimeDoIStart",
                "WorkingLifeAtHC"
             ],
             "link":[
@@ -2237,7 +2268,7 @@
          {
             "name":"RecruiterDocInfo",
             "content":[
-               "The recruiter sends a document detailing some of the key systems of the HealthCorp systems.'",
+               "The recruiter sends a document detailing some of the key systems of the HealthCorp systems.",
                "Nothing business critical, but useful nonetheless."
             ],
             "link":[
@@ -2255,12 +2286,12 @@
          {
             "name":"WhatTimeDoIStart-Decision",
             "content":[
-               "What does Nadine ask next?'",
-               "When does the Reception open?'",
+               "What does Nadine ask next?",
+               "When does the Reception open?",
                "What time do the managers and executives come in?"
             ],
             "link":[
-               "FrontDeskIsOpen'",
+               "FrontDeskIsOpen",
                "RecruiterExecsAndManagers"
             ],
             "images":[
@@ -2387,12 +2418,12 @@
          {
             "name":"NadineDarren-Decision",
             "content":[
-               "What does Nadine say?'",
-               "I saw some of your other posts and found you'",
+               "What does Nadine say?",
+               "I saw some of your other posts and found you",
                "The site recommended you to me!"
             ],
             "link":[
-               "NadineStalkedDarren'",
+               "NadineStalkedDarren",
                "SiteRecommendedDarren"
             ],
             "images":[
