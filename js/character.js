@@ -47,7 +47,7 @@ class Character {   // factory class
                 if (currentObject.decision) { this.showDecisionButtons(); }
                 else {  // decisions don't need this
                     console.log("CHARACTER: Let's get the next thing.");
-                    this.typer.reset();
+                    this.typer.destroy();
                     that.leaveScene();  // once the character has stopped talking, leave the scene.
                 }
             }

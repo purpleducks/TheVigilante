@@ -479,7 +479,7 @@
                "laptop-desk.jpg"
             ],
             "systemDecision":true,
-            "texting": true,
+            "texting":true,
             "music":"Dreamy-Chill.mp3"
          },
          {
@@ -626,10 +626,12 @@
          {
             "content":[
                "Marcus: 'Of course I do but you gotta move on with your life Nadine'",
-               "Marcus: 'You can't let this take over ya life.'"
+               "Marcus: 'You can't let this take over ya life.'",
+               "Nadine: 'If you're trying to say don't turn into Dad, just tell me straight up Marcus.",
+               "Marcus: 'I didn't say that Nads, I just worry about you okay?"
             ],
             "link":[
-               "IgnoresMarcus"
+               "MarcusWorriesAbtNadine-Decision"
             ],
             "images":[
                "laptop-desk.jpg",
@@ -643,6 +645,108 @@
             "name":"SadMarcus",
             "texting":true,
             "music":"Emotional.mp3"
+         },
+         {
+            "name":"MarcusWorriesAbtNadine-Decision",
+            "content":[
+               "What does Nadine say?",
+               "Thanks for that Marcus, but I'll be fine",
+               "*ignores Marcus*",
+               "Don't. Just don't",
+               "Yeah, well you didn't have to say anything."
+            ],
+            "link":[
+               "MWAN-PassiveAggressiveNadine",
+               "IgnoresMarcus",
+               "MWAN-ShutsMarcusDown",
+               "MWAN-NadsIsOffended"
+            ],
+            "images":[
+
+            ],
+            "music":"",
+            "decision":true,
+            "texting":true
+         },
+         {
+            "name":"MWAN-PassiveAggressiveNadine",
+            "content":[
+               "Nadine: 'Thanks for that Marcus, but I'll be fine, you don't gotta worry about me anymore.'",
+               "Marcus: 'I always got to worry about you, comes with being the big brother sis 😘'",
+               "Marcus: 'Anyways, stay safe Nad, talk to you later :)'",
+               "Nadine: 'Talk soon.'"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "music":"",
+            "dialogue":true,
+            "texting":true
+         },
+         {
+            "name":"MWAN-ShutsMarcusDown",
+            "content":[
+               "Nadine: 'Marcus. Just don't. Don't even. Okay?'",
+               "Marcus: 'Okay, okay, I'm sorry. I'll talk to you tomorrow okay?'",
+               "Nadine: 'Fine.'"
+            ],
+            "link":[
+               "MWAN-MarcusFeelsBad"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "music":"",
+            "dialogue":true,
+            "texting":true
+         },
+         {
+            "name":"MWAN-NadsIsOffended",
+            "content":[
+               "Nadine: 'Yeah, well you didn't have to say anything, why you don't let anything be?'",
+               "Marcus: 'I'm sorry Nads, I just worry about you okay? Sue me 🤷‍'",
+               "Nadine: 'Whatever, I'll talk to you tomorrow",
+               "Marcus: 'Okay.. talk soon.'"
+            ],
+            "link":[
+               "FuckedIt"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "music":"",
+            "dialogue":true,
+            "texting":true
+         },
+         {
+            "name":"MWAN-MarcusFeelsBad",
+            "content":[
+               "You made Marcus feel bad."
+            ],
+            "link":[
+               "FuckedIt"
+            ],
+            "images":[
+
+            ],
+            "music":"",
+            "narration":true,
+            "texting":true
          },
          {
             "content":[
@@ -778,10 +882,11 @@
             "music":"Emotional.mp3"
          },
          {
+            "name":"MarcusWarning",
             "content":[
                "How does Nadine reply?",
-               "Nadine: 'thanks for the warning bro, but I think I got it.'",
-               "Nadine: 'just like they did Mom?'"
+               "thanks for the warning bro, but I think I got it.",
+               "just like they did Mom?"
             ],
             "link":[
                "TooAggressive",
@@ -790,15 +895,13 @@
             "images":[
                "laptop-desk.jpg"
             ],
-            "decision":true,
-            "dialogue":true,
             "characters":[
                "Nadine",
                "Marcus"
             ],
-            "name":"MarcusWarning",
+            "music":"",
             "texting":true,
-            "music":""
+            "decision":true
          },
          {
             "content":[
@@ -870,9 +973,9 @@
          {
             "content":[
                "How does Nadine respond?",
-               "Nadine: 'bro, you need to chill.'",
-               "Nadine: 'Fuck you man, you can't talk to me like that.'",
-               "Nadine: 'I know what I'm doing bro, I'm not the same little girl I was when Mom died'"
+               "bro, you need to chill.",
+               "Fuck you man, you can't talk to me like that.",
+               "I know what I'm doing bro, I'm not the same little girl I was when Mom died"
             ],
             "link":[
                "YouNeedToCalmDown",
@@ -882,13 +985,9 @@
             "images":[
                "laptop-desk.jpg"
             ],
-            "dialogue":true,
-            "characters":[
-               "Nadine",
-               "Marcus"
-            ],
             "name":"NadineDarrenDecisionOne",
             "texting":true,
+            "decision":true,
             "music":""
          },
          {
@@ -1045,8 +1144,8 @@
          {
             "content":[
                "How does Nadine reply?",
-               "Nadine: 'I can handle myself you know?'",
-               "Nadine: 'What, you think I'm dumb? I'm GOOD at what I do okay?'",
+               "I can handle myself you know?",
+               "What, you think I'm dumb? I'm GOOD at what I do okay?",
                "(ignores Marcus)"
             ],
             "link":[
@@ -1058,11 +1157,6 @@
                "laptop-desk.jpg"
             ],
             "decision":true,
-            "dialogue":true,
-            "characters":[
-               "Nadine",
-               "Marcus"
-            ],
             "name":"NadineDarrenDecisionTwo",
             "texting":true,
             "music":""
@@ -1191,13 +1285,10 @@
          },
          {
             "content":[
-               "Nadine: 'yeah everything went to fuck after Mom died, you really kept us all together'",
-               "You were really nice to Marcus, he'll remember that.",
-               "Marcus: 'look I gotta go, but call me if you need anything'",
-               "Marcus: 'and be careful with HealthCorp, those fuckers aren't messing around Nadine'"
+               "Nadine: 'yeah everything went to fuck after Mom died, you really kept us all together'"
             ],
             "link":[
-               "FINISH"
+               "RM-NiceToMarcus"
             ],
             "images":[
                "laptop-desk.jpg",
@@ -1216,32 +1307,80 @@
             "music":"Emotional.mp3"
          },
          {
+            "name":"RM-NiceToMarcus",
+            "content":[
+               "You were really nice to Marcus, he'll remember that."
+            ],
+            "link":[
+               "MarcusGottaGo"
+            ],
+            "images":[
+
+            ],
+            "music":"",
+            "narration":true
+         },
+         {
+            "name":"MarcusGottaGo",
+            "content":[
+               "Marcus: 'look I gotta go, but call me if you need anything'",
+               "Marcus: 'and be careful with HealthCorp, those fuckers aren't messing around Nadine'"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "music":"",
+            "dialogue":true
+         },
+         {
             "content":[
                "How does Nadine reply?",
-               "Nadine: 'Sure does.'",
+               "Sure does.",
                "(ignores Marcus)"
             ],
             "link":[
-               "DidntReadBlog",
+               "TAM-NadineResponse",
                "DidntReadBlog"
             ],
             "images":[
                "laptop-desk.jpg"
             ],
-            "dialogue":true,
-            "characters":[
-               "Nadine",
-               "Marcus"
-            ],
+            "decision":true,
             "name":"ThinkingAboutMom",
             "texting":true,
             "music":""
          },
          {
+            "name":"TAM-NadineResponse",
+            "content":[
+               "Nadine: 'Sure does...'"
+            ],
+            "link":[
+               "DidntReadBlog"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"",
+            "dialogue":true,
+            "texting":true
+         },
+         {
+            "name":"PaybackDecision",
             "content":[
                "What does Nadine say?",
-               "Nadine: 'Nothing, don't worry about it'",
-               "Nadine: 'I can get them to hurt like we did when Mom died'"
+               "Nothing, don't worry about it",
+               "I can get them to hurt like we did when Mom died"
             ],
             "link":[
                "IgnoresMarcus",
@@ -1251,12 +1390,6 @@
                "laptop-desk.jpg"
             ],
             "decision":true,
-            "dialogue":true,
-            "characters":[
-               "Nadine",
-               "Marcus"
-            ],
-            "name":"PaybackDecision",
             "texting":true,
             "music":""
          }
