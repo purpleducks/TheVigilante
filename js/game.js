@@ -59,7 +59,7 @@ class GameManager {    // singleton class?
                 currentObject.charctrsObjs[0].talk(this.soIndex); 
             }*/
             if (currentObject.narration) {
-                currentObject.charctrsObjs[0].startnarration(this.soIndex);
+                currentObject.charctrsObjs[0].startNarration(this.soIndex);
             }
             if (currentObject.systemDecision) {
                 if (this.checkSDCondition()) {
@@ -105,7 +105,12 @@ class GameManager {    // singleton class?
                 console.log("System needs to make a decision.");
                 var sdCondition = this.checkSDCondition();
                 console.log("GAME: SDCondition value is: "+sdCondition);
-                this.dataManager.addPlayerDecision(currentObject.link[0]);
+                if (sdCondition) {
+                    this.dataManager.addPlayerDecision(currentObject.link[0]);
+                }
+                else {
+                    this.dataManager.addPlayerDecision(currentObject.link[1]);
+                }
                 var gameContainer = document.getElementById("gameContainer");
                 var event = new Event("getDecisionObj");
                 gameContainer.dispatchEvent(event);
