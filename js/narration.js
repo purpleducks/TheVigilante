@@ -1,7 +1,7 @@
-class Cinematic extends Character {
+class Narration extends Character {
 
 
-	startCinematic() {
+	startNarration() {
         var gameMan = document.getElementById("gameContainer").gameMan;
         var currentObject = document.getElementById("gameContainer").currObj;
         var that = this; 
@@ -9,25 +9,25 @@ class Cinematic extends Character {
 
         switch(gameMan.soIndex % 4) {   // decides where the narration is gonna be
             case 0: // top left
-                $('#gameContainer').append("<div id='cinematic' class='topLeft'><div class='chatWindowBG'></div><div class='chatWindowFG'><p id='cinematicContent'></p></div></div>");
+                $('#gameContainer').append("<div id='narration' class='topLeft'><div class='chatWindowBG'></div><div class='chatWindowFG'><p id='narrationContent'></p></div></div>");
             break;
 
             case 1: // bottom right
-                $('#gameContainer').append("<div id='cinematic' class='bottomRight'><div class='chatWindowBG'></div><div class='chatWindowFG'><p id='cinematicContent'></p></div></div>");
+                $('#gameContainer').append("<div id='narration' class='topRight'><div class='chatWindowBG'></div><div class='chatWindowFG'><p id='narrationContent'></p></div></div>");
             break;
 
             case 2: // bottom left
-                $('#gameContainer').append("<div id='cinematic' class='bottomLeft'><div class='chatWindowBG'></div><div class='chatWindowFG'><p id='cinematicContent'></p></div></div>");
+                $('#gameContainer').append("<div id='narration' class='bottomLeft'><div class='chatWindowBG'></div><div class='chatWindowFG'><p id='narrationContent'></p></div></div>");
             break;
 
             case 3: // top right
-                $('#gameContainer').append("<div id='cinematic' class='topRight'><div class='chatWindowBG'></div><div class='chatWindowFG'><p id='cinematicContent'></p></div></div>");
+                $('#gameContainer').append("<div id='narration' class='bottomRight'><div class='chatWindowBG'></div><div class='chatWindowFG'><p id='narrationContent'></p></div></div>");
             break;
         }
            
-        document.getElementById("cinematic").addEventListener("remove", function(event){  // event 'remove' declaration
+        document.getElementById("narration").addEventListener("remove", function(event){  // event 'remove' declaration
             //$(this).remove();
-            var speechBox = document.getElementById("cinematic");
+            var speechBox = document.getElementById("narration");
             speechBox.remove();
             document.getElementById("gameContainer").gameMan.incrementSOIndex();
             var currObj = document.getElementById("gameContainer").currObj;
@@ -41,7 +41,7 @@ class Cinematic extends Character {
         
 
         setTimeout(function() { // wait for image to load
-            let temp = new TypeIt("#cinematicContent", {
+            let temp = new TypeIt("#narrationContent", {
             strings: currentString,
             speed: 70,
             breakLines: false,
@@ -51,12 +51,12 @@ class Cinematic extends Character {
                 console.log("Finished loading the image!");
                 
                 setTimeout(function() { // wait for user to read the message then animate out
-                    that.animateSpeech("cinematic", true); // animate speech box out before removing it
+                    that.animateSpeech("narration", true); // animate speech box out before removing it
                     setTimeout(function() {
-                        var gameMan = document.getElementById("gameContainer");
+                        var gameMan = document.getElementById("gameContainer").gameMan;
                         console.log("We're at image number "+gameMan.soIndex+" out of "+(that.speech.length+gameMan.soIndex));
                         temp.reset();
-                        that.name = "cinematic";
+                        that.name = "narration";
                         that.leaveScene();
                         
                     }, 500)

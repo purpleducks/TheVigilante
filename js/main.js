@@ -11,7 +11,7 @@ function runGame() {
 
     document.getElementById("gameContainer").addEventListener("nextObject", processNextObj, true);
 
-    document.getElementById("gameContainer").addEventListener("startTexting", startProcessing, true);  
+    // document.getElementById("gameContainer").addEventListener("startTexting", startProcessing, true);    TODO: fix texting / remove it at some point
 
     gameMan.introData = gameMan.introData["Introduction"]["storylines"];
     var firstObject = gameMan.introData[0];       // get the start object
@@ -33,7 +33,8 @@ function processNextObj(evt) {
     removeAllElements();
     var nextObject = gameMan.introData.find(speechObj => speechObj.name === currObj.link[0]);
     console.log("MAIN: The next object is: " +nextObject.name);
-    checkForTextingView(nextObject);
+    // checkForTextingView(nextObject);     TODO: fix texting / remove it at some point
+    startProcessing(gameMan, nextObject);
     if (evt instanceof Event) { evt.stopPropagation(); }
 }
 
@@ -48,7 +49,8 @@ function getDecisionObj(evt) {
     var linkObj = gameMan.introData.find(speechObj => speechObj.name === linkObjName);
     console.log("MAIN: Player chose: " +linkObjName);
     removeAllElements();
-    checkForTextingView(linkObj);
+    // checkForTextingView(linkObj);        TODO: fix texting / remove it at some point
+    startProcessing(gameMan, linkObj);
     if (evt instanceof Event) { evt.stopPropagation(); }
 }
 

@@ -55,11 +55,11 @@ class GameManager {    // singleton class?
                     currentObject.charctrsObjs[1].talk(this.soIndex);
                 }
             }
-            if (currentObject.narration) {
+            /*if (currentObject.narration) {
                 currentObject.charctrsObjs[0].talk(this.soIndex); 
-            }
-            if (currentObject.cinematic) {
-                currentObject.charctrsObjs[0].startCinematic(this.soIndex);
+            }*/
+            if (currentObject.narration) {
+                currentObject.charctrsObjs[0].startnarration(this.soIndex);
             }
             if (currentObject.systemDecision) {
                 if (this.checkSDCondition()) {
@@ -86,12 +86,12 @@ class GameManager {    // singleton class?
         this.soIndex = 0;
 
         console.log("GAME: Current object being SORTED: " + currentObject.name);
-        if (currentObject.cinematic) {
-            charctrsObjs.push(new Cinematic("cinematic","",""));
+        if (currentObject.narration) {
+            charctrsObjs.push(new Narration("narration","",""));
             currentObject.charctrsObjs = charctrsObjs;
             currentObject.charctrsObjs[0].speech = objSpeechArr;
             currentObject.charctrsObjs[0].img = currentObject["images"]; // save the images array in this object's field 
-            currentObject.charctrsObjs[0].startCinematic();
+            currentObject.charctrsObjs[0].startNarration();
         }
         else {
             if (currentObject["decision"]) {  // user decision
@@ -110,29 +110,27 @@ class GameManager {    // singleton class?
                 var event = new Event("getDecisionObj");
                 gameContainer.dispatchEvent(event);
 
-            } else if (currentObject["narration"]) {    // if its narration, continue as normal...
-                var charctrsObjs = [];
-                charctrsObjs.push(new Character("narrator", null, 'T')); // position is set to the top
-                currentObject.charctrsObjs = charctrsObjs;
-                currentObject.charctrsObjs[0].speech = objSpeechArr;
-                currentObject.charctrsObjs[0].talk(); 
-
-            } else if (currentObject["dialogue"]) {  // if its dialogue, sort the speech between characters
+            }
+            else if (currentObject["dialogue"]) {  // if its dialogue, sort the speech between characters
 
                 if (this.soIndex == 0) { // IF ITS THE FIRST RUN -----
                     // sort characters and assets
                     var whereIsMain = 'L';
                     var altCharacter = 'R';
+                    /*
                     if (currentObject.texting) { 
                         whereIsMain = 'R'; 
                         altCharacter = 'L'; 
-                    }
+                    }*/
                     for (var i = 0; i < characters.length; i++) {   
                         var side = '';
                         if (i == 0) { side = whereIsMain; }
                         else { side = altCharacter; }
+                        /*
                         if (currentObject["texting"]) { charctrsObjs.push(new Texting(characters[i], "images/"+characters[i]+".png", side)); }  // makes a new character object and saves it in an array
-                        else { charctrsObjs.push(new Character(characters[i], "images/"+characters[i]+".png", side)); }
+                        else { charctrsObjs.push(new Character(characters[i], "images/"+characters[i]+".png", side)); }     TODO: fix texting / remove it at some point
+                        */   
+                        charctrsObjs.push(new Character(characters[i], "images/"+characters[i]+".png", side));
                     }
 
                     // ---- sorts the speech between characters ---------
@@ -166,7 +164,7 @@ class GameManager {    // singleton class?
         var currentObject = document.getElementById("gameContainer").currObj;
         if (currentObject.systemDecision) {
             for (var i = 0; i < currentObject.content.length; i++) {
-                if (this.dataManager.checkForDecision(currentObject.content[i] === undefined)) {    // if the condition does not exist, then return false
+                if (this.dataManager.checkForDecision(currentObject.content[i]) === undefined) {    // if the condition does not exist, then return false
                     return false;
                 }
             }   

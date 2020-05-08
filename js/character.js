@@ -12,6 +12,7 @@ class Character {   // factory class
         var currentObject = document.getElementById("gameContainer").currObj;
         var charElem = document.getElementById(this.name);
         var currentString;
+        var justTheSpeech;
         var that = this;
 
         if (charElem != null) {   // if the element exists, then delete it and make a new one
@@ -34,9 +35,18 @@ class Character {   // factory class
         
         if (currentObject.decision) { this.makeDecisionButtons(gameMan); }
         currentString = currentObject.content.shift();
-        console.log("CHARACTER: Sending this to screen: " +currentString);
+
+        if (!currentObject.decision) {
+            justTheSpeech = currentString.split(this.name+": '")[1];
+            justTheSpeech = justTheSpeech.slice(0, (justTheSpeech.length - 1));
+        }
+        else {
+            justTheSpeech = currentString;
+        }
+
+        console.log("CHARACTER: Sending this to screen: " +justTheSpeech);
         this.typer = new TypeIt("#"+this.name+"Speech", {
-            strings: currentString,
+            strings: justTheSpeech,
             speed: 70,
             breakLines: false,
             lifeLike: true,
@@ -75,10 +85,10 @@ class Character {   // factory class
         var textingView = document.getElementById(tempName);
         var delay = 3000;   // for dialogue and narration
 
-        if (textingView == null) {   // if the texting view exists then, set the name to that
+        if (textingView == null) {   // if the texting view doesn't exist then, set the name to the character name
             tempName = this.name;
         }
-        if (this.name == "cinematic") { delay = 750; }
+        if (this.name == "narration") { delay = 750; }
         setTimeout(function() {
             var currentSpeech = document.getElementById(tempName);
             console.log("CHARACTER: Removing "+currentSpeech.id+" element.");

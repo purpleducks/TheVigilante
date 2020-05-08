@@ -66,7 +66,7 @@ function testGameJSON(json) {
 					}
 				}
 			}
-			if (speechObject.narration || speechObject.cinematic || speechObject.minigame) { 
+			if (speechObject.narration || speechObject.minigame) { 
 				hasAFlag = true;
 			}
 			if (!hasAFlag) {

@@ -19,7 +19,7 @@ class PlayerDataManager {
 	}
 
 	checkForDecision(decisionName) {
-		return this.playerDecisions.find(speechObj => speechObj.name === decisionName);
+		return this.playerDecisions.find(speechObj => speechObj === decisionName);
 	}
 
 	saveToStorage() {

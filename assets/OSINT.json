@@ -6,7 +6,7 @@
             "content":[
                "Monday - 11AM'",
                "Nadine is at work at Romero Casinos.'",
-               "She's busy working away on a pretty mundane report that corporate want on the new machines they've rolled out when she hears her co-workers conversation."
+               "She's busy working away on a pretty mundane report that Corporate want on the new machines, when she hears her co-workers conversation by the water cooler."
             ],
             "link":[
                "CoWorkerDialogueOne"
@@ -14,7 +14,7 @@
             "images":[
 
             ],
-            "cinematic":true,
+            "narration":true,
             "music":""
          },
          {
@@ -647,7 +647,7 @@
          {
             "name":"CompanyReviewSite",
             "content":[
-               "Nadine decides to click on a popular compay review site to start digging up dirt abput HealthCorp"
+               "Nadine decides to click on a popular company review site to start digging up dirt abput HealthCorp"
             ],
             "images":[
 
@@ -1116,7 +1116,9 @@
          {
             "name":"AnonEmail-NadineReachesOut-2",
             "content":[
-               "Nadine makes an email account that looks similar to Sam's email address."
+               "Nadine: 'Hi there! It's Sam, I got your email but I lost access to my inbox, which is why I'm emailing you from this address.'",
+               "Nadine: 'Would you mind texting me instead? I'm easier to reach on there, so here's my number if you want to talk!'",
+               "Nadine: 'Talk soon! Sam.'"
             ],
             "link":[
                "AnonEmail-NadineReachesOut-3"
@@ -1128,14 +1130,16 @@
                "Nadine"
             ],
             "music":"",
-            "narration":true
+            "dialogue":true
          },
          {
             "name":"AnonEmail-NadineReachesOut-3",
             "content":[
-               "Nadine: 'Hi there! It's Sam, I got your email but I lost access to my inbox, which is why I'm emailing you from this address.'",
-               "Nadine: 'Would you mind texting me instead? I'm easier to reach on there, so here's my number if you want to talk!'",
-               "Nadine: 'Talk soon! Sam.'"
+               "Nadine sends the email, she's not optimistic that they'll reply.",
+               " ......... ",
+               "After about 15 minutes, the Anonymous person replies to Nadine's email with just a phone number.",
+               "Nothing else. Nadine is suspicious.",
+               "She opens her phone and introduces herself as Sam to the Anonymous person"
             ],
             "link":[
                "AnonEmail-NadineReachesOut-4"
@@ -1147,31 +1151,10 @@
                "Nadine"
             ],
             "music":"",
-            "dialogue":true
-         },
-         {
-            "name":"AnonEmail-NadineReachesOut-4",
-            "content":[
-               "Nadine sends the email, she's not optimistic that they'll reply.",
-               " ......... ",
-               "After about 15 minutes, the Anonymous person replies to Nadine's email with just a phone number.",
-               "Nothing else. Nadine is suspicious.",
-               "She opens her phone and introduces herself as Sam to the Anonymous person"
-            ],
-            "link":[
-               "AnonEmail-NadineReachesOut-5"
-            ],
-            "images":[
-
-            ],
-            "characters":[
-               "Nadine"
-            ],
-            "music":"",
             "narration":true
          },
          {
-            "name":"AnonEmail-NadineReachesOut-5",
+            "name":"AnonEmail-NadineReachesOut-4",
             "content":[
                "Nadine: 'hi there! it's Sam, thanks for your email'",
                "Nadine: 'when I got your email, I was so happy, like I knew there had to be others!'",
@@ -1946,7 +1929,9 @@
          {
             "name":"BloggerAndDarren",
             "content":[
-               "Nadine remembers reading about a man the Blogger was talking to called Darren, so she searches for him on the site",
+               "Nadine remembers reading emails from a man called Darren, that Sam was talking to.",
+               "'He worked in their Sales department! He must know what really goes on in there', Nadine thought",
+               "So she searches for him on the site...",
                "After a lot of searching, Nadine manages to find him and discovers that he's a Manager in their Sales department."
             ],
             "link":[

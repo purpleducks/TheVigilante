@@ -87,7 +87,7 @@
             "link":[
                "Opening Speech"
             ],
-            "cinematic":true,
+            "narration":true,
             "name":"Opening",
             "music":"Children-of-MH17-longer.mp3"
          },
@@ -367,7 +367,9 @@
          },
          {
             "content":[
-               "Naadine decides to download the whole inbox but Sam must have noticed the intrusion, Nadine's download was interrupted and she only managed to download the folder she was viewing and she loses access."
+               "Nadine decides that there must be more to see here and decides to download the whole inbox... ", 
+               "... but Sam must have noticed the intrusion and Nadine's download was interrupted.",
+               "She only managed to download the folder she was viewing and she loses access."
             ],
             "link":[
                "Texting Marcus"
@@ -421,7 +423,7 @@
                "Marcus: 'Hey sis, did you see that post about that blogger? He was going IN on HealthCorp, maybe this is a good sign yknow?'"
             ],
             "link":[
-               "NadineReply1"
+               "NadineReply1-SysDecision"
             ],
             "images":[
                "laptop-desk.jpg"
@@ -436,11 +438,26 @@
             "music":"Dreamy-Chill.mp3"
          },
          {
+            "name": "NadineReply1-SysDecision",
+            "content": [
+               "In bloggers profile"
+            ],
+            "link": [
+               "NadineReply1",
+               "NadineReply1-NoHackOne"
+            ],
+            "images": [
+               "laptop-desk.jpg"
+            ],
+            "music": "",
+            "systemDecision": true
+         },
+         {
             "content":[
                "How does Nadine reply?",
-               "Nadine: 'I looked into him, he's legit. We should reach out.'",
-               "Nadine: 'I looked into him, he's totally a scammer, tryna get money out of folk like us'",
-               "Nadine: 'I saw but it just reminded me too much of Mom, I couldn't read it.'",
+               "I looked into him, he's legit. We should reach out.",
+               "I looked into him, he's totally a scammer, tryna get money out of folk like us",
+               "I saw but it just reminded me too much of Mom, I couldn't read it.",
                "(ignores Marcus)"
             ],
             "link":[
@@ -492,7 +509,7 @@
                "In bloggers email"
             ],
             "link":[
-               "HackTwoSuccess",
+               "HackTwoSuccess-SD-One",
                "HackTwoFail"
             ],
             "images":[
@@ -553,6 +570,7 @@
                "Marcus"
             ],
             "images":[
+               "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
             "name":"DidntReadBlog",
@@ -579,26 +597,49 @@
             "music":""
          },
          {
-            "content":[
-               "Which folder did Nadine read?",
-               "HealthCorp",
-               "Darren",
-               "Blog",
-               "Hospital"
+            "name": "HackTwoSuccess-SD-One",
+            "content": [
+               "HealthCorp email"
             ],
-            "link":[
+            "link": [
                "MarcusHealthCorp",
+               "HackTwoSuccess-SD-Two"
+            ],
+            "images": [
+               "laptop-desk.jpg"
+            ],
+            "music": "Dreamy-Chill.mp3",
+            "systemDecision":true
+         },
+         {
+            "name": "HackTwoSuccess-SD-Two",
+            "content": [
+               "Darren email"
+            ],
+            "link": [
                "MarcusDarren",
+               "HackTwoSuccess-SD-Three"
+            ],
+            "images": [
+               "laptop-desk.jpg"
+            ],
+            "music": "Dreamy-Chill.mp3",
+            "systemDecision":true
+         },
+         {
+            "name": "HackTwoSuccess-SD-Three",
+            "content": [
+               "Blog email"
+            ],
+            "link": [
                "MarcusBlog",
                "MarcusHospital"
             ],
-            "images":[
+            "images": [
                "laptop-desk.jpg"
             ],
-            "decision":true,
-            "name":"HackTwoSuccess",
-            "texting":true,
-            "music":"Dreamy-Chill.mp3"
+            "music": "Dreamy-Chill.mp3",
+            "systemDecision":true
          },
          {
             "content":[
@@ -656,6 +697,8 @@
             ],
             "images":[
                "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
             "dialogue":true,
@@ -683,7 +726,7 @@
                "MWAN-NadsIsOffended"
             ],
             "images":[
-
+               "laptop-desk.jpg"
             ],
             "music":"",
             "decision":true,
@@ -701,7 +744,10 @@
                "FINISH"
             ],
             "images":[
-
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
             ],
             "characters":[
                "Nadine",
@@ -722,7 +768,9 @@
                "MWAN-MarcusFeelsBad"
             ],
             "images":[
-
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
             ],
             "characters":[
                "Nadine",
@@ -744,7 +792,10 @@
                "FuckedIt"
             ],
             "images":[
-
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
             ],
             "characters":[
                "Nadine",
@@ -763,7 +814,7 @@
                "FuckedIt"
             ],
             "images":[
-
+               "laptop-desk.jpg"
             ],
             "music":"",
             "narration":true,
@@ -889,8 +940,6 @@
                "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg",
-               "laptop-desk.jpg",
-               "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
             "dialogue":true,
@@ -951,6 +1000,7 @@
                "FINISH"
             ],
             "images":[
+               "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg"
@@ -1022,6 +1072,7 @@
             ],
             "images":[
                "laptop-desk.jpg",
+               "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
             "dialogue":true,
@@ -1045,6 +1096,7 @@
             ],
             "images":[
                "laptop-desk.jpg",
+               "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
             "dialogue":true,
@@ -1066,6 +1118,7 @@
                "NadineDarrenDecisionTwo"
             ],
             "images":[
+               "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
@@ -1193,6 +1246,7 @@
             ],
             "images":[
                "laptop-desk.jpg",
+               "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
             "dialogue":true,
@@ -1214,6 +1268,7 @@
                "TooAggressiveStub"
             ],
             "images":[
+               "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
@@ -1312,9 +1367,6 @@
                "RM-NiceToMarcus"
             ],
             "images":[
-               "laptop-desk.jpg",
-               "laptop-desk.jpg",
-               "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
             "goodtrait":true,
@@ -1336,7 +1388,7 @@
                "MarcusGottaGo"
             ],
             "images":[
-
+               "laptop-desk.jpg"
             ],
             "music":"",
             "narration":true
@@ -1351,7 +1403,8 @@
                "FINISH"
             ],
             "images":[
-
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1387,7 +1440,7 @@
                "DidntReadBlog"
             ],
             "images":[
-
+               "laptop-desk.jpg"
             ],
             "characters":[
                "Nadine"
