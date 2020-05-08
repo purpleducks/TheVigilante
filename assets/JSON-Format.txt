@@ -6,7 +6,6 @@ The Vigilante JSON Format
 	• Characters - the array of String which contains the names of the Character that are involved in this bit of the scene
 	• Images - the array of String containing all of the filenames to images which show in the background for each bit of speech in the Content array
 	• Music - this can either contain a filename to an audio file to be played OR an empty string which indicates to the System to continue playing the current track.
-	• Condition - an array of String that must have at least one of the items chosen by the player in order to progress down the true path otherwise it goes down the false path
 	• Flags - there are various flags which can be set
 		• Narration - marks if the Speech object should be narrated
 		• Dialogue - marks if the Speech object should be displayed as dialogue between characters

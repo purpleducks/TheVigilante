@@ -3,11 +3,31 @@
       "storylines":[
          {
             "content":[
+               "Marcus: 'Hey sis, did you see that post about that blogger? He was going IN on HealthCorp, maybe this is a good sign yknow?'"
+            ],
+            "link":[
+               "NadineReply1-SysDecision"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "dialogue":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "name":"Texting Marcus dialogue",
+            "texting":true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "content":[
                "It's Sunday - 1PM.",
                "Nadine wakes up late, gets ready and turns on her computer to see what's going on.",
                "As usual, she does her daily ritual of searching for stories about HealthCorp and anyone trying to sue them like her father did all those years ago.",
                "This is when she stumbles upon a blog post; it reads 'HealthCorp are EVIL!!'.",
-               "The blogger talks about how their father had terminal cancer, how HealthCorp did the exact same thing to them as they had done to Nadine's mother and left them to die."
+               "Sam talks about how his father had terminal cancer and how HealthCorp cancelled his father's insurance just as he was about to start chemo",
+               "They couldn't keep up with the payments and Sam had to work two jobs and re-mortgage his house just to make the payments."
             ],
             "link":[
                "Investigate blog decision"
@@ -17,11 +37,12 @@
                "bedroom.jpg",
                "typing.jpg",
                "blog-post.jpg",
+               "blog-post.jpg",
                "blog-post.jpg"
             ],
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "narration":true,
             "name":"Opening Speech",
@@ -85,7 +106,7 @@
             "link":[
                "Opening Speech"
             ],
-            "cinematic":true,
+            "narration":true,
             "name":"Opening",
             "music":"Children-of-MH17-longer.mp3"
          },
@@ -95,7 +116,8 @@
                "Nadine wakes up late, gets ready and turns on her computer to see what's going on.",
                "As usual, she does her daily ritual of searching for stories about HealthCorp and anyone trying to sue them like her father did all those years ago.",
                "This is when she stumbles upon a blog post; it reads 'HealthCorp are EVIL!!'.",
-               "The blogger talks about how their father had terminal cancer, how HealthCorp did the exact same thing to them as they had done to Nadine's mother and left them to die."
+               "Sam talks about how his father had terminal cancer and how HealthCorp cancelled his father's insurance just as he was about to start chemo",
+               "They couldn't keep up with the payments and Sam had to work two jobs and re-mortgage his house just to make the payments."
             ],
             "link":[
                "Investigate blog decision"
@@ -105,11 +127,12 @@
                "bedroom.jpg",
                "typing.jpg",
                "blog-post.jpg",
+               "blog-post.jpg",
                "blog-post.jpg"
             ],
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "narration":true,
             "name":"Opening Speech",
@@ -137,8 +160,8 @@
          },
          {
             "content":[
-               "Nadine decides to investigate this further and investigate the blogger's story (it was posted late last night)",
-               "After a lot of trawling, she finds the blogger's social media profile and a post to a GoFundMe page, where they're raising money for their dad's treatment"
+               "Nadine decides to investigate this further and investigate Sam's story (it was posted late last night)",
+               "After a lot of trawling, she finds Sam's social media profile and a post to a GoFundMe page, where he was raising money for his dad's treatment"
             ],
             "link":[
                "Investigate blog post decision"
@@ -150,14 +173,14 @@
             "narration":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Investigate blog post",
             "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
-               "Does Nadine hack into the blogger's social media profile?",
+               "Does Nadine hack into Sam's social media profile?",
                "Hacks into social media profile",
                "Leaves it and turns laptop off"
             ],
@@ -171,7 +194,7 @@
             "decision":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Investigate blog post decision",
             "music":"A-Stranger-Thing.mp3"
@@ -189,15 +212,15 @@
             "narration":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Probably a scam",
             "music":"Fresh-Fallen-Snow.mp3"
          },
          {
             "content":[
-               "Nadine decides to launch a dictionary attack on the blogger's social media profile.",
-               "Nadine manages to crack the blogger's password!",
+               "Nadine decides to launch a dictionary attack on Sam's social media profile.",
+               "Nadine manages to crack the Sam's password!",
                "Nadine failed to crack the password and the social media website locked her out."
             ],
             "link":[
@@ -210,60 +233,66 @@
             "minigame":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Social media profile hack",
             "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
-               "Nadine sees messages between the blogger and their family talking about their father being in hospital",
-               "The timestamps prove that the blogger wasn't lying about their father being in hospital and there are selfies of their father and them in a hospital bed.",
-               "Nadine is still curious about the blogger."
+               "Nadine sees messages between Sam and his family talking about his father being in hospital",
+               "The timestamps prove that Sam wasn't lying about his father being in hospital and there are selfies of his father and Sam in a hospital bed.",
+               "Nadine is still curious about Sam, what is he hiding?."
             ],
             "link":[
                "Blogger email hack"
             ],
+            "images": [
+            ],
             "narration":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"In bloggers profile",
             "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
-               "Does Nadine hack into the blogger's emails?",
-               "Hack into their email - they're hiding something.",
+               "Does Nadine hack into Sam's emails?",
+               "Hack into his email - he's hiding something.",
                "He's clean, his story checks out."
             ],
             "link":[
                "Blogger email hack",
                "Texting Marcus"
             ],
+            "images": [
+            ],
             "decision":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Bloggers email",
             "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
-               "Nadine decides to hack into the blogger's emails",
-               "Nadine managed to hack into the blogger's email account.",
+               "Nadine decides to hack into Sam's emails",
+               "Nadine managed to hack into Sam's email account.",
                "They have two factor authentication enabled, they'll be surprised to get a random text. Nadine decides against continuing to hack in."
             ],
             "link":[
                "In bloggers email",
                "Texting Marcus"
             ],
+            "images": [
+            ],
             "minigame":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Blogger email hack",
             "music":"A-Stranger-Thing.mp3"
@@ -282,6 +311,8 @@
                "Blog email",
                "Hospital email"
             ],
+            "images": [
+            ],
             "decision":true,
             "HackTwoSuccess":true,
             "name":"In bloggers email",
@@ -298,31 +329,37 @@
             "characters":[
                "Nadine"
             ],
+            "images": [
+            ],
             "name":"HealthCorp email",
             "music":""
          },
          {
             "content":[
-               "Nadine discovers that the blogger is dating a HealthCorp employee called Darren Anderson",
+               "Nadine discovers that Sam is dating a HealthCorp employee called Darren Anderson",
                "Based on the emails, it looks like Darren works in HealthCorp's sales department. Nadine notes this down just in case ;)"
             ],
             "link":[
                "Email intrusion detected"
             ],
+            "images": [
+            ],
             "narration":true,
             "characters":[
                "Nadine",
-               "Blogger"
+               "Sam"
             ],
             "name":"Darren email",
             "music":""
          },
          {
             "content":[
-               "Nadine discovers a lot of messages from other people who say they were screwed over by HealthCorp's tactics too. The blogger even replied to some of them"
+               "Nadine discovers a lot of messages from other people who say they were screwed over by HealthCorp's tactics too. Sam even replied to some of them"
             ],
             "link":[
                "Email intrusion detected"
+            ],
+            "images": [
             ],
             "narration":true,
             "characters":[
@@ -338,6 +375,8 @@
             "link":[
                "Email intrusion detected"
             ],
+            "images": [
+            ],
             "narration":true,
             "characters":[
                "Nadine"
@@ -347,10 +386,14 @@
          },
          {
             "content":[
-               "Naadine decides to download the whole inbox but the blogger must have noticed the intrusion, Nadine's download was interrupted and she only managed to download the folder she was viewing and she loses access."
+               "Nadine decides that there must be more to see here and decides to download the whole inbox... ", 
+               "... but Sam must have noticed the intrusion and Nadine's download was interrupted.",
+               "She only managed to download the folder she was viewing and she loses access."
             ],
             "link":[
                "Texting Marcus"
+            ],
+            "images": [
             ],
             "narration":true,
             "characters":[
@@ -365,6 +408,8 @@
             ],
             "link":[
                "Texting Marcus"
+            ],
+            "images": [
             ],
             "narration":true,
             "characters":[
@@ -394,10 +439,10 @@
          },
          {
             "content":[
-               "Marcus: 'Hey sis, did you see that post about the blogger? He was going IN on HealthCorp, maybe this is a good sign yknow?'"
+               "Marcus: 'Hey sis, did you see that post about that blogger? He was going IN on HealthCorp, maybe this is a good sign yknow?'"
             ],
             "link":[
-               "NadineReply1"
+               "NadineReply1-SysDecision"
             ],
             "images":[
                "laptop-desk.jpg"
@@ -412,11 +457,51 @@
             "music":"Dreamy-Chill.mp3"
          },
          {
+            "name": "NadineReply1-SysDecision",
+            "content": [
+               "In bloggers profile"
+            ],
+            "link": [
+               "NadineReply1",
+               "NadineReply1-NoHackOne"
+            ],
+            "images": [
+               "laptop-desk.jpg"
+            ],
+            "music": "",
+            "systemDecision": true
+         },
+         {
+            "name": "NadineReply1-NoHackOne",
             "content":[
                "How does Nadine reply?",
-               "Nadine: 'I looked into him, he's legit. We should reach out.'",
-               "Nadine: 'I looked into him, he's totally a scammer, tryna get money out of folk like us'",
-               "Nadine: 'I saw but it just reminded me too much of Mom, I couldn't read it.'",
+               "I looked into him, he's totally a scammer, tryna get money out of folk like us",
+               "I saw but it just reminded me too much of Mom, I couldn't read it.",
+               "(ignores Marcus)"
+            ],
+            "link":[
+               "HackOneSuccess",
+               "ScammerBlogger",
+               "DidntReadBlog",
+               "IgnoresMarcus"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "decision":true,
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "texting":true,
+            "music":"Dreamy-Chill.mp3"
+         },
+         {
+            "content":[
+               "How does Nadine reply?",
+               "I looked into him, he's legit. We should reach out.",
+               "I looked into him, he's totally a scammer, tryna get money out of folk like us",
+               "I saw but it just reminded me too much of Mom, I couldn't read it.",
                "(ignores Marcus)"
             ],
             "link":[
@@ -468,14 +553,14 @@
                "In bloggers email"
             ],
             "link":[
-               "HackTwoSuccess",
+               "HackTwoSuccess-SD-One",
                "HackTwoFail"
             ],
             "images":[
                "laptop-desk.jpg"
             ],
             "systemDecision":true,
-            "texting": true,
+            "texting":true,
             "music":"Dreamy-Chill.mp3"
          },
          {
@@ -495,6 +580,7 @@
                "PaybackDecision"
             ],
             "images":[
+               "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg",
@@ -528,6 +614,7 @@
                "Marcus"
             ],
             "images":[
+               "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
             "name":"DidntReadBlog",
@@ -554,26 +641,49 @@
             "music":""
          },
          {
-            "content":[
-               "Which folder did Nadine read?",
-               "HealthCorp",
-               "Darren",
-               "Blog",
-               "Hospital"
+            "name": "HackTwoSuccess-SD-One",
+            "content": [
+               "HealthCorp email"
             ],
-            "link":[
+            "link": [
                "MarcusHealthCorp",
+               "HackTwoSuccess-SD-Two"
+            ],
+            "images": [
+               "laptop-desk.jpg"
+            ],
+            "music": "Dreamy-Chill.mp3",
+            "systemDecision":true
+         },
+         {
+            "name": "HackTwoSuccess-SD-Two",
+            "content": [
+               "Darren email"
+            ],
+            "link": [
                "MarcusDarren",
+               "HackTwoSuccess-SD-Three"
+            ],
+            "images": [
+               "laptop-desk.jpg"
+            ],
+            "music": "Dreamy-Chill.mp3",
+            "systemDecision":true
+         },
+         {
+            "name": "HackTwoSuccess-SD-Three",
+            "content": [
+               "Blog email"
+            ],
+            "link": [
                "MarcusBlog",
                "MarcusHospital"
             ],
-            "images":[
+            "images": [
                "laptop-desk.jpg"
             ],
-            "decision":true,
-            "name":"HackTwoSuccess",
-            "texting":true,
-            "music":"Dreamy-Chill.mp3"
+            "music": "Dreamy-Chill.mp3",
+            "systemDecision":true
          },
          {
             "content":[
@@ -622,12 +732,16 @@
          {
             "content":[
                "Marcus: 'Of course I do but you gotta move on with your life Nadine'",
-               "Marcus: 'You can't let this take over ya life.'"
+               "Marcus: 'You can't let this take over ya life.'",
+               "Nadine: 'If you're trying to say don't turn into Dad, just tell me straight up Marcus.",
+               "Marcus: 'I didn't say that Nads, I just worry about you okay?"
             ],
             "link":[
-               "IgnoresMarcus"
+               "MarcusWorriesAbtNadine-Decision"
             ],
             "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
@@ -639,6 +753,116 @@
             "name":"SadMarcus",
             "texting":true,
             "music":"Emotional.mp3"
+         },
+         {
+            "name":"MarcusWorriesAbtNadine-Decision",
+            "content":[
+               "What does Nadine say?",
+               "Thanks for that Marcus, but I'll be fine",
+               "*ignores Marcus*",
+               "Don't. Just don't",
+               "Yeah, well you didn't have to say anything."
+            ],
+            "link":[
+               "MWAN-PassiveAggressiveNadine",
+               "IgnoresMarcus",
+               "MWAN-ShutsMarcusDown",
+               "MWAN-NadsIsOffended"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "music":"",
+            "decision":true,
+            "texting":true
+         },
+         {
+            "name":"MWAN-PassiveAggressiveNadine",
+            "content":[
+               "Nadine: 'Thanks for that Marcus, but I'll be fine, you don't gotta worry about me anymore.'",
+               "Marcus: 'I always got to worry about you, comes with being the big brother sis 😘'",
+               "Marcus: 'Anyways, stay safe Nad, talk to you later :)'",
+               "Nadine: 'Talk soon.'"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "music":"",
+            "dialogue":true,
+            "texting":true
+         },
+         {
+            "name":"MWAN-ShutsMarcusDown",
+            "content":[
+               "Nadine: 'Marcus. Just don't. Don't even. Okay?'",
+               "Marcus: 'Okay, okay, I'm sorry. I'll talk to you tomorrow okay?'",
+               "Nadine: 'Fine.'"
+            ],
+            "link":[
+               "MWAN-MarcusFeelsBad"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "music":"",
+            "dialogue":true,
+            "texting":true
+         },
+         {
+            "name":"MWAN-NadsIsOffended",
+            "content":[
+               "Nadine: 'Yeah, well you didn't have to say anything, why you don't let anything be?'",
+               "Marcus: 'I'm sorry Nads, I just worry about you okay? Sue me 🤷‍'",
+               "Nadine: 'Whatever, I'll talk to you tomorrow",
+               "Marcus: 'Okay.. talk soon.'"
+            ],
+            "link":[
+               "FuckedIt"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "music":"",
+            "dialogue":true,
+            "texting":true
+         },
+         {
+            "name":"MWAN-MarcusFeelsBad",
+            "content":[
+               "You made Marcus feel bad."
+            ],
+            "link":[
+               "FuckedIt"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "music":"",
+            "narration":true,
+            "texting":true
          },
          {
             "content":[
@@ -657,7 +881,7 @@
          },
          {
             "content":[
-               "Nadine: 'HealthCorp just won't quit with them, he put up his post about how they treated their dad and within an hour, they were filling up his inbox with cease and desist statements and threatening to sue for defamation'",
+               "Nadine: 'HealthCorp just won't quit with them, he put up his post about how they treated his dad and within an hour, they were filling up his inbox with cease and desist statements and threatening to sue for defamation'",
                "Nadine: 'I can't even imagine what that would be like, poor thing'",
                "Nadine: 'like haven't they been through enough?! man'",
                "Marcus: 'fuuuck man, that's brutal. why they comin for him like that? he ain't even THAT popular.'",
@@ -760,8 +984,6 @@
                "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg",
-               "laptop-desk.jpg",
-               "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
             "dialogue":true,
@@ -774,10 +996,11 @@
             "music":"Emotional.mp3"
          },
          {
+            "name":"MarcusWarning",
             "content":[
                "How does Nadine reply?",
-               "Nadine: 'thanks for the warning bro, but I think I got it.'",
-               "Nadine: 'just like they did Mom?'"
+               "thanks for the warning bro, but I think I got it.",
+               "just like they did Mom?"
             ],
             "link":[
                "TooAggressive",
@@ -786,15 +1009,13 @@
             "images":[
                "laptop-desk.jpg"
             ],
-            "decision":true,
-            "dialogue":true,
             "characters":[
                "Nadine",
                "Marcus"
             ],
-            "name":"MarcusWarning",
+            "music":"",
             "texting":true,
-            "music":""
+            "decision":true
          },
          {
             "content":[
@@ -823,6 +1044,7 @@
                "FINISH"
             ],
             "images":[
+               "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg"
@@ -866,9 +1088,9 @@
          {
             "content":[
                "How does Nadine respond?",
-               "Nadine: 'bro, you need to chill.'",
-               "Nadine: 'Fuck you man, you can't talk to me like that.'",
-               "Nadine: 'I know what I'm doing bro, I'm not the same little girl I was when Mom died'"
+               "bro, you need to chill.",
+               "Fuck you man, you can't talk to me like that.",
+               "I know what I'm doing bro, I'm not the same little girl I was when Mom died"
             ],
             "link":[
                "YouNeedToCalmDown",
@@ -878,13 +1100,9 @@
             "images":[
                "laptop-desk.jpg"
             ],
-            "dialogue":true,
-            "characters":[
-               "Nadine",
-               "Marcus"
-            ],
             "name":"NadineDarrenDecisionOne",
             "texting":true,
+            "decision":true,
             "music":""
          },
          {
@@ -897,6 +1115,7 @@
                "NadineDarrenDecisionThree"
             ],
             "images":[
+               "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
@@ -921,6 +1140,7 @@
             ],
             "images":[
                "laptop-desk.jpg",
+               "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
             "dialogue":true,
@@ -942,6 +1162,7 @@
                "NadineDarrenDecisionTwo"
             ],
             "images":[
+               "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
@@ -1041,8 +1262,8 @@
          {
             "content":[
                "How does Nadine reply?",
-               "Nadine: 'I can handle myself you know?'",
-               "Nadine: 'What, you think I'm dumb? I'm GOOD at what I do okay?'",
+               "I can handle myself you know?",
+               "What, you think I'm dumb? I'm GOOD at what I do okay?",
                "(ignores Marcus)"
             ],
             "link":[
@@ -1054,11 +1275,6 @@
                "laptop-desk.jpg"
             ],
             "decision":true,
-            "dialogue":true,
-            "characters":[
-               "Nadine",
-               "Marcus"
-            ],
             "name":"NadineDarrenDecisionTwo",
             "texting":true,
             "music":""
@@ -1073,6 +1289,7 @@
                "TooAggressiveStub"
             ],
             "images":[
+               "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
@@ -1095,6 +1312,7 @@
                "TooAggressiveStub"
             ],
             "images":[
+               "laptop-desk.jpg",
                "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
@@ -1187,18 +1405,12 @@
          },
          {
             "content":[
-               "Nadine: 'yeah everything went to fuck after Mom died, you really kept us all together'",
-               "You were really nice to Marcus, he'll remember that.",
-               "Marcus: 'look I gotta go, but call me if you need anything'",
-               "Marcus: 'and be careful with HealthCorp, those fuckers aren't messing around Nadine'"
+               "Nadine: 'yeah everything went to fuck after Mom died, you really kept us all together'"
             ],
             "link":[
-               "FINISH"
+               "RM-NiceToMarcus"
             ],
             "images":[
-               "laptop-desk.jpg",
-               "laptop-desk.jpg",
-               "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
             "goodtrait":true,
@@ -1212,32 +1424,81 @@
             "music":"Emotional.mp3"
          },
          {
+            "name":"RM-NiceToMarcus",
+            "content":[
+               "You were really nice to Marcus, he'll remember that."
+            ],
+            "link":[
+               "MarcusGottaGo"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "music":"",
+            "narration":true
+         },
+         {
+            "name":"MarcusGottaGo",
+            "content":[
+               "Marcus: 'look I gotta go, but call me if you need anything'",
+               "Marcus: 'and be careful with HealthCorp, those fuckers aren't messing around Nadine'"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+               "laptop-desk.jpg",
+               "laptop-desk.jpg"
+            ],
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "music":"",
+            "dialogue":true
+         },
+         {
             "content":[
                "How does Nadine reply?",
-               "Nadine: 'Sure does.'",
+               "Sure does.",
                "(ignores Marcus)"
             ],
             "link":[
-               "DidntReadBlog",
+               "TAM-NadineResponse",
                "DidntReadBlog"
             ],
             "images":[
                "laptop-desk.jpg"
             ],
-            "dialogue":true,
-            "characters":[
-               "Nadine",
-               "Marcus"
-            ],
+            "decision":true,
             "name":"ThinkingAboutMom",
             "texting":true,
             "music":""
          },
          {
+            "name":"TAM-NadineResponse",
+            "content":[
+               "Nadine: 'Sure does...'"
+            ],
+            "link":[
+               "DidntReadBlog"
+            ],
+            "images":[
+               "laptop-desk.jpg"
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"",
+            "dialogue":true,
+            "texting":true
+         },
+         {
+            "name":"PaybackDecision",
             "content":[
                "What does Nadine say?",
-               "Nadine: 'Nothing, don't worry about it'",
-               "Nadine: 'I can get them to hurt like we did when Mom died'"
+               "Nothing, don't worry about it",
+               "I can get them to hurt like we did when Mom died"
             ],
             "link":[
                "IgnoresMarcus",
@@ -1247,12 +1508,6 @@
                "laptop-desk.jpg"
             ],
             "decision":true,
-            "dialogue":true,
-            "characters":[
-               "Nadine",
-               "Marcus"
-            ],
-            "name":"PaybackDecision",
             "texting":true,
             "music":""
          }

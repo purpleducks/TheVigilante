@@ -148,7 +148,6 @@ body {
 
 .chatWindowFG p {
     position: absolute;
-    left: 1vw;
     color: white;
     display: inline-block;
   	overflow: hidden;
@@ -158,6 +157,8 @@ body {
     font-family: IBMPlex;
     margin-top: 2vh;
     z-index: 3;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 @media screen and (max-width: 800px) {
@@ -180,11 +181,6 @@ body {
     left: 5%;
 }
 
-#narratorSpeech, #decisionSpeech {
-    margin: auto;
-    padding-top: 1vw;
-    margin-right: 2%;
-}
 
 #musicControl {
     height: 5vh;
@@ -263,7 +259,7 @@ body {
 
 /* Cinematic elements */
 
-#cinematic {
+#narration {
     width: 45%;
     height: 20%;
 }
