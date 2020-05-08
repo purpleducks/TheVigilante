@@ -6,7 +6,7 @@ function main() {
         animateElemsIn();
     }
     document.getElementById("startButton").onclick = function () {
-        location.href = "../page1.html";
+        location.href = "./page1.html";
     };
 
     addLabelToggleEL("musicControl");
