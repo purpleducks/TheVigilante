@@ -3,25 +3,6 @@
       "storylines":[
          {
             "content":[
-               "Marcus: 'Hey sis, did you see that post about that blogger? He was going IN on HealthCorp, maybe this is a good sign yknow?'"
-            ],
-            "link":[
-               "NadineReply1-SysDecision"
-            ],
-            "images":[
-               "laptop-desk.jpg"
-            ],
-            "dialogue":true,
-            "characters":[
-               "Nadine",
-               "Marcus"
-            ],
-            "name":"Texting Marcus dialogue",
-            "texting":true,
-            "music":"Dreamy-Chill.mp3"
-         },
-         {
-            "content":[
                "It's Sunday - 1PM.",
                "Nadine wakes up late, gets ready and turns on her computer to see what's going on.",
                "As usual, she does her daily ritual of searching for stories about HealthCorp and anyone trying to sue them like her father did all those years ago.",
