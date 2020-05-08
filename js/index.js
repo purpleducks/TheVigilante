@@ -6,7 +6,7 @@ function main() {
         animateElemsIn();
     }
     document.getElementById("startButton").onclick = function () {
-        location.href = "https://zeno.computing.dundee.ac.uk/2019-games/mohammednadat/page1.html";
+        location.href = "../page1.html";
     };
 
     addLabelToggleEL("musicControl");
