@@ -3,26 +3,40 @@ class DictionaryAttack extends Minigame {
 	constructor(name, difficulty) {
 		super(name, difficulty);
 		this.words = [];
+		this.onScreenWords = [];
+		this.shownWords = [];
 		this.completedWords = 0;
+		this.score = 0;
 	}
 
 	loadWords() {
 		var that = this;
-		var tempArr = [];
-        fetch("assets/common-passwords.txt")
-		.then( response => response.text() )
-		.then( text => tempArr )
-		do {
-			if (tempArr.length > 0) {
-				this.words = tempArr;
-			}
-		} while (tempArr.length == 0);
+		var client = new XMLHttpRequest();
+		client.open('GET', 'assets/common-passwords.txt');
+		client.onloadend = function() {
+			that.words = client.responseText.split('\n');
+			that.runGame();
+		}
+		client.send();
+    }
+
+    runGame() {
+    	var that = this;
+    	setInterval(function() {
+    		that.addNewWord();
+    	}, 1000);
     }
 
 	addNewWord() {
 		var wordIndex = this.getRandomInt(0, this.words.length);
-		this.completedWords++;
-		this.animateWord(wordIndex);	
+		var newWordCheck = this.shownWords.indexOf(this.words[wordIndex]);
+		console.log(newWordCheck);
+		while(newWordCheck != -1) {
+			wordIndex = this.getRandomInt(0, this.words.length);
+			newWordCheck = this.shownWords.indexOf(this.words[wordIndex]);
+		}
+		this.onScreenWords.push(this.words[wordIndex]);
+		this.animateWord(wordIndex);
 	}
 
 	/**	https://stackoverflow.com/a/1527820
@@ -43,43 +57,66 @@ class DictionaryAttack extends Minigame {
 		var word = this.words[wordIndex];
 		$('#minigameLayer').append("<div class='word' id=word"+wordIndex+"><p>"+word+"</p></div>");
 		var elem = document.getElementById("word"+wordIndex);
-		var id = setInterval(frame, 5);
-
+		var id = setInterval(frame, 30);
+		var that = this;
+		elem.style.left = this.getRandomInt(2,90) + 'vw';
 		function frame() {
 		  if (position >= screen.height) {
 		      clearInterval(id);
+		      console.log("BYEEEEE from "+elem.id);
+		      that.completedWords++;
+		      var wordId = elem.id.slice(4, elem.id.length);
+		      that.removeWord(wordId);
 		    } else {
-		      position++;
+		      position += that.getRandomInt(1, 5);
 		      elem.style.top = position + 'px';
-		      if ((this.completedWords % 2) == 0) {
-		      	elem.style.left = position + 'px';
-		      }
-		      else {
-		      	elem.style.right = position + 'px';
-		      }
 		    }
 		}
 	}
 
 	checkWord() {
-
-	}
-
-	removeWord() {
-
-	}
-
-
-
-	runGame() {
-		var that = this;
-		console.log("YAS");
-		/*
-		setInterval(function() {
-			if (this.completedWords == 4) { clearInterval(); }
-			else {
-				that.addNewWord();
+		var guessingValue = document.getElementById("passwordGuess").value;
+		var correctWord = this.onScreenWords.indexOf(guessingValue);
+		if (correctWord != -1) {	// if the user typed in a word correctly ...
+			document.getElementById("passwordGuess").value = '';
+			this.score++;
+			document.getElementById("scoreboard").innerHTML = "SCORE: "+this.score;
+			var correctWordIndex = this.words.indexOf(guessingValue);
+			this.removeWord(correctWordIndex);
+			if (this.score == 10) { 
+				alert("YAY"); 
+				this.clearScreen();
+				clearInterval(); 
 			}
-		}, 500);*/
+		}
+	}
+
+	removeWord(id) {
+		var wordToRemove = this.words[id];
+		this.shownWords.push(wordToRemove);
+		var OSWId = this.onScreenWords.indexOf(wordToRemove);
+		this.onScreenWords.splice(OSWId, 1);	// remove only the element at index
+		var elemToRemove = document.getElementById("word"+id);
+		if (elemToRemove != null) {
+			elemToRemove.remove();
+			console.log("Removed word"+id);
+			if (this.score <= 10) { 
+				this.addNewWord();
+			}
+		}
+		else {
+			console.log("Null element removal FAIL");
+		}
+	}
+
+	clearScreen() {
+		var allWords = document.getElementsByClassName("word");
+		while (allWords.length > 0) {
+			for (var i = 0; i < allWords.length; i++) {
+				allWords[i].remove();
+			}
+			allWords = document.getElementsByClassName("word");
+		}
+				
 	}
 }

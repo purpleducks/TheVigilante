@@ -47,7 +47,7 @@ class Character {   // factory class
         console.log("CHARACTER: Sending this to screen: " +justTheSpeech);
         this.typer = new TypeIt("#"+this.name+"Speech", {
             strings: justTheSpeech,
-            speed: 70,
+            speed: 100,
             breakLines: false,
             lifeLike: true,
             nextStringDelay: [4000,500],

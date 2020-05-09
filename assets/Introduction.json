@@ -461,7 +461,6 @@
                "(ignores Marcus)"
             ],
             "link":[
-               "HackOneSuccess",
                "ScammerBlogger",
                "DidntReadBlog",
                "IgnoresMarcus"
@@ -668,9 +667,9 @@
          },
          {
             "content":[
-               "Nadine: 'Well his story checks out, he's got a GoFundMe page for his dad'",
-               "Nadine: 'and he was talking to his family and friends almost constantly about him'",
-               "Marcus: 'damn, that sounds like how it was with Mom'"
+               "Nadine: 'Well his story checks out, he's got a GoFundMe page for his Dad'",
+               "Nadine: 'And he was talking to his family and friends almost constantly about him'",
+               "Marcus: 'Damn, that sounds like how it was with Mom....'"
             ],
             "link":[
                "ThinkingAboutMom"
@@ -1008,7 +1007,6 @@
             "images":[
                "laptop-desk.jpg"
             ],
-            "badtrait":true,
             "narration":true,
             "name":"TooAggressive",
             "texting":true,
@@ -1193,7 +1191,6 @@
                "laptop-desk.jpg",
                "laptop-desk.jpg"
             ],
-            "goodtrait":true,
             "dialogue":true,
             "characters":[
                "Nadine",
@@ -1234,7 +1231,6 @@
             "images":[
                "laptop-desk.jpg"
             ],
-            "badtrait":true,
             "narration":true,
             "name":"Ghosted",
             "texting":true,
@@ -1308,7 +1304,7 @@
          },
          {
             "content":[
-               "That could have been handled better"
+               "That could have been handled better ...."
             ],
             "link":[
                "FINISH"
@@ -1331,7 +1327,6 @@
             "images":[
                "laptop-desk.jpg"
             ],
-            "badtrait":true,
             "narration":true,
             "characters":[
                "Nadine",
@@ -1351,7 +1346,6 @@
             "images":[
                "laptop-desk.jpg"
             ],
-            "badtrait":true,
             "narration":true,
             "characters":[
                "Nadine",
@@ -1394,7 +1388,6 @@
             "images":[
                "laptop-desk.jpg"
             ],
-            "goodtrait":true,
             "dialogue":true,
             "characters":[
                "Nadine",

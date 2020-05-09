@@ -37,4 +37,36 @@
   border-radius: 25px;
   opacity: 0.6;
   font-family: IBMPlex;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  z-index: 1; 
+}
+
+#scoreboard {
+  z-index: 3;
+  position: absolute;
+  font-size: 2vw;
+  color: white;
+  font-family: IBMPlex;
+  background-color: gray;
+  border-radius: 7px; 
+  bottom: 0.4vh;
+  left: 1vw;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#passwordGuess {
+  position: absolute;
+  bottom: 3vh;
+  width: 80%;
+  left: 14vw;
+  height: 6%;
+  border-radius: 17px;
+  color: white;
+  background-color: darkgreen;
+  font-size: 3vh;
+  font-family: IBMPlex;
+  z-index: 2;
 }

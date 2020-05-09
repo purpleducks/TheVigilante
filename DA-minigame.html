@@ -17,9 +17,12 @@
         <div id="minigameLayer">
             <script type="text/javascript">
                 var minigameObj = new DictionaryAttack("Dictionary Attack", 1);
+                document.getElementById("minigameLayer").minigameObj = minigameObj;
                 minigameObj.loadWords();
                 // minigameObj.runGame();
             </script>
+            <h1 id="scoreboard"> SCORE: 0</h1> 
+            <input type="text" id="passwordGuess" onkeyup="document.getElementById('minigameLayer').minigameObj.checkWord()"><br><br>
         </div>
     </body>
 </html>
