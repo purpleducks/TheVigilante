@@ -9,20 +9,28 @@
         <script src="js/DA-minigame.js" charset="utf-8"></script>
         <link rel="icon" type="image/png" href="favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/DA-minigame.css">
     </head>
-    <body>
+    <body onload="loadWords()">
         <img id="matrixBg" src="images/matrix.gif">
         <div id="minigameLayer">
-            <script type="text/javascript">
-                var minigameObj = new DictionaryAttack("Dictionary Attack", 1);
-                document.getElementById("minigameLayer").minigameObj = minigameObj;
-                minigameObj.loadWords();
-                // minigameObj.runGame();
-            </script>
             <h1 id="scoreboard"> SCORE: 0</h1> 
-            <input type="text" id="passwordGuess" onkeyup="document.getElementById('minigameLayer').minigameObj.checkWord()"><br><br>
+            <form type="text" onsubmit="checkWord(); return false;">
+                <input type="text" name="passwordGuess" id="passwordGuess" >
+                <br><br>
+            </form>
+            <div id="gameResult" style="visibility: hidden;">
+                    <div class="chatWindowBG">
+                    </div>
+                    <div class="chatWindowFG">
+                        <p id="gameResultSpeech"></p>
+                    </div>
+            </div>
+            <a onclick="playPauseMusic()">
+                <img src="images/pause-music-icon.png" id="musicControl"/>
+            </a>
+            <h5 style="visibility:hidden" id="musicControlLabel">MUSIC PLAY/PAUSE</h5>
+            <audio autoplay loop id="musicPlayer"><source src="music/Cold-Fire.mp3" type="audio/mpeg"></audio>
         </div>
     </body>
 </html>

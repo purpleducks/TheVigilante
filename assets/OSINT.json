@@ -1085,7 +1085,7 @@
             "content":[
                "Nadine: 'Damn, Dad was right, they're are others who are trying to fight them.'",
                "Nadine: 'Wish I listened to him, he might still be here now ...'",
-               "Nadine: 'Let's reach out, but I guess I'll have to pretend to be Sam, but from a different account."
+               "Nadine: 'Let's reach out, but I guess I'll have to pretend to be Jack, but from a different account."
             ],
             "link":[
                "AnonEmail-NadineReachesOut-1"
@@ -1102,7 +1102,7 @@
          {
             "name":"AnonEmail-NadineReachesOut-1",
             "content":[
-               "Nadine makes an email account that looks similar to Sam's email address."
+               "Nadine makes an email account that looks similar to Jack's email address."
             ],
             "link":[
                "AnonEmail-NadineReachesOut-2"
@@ -1116,9 +1116,9 @@
          {
             "name":"AnonEmail-NadineReachesOut-2",
             "content":[
-               "Nadine: 'Hi there! It's Sam, I got your email but I lost access to my inbox, which is why I'm emailing you from this address.'",
+               "Nadine: 'Hi there! It's Jack, I got your email but I lost access to my inbox, which is why I'm emailing you from this address.'",
                "Nadine: 'Would you mind texting me instead? I'm easier to reach on there, so here's my number if you want to talk!'",
-               "Nadine: 'Talk soon! Sam.'"
+               "Nadine: 'Talk soon! Jack.'"
             ],
             "link":[
                "AnonEmail-NadineReachesOut-3"
@@ -1139,7 +1139,7 @@
                " ......... ",
                "After about 15 minutes, the Anonymous person replies to Nadine's email with just a phone number.",
                "Nothing else. Nadine is suspicious.",
-               "She opens her phone and introduces herself as Sam to the Anonymous person"
+               "She opens her phone and introduces herself as Jack to the Anonymous person"
             ],
             "link":[
                "AnonEmail-NadineReachesOut-4"
@@ -1156,7 +1156,7 @@
          {
             "name":"AnonEmail-NadineReachesOut-4",
             "content":[
-               "Nadine: 'hi there! it's Sam, thanks for your email'",
+               "Nadine: 'hi there! it's Jack, thanks for your email'",
                "Nadine: 'when I got your email, I was so happy, like I knew there had to be others!'",
                "Anonymous-Sender: 'my pleasure, and yeah i know it's not my story but I care for my friend yknow?'"
             ],
@@ -1929,7 +1929,7 @@
          {
             "name":"BloggerAndDarren",
             "content":[
-               "Nadine remembers reading emails from a man called Darren, that Sam was talking to.",
+               "Nadine remembers reading emails from a man called Darren, that Jack was talking to.",
                "'He worked in their Sales department! He must know what really goes on in there', Nadine thought",
                "So she searches for him on the site...",
                "After a lot of searching, Nadine manages to find him and discovers that he's a Manager in their Sales department."
@@ -2348,7 +2348,7 @@
          {
             "name":"NadineTalksToDarren",
             "content":[
-               "Nadine: 'hey it's Sam, the blogger?'",
+               "Nadine: 'hey it's Jack, the blogger?'",
                "Nadine: 'I tried to email you but it wouldn't let me for some reason, so I thought I would reach out on here.'",
                "Nadine: 'I've been looking into HealthCorp, I'm trying to do an expose of sorts on their shady business practices, think you can help?'"
             ],
@@ -2548,7 +2548,7 @@
                "Darren: 'I'm glad, hopefully you can find a way to get some evidence and expose them for the scum that they are.'",
                "Darren: 'Only reason why I'm still working there is because the pay is good and I'm locked in for another 2 years'",
                "Nadine: 'What do you mean? They can't force you to work there surely?'",
-               "Darren: 'Cmon Sam you've seen what HealthCorp is capable of, they do what they like.'",
+               "Darren: 'Cmon Jack you've seen what HealthCorp is capable of, they do what they like.'",
                "Nadine: 'well someone's gotta do something about it, that might as wel be me.'",
                "Darren: 'You can't be serious? You're not gonna be able to just waltz in and press the big red button yknow?'"
             ],
@@ -2799,7 +2799,7 @@
                "Nadine: 'What else am I meant to think Darren?'",
                "Nadine: 'You work at HealthCorp, how can I trust anything you say?'",
                "Darren: 'I'm not some sort of predator, I wanna get HealthCorp just like you do!'",
-               "Darren: 'And I genuinely like you Sam, why would I fake that? I'm not some corporate puppet!'"
+               "Darren: 'And I genuinely like you Jack, why would I fake that? I'm not some corporate puppet!'"
             ],
             "link":[
                "ND-DIM-Decision-Two"
@@ -2820,7 +2820,7 @@
                "Nadine: 'I just have a bad feeling, like I think you're trying to play me here.'",
                "Nadine: 'You popped up to me after I posted my post about HealthCorp, and were acting really sweet. Would you blame me for being suspicious?'",
                "Nadine: 'Like what else am I meant to think?'",
-               "Darren: 'Whatever, good luck then. You better watch your back, Sam."
+               "Darren: 'Whatever, good luck then. You better watch your back, Jack."
             ],
             "link":[
                "DarrenIsAThreat"
@@ -2968,7 +2968,7 @@
                "Nadine: 'Then stand in front of me and say how much you hate them? It doesn't make sense to me.'",
                "Darren: 'I don't know what I can say to you to convince you that I'm on your side, like I'm forced to work there.'",
                "Nadine: 'There is nothing you can say, you've proven that you aren't to be trusted.'",
-               "Darren: 'Whatever, good luck then. You better watch your back, Sam.'"
+               "Darren: 'Whatever, good luck then. You better watch your back, Jack.'"
             ],
             "link":[
                "DarrenIsAThreat"
@@ -3063,7 +3063,7 @@
             "content":[
                "Darren: 'Well I really appreciate that. The world needs to know how evil HealthCorp really are.'",
                "Nadine: 'You're damn right they do, I hope we can expose them.'",
-               "Darren: 'You bet, anyways, talk soon. Stay safe Sam xx'"
+               "Darren: 'You bet, anyways, talk soon. Stay safe Jack xx'"
             ],
             "link":[
                "NadineLogsOut"
@@ -3099,7 +3099,7 @@
             "name":"ND-PassiveAggressiveNad",
             "content":[
                "Nadine: 'Don't be worrying about me, I'm good.'",
-               "Darren: 'Hmm, I bet, talk soon Sam xx'"
+               "Darren: 'Hmm, I bet, talk soon Jack xx'"
             ],
             "link":[
                "NadineLogsOut"
@@ -3142,7 +3142,7 @@
                "Nadine: 'I just don't know what to believe with you'",
                "Nadine: 'It's all a bit too suspicious for me though'",
                "Darren: 'Whatever, I was only trying to help but good luck anyway.'",
-               "Darren: 'Watch your back Sam.'"
+               "Darren: 'Watch your back Jack.'"
             ],
             "link":[
                "DarrenIsAThreat"
@@ -3160,7 +3160,7 @@
          {
             "name":"ND-NadineGhostsDarren",
             "content":[
-               "Darren: 'So that's how it is? Real mature Sam'",
+               "Darren: 'So that's how it is? Real mature Jack'",
                "Darren: 'Whatever, you better watch yourself.'"
             ],
             "link":[

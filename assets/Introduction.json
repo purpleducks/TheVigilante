@@ -7,8 +7,8 @@
                "Nadine wakes up late, gets ready and turns on her computer to see what's going on.",
                "As usual, she does her daily ritual of searching for stories about HealthCorp and anyone trying to sue them like her father did all those years ago.",
                "This is when she stumbles upon a blog post; it reads 'HealthCorp are EVIL!!'.",
-               "Sam talks about how his father had terminal cancer and how HealthCorp cancelled his father's insurance just as he was about to start chemo",
-               "They couldn't keep up with the payments and Sam had to work two jobs and re-mortgage his house just to make the payments."
+               "Jack talks about how his father had terminal cancer and how HealthCorp cancelled his father's insurance just as he was about to start chemo",
+               "They couldn't keep up with the payments and Jack had to work two jobs and re-mortgage his house just to make the payments."
             ],
             "link":[
                "Investigate blog decision"
@@ -23,7 +23,7 @@
             ],
             "characters":[
                "Nadine",
-               "Sam"
+               "Jack"
             ],
             "narration":true,
             "name":"Opening Speech",
@@ -97,8 +97,8 @@
                "Nadine wakes up late, gets ready and turns on her computer to see what's going on.",
                "As usual, she does her daily ritual of searching for stories about HealthCorp and anyone trying to sue them like her father did all those years ago.",
                "This is when she stumbles upon a blog post; it reads 'HealthCorp are EVIL!!'.",
-               "Sam talks about how his father had terminal cancer and how HealthCorp cancelled his father's insurance just as he was about to start chemo",
-               "They couldn't keep up with the payments and Sam had to work two jobs and re-mortgage his house just to make the payments."
+               "Jack talks about how his father had terminal cancer and how HealthCorp cancelled his father's insurance just as he was about to start chemo",
+               "They couldn't keep up with the payments and Jack had to work two jobs and re-mortgage his house just to make the payments."
             ],
             "link":[
                "Investigate blog decision"
@@ -113,7 +113,7 @@
             ],
             "characters":[
                "Nadine",
-               "Sam"
+               "Jack"
             ],
             "narration":true,
             "name":"Opening Speech",
@@ -141,8 +141,8 @@
          },
          {
             "content":[
-               "Nadine decides to investigate this further and investigate Sam's story (it was posted late last night)",
-               "After a lot of trawling, she finds Sam's social media profile and a post to a GoFundMe page, where he was raising money for his dad's treatment"
+               "Nadine decides to investigate this further and investigate Jack's story (it was posted late last night)",
+               "After a lot of trawling, she finds Jack's social media profile and a post to a GoFundMe page, where he was raising money for his dad's treatment"
             ],
             "link":[
                "Investigate blog post decision"
@@ -154,14 +154,14 @@
             "narration":true,
             "characters":[
                "Nadine",
-               "Sam"
+               "Jack"
             ],
             "name":"Investigate blog post",
             "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
-               "Does Nadine hack into Sam's social media profile?",
+               "Does Nadine hack into Jack's social media profile?",
                "Hacks into social media profile",
                "Leaves it and turns laptop off"
             ],
@@ -175,7 +175,7 @@
             "decision":true,
             "characters":[
                "Nadine",
-               "Sam"
+               "Jack"
             ],
             "name":"Investigate blog post decision",
             "music":"A-Stranger-Thing.mp3"
@@ -193,15 +193,15 @@
             "narration":true,
             "characters":[
                "Nadine",
-               "Sam"
+               "Jack"
             ],
             "name":"Probably a scam",
             "music":"Fresh-Fallen-Snow.mp3"
          },
          {
             "content":[
-               "Nadine decides to launch a dictionary attack on Sam's social media profile.",
-               "Nadine manages to crack the Sam's password!",
+               "Nadine decides to launch a dictionary attack on Jack's social media profile.",
+               "Nadine manages to crack the Jack's password!",
                "Nadine failed to crack the password and the social media website locked her out."
             ],
             "link":[
@@ -214,16 +214,16 @@
             "minigame":true,
             "characters":[
                "Nadine",
-               "Sam"
+               "Jack"
             ],
             "name":"Social media profile hack",
             "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
-               "Nadine sees messages between Sam and his family talking about his father being in hospital",
-               "The timestamps prove that Sam wasn't lying about his father being in hospital and there are selfies of his father and Sam in a hospital bed.",
-               "Nadine is still curious about Sam, what is he hiding?."
+               "Nadine sees messages between Jack and his family talking about his father being in hospital",
+               "The timestamps prove that Jack wasn't lying about his father being in hospital and there are selfies of his father and Jack in a hospital bed.",
+               "Nadine is still curious about Jack, what is he hiding?."
             ],
             "link":[
                "Blogger email hack"
@@ -233,14 +233,14 @@
             "narration":true,
             "characters":[
                "Nadine",
-               "Sam"
+               "Jack"
             ],
             "name":"In bloggers profile",
             "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
-               "Does Nadine hack into Sam's emails?",
+               "Does Nadine hack into Jack's emails?",
                "Hack into his email - he's hiding something.",
                "He's clean, his story checks out."
             ],
@@ -253,15 +253,15 @@
             "decision":true,
             "characters":[
                "Nadine",
-               "Sam"
+               "Jack"
             ],
             "name":"Bloggers email",
             "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
-               "Nadine decides to hack into Sam's emails",
-               "Nadine managed to hack into Sam's email account.",
+               "Nadine decides to hack into Jack's emails",
+               "Nadine managed to hack into Jack's email account.",
                "They have two factor authentication enabled, they'll be surprised to get a random text. Nadine decides against continuing to hack in."
             ],
             "link":[
@@ -273,7 +273,7 @@
             "minigame":true,
             "characters":[
                "Nadine",
-               "Sam"
+               "Jack"
             ],
             "name":"Blogger email hack",
             "music":"A-Stranger-Thing.mp3"
@@ -317,7 +317,7 @@
          },
          {
             "content":[
-               "Nadine discovers that Sam is dating a HealthCorp employee called Darren Anderson",
+               "Nadine discovers that Jack is dating a HealthCorp employee called Darren Anderson",
                "Based on the emails, it looks like Darren works in HealthCorp's sales department. Nadine notes this down just in case ;)"
             ],
             "link":[
@@ -328,14 +328,14 @@
             "narration":true,
             "characters":[
                "Nadine",
-               "Sam"
+               "Jack"
             ],
             "name":"Darren email",
             "music":""
          },
          {
             "content":[
-               "Nadine discovers a lot of messages from other people who say they were screwed over by HealthCorp's tactics too. Sam even replied to some of them"
+               "Nadine discovers a lot of messages from other people who say they were screwed over by HealthCorp's tactics too. Jack even replied to some of them"
             ],
             "link":[
                "Email intrusion detected"
@@ -368,7 +368,7 @@
          {
             "content":[
                "Nadine decides that there must be more to see here and decides to download the whole inbox... ", 
-               "... but Sam must have noticed the intrusion and Nadine's download was interrupted.",
+               "... but Jack must have noticed the intrusion and Nadine's download was interrupted.",
                "She only managed to download the folder she was viewing and she loses access."
             ],
             "link":[
