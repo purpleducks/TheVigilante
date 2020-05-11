@@ -1,12 +1,18 @@
 function loadWords() {
 	addLabelToggleEL("musicControl");
-	var client = new XMLHttpRequest();
-	client.open('GET', 'assets/common-passwords.txt');
-	client.onloadend = function() {
-		document.getElementById("minigameLayer").words = client.responseText.split('\n');
-		runGame();
+	if (checkFirstVisit()) {	// if this is their first visit then ....
+		var client = new XMLHttpRequest();
+		client.open('GET', 'assets/common-passwords.txt');
+		client.onloadend = function() {
+			document.getElementById("minigameLayer").words = client.responseText.split('\n');
+			runGame();
+		}
+		client.send();
 	}
-	client.send();
+	else {
+
+	}
+	
 }
 
 function runGame() {
@@ -90,6 +96,7 @@ function animateWord(wordIndex) {
 			if (minigameLayer.score >= 42 && !minigameLayer.gameEnded) {	// if the score threshold is reached / too many words have been shown
 				// alert("YOU WON!");
 				minigameLayer.gameEnded = true;
+
 				document.getElementById("gameResult").style.visibility = "visible";
 				document.getElementById("gameResultSpeech").innerHTML = "YOU'RE IN! 👨‍💻👩‍💻";
 				document.getElementById("gameResultSpeech").style.color = "limegreen";
@@ -98,9 +105,14 @@ function animateWord(wordIndex) {
                 musicPlayer.setAttribute('src', "./music/success.mp3");
                 musicPlayer.load();
                 musicPlayer.play();
-				document.getElementById("")
+				var allActions = JSON.parse(localStorage.getItem("allActions"));
+				allActions.push("In bloggers profile");
+				localStorage.setItem("allActions", JSON.stringify(allActions));
+
 				clearScreen();
 				clearInterval();
+
+				window.location.replace("./page1.html");
 				return 0;
 			}
 			if (minigameLayer.spentWords > 70 && !minigameLayer.gameEnded) { // if the game is over ... 
@@ -114,8 +126,14 @@ function animateWord(wordIndex) {
                 musicPlayer.setAttribute('src', "./music/fail.mp3");
                 musicPlayer.load();
                 musicPlayer.play();
+                var allActions = JSON.parse(localStorage.getItem("allActions"));
+				allActions.push("Probably a scam");
+				localStorage.setItem("allActions", JSON.stringify(allActions));
+
 				clearScreen();
 				clearInterval();
+
+				window.location.replace("./page1.html");
 				return 0;
 			}
 			if (!minigameLayer.gameEnded) { // if its not 
@@ -138,6 +156,24 @@ function animateWord(wordIndex) {
 			removeWord(wordId);
 		}
 	}
+}
+
+// SOURCE: https://stackoverflow.com/a/8572030
+function checkFirstVisit() {
+  if(document.cookie.indexOf('refreshCheck')==-1) {
+    // cookie doesn't exist, create it now
+    document.cookie = 'refreshCheck=1';
+    return true;
+  }
+  else {
+    // not first visit, so alert
+    alert('Refreshing is not allowed.');		// cheating!
+    var allActions = JSON.parse(localStorage.getItem("allActions"));	
+	allActions.push("Probably a scam");	// assume fail
+	localStorage.setItem("allActions", JSON.stringify(allActions));
+	window.location.replace("./page1.html");	// redirect back to the game
+    return false;
+  }
 }
 
 function checkWord() {

@@ -18,15 +18,24 @@ class PlayerDataManager {
 		return this.playerDecisions[this.playerDecisions.length - 1];
 	}
 
+	getLastObject() {
+		return this.allActions[this.allActions.length - 1];
+	}
+
 	checkForDecision(decisionName) {
 		return this.playerDecisions.find(speechObj => speechObj === decisionName);
 	}
 
 	saveToStorage() {
-
+		localStorage.setItem('allActions', JSON.stringify(this.allActions));
+		localStorage.setItem('playerDecisions', JSON.stringify(this.playerDecisions));
 	}
 
 	loadFromStorage() {
-		
+		this.allActions = JSON.parse(localStorage.getItem("allActions"));
+		this.playerDecisions = JSON.parse(localStorage.getItem("playerDecisions"));
+		console.log("PDM - Got data from local storage");
+		console.log(this.allActions);
+		console.log(this.playerDecisions);
 	}
 }

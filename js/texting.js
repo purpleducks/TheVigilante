@@ -52,7 +52,7 @@ class Texting extends Character {
             if (currentObject.decision) { that.showDecisionButtons(); }
             else {  // decisions don't need this
                 console.log("TEXTING: Let's get the next thing.");
-                that.leaveScene();  // once the character has stopped talking, leave the scene.
+                that.getNextSpeech();  // once the character has stopped talking, leave the scene.
             }
         }, 3000);
     }

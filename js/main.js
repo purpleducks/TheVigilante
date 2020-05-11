@@ -14,12 +14,23 @@ function runGame() {
     // document.getElementById("gameContainer").addEventListener("startTexting", startProcessing, true);    TODO: fix texting / remove it at some point
 
     gameMan.introData = gameMan.introData["Introduction"]["storylines"];
-    var firstObject = gameMan.introData[0];       // get the start object
-    console.log(firstObject);
-    // gameMan.allActions.push(firstObject.name);
-    gameMan.dataManager.addToAllActions(firstObject.name);
-    document.getElementById("gameContainer").currObj = firstObject;
-    gameMan.sortSpeech(firstObject, 0);   // only for the first time
+    if (localStorage.allActions != null && localStorage.playerDecisions != null) {
+        console.log("MAIN: Loading from LocalStorage, getting last Speech Object from AllActions array");
+        gameMan.dataManager.loadFromStorage();
+        var lastObjName = gameMan.dataManager.getLastObject();
+        var lastObject = gameMan.introData.find(speechObj => speechObj.name === lastObjName);
+        console.log(lastObject);
+        document.getElementById("gameContainer").currObj = lastObject;
+        gameMan.sortSpeech(lastObject);
+    }
+    else {
+        var firstObject = gameMan.introData[0];       // get the start object
+        console.log(firstObject);
+        // gameMan.allActions.push(firstObject.name);
+        gameMan.dataManager.addToAllActions(firstObject.name);
+        document.getElementById("gameContainer").currObj = firstObject;
+        gameMan.sortSpeech(firstObject);   // only for the first time
+    }
 }
 
 /**
@@ -205,5 +216,5 @@ function main() {
     // gameContainer.style.backgroundImage = "url(images/texting.jpg)"
     gameMan.getIntro();
     gameContainer.gameMan = gameMan;
-	runGame();
+    runGame();
 }

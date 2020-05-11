@@ -7,6 +7,7 @@
     font-family: SourceCodePro;
     src: url("../assets/SourceCodePro-Regular.ttf");
 }
+
 /* -------- Positioning classes  -------- */
 .center {
     padding: 0;        /* gotten this from https://stackoverflow.com/a/7782251 */
@@ -173,12 +174,12 @@ body {
   }
 }
 
-#narrator, #decision {
+#decision, #minigame {
     position: absolute;
     width: 95%;
     height: 25%;
-    top: 2%;
     left: 5%;
+    top: 2%;
 }
 
 
@@ -256,8 +257,6 @@ body {
     /*margin-right: 4vw;*/
 }
 
-
-/* Cinematic elements */
 
 #narration {
     width: 45%;

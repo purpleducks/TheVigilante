@@ -161,6 +161,12 @@ class GameManager {    // singleton class?
             } else if (currentObject["minigame"]) {  // TODO
                 // -------- Minigames --------
                 console.log("GAME: Loading the minigame.");
+                this.dataManager.saveToStorage();
+                charctrsObjs.push(new Character("minigame", null, 'M'));
+                currentObject.charctrsObjs = charctrsObjs;
+                currentObject.charctrsObjs[0].speech = objSpeechArr;
+                currentObject.charctrsObjs[0].talk();
+                
             }
         }
     }
