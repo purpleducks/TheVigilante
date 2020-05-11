@@ -1,6 +1,6 @@
 
 function testGameJSON(json) {
-	var gameData = json.OSINT.storylines;
+	var gameData = json.Introduction.storylines;
 	var imagelessObjects = [];
 	var quietObjects = [];
 	console.log("IN TEST NOW");
@@ -86,7 +86,7 @@ function testGameJSON(json) {
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'assets/OSINT.json', true);
+    xobj.open('GET', 'assets/Introduction.json', true);
     // Replace 'my_data' with the path to your file
     xobj.onreadystatechange = function() {
         if (xobj.readyState === 4 && xobj.status === 200) {

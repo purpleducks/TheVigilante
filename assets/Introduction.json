@@ -298,7 +298,7 @@
             "decision":true,
             "HackTwoSuccess":true,
             "name":"In bloggers email",
-            "music":""
+            "music":"A-Stranger-Thing.mp3"
          },
          {
             "content":[
@@ -314,7 +314,7 @@
             "images": [
             ],
             "name":"HealthCorp email",
-            "music":""
+            "music":"Dreamy-Chill.mp3"
          },
          {
             "content":[
@@ -332,7 +332,7 @@
                "Jack"
             ],
             "name":"Darren email",
-            "music":""
+            "music":"Dreamy-Chill.mp3"
          },
          {
             "content":[
@@ -348,7 +348,7 @@
                "Nadine"
             ],
             "name":"Blog email",
-            "music":""
+            "music":"Dreamy-Chill.mp3"
          },
          {
             "content":[
@@ -364,7 +364,7 @@
                "Nadine"
             ],
             "name":"Hospital email",
-            "music":""
+            "music":"Dreamy-Chill.mp3"
          },
          {
             "content":[
@@ -382,7 +382,7 @@
                "Nadine"
             ],
             "name":"Email intrusion detected",
-            "music":""
+            "music":"download-interrupted-with-glitch.mp3"
          },
          {
             "content":[
@@ -398,7 +398,7 @@
                "Nadine"
             ],
             "name":"Closes laptop",
-            "music":""
+            "music":"Safe-From-The-Rain.mp3"
          },
          {
             "content":[
@@ -450,7 +450,7 @@
             "images": [
                "laptop-desk.jpg"
             ],
-            "music": "",
+            "music":"Dreamy-Chill.mp3",
             "systemDecision": true
          },
          {
@@ -600,11 +600,11 @@
             ],
             "name":"DidntReadBlog",
             "texting":true,
-            "music":"Emotional.mp3"
+            "music":"Safe-From-The-Rain.mp3"
          },
          {
             "content":[
-               "Marcus: 'okaaay, guess we'll talk later then, stay safe sis, it's a dangerous world out there'"
+               "Marcus: 'Okaaay, guess we'll talk later then, stay safe sis, it's a dangerous world out there'"
             ],
             "link":[
                "FINISH"
@@ -619,7 +619,7 @@
             ],
             "name":"IgnoresMarcus",
             "texting":true,
-            "music":""
+            "music":"Safe-From-The-Rain.mp3"
          },
          {
             "name": "HackTwoSuccess-SD-One",
@@ -691,8 +691,8 @@
          },
          {
             "content":[
-               "Nadine: 'Don't you? I mean what they did to her was so fucked up'",
-               "Nadine: 'It's unforgiveable.'"
+               "Nadine: 'Don't you? I mean what they did to her was so fucked up!'",
+               "Nadine: 'It's completely unforgiveable.'"
             ],
             "link":[
                "SadMarcus"
@@ -708,14 +708,14 @@
             ],
             "name":"SadNadine",
             "texting":true,
-            "music":"Emotional.mp3"
+            "music":"Safe-From-The-Rain.mp3"
          },
          {
             "content":[
-               "Marcus: 'Of course I do but you gotta move on with your life Nadine'",
-               "Marcus: 'You can't let this take over ya life.'",
+               "Marcus: 'Of course I do but you gotta move on with your life Nadine...'",
+               "Marcus: 'You can't let our past take over ya life, we've got to carry on, it's what Mom would want!",
                "Nadine: 'If you're trying to say don't turn into Dad, just tell me straight up Marcus.",
-               "Marcus: 'I didn't say that Nads, I just worry about you okay?"
+               "Marcus: 'I didn't say that Nads! I just worry about you, okay?"
             ],
             "link":[
                "MarcusWorriesAbtNadine-Decision"
@@ -733,7 +733,7 @@
             ],
             "name":"SadMarcus",
             "texting":true,
-            "music":"Emotional.mp3"
+            "music":"Safe-From-The-Rain.mp3"
          },
          {
             "name":"MarcusWorriesAbtNadine-Decision",
@@ -753,7 +753,7 @@
             "images":[
                "laptop-desk.jpg"
             ],
-            "music":"",
+            "music":"Safe-From-The-Rain.mp3",
             "decision":true,
             "texting":true
          },
@@ -778,7 +778,7 @@
                "Nadine",
                "Marcus"
             ],
-            "music":"",
+            "music":"Safe-From-The-Rain.mp3",
             "dialogue":true,
             "texting":true
          },
@@ -801,14 +801,14 @@
                "Nadine",
                "Marcus"
             ],
-            "music":"",
+            "music":"Safe-From-The-Rain.mp3",
             "dialogue":true,
             "texting":true
          },
          {
             "name":"MWAN-NadsIsOffended",
             "content":[
-               "Nadine: 'Yeah, well you didn't have to say anything, why you don't let anything be?'",
+               "Nadine: 'Yeah, well you didn't have to say anything, why don't you let anything be?'",
                "Marcus: 'I'm sorry Nads, I just worry about you okay? Sue me 🤷‍'",
                "Nadine: 'Whatever, I'll talk to you tomorrow",
                "Marcus: 'Okay.. talk soon.'"
@@ -826,7 +826,7 @@
                "Nadine",
                "Marcus"
             ],
-            "music":"",
+            "music":"Safe-From-The-Rain.mp3",
             "dialogue":true,
             "texting":true
          },
@@ -841,7 +841,7 @@
             "images":[
                "laptop-desk.jpg"
             ],
-            "music":"",
+            "music":"Safe-From-The-Rain.mp3",
             "narration":true,
             "texting":true
          },
@@ -864,10 +864,10 @@
             "content":[
                "Nadine: 'HealthCorp just won't quit with them, he put up his post about how they treated his dad and within an hour, they were filling up his inbox with cease and desist statements and threatening to sue for defamation'",
                "Nadine: 'I can't even imagine what that would be like, poor thing'",
-               "Nadine: 'like haven't they been through enough?! man'",
-               "Marcus: 'fuuuck man, that's brutal. why they comin for him like that? he ain't even THAT popular.'",
-               "Marcus: 'they'll just go after anyone who speaks outta line'",
-               "Marcus: 'you better be careful sis, I don't want anything happening to ya'"
+               "Nadine: 'Like haven't they been through enough?! man'",
+               "Marcus: 'Fuuuck man, that's brutal. why they comin for him like that? he ain't even THAT popular.'",
+               "Marcus: 'They'll just go after anyone who speaks outta line'",
+               "Marcus: 'You better be careful sis, I don't want anything happening to ya'"
             ],
             "link":[
                "MarcusWarning"
@@ -891,9 +891,9 @@
          },
          {
             "content":[
-               "Nadine: 'turns out our blogger is dating a HealthCorp employee called Darren Anderson'",
-               "Nadine: 'works in sales, probably used them to see what they knew about HealthCorp's tactics'",
-               "Nadine: 'could be a good way into their HQ 👀👀👀'"
+               "Nadine: 'Turns out our blogger is dating a HealthCorp employee called Darren Anderson'",
+               "Nadine: 'Works in sales, probably used them to see what they knew about HealthCorp's tactics'",
+               "Nadine: 'Could be a good way into their HQ 👀👀👀'"
             ],
             "link":[
                "MarcusDarren2"
@@ -914,12 +914,12 @@
          },
          {
             "content":[
-               "Nadine: 'there's a bunch of people in this blogger's inbox talkin about how HealthCorp screwed them over too'",
+               "Nadine: 'There's a bunch of people in this blogger's inbox talkin about how HealthCorp screwed them over too'",
                "Nadine: 'I'm glad we weren't the only ones'",
-               "Marcus: 'what does it matter? Moms dead and Dad is... well Dad'",
-               "Marcus: 'doesn't do anything for us Nad'",
-               "Nadine: 'when enough people get mad they can rise up and fight'",
-               "Nadine: 'it means the tide is turning, and HealthCorp are gonna get what they deserve'"
+               "Marcus: 'What does it matter? Moms dead and Dad is... well Dad'",
+               "Marcus: 'Doesn't do anything for us Nad'",
+               "Nadine: 'When enough people get mad they can rise up and fight'",
+               "Nadine: 'It means the tide is turning, and HealthCorp are gonna get what they deserve'"
             ],
             "link":[
                "MarcusQuestioningNadine"
@@ -943,15 +943,15 @@
          },
          {
             "content":[
-               "Nadine: 'they got stuck with thousands of dollars of medical bills after HealthCorp screwed em over'",
-               "Nadine: 'doesn't look like the hospital's cutting em any slack either.'",
-               "Nadine: 'worst still, the GoFundMe is nowhere near close enough to paying it all off. I can't believe they can get away with this sort of shit every day'",
-               "Marcus: 'they gonna keep on doing it until it stops making them money'",
-               "Marcus: 'that's how they make their money, by killing off poor people with crazy medical bills that they never gonna be able to pay'",
-               "Marcus: 'that's how they own you.",
-               "Nadine: 'don't I know it, I never told you how grateful I was to you for pushing me when we was young'",
-               "Marcus: 'that's what I'm here for sis'",
-               "Marcus: 'especially after dad checked out, I gotta look out for my little sister haha'"
+               "Nadine: 'They got stuck with thousands of dollars of medical bills after HealthCorp screwed em over'",
+               "Nadine: 'Doesn't look like the hospital's cutting em any slack either.'",
+               "Nadine: 'Worst still, the GoFundMe is nowhere near close enough to paying it all off. I can't believe they can get away with this sort of shit every day'",
+               "Marcus: 'They gonna keep on doing it until it stops making them money'",
+               "Marcus: 'That's how they make their money, by killing off poor people with crazy medical bills that they never gonna be able to pay'",
+               "Marcus: 'That's how they own you.",
+               "Nadine: 'Don't I know it, I never told you how grateful I was to you for pushing me when we was young'",
+               "Marcus: 'That's what I'm here for sis'",
+               "Marcus: 'Especially after dad checked out, I gotta look out for my little sister haha'"
             ],
             "link":[
                "RememberingMom"
@@ -974,14 +974,14 @@
             ],
             "name":"MarcusHospital",
             "texting":true,
-            "music":"Emotional.mp3"
+            "music":"Safe-From-The-Rain.mp3"
          },
          {
             "name":"MarcusWarning",
             "content":[
                "How does Nadine reply?",
-               "thanks for the warning bro, but I think I got it.",
-               "just like they did Mom?"
+               "Thanks for the warning bro, but I think I got it.",
+               "Just like they did Mom?"
             ],
             "link":[
                "TooAggressive",
@@ -994,7 +994,7 @@
                "Nadine",
                "Marcus"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "texting":true,
             "decision":true
          },
@@ -1011,14 +1011,14 @@
             "narration":true,
             "name":"TooAggressive",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
-               "Nadine: 'just like they did Mom?'",
+               "Nadine: 'Just like they did Mom?'",
                "Marcus: '....yeah, like they did Mom'",
-               "Marcus: 'just don't do anything rash little sister'",
-               "Marcus: 'it's my job to keep you safe remember :')'"
+               "Marcus: 'Just don't do anything rash little sister'",
+               "Marcus: 'It's my job to keep you safe remember :')'"
             ],
             "link":[
                "FINISH"
@@ -1036,15 +1036,15 @@
             ],
             "name":"DeadMom",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
-               "Marcus: 'nooo Nadine, don't be saying that'",
-               "Marcus: 'man it's like you wanna get on the wrong side of these people'",
-               "Marcus: 'these aren't people you wanna be playin with sis! these are the most dangerous people in the country'",
-               "Marcus: 'they own Supreme judges, politicians, police chiefs, all the way down to the fuckin parking attendants'",
-               "Marcus: 'they will mess your life up just like they did when Mom died'"
+               "Marcus: 'Nadine, don't be saying that'",
+               "Marcus: 'Man it's like you wanna get on the wrong side of these people'",
+               "Marcus: 'These aren't people you wanna be playin with sis! these are the most dangerous people in the country'",
+               "Marcus: 'They own Supreme judges, politicians, police chiefs, all the way down to the fuckin parking attendants'",
+               "Marcus: 'They will mess your life up just like they did when Mom died'"
             ],
             "link":[
                "NadineDarrenDecisionOne"
@@ -1063,7 +1063,7 @@
             ],
             "name":"MarcusDarren2",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
@@ -1083,11 +1083,11 @@
             "name":"NadineDarrenDecisionOne",
             "texting":true,
             "decision":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
-               "Nadine: 'bro, you need to chill.'",
+               "Nadine: 'Bro, you need to chill.'",
                "Marcus: 'I'm sorry sis but I'm just keepin it real with you'",
                "Marcus: 'I don't want anything happening to you'"
             ],
@@ -1106,7 +1106,7 @@
             ],
             "name":"YouNeedToCalmDown",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
@@ -1130,7 +1130,7 @@
             ],
             "name":"FuckYouMan",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
@@ -1153,7 +1153,7 @@
             ],
             "name":"ImAPro",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
@@ -1174,7 +1174,7 @@
             ],
             "name":"NadineDarrenDecisionThree",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
@@ -1220,7 +1220,7 @@
             ],
             "name":"MarcusApology",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
@@ -1235,7 +1235,7 @@
             "narration":true,
             "name":"Ghosted",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
@@ -1255,7 +1255,7 @@
             "decision":true,
             "name":"NadineDarrenDecisionTwo",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
@@ -1278,7 +1278,7 @@
             ],
             "name":"NadineIsStrongAggy",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
@@ -1301,7 +1301,7 @@
             ],
             "name":"YouThinkImDumb",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
@@ -1316,7 +1316,7 @@
             "narration":true,
             "name":"FuckedIt",
             "texting":true,
-            "music":""
+            "music":"Safe-From-The-Rain-uhoh.mp3"
          },
          {
             "content":[
@@ -1335,7 +1335,7 @@
             ],
             "name":"TooAggressiveFYM",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
@@ -1354,13 +1354,13 @@
             ],
             "name":"TooAggressiveStub",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
-               "Marcus: 'how you gonna do that now?'",
-               "Marcus: 'you don't wanna play with these people Nad'",
-               "Marcus: 'these the kind of people that can erase you and no one would know'"
+               "Marcus: 'How you gonna do that now?'",
+               "Marcus: 'You don't wanna play with these people Nad'",
+               "Marcus: 'These the kind of people that can erase you and no one would know'"
             ],
             "link":[
                "MarcusWarning"
@@ -1377,11 +1377,11 @@
             ],
             "name":"MarcusQuestioningNadine",
             "texting":true,
-            "music":""
+            "music":"Memory-Lapse.mp3"
          },
          {
             "content":[
-               "Nadine: 'yeah everything went to fuck after Mom died, you really kept us all together'"
+               "Nadine: 'Yeah everything went to fuck after Mom died, you really kept us all together'"
             ],
             "link":[
                "RM-NiceToMarcus"
@@ -1396,7 +1396,7 @@
             ],
             "name":"RememberingMom",
             "texting":true,
-            "music":"Emotional.mp3"
+            "music":"Safe-From-The-Rain.mp3"
          },
          {
             "name":"RM-NiceToMarcus",
@@ -1409,14 +1409,14 @@
             "images":[
                "laptop-desk.jpg"
             ],
-            "music":"",
+            "music":"Safe-From-The-Rain.mp3",
             "narration":true
          },
          {
             "name":"MarcusGottaGo",
             "content":[
-               "Marcus: 'look I gotta go, but call me if you need anything'",
-               "Marcus: 'and be careful with HealthCorp, those fuckers aren't messing around Nadine'"
+               "Marcus: 'Look I gotta go, but call me if you need anything'",
+               "Marcus: 'And be careful with HealthCorp, those fuckers aren't messing around Nadine'"
             ],
             "link":[
                "FINISH"
@@ -1429,7 +1429,7 @@
                "Nadine",
                "Marcus"
             ],
-            "music":"",
+            "music":"Safe-From-The-Rain.mp3",
             "dialogue":true
          },
          {
@@ -1448,7 +1448,7 @@
             "decision":true,
             "name":"ThinkingAboutMom",
             "texting":true,
-            "music":""
+            "music":"Safe-From-The-Rain.mp3"
          },
          {
             "name":"TAM-NadineResponse",
@@ -1464,7 +1464,7 @@
             "characters":[
                "Nadine"
             ],
-            "music":"",
+            "music":"Safe-From-The-Rain.mp3",
             "dialogue":true,
             "texting":true
          },
@@ -1484,7 +1484,7 @@
             ],
             "decision":true,
             "texting":true,
-            "music":""
+            "music":"Dreamy-Chill.mp3"
          }
       ]
    }

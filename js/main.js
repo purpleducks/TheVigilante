@@ -79,12 +79,18 @@ function startProcessing(evt, nextObject) {
         currObj = nextObject;
     }
     // var nextObject = gameMan.introData.find(speechObj => speechObj.name === currObj.link[0]);
-    document.getElementById("gameContainer").currObj = currObj;
-    // evt.currentTarget.currObj = nextObject;
-    // gameMan.allActions.push(nextObject.name);
-    console.log("MAIN: We processing the object called: "+ currObj.name);
-    gameMan.dataManager.addToAllActions(currObj.name);
-    gameMan.sortSpeech(currObj, 0);
+    if (currObj.name != "FINISH") {
+         document.getElementById("gameContainer").currObj = currObj;
+        // evt.currentTarget.currObj = nextObject;
+        // gameMan.allActions.push(nextObject.name);
+        console.log("MAIN: We processing the object called: "+ currObj.name);
+        gameMan.dataManager.addToAllActions(currObj.name);
+        gameMan.sortSpeech(currObj, 0);
+    }
+    else {
+        console.log("WE DONEEEEEEEEEEEEEE");
+    }
+   
     if (evt instanceof Event) { evt.stopPropagation(); }
 }
 
