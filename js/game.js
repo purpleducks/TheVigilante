@@ -1,9 +1,6 @@
 class GameManager {    // singleton class?
     
     constructor() {
-        this.introData = []
-        this.allActions = [];
-        this.playerDecisions = [];
         this.dataManager = new PlayerDataManager();
         this.soIndex = 0;
     }
@@ -16,21 +13,6 @@ class GameManager {    // singleton class?
         // save the player's game into the HTML5 LocalStorage
     }
     
-    getIntro() {
-        var tempData = [];
-        $.ajax({
-            url: "assets/Introduction.json",
-            dataType: "json",
-            data: tempData,
-            async: false,
-            success: function(json)
-            {
-                tempData = json;
-                console.log("UHUHU");
-            }
-        });
-        this.introData = tempData;
-    }
     
     incrementSOIndex() {
         this.soIndex++;
