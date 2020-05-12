@@ -42,7 +42,6 @@ body {
 
 .word {
   position: absolute;
-  width: 8vw;
   height: 5vh;
   background-color: white;
   border-radius: 25px;
@@ -52,6 +51,8 @@ body {
   justify-content: center;
   align-items: center; 
   z-index: 1; 
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #scoreboard {
@@ -62,10 +63,9 @@ body {
   font-family: IBMPlex;
   background-color: gray;
   border-radius: 7px; 
-  bottom: 0.4vh;
+  bottom: 0.5vh;
   left: 1vw;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 7px; 
 }
 
 #passwordGuess {
@@ -81,6 +81,38 @@ body {
   font-family: IBMPlex;
   z-index: 2;
   padding-left: 1%;
+}
+
+#gameOverMeter {
+  position: absolute;
+  bottom: 11vh;
+  width: 70%;
+  left: 14.5vw;
+  height: 4%;
+  background-color: #626262;
+  border-radius: 17px;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+   appearance: none;
+   -moz-appearance: none;
+   border: none;
+   z-index: 1;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: red;
+  opacity: 0.7;
+  border-radius: 1;
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;*/
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: red;
+  opacity: 0.7  ;
+  border-radius: 17px;
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;*/
 }
 
 .chatWindowBG {
@@ -137,7 +169,7 @@ body {
   left: 20%;
 }
 
-#musicControlLabel {
+#musicControlLabel, #gOMLabel {
   position: absolute;
   color: white;
   bottom: 7.5%;
@@ -145,6 +177,12 @@ body {
   font-size: 0.6vw;
   font-family: IBMPlex;
   z-index: 4;
+}
+
+#gOMLabel {
+  bottom: 13%;
+  right: 44vw;
+  font-size: 1vw;
 }
 
 #musicControl {

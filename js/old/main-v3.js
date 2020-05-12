@@ -1,16 +1,16 @@
 
-function getIntro(introData) {
+function getIntro(data) {
     $.ajax({
         url: "assets/Introduction.json",
         dataType: "json",
-        data: introData,
+        data: data,
         async: false,
         success: function(json)
         {
-            introData = json;
+            data = json;
         }
     });
-    return introData;
+    return data;
 }
 
 /*
@@ -23,10 +23,10 @@ function getIntro(introData) {
 	closing event. These names correspond to PNG images in the assets folder.
 	The content is in the "content" array
 */
-function runGame(introData) {
-	console.log(introData["Introduction"]["storylines"]);	// debug - test that introdata has JSON data loaded correctly
-	var startObject = introData["Introduction"]["storylines"][0];		// get the start object
-	startObject = introData["Introduction"]["storylines"][0][Object.getOwnPropertyNames(startObject)]; // properly access the object
+function runGame(data) {
+	console.log(data["Introduction"]["storylines"]);	// debug - test that data has JSON data loaded correctly
+	var startObject = data["Introduction"]["storylines"][0];		// get the start object
+	startObject = data["Introduction"]["storylines"][0][Object.getOwnPropertyNames(startObject)]; // properly access the object
 	console.log(startObject["characters"]);
 	var displayTypes=[];
 	var functionTypes=[];
@@ -222,10 +222,10 @@ function main() {
     sceneSpeech = JSON.parse(response);
 	console.log(sceneSpeech);
 	}); */
-    var introData={};
+    var data={};
     var playerData={};
     gameContainer.style.backgroundImage="url(assets/office-bg.png)"
-	introData = getIntro(introData);
-	runGame(introData);
+	data = getIntro(data);
+	runGame(data);
     
 }

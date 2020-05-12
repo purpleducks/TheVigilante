@@ -23,7 +23,7 @@ function runGame() {
 	minigameLayer.gameEnded = false;
 	setInterval(function() {
 		var minigameLayer = document.getElementById("minigameLayer");
-		minigameLayer.spentWords++;
+		console.log("SPENT WORDS: " + minigameLayer.spentWords);
 		if (minigameLayer.spentWords < 70) {
 			addNewWord(); 
 			document.getElementById("minigameLayer").addEventListener('stopMakingWords', function() {
@@ -52,10 +52,10 @@ function addNewWord() {
 			for (var i = 0; i < tempShownWords.length; i++) {
 				minigameLayer.shownWords.push(tempShownWords[i].textContent);
 			}
-			console.log(minigameLayer.shownWords);
+			// console.log(minigameLayer.shownWords);
 			wordIndex = getRandomInt(0, minigameLayer.words.length);
 			newWordCheck = minigameLayer.shownWords.indexOf(minigameLayer.words[wordIndex]);
-			console.log("BLOOP");
+			// console.log("BLOOP");
 		}
 		minigameLayer.shownWords.push(minigameLayer.words[wordIndex]);
 		// this.onScreenWords.push(this.words[wordIndex]);
@@ -112,7 +112,9 @@ function animateWord(wordIndex) {
 				clearScreen();
 				clearInterval();
 
-				window.location.replace("./page1.html");
+				setTimeout(function() {
+					window.location.replace("./page1.html");
+				}, 2000);
 				return 0;
 			}
 			if (minigameLayer.spentWords > 70 && !minigameLayer.gameEnded) { // if the game is over ... 
@@ -138,9 +140,9 @@ function animateWord(wordIndex) {
 			}
 			if (!minigameLayer.gameEnded) { // if its not 
 				clearInterval(id);
-				console.log("BYEEEEE from "+elem.id);
+				// console.log("BYEEEEE from "+elem.id);
 				var wordId = elem.id.slice(4, elem.id.length);
-				removeWord(wordId);
+				removeWord(wordId, false);
 			}
 			else {
 				var stopMakingWords = new Event('stopMakingWords');
@@ -153,7 +155,7 @@ function animateWord(wordIndex) {
 		} else {
 			clearInterval();
 			var wordId = elem.id.slice(4, elem.id.length);
-			removeWord(wordId);
+			removeWord(wordId, false);
 		}
 	}
 }
@@ -191,29 +193,29 @@ function checkWord() {
 		minigameLayer.score += 2;
 		document.getElementById("scoreboard").innerHTML = "SCORE: "+minigameLayer.score;
 		var correctWordIndex = minigameLayer.words.indexOf(guessingValue);
-		removeWord(correctWordIndex);
+		removeWord(correctWordIndex, true);
 		if (minigameLayer.score == 42) { 
-
 			clearScreen();
 			clearInterval(); 
 		}
 	}
 }
 
-function removeWord(id) {
+function removeWord(id, correctAnswer) {
 	var minigameLayer = document.getElementById("minigameLayer");
 	var wordToRemove = minigameLayer.words[id];
 	var OSWId = minigameLayer.shownWords.indexOf(wordToRemove);
 	minigameLayer.shownWords.splice(OSWId, 1);	// remove only the element at index
 	var elemToRemove = document.getElementById("word"+id);
 	if (elemToRemove != null) {
+		minigameLayer.spentWords++;
 		elemToRemove.remove();
-		//console.log("Removed word"+id);
-		console.log(minigameLayer.shownWords.length);
-		/*
-		if (this.score <= 42) { 
-			this.addNewWord();
-		}*/
+		if (!correctAnswer) {
+			var gameOverProgress = document.getElementById("gameOverMeter");
+			gameOverProgress.value = Math.round((minigameLayer.spentWords/70)*100);
+
+		}
+		// console.log(minigameLayer.shownWords.length);
 	}
 	else {
 		console.log("Null element removal FAIL");

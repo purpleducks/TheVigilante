@@ -1,6 +1,7 @@
 function main() {
     if (document.cookie.indexOf('firstTime') == -1) { // if its the first time... 
         setTimeout(animateElemsIn, 7000);
+        localStorage.clear();   // clear previous save if this is the first time.
     }
     else {
         animateElemsIn();

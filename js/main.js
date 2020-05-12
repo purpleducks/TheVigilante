@@ -5,7 +5,7 @@
  */
 function runGame() {
     var gameMan = document.getElementById("gameContainer").gameMan;
-	console.log(gameMan.introData);	// debug - test that introData has JSON data loaded correctly
+	console.log(gameMan.dataManager.gameData);	// debug - test that data has JSON data loaded correctly
 
     document.getElementById("gameContainer").addEventListener("getDecisionObj", getDecisionObj, true);
 
@@ -13,18 +13,18 @@ function runGame() {
 
     // document.getElementById("gameContainer").addEventListener("startTexting", startProcessing, true);    TODO: fix texting / remove it at some point
 
-    gameMan.introData = gameMan.introData["Introduction"]["storylines"];
+    // gameMan.dataManager.gameData = gameMan.dataManager.gameData["Introduction"]["storylines"];
     if (localStorage.allActions != null && localStorage.playerDecisions != null) {
         console.log("MAIN: Loading from LocalStorage, getting last Speech Object from AllActions array");
         gameMan.dataManager.loadFromStorage();
         var lastObjName = gameMan.dataManager.getLastObject();
-        var lastObject = gameMan.introData.find(speechObj => speechObj.name === lastObjName);
+        var lastObject = gameMan.dataManager.gameData.find(speechObj => speechObj.name === lastObjName);
         console.log(lastObject);
         document.getElementById("gameContainer").currObj = lastObject;
         gameMan.sortSpeech(lastObject);
     }
     else {
-        var firstObject = gameMan.introData[0];       // get the start object
+        var firstObject = gameMan.dataManager.gameData[0];       // get the start object
         console.log(firstObject);
         // gameMan.allActions.push(firstObject.name);
         gameMan.dataManager.addToAllActions(firstObject.name);
@@ -42,7 +42,7 @@ function processNextObj(evt) {
     var gameMan = evt.currentTarget.gameMan;
     var currObj = evt.currentTarget.currObj;
     removeAllElements();
-    var nextObject = gameMan.introData.find(speechObj => speechObj.name === currObj.link[0]);
+    var nextObject = gameMan.dataManager.gameData.find(speechObj => speechObj.name === currObj.link[0]);
     console.log("MAIN: The next object is: " +nextObject.name);
     // checkForTextingView(nextObject);     TODO: fix texting / remove it at some point
     startProcessing(gameMan, nextObject);
@@ -57,7 +57,7 @@ function getDecisionObj(evt) {
     console.log("MAIN: Getting the next Decision object!");
     var gameMan = evt.currentTarget.gameMan;
     var linkObjName = gameMan.dataManager.getLastDecision();
-    var linkObj = gameMan.introData.find(speechObj => speechObj.name === linkObjName);
+    var linkObj = gameMan.dataManager.gameData.find(speechObj => speechObj.name === linkObjName);
     console.log("MAIN: Player chose: " +linkObjName);
     removeAllElements();
     // checkForTextingView(linkObj);        TODO: fix texting / remove it at some point
@@ -72,13 +72,13 @@ function startProcessing(evt, nextObject) {
     if (evt instanceof Event) { // sent from the showTextView subroutine
         gameMan = evt.currentTarget.gameMan;
         var lastObj = evt.currentTarget.currObj;
-        currObj = gameMan.introData.find(speechObj => speechObj.name === lastObj.link[0]);
+        currObj = gameMan.dataManager.gameData.find(speechObj => speechObj.name === lastObj.link[0]);
     }
     else {  // sent from the two main event handlers
         gameMan = evt;
         currObj = nextObject;
     }
-    // var nextObject = gameMan.introData.find(speechObj => speechObj.name === currObj.link[0]);
+    // var nextObject = gameMan.dataManager.gameData.find(speechObj => speechObj.name === currObj.link[0]);
     if (currObj.name != "FINISH") {
          document.getElementById("gameContainer").currObj = currObj;
         // evt.currentTarget.currObj = nextObject;
@@ -88,7 +88,21 @@ function startProcessing(evt, nextObject) {
         gameMan.sortSpeech(currObj, 0);
     }
     else {
-        console.log("WE DONEEEEEEEEEEEEEE");
+        if (gameMan.currentStage == "Introduction") {
+            gameMan.dataManager.getData("OSINT");
+        }
+        else if (gameMan.currentStage == "OSINT") {
+            gameMan.dataManager.getData("BreakIn");
+        }
+        else if (gameMan.currentStage == "BreakIn") {
+            gameMan.dataManager.getData("TheHack");
+        }
+        else if (gameMan.currentStage == "TheHack") {
+            gameMan.dataManager.getData("TheEscape");
+        }
+        else {
+            alert("GAME OVER!");
+        }
     }
    
     if (evt instanceof Event) { evt.stopPropagation(); }
@@ -220,7 +234,7 @@ function main() {
     var gameMan = new GameManager();
     var gameContainer = document.getElementById("gameContainer")
     // gameContainer.style.backgroundImage = "url(images/texting.jpg)"
-    gameMan.getIntro();
+    gameMan.dataManager.getData("Introduction");
     gameContainer.gameMan = gameMan;
     runGame();
 }

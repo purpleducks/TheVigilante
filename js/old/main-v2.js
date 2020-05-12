@@ -1,4 +1,4 @@
-let introData;
+let data;
 let playerProgress;
 
 function main() {
@@ -16,11 +16,11 @@ function getIntro()
 	$.ajax({
 			url: 'assets/Introduction.json',
 			dataType: 'json',
-	    data: introData,
+	    data: data,
 	    async: false,
 			success: function(json)
 			{
-				introData = json;
+				data = json;
 			}
 		});
 }
@@ -36,9 +36,9 @@ function getIntro()
 	The content is in the "content" array
 */
 function runGame() {
-	console.log(introData["Introduction"]["storylines"]);	// debug - test that introdata has JSON data loaded correctly
-	let startObject = introData["Introduction"]["storylines"][0];		// get the start object
-	startObject = introData["Introduction"]["storylines"][0][Object.getOwnPropertyNames(startObject)]; // properly access the object
+	console.log(data["Introduction"]["storylines"]);	// debug - test that data has JSON data loaded correctly
+	let startObject = data["Introduction"]["storylines"][0];		// get the start object
+	startObject = data["Introduction"]["storylines"][0][Object.getOwnPropertyNames(startObject)]; // properly access the object
 	console.log(startObject);
 	displayTypes=[];
 	functionTypes=[];

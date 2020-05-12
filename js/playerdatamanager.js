@@ -1,5 +1,7 @@
 class PlayerDataManager {
 	constructor() {
+		this.gameData = [];
+		this.currentStage = "";
 		this.allActions = [];
         this.playerDecisions = [];
 	}
@@ -38,4 +40,21 @@ class PlayerDataManager {
 		console.log(this.allActions);
 		console.log(this.playerDecisions);
 	}
+
+	getData(jsonName) {
+        var tempData = [];
+        $.ajax({
+            url: "assets/"+jsonName+".json",
+            dataType: "json",
+            data: tempData,
+            async: false,
+            success: function(json)
+            {
+                tempData = json;
+                console.log("UHUHU");
+            }
+        });
+        this.gameData = tempData[jsonName]["storylines"];
+        this.currentStage = jsonName;
+    }
 }

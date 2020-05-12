@@ -1,7 +1,7 @@
 class GameManager {    // singleton class?
     
     constructor() {
-        this.introData = []
+        this.data = []
         this.playerData = [];
     }
     
@@ -25,7 +25,7 @@ class GameManager {    // singleton class?
                 tempData = json;
             }
         });
-        this.introData = tempData;
+        this.data = tempData;
     }
     
     
