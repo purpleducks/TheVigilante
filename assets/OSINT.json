@@ -393,6 +393,23 @@
             "music":""
          },
          {
+           "name":"NadDanIsNeutral",
+           "content": [
+             "Nadine: 'Interesting, think you can get me in?'"
+           ],
+           "link": [
+             "DanielleHooksNadUp"
+           ],
+           "images": [
+
+           ],
+           "characters": [
+             "Nadine"
+           ],
+           "music":"",
+           "dialogue": true
+         },
+         {
             "name":"NadDanIsRudeTwo",
             "content":[
                "Nadine: 'Okay cool, why are you telling me all this? Are you gonna help me or what?'"
