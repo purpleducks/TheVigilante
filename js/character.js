@@ -49,9 +49,9 @@ class Character {   // factory class
         if (!currentObject.minigame) {  // we want the player to read the minigame notes before playing!
             if (justTheSpeech.length <= 50) { maxTime = 1500; }     // variable typing speed based on the length of the speech string
             else if (justTheSpeech.length <= 100) { maxTime = 3500; }
-            else if (justTheSpeech.length <= 150) { maxTime = 6000; }
-            else if (justTheSpeech.length <= 200) { maxTime = 7000; }
-            else { maxTime = 9000; }
+            else if (justTheSpeech.length <= 150) { maxTime = 7500; }
+            else if (justTheSpeech.length <= 200) { maxTime = 8500; }
+            else { maxTime = 9500; }
             idealSpeed = Math.round(maxTime / justTheSpeech.length);
         }
         else {
@@ -189,9 +189,9 @@ class Character {   // factory class
     processDecision(evt) {
         var gameContainer = document.getElementById("gameContainer");
         var gameMan = gameContainer.gameMan;
-        var currObjIndex = gameMan.introData.findIndex(speechObj => speechObj.name === gameContainer.currObj.name);
+        var currObjIndex = gameMan.dataManager.gameData.findIndex(speechObj => speechObj.name === gameContainer.currObj.name);
         var linkObjIndex = evt.currentTarget.id;
-        var linkObjName = gameMan.introData[currObjIndex].link[linkObjIndex];
+        var linkObjName = gameMan.dataManager.gameData[currObjIndex].link[linkObjIndex];
         // gameMan.playerDecisions.push(linkObjName);
         gameMan.dataManager.addPlayerDecision(linkObjName);
 
