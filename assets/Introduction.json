@@ -96,9 +96,10 @@
                "It's Sunday - 1PM.",
                "Nadine wakes up late, gets ready and turns on her computer to see what's going on.",
                "As usual, she does her daily ritual of searching for stories about HealthCorp and anyone trying to sue them like her father did all those years ago.",
-               "This is when she stumbles upon a blog post; it reads 'HealthCorp are EVIL!!'.",
-               "Jack talks about how his father had terminal cancer and how HealthCorp cancelled his father's insurance just as he was about to start chemo",
-               "They couldn't keep up with the payments and Jack had to work two jobs and re-mortgage his house just to make the payments...."
+               "This is when she stumbles upon a blog post; it reads 'HealthCorp are EVIL!!'",
+               "Jack talks about how his father had terminal cancer and how HealthCorp cancelled his father's insurance.",
+               "Just as he was about to start chemotherapy...",
+               "They couldn't keep up with the payments and Jack had to work two jobs and re-mortgage his house just to make the payments."
             ],
             "link":[
                "Investigate blog decision"
@@ -166,7 +167,7 @@
                "Leaves it and turns laptop off"
             ],
             "link":[
-               "Social media profile hack",
+               "Social media profile hack explanation",
                "Probably a scam"
             ],
             "images":[
@@ -200,7 +201,7 @@
          },
          {
             "content":[
-               "Nadine decides to launch a dictionary attack on Jack's social media profile. She needs to get a score of 42 to win, why you ask? Because it's the answer to the universe of course. 🤷‍",
+               "Nadine launches the attack.",
                "Nadine manages to crack the Jack's password!",
                "Nadine failed to crack the password and the social media website locked her out."
             ],
@@ -218,6 +219,26 @@
                "Jack"
             ],
             "name":"Social media profile hack",
+            "music":"A-Stranger-Thing.mp3"
+         },
+         {
+            "name": "Social media profile hack explanation",
+            "content": [
+               "Nadine decides to launch a dictionary attack on Jack's social media profile. ",
+               "In order to gain access to Jack's social media profile, she needs to get a score of 42 to win, why you ask?",
+               "Because it's the answer to the universe of course. 🤷‍",
+               "She needs to get this score before the system locks her out for too many failed attempts, so be quick!"
+            ],
+            "link": [
+               "Social media profile hack"
+            ],
+            "images": [
+               "blogger-socials.jpg",
+               "blogger-socials.jpg",
+               "blogger-socials.jpg",
+               "blogger-socials.jpg"
+            ],
+            "narration": true,
             "music":"A-Stranger-Thing.mp3"
          },
          {
@@ -549,13 +570,13 @@
                "Nadine: 'I looked into him, he's totally a scammer, tryna get money out of folk like us'",
                "Marcus: 'Whaaaat? no way, man people these days will do anything for money smh'",
                "Nadine: 'It's messed up, people taking advantage of people who already got fucked over by HealthCorp, tryna fuck em over again!'",
-               "Nadine: 'sorry it just gets me so mad at how they can get away with this sort of shit everyday.'",
-               "Marcus: 'who HealthCorp?'",
-               "Marcus: 'nobody is gonna go after them, they got everyone in their pocket from Supremes all the way down to the fuckin parking attendants'",
-               "Marcus: 'they're untouchable'",
-               "Nadine: 'yeah that's what they think'",
-               "Nadine: 'nobody's untouchable'",
-               "Marcus: 'what are you talkin about?'"
+               "Nadine: 'Sorry it just gets me so mad at how they can get away with this sort of shit everyday.'",
+               "Marcus: 'Who HealthCorp?'",
+               "Marcus: 'Nobody is gonna go after them, they got everyone in their pocket from Supremes all the way down to the fuckin parking attendants'",
+               "Marcus: 'They're untouchable'",
+               "Nadine: 'Yeah that's what they think.'",
+               "Nadine: 'Nobody's untouchable...'",
+               "Marcus: 'What are you talkin about?'"
             ],
             "link":[
                "PaybackDecision"
@@ -1017,8 +1038,8 @@
             "content":[
                "Nadine: 'Just like they did Mom?'",
                "Marcus: '....yeah, like they did Mom'",
-               "Marcus: 'Just don't do anything rash little sister'",
-               "Marcus: 'It's my job to keep you safe remember :')'"
+               "Marcus: 'Just don't do anything rash, okay?'",
+               "Marcus: 'It's my job to keep you safe remember 😘'"
             ],
             "link":[
                "FINISH"
