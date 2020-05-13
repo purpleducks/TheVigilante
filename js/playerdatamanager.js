@@ -24,8 +24,8 @@ class PlayerDataManager {
 		return this.allActions[this.allActions.length - 1];
 	}
 
-	checkForDecision(decisionName) {
-		return this.playerDecisions.find(speechObj => speechObj === decisionName);
+	checkForAction(actionName) {
+		return this.allActions.find(speechObj => speechObj === actionName);
 	}
 
 	saveToStorage() {

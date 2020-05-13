@@ -596,7 +596,7 @@
                "Because Nadine already has a pass to get in, she confidently walks up to the security gates and swipes her pass through."
             ],
             "link":[
-
+              "ME-ToTheLifts"
             ],
             "images":[
 
@@ -739,7 +739,7 @@
            "name":"ME-Reception-2","content":[
              "He types away at his computer for a moment or two.",
              "Then makes a phone call and pulls out something from a drawer"
-             ],"link":[],"images":[],"music":"","narration":true
+             ],"link":["ME-SwipePass"],"images":[],"music":"","narration":true
          },
          {
            "name":"ME-Reception-3","content":[
@@ -834,7 +834,7 @@
          },
          {
            "name":"ME-SwipePass","content":["Nadine walks over to the security gate and swipes her card."],
-           "link":[],"images":[],"music":"","narration":true
+           "link":["ME-ToTheLifts"],"images":[],"music":"","narration":true
 
          },
          {
@@ -908,20 +908,122 @@
              "But the lift doesn't move. ",
              "The contact point is flashing red angrily.",
              "Looks like Nadine needs to score some credentials or a ride up there before she can get to the Server Room."
-             ],"link":["Lift-WithAnonPlans"],"images":[],"music":"","narration":true
+             ],"link":["Lift-NoAnonPlans"],"images":[],"music":"","narration":true
          },
          {
-           "name":"Lift-22","content":["Nadine decides that her best shot at messing with HealthCorp is their R+D department."],
-           "link":[],"images":[],"music":"","narration":true
+           "name":"Lift-22","content":[
+             "Nadine decides that her best shot at messing with HealthCorp is their R+D department."
+           ],"link":["R&D-Reasoning"],"images":[],"music":"","narration":true
          },
          {
-           "name":"Lift-13","content":[],"link":[],"images":[],"music":"","narration":true
+           "name":"R&D-Reasoning","content":[
+             "Nadine: 'Disrupt and expose how they can rip people off '",
+"Nadine: 'that ought to do it...'"
+             ],"link":["R&D-UpWeGo"],"images":[],"characters":["Nadine"],"music":"","dialogue":true
          },
          {
-           "name":"Lift-9","content":[],"link":[],"images":[],"music":"","narration":true
+           "name":"R&D-UpWeGo","content":[
+             "Nadine presses the button for the 22nd floor and the lift starts its' ascent."
+           ],
+           "link":["R&D-Arrived"],"images":[],"music":"","narration":true
+         },
+         { 
+            "name":"R&D-Arrived","content":[
+             "Nadine arrives at the Research and Development Lab.The R+D floor looks like a startup company, very modern and very sleek.",
+             "There are lots of computers and pieces of computers scattered around the place, like a child who left their toys about."
+            ],"link":["R&D-NadDanielle-SysDecision"],"images":[],"music":"","narration":true
          },
          {
-           "name":"Lift-25","content":[],"link":[],"images":[],"music":"","narration":true
+           "name":"R&D-NadDanielle-SysDecision","content":["MarcusHasTea"],
+           "link":["R&D-NadSpotsDanielle"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"R&D-NadSpotsDanielle","content":[
+               "She stops when she recognises someone she's seen before."
+            ],"link":["R&D-NadDanielle-1"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-NadDanielle-1","content":[
+               "Nadine: 'Danielle! Hey girl!'",
+"Danielle: 'Oh hey! Come over here!'",
+"Nadine: 'Sure, where are we goi-'"
+            ],"link":["R&D-NadDanielle-2"],"images":[],"characters":["Nadine", "Danielle"],"music":"","dialogue":true
+         },
+         {
+            "name":"R&D-NadDanielle-2","content":["Danielle whisks Nadine away to an empty conference room."],
+            "link":["R&D-DanielleLikeNad-SysDecision"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-DanielleLikeNad-SysDecision","content":["ImpressedDanielle"],
+            "link":["R&D-DanielleTechniciansPass-1","R&D-DanielleGetOut"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"R&D-DanielleGetOut","content":[
+               "Nadine: 'What the hell are you doing?'",
+"Danielle: 'What the hell am I doing?? What the hell are YOU doing?'",
+"Danielle: 'You're meant to be on your way to taking down HealthCorp, not galavanting round R+D'",
+"Nadine: 'I was just curious okay? Jeez.'",
+"Danielle: 'Now is not the time for all that, you are going to get your butt up to that server room and do whatever hacker mumbo jumbo you need to do to get in and end this nightmare.'"
+            ],"link":["R&D-DanielleRushesNad"],"images":[],"characters":["Nadine", "Danielle"],"music":"","dialogue":true
+         },
+         {
+            "name":"R&D-DanielleRushesNad","content":["Danielle rushes Nadine out of the conference room to the lift. "],
+            "link":["Lift-NoAnonPlans"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-DanielleTechniciansPass-1","content":[
+               "Nadine: 'What the hell are you doing?'",
+"Danielle: 'What the hell am I doing?? What the hell are YOU doing?'",
+"Nadine: 'What does it look like? I broke in!'",
+"Danielle: 'Okay then why are you here now?'",
+"Nadine: 'Well, I wanted to expose the new ways HealthCorp is finding to rip people off, yknow, to expose them.'",
+"Danielle: 'Hmph, you won't find that here, where do you think all of that information is stored dummy?'",
+"Danielle: 'Here take this technician's pass, I was going to give it to you but I didn't think you were actually serious.'"
+            ],"link":["R&D-DanielleTechniciansPass-2"],"images":[],"characters":["Nadine", "Danielle"],"music":"","dialogue":true
+         },
+         {
+            "name":"R&D-DanielleTechniciansPass-2","content":["Danielle hands her a technician's pass."],
+            "link":["R&D-DanielleServerRoom"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-DanielleServerRoom","content":[
+               "Danielle: 'The server room is on the 26th floor, you'll need to be quick and stay undetected'",
+"Nadine: 'Got it, thank you so much Danielle. I owe you one'",
+"Danielle: 'No problem, stay safe Nadine.'",
+"Nadine: 'You too.'"
+],"link":["R&D-NadDanServerRoom"],"images":[],"characters":["Nadine", "Danielle"],"music":"","dialogue":true
+         },
+         {
+            "name":"R&D-NadDanServerRoom","content":[
+               "Danielle rushes Nadine out of the conference room to the lift.",
+               "She gets in and presses the button for the server room.",
+               "She puts it up against the reader and it flashes a happy green colour.",
+               "The lift starts its' ascent to the 26th floor"
+            ],"link":["InTheServerRoom"],"images":[],"music":"","narration":true
+         },
+         {
+           "name":"Lift-13","content":[
+             "Nadine arrives at the Marketing floor.",
+             "This floor is minimalistic and modern, there are lots of creative spaces and conference rooms. Nadine feels very out of place. ",
+             "She is approached by a woman in a sleek black dress."
+             ],"link":[],"images":[],"music":"","narration":true
+         },
+         {
+           "name":"Lift-9","content":[
+             "Nadine decides her best shot to mess with HealthCorp is with their Sales teams and so she decides to go there.",
+             "She presses the button and the lift starts zooming up to the 9th floor.",
+             "Nadine quickly arrives at the sales floor."
+             ],"link":["SalesFloor"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"SalesFloor","content":[],"link":[],"images":[],"music":"","narration":true
+         },
+         {
+           "name":"Lift-25","content":[
+             "Nadine decides her best shot to mess with HealthCorp is with their server room.",
+             "The Technical department is the best place to start.",
+             "She presses the button and the lift starts zooming up to the 25th floor."
+             ],"link":[],"images":[],"music":"","narration":true
          },
          {
             "name":"MainEntrance-LookForExploits-Decision",
@@ -1102,11 +1204,9 @@
                "Nadine: 'Please Tammy, if I'm late, they'll fire me without even thinking about it.'",
                "Tammy: '....... Okay fine, come with me.'"
             ],
-            "link":[
-
-            ],
+            "link":["ME-NW-GoingIn"],
             "images":[
-               "ME-NW-GoingIn"
+
             ],
             "characters":[
                "Nadine",
@@ -1163,9 +1263,7 @@
                "Nadine: 'Ermmm... like a week ago?'",
                "Tammy: 'Really? Sure about that?'"
             ],
-            "link":[
-
-            ],
+            "link":["ME-NW-TechnicalCaught"],
             "images":[
 
             ],
@@ -1297,9 +1395,7 @@
                "Tammy puts her laptop in her bag and gets up to make her way to the security gates.",
                "Nadine follows her to the security gate."
             ],
-            "link":[
-
-            ],
+            "link":["ME-NW-CredentialCheck"],
             "images":[
 
             ],
@@ -1396,9 +1492,7 @@
                "Nadine says her goodbyes and steps out of the lift onto the 9th floor.",
                "The lift doors close and Tammy continues on up to the Technical department's floors."
             ],
-            "link":[
-
-            ],
+            "link":["SalesFloor"],
             "images":[
 
             ],
@@ -2085,9 +2179,7 @@
                "Real classy....",
                "The lift continues onto the 22nd floor."
             ],
-            "link":[
-
-            ],
+            "link":["R&D-Arrived"],
             "images":[
 
             ],
@@ -2136,34 +2228,6 @@
             ],
             "link":[
                "ME-SM-Nadine13thFloor"
-            ],
-            "images":[
-
-            ],
-            "music":"",
-            "narration":true
-         },
-         {
-            "name":"ME-SM-Nadine13thFloor",
-            "content":[
-
-            ],
-            "link":[
-
-            ],
-            "images":[
-
-            ],
-            "music":"",
-            "narration":true
-         },
-         {
-            "name":"ME-SM-Nadine22ndFloor",
-            "content":[
-
-            ],
-            "link":[
-
             ],
             "images":[
 
@@ -2403,9 +2467,7 @@
                "Nadine parks in the security bay.",
                "She turns off the engine and watches as the security guard radioes for what she presumes is backup."
             ],
-            "link":[
-
-            ],
+            "link":[],
             "images":[
 
             ],
@@ -2438,9 +2500,7 @@
                "Nadine drives down the dark tunnel.",
                "She parks her car and starts to make her way to the nearby lift."
             ],
-            "link":[
-
-            ],
+            "link":[],
             "images":[
 
             ],
@@ -2531,9 +2591,7 @@
                "Nadine shifts her car into reverse and quickly backs it up into the side street.",
                "She floors it and speeds away from the HQ."
             ],
-            "link":[
-
-            ],
+            "link":[],
             "images":[
 
             ],

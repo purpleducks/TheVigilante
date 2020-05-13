@@ -4,8 +4,8 @@
          {
             "name":"NadineAtWork",
             "content":[
-               "Monday - 11AM'",
-               "Nadine is at work at Romero Casinos.'",
+               "Monday - 11AM",
+               "Nadine is at work at Romero Casinos.",
                "She's busy working away on a pretty mundane report that Corporate want on the new machines, when she hears her co-workers conversation by the water cooler."
             ],
             "link":[
@@ -20,11 +20,11 @@
          {
             "name":"CoWorkerDialogueOne",
             "content":[
-               "Co-worker 1: Did you hear about the new benefits package HR announced?'",
-               "Co-worker 2: Ooooh no I didn't, please tell me they gave us more money for gas, these prices lately have been KILLER'",
-               "Co-worker 1: Nah, I was mad about that too, but they did switch our health insurance to HealthCorp'",
-               "Co-worker 2: Ugh it's about time! MediKare were the worst, I had my gall bladder removed and they took two weeks to pay out. TWO WEEKS. Like I've heard HealthCorp pay out instantly, like no questions asked, they're great.'",
-               "Co-worker 1: oh really? thank god, that's honestly the last thing I wanna be worrying about, dread to think how much medical bills cost nowadays."
+               "Co-worker 1: 'Did you hear about the new benefits package HR announced?'",
+               "Co-worker 2: 'Ooooh no I didn't, please tell me they gave us more money for gas, these prices lately have been KILLER'",
+               "Co-worker 1: 'Nah, I was mad about that too, but they did switch our health insurance to HealthCorp'",
+               "Co-worker 2: 'Ugh it's about time! MediKare were the worst, I had my gall bladder removed and they took two weeks to pay out. TWO WEEKS. Like I've heard HealthCorp pay out instantly, like no questions asked, they're great.'",
+               "Co-worker 1: 'oh really? thank god, that's honestly the last thing I wanna be worrying about, dread to think how much medical bills cost nowadays.'"
             ],
             "link":[
                "NadineInternalDialogue"
@@ -42,10 +42,10 @@
          {
             "name":"NadineInternalDialogue",
             "content":[
-               "Nadine: If only they knew how bad HealthCorp really are'",
-               "Nadine: But no-one really knows what they're capable of'",
-               "Nadine: Well......'",
-               "Nadine: I guess I could check it out and see if there's any way for me to expose their shady business!"
+               "Nadine: 'If only they knew how bad HealthCorp really are'",
+               "Nadine: 'But no-one really knows what they're capable of'",
+               "Nadine: 'Well......'",
+               "Nadine: 'I guess I could check it out and see if there's any way for me to expose their shady business!'"
             ],
             "link":[
                "LetsLookAtHC"
@@ -64,7 +64,7 @@
             "content":[
                "Nadine decides to finish up her report and start looking into HealthCorp."
             ],
-            "link":"NadDecisionOne'",
+            "link":"NadDecisionOne",
             "images":[
 
             ],
@@ -74,12 +74,12 @@
          {
             "name":"NadDecisionOne",
             "content":[
-               "What does Nadine do first?'",
-               "Google HealthCorp'",
+               "What does Nadine do first?",
+               "Google HealthCorp",
                "Text Marcus"
             ],
             "link":[
-               "SearchHC'",
+               "SearchHC",
                "NadineWasNice"
             ],
             "images":[
@@ -91,12 +91,12 @@
          {
             "name":"NadineWasNice",
             "link":[
-               "MarcusHasTea'",
-               "NadineWasMean"
+               "MarcusHasTea",
+               "NadineWasNice-2"
             ],
             "content":[
-               "NadineIsStrong",
-               "RememberingMom"
+               "NadineIsStrong"
+
             ],
             "images":[
 
@@ -105,21 +105,8 @@
             "music":""
          },
          {
-            "name":"NadineWasMean",
-            "link":[
-               "SearchHC'",
-               "MarcusPA"
-            ],
-            "content":[
-               "TooAggressiveFYM",
-               "TooAggressiveStub",
-               "TooAggressive'",
-               "Ghosted"
-            ],
-            "images":[
-            ],
-            "systemDecision":true,
-            "music":""
+           "name":"NadineWasNice-2","content":["RememberingMom"],
+           "link":["MarcusHasTea", "MarcusPA"],"images":[],"music":"","systemDecision":true
          },
          {
             "name":"MarcusPA",
@@ -378,7 +365,7 @@
          {
             "name":"NadDanielleTwo",
             "content":[
-               "What does Nadine say?'",
+               "What does Nadine say?",
                "Why are you telling me all this?",
                "Interesting, think you can get me one?"
             ],
@@ -694,7 +681,7 @@
             "name":"CRS-NadineWhatTheHeck",
             "content":[
                "Nadine: 'What is going on here?'",
-               "Nadine: 'Are they really that bad of a company? Their staff can't be happy indirectly killing people everyday..."
+               "Nadine: 'Are they really that bad of a company? Their staff can't be happy indirectly killing people everyday...'"
             ],
             "images":[
 
@@ -978,7 +965,7 @@
             "content":[
                "Nadine: 'The inbox!!'",
                "Co-worker: 'Erm, you ok honey?'",
-               "Nadine: 'Sorry! My bad, didn't mean to scare you."
+               "Nadine: 'Sorry! My bad, didn't mean to scare you.'"
             ],
             "link":[
                "NadineEpiphany"
@@ -1102,7 +1089,7 @@
             "content":[
                "Nadine: 'Damn, Dad was right, they're are others who are trying to fight them.'",
                "Nadine: 'Wish I listened to him, he might still be here now ...'",
-               "Nadine: 'Let's reach out, but I guess I'll have to pretend to be Jack, but from a different account."
+               "Nadine: 'Let's reach out, but I guess I'll have to pretend to be Jack, but from a different account.'"
             ],
             "link":[
                "AnonEmail-NadineReachesOut-1"
@@ -1339,7 +1326,7 @@
                "Nadine: 'Of course I care! I hate them just as much as you do!'",
                "Nadine: 'Why else would I write an article about them fucking over my family?'",
                "Nadine: 'Putting my family in thousands of dollars of debt?'",
-               "Nadine: 'I wanna see them pay for what they've done to my family and probably countless others!"
+               "Nadine: 'I wanna see them pay for what they've done to my family and probably countless others!'"
             ],
             "link":[
                "RedeemedForAnon"
@@ -1820,7 +1807,7 @@
             "content":[
                "Anonymous-Sender: 'Man I don't understand you'",
                "Anonymous-Sender: 'You were saying how bad HealthCorp is but you're not doing anything about it?'",
-               "Anonymous-Sender: 'that don't make any sense."
+               "Anonymous-Sender: 'that don't make any sense.'"
             ],
             "link":[
                "NadinesExplanationAnon"
@@ -2437,8 +2424,8 @@
          {
             "name":"NadineStalkedDarren",
             "content":[
-               "Nadine: 'well I stumbled across our emails while I was going through my inbox, and I thought I'd search you up and reach out!",
-               "Nadine: 'I hope that's not too weird, I thought you could help me out.",
+               "Nadine: 'well I stumbled across our emails while I was going through my inbox, and I thought I'd search you up and reach out!'",
+               "Nadine: 'I hope that's not too weird, I thought you could help me out.'",
                "Darren: 'Ahhh I see, I don't think I'll be much help to you really, sorry!'"
             ],
             "link":[
@@ -2462,7 +2449,7 @@
                "Nadine: 'Of course, everyone does'",
                "Darren: 'like I'm used to dealing with shady sales tactics but targeting families that are pre-disposed to get cancer'",
                "Darren: 'just to rip them off later?'",
-               "Darren: 'that's not what I signed up for. and there's way more to it than you could even imagine!",
+               "Darren: 'that's not what I signed up for. and there's way more to it than you could even imagine!'",
                "Nadine: 'What are you talking about??'",
                "Darren: 'HealthCorp are fucked up more than you could even imagine.'",
                "Darren: 'Their whole business model is centred around exploiting the weak and getting all they can from them'",
@@ -2837,7 +2824,7 @@
                "Nadine: 'I just have a bad feeling, like I think you're trying to play me here.'",
                "Nadine: 'You popped up to me after I posted my post about HealthCorp, and were acting really sweet. Would you blame me for being suspicious?'",
                "Nadine: 'Like what else am I meant to think?'",
-               "Darren: 'Whatever, good luck then. You better watch your back, Jack."
+               "Darren: 'Whatever, good luck then. You better watch your back, Jack.'"
             ],
             "link":[
                "DarrenIsAThreat"
