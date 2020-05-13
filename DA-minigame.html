@@ -6,18 +6,29 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
         <script src="js/minigame.js" charset="utf-8"></script>
-        <script src="js/DA-minigame.js" charset="utf-8"></script>
+        <script src="js/DA-minigame-v1.js" charset="utf-8"></script>
         <link rel="icon" type="image/png" href="favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/DA-minigame.css">
+        <script>
+          function startGame() {
+            var minigameObj = new DictionaryAttack("DA",1);
+            minigameObj.loadWords();
+            document.getElementById("minigameLayer").minigameObj = minigameObj;
+          }
+          function checkWordField() {
+            var minigameObj = document.getElementById("minigameLayer").minigameObj;
+            minigameObj.checkWord();
+          }
+        </script>
     </head>
-    <body onload="loadWords()">
+    <body onload="startGame()">
         <img id="matrixBg" src="images/matrix.gif">
         <div id="minigameLayer">
-            <h1 id="scoreboard"> SCORE: 0</h1> 
+            <h1 id="scoreboard"> SCORE: 0</h1>
             <h5 id="gOMLabel">SYSTEM LOCKDOWN PROGRESS</h5>
             <progress id="gameOverMeter" value="0" max="100"> 32% </progress>
-            <form type="text" onsubmit="checkWord(); return false;">
+            <form type="text" onsubmit="checkWordField(); return false;">
                 <input type="text" name="passwordGuess" id="passwordGuess" >
                 <br><br>
             </form>
@@ -36,5 +47,3 @@
         </div>
     </body>
 </html>
-  
-  

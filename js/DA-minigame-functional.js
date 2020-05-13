@@ -9,10 +9,7 @@ function loadWords() {
 		}
 		client.send();
 	}
-	else {
 
-	}
-	
 }
 
 function runGame() {
@@ -25,7 +22,7 @@ function runGame() {
 		var minigameLayer = document.getElementById("minigameLayer");
 		console.log("SPENT WORDS: " + minigameLayer.spentWords);
 		if (minigameLayer.spentWords < 70) {
-			addNewWord(); 
+			addNewWord();
 			document.getElementById("minigameLayer").addEventListener('stopMakingWords', function() {
 				clearInterval();
 			});
@@ -35,7 +32,7 @@ function runGame() {
 }
 
 function addNewWord() {
-	var minigameLayer = document.getElementById("minigameLayer");	
+	var minigameLayer = document.getElementById("minigameLayer");
 	if (!minigameLayer.gameEnded) {
 		var wordIndex = getRandomInt(0, minigameLayer.words.length);
 		minigameLayer.shownWords = [];
@@ -117,7 +114,7 @@ function animateWord(wordIndex) {
 				}, 2000);
 				return 0;
 			}
-			if (minigameLayer.spentWords > 70 && !minigameLayer.gameEnded) { // if the game is over ... 
+			if (minigameLayer.spentWords > 70 && !minigameLayer.gameEnded) { // if the game is over ...
 				// alert("YOU LOST!");
 				minigameLayer.gameEnded = true;
 				document.getElementById("gameResult").style.visibility = "visible";
@@ -138,7 +135,7 @@ function animateWord(wordIndex) {
 				window.location.replace("./page1.html");
 				return 0;
 			}
-			if (!minigameLayer.gameEnded) { // if its not 
+			if (!minigameLayer.gameEnded) { // if its not
 				clearInterval(id);
 				// console.log("BYEEEEE from "+elem.id);
 				var wordId = elem.id.slice(4, elem.id.length);
@@ -170,10 +167,10 @@ function checkFirstVisit() {
   else {
     // not first visit, so alert
     alert('Refreshing is not allowed.');		// cheating!
-    var allActions = JSON.parse(localStorage.getItem("allActions"));	
-	allActions.push("Probably a scam");	// assume fail
-	localStorage.setItem("allActions", JSON.stringify(allActions));
-	window.location.replace("./page1.html");	// redirect back to the game
+    var allActions = JSON.parse(localStorage.getItem("allActions"));
+		allActions.push("Probably a scam");	// assume fail
+		localStorage.setItem("allActions", JSON.stringify(allActions));
+		window.location.replace("./page1.html");	// redirect back to the game
     return false;
   }
 }
@@ -194,9 +191,9 @@ function checkWord() {
 		document.getElementById("scoreboard").innerHTML = "SCORE: "+minigameLayer.score;
 		var correctWordIndex = minigameLayer.words.indexOf(guessingValue);
 		removeWord(correctWordIndex, true);
-		if (minigameLayer.score == 42) { 
+		if (minigameLayer.score == 42) {
 			clearScreen();
-			clearInterval(); 
+			clearInterval();
 		}
 	}
 }
@@ -231,7 +228,7 @@ function clearScreen() {
 		allWords = document.getElementsByClassName("word");
 	}
 	console.log("byeeeeeeeeeee");
-			
+
 }
 
 function playPauseMusic() {
