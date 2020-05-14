@@ -3,18 +3,22 @@
  * the Game Loop: Runs the game for the first time and sets the two key Event Listeners
  * @param {GameManager} gameMan the Game Manager object used to access the different UI elements.
  */
-function runGame() {
+function runGame(stageChange) {
     var gameMan = document.getElementById("gameContainer").gameMan;
 	console.log(gameMan.dataManager.gameData);	// debug - test that data has JSON data loaded correctly
+    if (gameMan.dataManager.currentStage == "Introduction") {
+        
+        document.getElementById("gameContainer").addEventListener("getDecisionObj", getDecisionObj, true);
 
-    document.getElementById("gameContainer").addEventListener("getDecisionObj", getDecisionObj, true);
+        document.getElementById("gameContainer").addEventListener("nextObject", processNextObj, true);
 
-    document.getElementById("gameContainer").addEventListener("nextObject", processNextObj, true);
+        // document.getElementById("gameContainer").addEventListener("startTexting", startProcessing, true);    TODO: fix texting / remove it at some point        
+    }
 
-    // document.getElementById("gameContainer").addEventListener("startTexting", startProcessing, true);    TODO: fix texting / remove it at some point
+    if (stageChange) { saveToStorage(); }
 
     // gameMan.dataManager.gameData = gameMan.dataManager.gameData["Introduction"]["storylines"];
-    if (localStorage.allActions != null && localStorage.playerDecisions != null) {
+    if (localStorage.allActions != null && localStorage.playerDecisions != null && !stageChange) {
         console.log("MAIN: Loading from LocalStorage, getting last Speech Object from AllActions array");
         gameMan.dataManager.loadFromStorage();
         var lastObjName = gameMan.dataManager.getLastObject();
@@ -88,20 +92,24 @@ function startProcessing(evt, nextObject) {
         gameMan.sortSpeech(currObj, 0);
     }
     else {
-        if (gameMan.currentStage == "Introduction") {
-            gameMan.dataManager.getData("OSINT");
+        if (gameMan.dataManager.currentStage == "Introduction") {
+            gameMan.dataManager.getData("OSINT","json");
         }
-        else if (gameMan.currentStage == "OSINT") {
-            gameMan.dataManager.getData("BreakIn");
+        else if (gameMan.dataManager.currentStage == "OSINT") {
+            gameMan.dataManager.getData("BreakIn","json");
         }
-        else if (gameMan.currentStage == "BreakIn") {
-            gameMan.dataManager.getData("TheHack");
+        else if (gameMan.dataManager.currentStage == "BreakIn") {
+            gameMan.dataManager.getData("TheHack","json");
         }
-        else if (gameMan.currentStage == "TheHack") {
-            gameMan.dataManager.getData("TheEscape");
+        else if (gameMan.dataManager.currentStage == "TheHack") {
+            gameMan.dataManager.getData("TheEscape","json");
         }
         else {
             alert("GAME OVER!");
+        }
+        if (!(gameMan.dataManager.currentStage === undefined)) {
+            removeAllElements();
+            runGame(true);
         }
     }
    
@@ -140,14 +148,19 @@ function checkForTextingView(nextObject) {
  */
 function removeAllElements() {
     var checkCharacters = document.getElementsByClassName("characterSpeech");
+    var checkCharImgs = document.getElementsByClassName("characterImg");
     var otherElems = document.getElementsByClassName("misc");
     var buttons = document.getElementById("buttonContainer");
     var charElemLen = checkCharacters.length;
+    var charElemImgLen = checkCharImgs.length;
     var otherElemLen = otherElems.length;
 
     if (buttons !=null) { buttons.remove(); }
     for (var i = 0; i < charElemLen; i++) {
         checkCharacters[0].remove();
+    }
+    for (var i = 0; i < charElemImgLen; i++) {
+        checkCharImgs[0].remove();
     }
     for (var i = 0; i < otherElemLen; i++) {
         otherElems[0].remove();
@@ -237,5 +250,5 @@ function main() {
     gameMan.dataManager.getData("Introduction","json");
     gameMan.dataManager.getData("music-credits","text");
     gameContainer.gameMan = gameMan;
-    runGame();
+    runGame(false);
 }

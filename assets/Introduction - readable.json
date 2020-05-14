@@ -293,6 +293,7 @@
             "images": [
             ],
             "minigame":true,
+            "minigame-link":"DA-minigame.html",
             "characters":[
                "Nadine",
                "Jack"
@@ -625,7 +626,7 @@
          },
          {
             "content":[
-               "Marcus: 'Okaaay, guess we'll talk later then, stay safe sis, it's a dangerous world out there'"
+               "Marcus: 'Okaaay, guess we'll talk later then, stay safe sis, it's a dangerous world out there...'"
             ],
             "link":[
                "FINISH"

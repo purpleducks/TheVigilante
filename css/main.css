@@ -45,13 +45,13 @@
 }
 
 .topLeft {
-    top: 2%;
+    top: 4%;
     left: 2%;
     position: absolute;
 }
 
 .topRight {
-    top: 2%;
+    top: 4%;
     right: 2%;
     position: absolute;
 }
@@ -87,7 +87,7 @@ button {
 }
 
 body {
-    background-color: black;        
+    background-color: #333;        
     overflow: hidden;
 }
 
@@ -179,7 +179,7 @@ body {
     width: 95%;
     height: 25%;
     left: 5%;
-    top: 2%;
+    top: 4%;
 }
 
 
@@ -224,7 +224,7 @@ body {
 #musicCredits {
     position: absolute;
     color: white;
-    font-size: 1vw;
+    font-size: 0.8vw;
     font-family: IBMPlex;
     z-index: 4;
     left: 1%;
@@ -232,10 +232,9 @@ body {
     background-color: black;
     padding: 3px;
     border-radius: 4px;
-    bottom: 2%;
+    top: 0%;
     overflow: auto;
-    width: 20vw;
-    text-align: center;
+    text-align: left;
 }
 
 /* Decision elements */

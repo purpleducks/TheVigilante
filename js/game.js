@@ -5,15 +5,6 @@ class GameManager {    // singleton class?
         this.soIndex = 0;
     }
 
-    loadGame() {
-        // load the player's game from the HTML5 LocalStorage
-    }
-
-    saveGame() {
-        // save the player's game into the HTML5 LocalStorage
-    }
-
-
     incrementSOIndex() {
         this.soIndex++;
         return 0;
@@ -175,11 +166,11 @@ class GameManager {    // singleton class?
         justTrack = justTrack.replace(/-/g,' ');
         var musicCreditLabel = document.getElementById("musicCredits");
         var foundTrackIndex = this.dataManager.musicCredits.findIndex(music =>music.name == justTrack);
-        if (foundTrack == -1) {
+        if (foundTrackIndex == -1) {
             musicCreditLabel.innerHTML = "TRACK NOT FOUND!"
         } else {
             var foundTrack = this.dataManager.musicCredits[foundTrackIndex];
-            musicCreditLabel.innerHTML = "MUSIC PLAYING: "+foundTrack.name+"<br> CREDIT TO: "+foundTrack.artist+"</br>";
+            musicCreditLabel.innerHTML = "MUSIC PLAYING: "+foundTrack.name+"<br> CREDIT TO: "+foundTrack.artist+" <br> CLICK HERE FOR LINK</br>";
             var creditLink = document.getElementById("musicCreditSource");
             var link;
             if (foundTrack.link == "(YouTube Audio Library)")
