@@ -122,7 +122,8 @@
             "images":[
 
             ],
-            "systemDecision":true
+            "systemDecision":true,
+            "music":""
          },
          {
             "name":"UGCarPark-SysDecision-1",
@@ -150,7 +151,8 @@
             "images":[
 
             ],
-            "narration":true
+            "narration":true,
+            "music":""
          },
          {
             "name":"SheHasNoPlan",
@@ -164,7 +166,8 @@
             "link":[
                "NadineHasNoPlan"
             ],
-            "narration":true
+            "narration":true,
+            "music":""
          },
          {
             "name":"NadineHasNoPlan",
@@ -177,7 +180,8 @@
             "link":[
                "DanielleAndNadine-SysDecision"
             ],
-            "narration":true
+            "narration":true,
+            "music":""
          },
          {
             "name":"NadDanAtTheDoor",
@@ -901,7 +905,7 @@
              ],"link":["InTheServerRoom"],"images":[],"music":"","narration":true
          },
          {
-           "name":"InTheServerRoom","content":[],"link":[],"images":[],"music":"","narration":true
+           "name":"InTheServerRoom","content":["Content"],"link":["Link"],"images":[],"music":"","narration":true
          },
          {
            "name":"ServerRoom-NoPermission","content":[
@@ -935,12 +939,149 @@
          },
          {
            "name":"R&D-NadDanielle-SysDecision","content":["MarcusHasTea"],
-           "link":["R&D-NadSpotsDanielle"],"images":[],"music":"","systemDecision":true
+           "link":["R&D-NadSpotsDanielle","R&D-Circular"],"images":[],"music":"","systemDecision":true
          },
          {
             "name":"R&D-NadSpotsDanielle","content":[
                "She stops when she recognises someone she's seen before."
             ],"link":["R&D-NadDanielle-1"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-Circular","content":[
+               "What does Nadine do?",
+               "Go to a vacant computer.",
+               "Have a look around.",
+               "Go talk to a random person"
+            ],"link":["Tech-Computer","R&D-LookAround-OSINT-SysDecision","R&D-People-SysDecision"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"R&D-People-SysDecision","content":["R&D-P-Finneas"],
+            "link":["R&D-NoOneThere", "R&D-People"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"R&D-NoOneThere","content":["There is no one here to speak to, Nadine should do something else."],
+            "link":["R&D-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-People","content":[
+               "Nadine decides to talk to some of the people in the break room. She approaches an older man."
+            ],"link":["R&D-P-Finneas"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-P-Finneas","content":[
+               "Nadine: 'Hi there, how are you? I'm Rachel, nice to meet you.'",
+"Finneas: 'Oh hello there, My name is Dr Finneas Humphrey, great to meet you.'",
+"Finneas: 'Are you new to the Department? I don't believe I've seen you around here before'",
+"Nadine: 'Oh I'm new here! I started a couple days ago.'",
+"Finneas: 'Ah that'll do it haha, so many new faces around, you lose track at my age.'",
+"Nadine: 'I was wondering if you could tell me more about HealthCorp'",
+"Finneas: 'Well I've worked here most of my life, what do you wanna know?'"
+            ],
+            "link":["R&D-P-Finneas-Decision"],"images":[],"characters":["Nadine", "Finneas"],"music":"","dialogue":true
+         },
+         {
+            "name":"R&D-P-Finneas-Decision","content":[
+               "What does Nadine say?",
+               "About the Server Room.",
+               "Who are the Inner Circle?",
+               "HealthCorp targets."
+            ],"link":["R&D-P-ServerRoom","R&D-P-InnerCircle","R&D-P-HealthCorp"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"R&D-P-ServerRoom","content":[
+               "Nadine: 'What do you know about the server room?'",
+"Finneas: 'Not a lot really, being in R&D we don't really deal with it that much.'",
+"Finneas: 'It's on the 26th floor, with the rest of the Technical department. When we do have trouble, I get in touch with a man called Richard who knows a lot about all of that IT mumbo jumbo.'",
+"Nadine: 'Do you think I could meet Richard? I'd love to learn more about all of that...'",
+"Finneas: 'IT mumbo jumbo? Yes of course, I'll see if he's available now to take you up for a tour'"
+            ],"link":["R&D-P-FinneasCalls"],"images":[],"characters":["Nadine", "Finneas"],"music":"","dialogue":true
+         },
+         {
+            "name":"R&D-P-FinneasCalls","content":[
+               "Finneas reaches into his pocket and pulls out his phone to text Richard. ",
+               "Almost immeadiately, he hears back."
+            ],"link":["R&D-P-FinneasIsShook"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-P-FinneasIsShook","content":[
+               "Finneas: 'My, that was quick! He said he'd love to and he's on his way down.'",
+"Finneas: 'Lucky you! Good thing we met hoho!'",
+"Nadine: 'Definitely, thank you so much Doctor Humphrey!'",
+"Finneas: 'Oh please, call me Finneas. Well I must be off, I will be seeing you soon Rachel, I'm sure.'"
+            ],
+            "link":["R&D-P-FinneasBye-2"],"images":[],"characters":["Nadine", "Finneas"],"music":"","dialogue":true
+         },
+         {
+            "name":"R&D-P-FinneasBye-2","content":[
+               "Finneas leaves the break room and shortly after, so does Nadine. ",
+               "She returns to the foyer of the R&D floor, where a man is standing, waiting. Nadine approaches him."
+            ],"link":["R&D-P-Richard"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-P-Richard","content":[
+               "Richard: 'Ahh you must be Rachel! Name's Richard, Finneas told me that you wanted to take a look around the server room?'",
+"Nadine: 'That's right! I'm interested in how the R&D department use technology to improve the services for HealthCorp'",
+"Richard: 'Naturally, right this way, let's start the tour!'"
+            ],
+            "link":["R&D-P-Richard-Lift"],"images":[],"characters":["Nadine", "Richard"],"music":"","dialogue":true
+         },
+         {
+            "name":"R&D-P-Richard-Lift","content":[
+               "They both enter the lift. ",
+               "Richard scans his pass against the contact point and presses the button for the server room."
+            ],"link":["InTheServerRoom"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-P-InnerCircle","content":[
+               "Nadine: 'I overheard some people talking about the Inner Circle, what's that?'",
+"Finneas: 'What? Where did you hear that?'",
+"Nadine: 'Just around the office, why?'",
+"Finneas: 'You don't talk about the Inner Circle, especially here. Excuse me, I have to go.'"
+            ],"link":["R&D-P-SecurityGuards"],"images":[],"characters":["Nadine", "Finneas"],"music":"","dialogue":true
+         },
+         {
+            "name":"R&D-P-SecurityGuards","content":[
+               "Finneas quickly left the break room. ",
+               "A few moments later, three security guards came into the break room and apprehended Nadine."
+            ],"link":["Tech-SG-Busted"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-P-HealthCorp","content":[
+               "Nadine: 'I just wanted to know more about how HealthCorp targets their insurance'",
+"Finneas: 'Ahh now that is interesting.'",
+"Finneas: 'They do a lot of research into how terminal illnesses like cystic fibrosis and cancer work between the generations, to predict who to aim their insurance at'",
+"Finneas: 'Aim at the long game, yknow?'",
+"Nadine: 'Wow, that's crazy, how does no one know about it?'",
+"Finneas: 'I'd wager that no one outside these four walls knows about it.'",
+"Finneas: 'Friends in high places and all that, anyway, I best be getting back to work, you stay safe Nadine.'",
+"Nadine: 'Sure, it was great talking to you Finneas, thank you...'"
+            ],"link":["R&D-P-FinneasBye"],"images":[],"characters":["Nadine", "Finneas"],"music":"","dialogue":true
+         },
+         {
+            "name":"R&D-P-FinneasBye","content":[
+               "He gets up and leaves the break room. ",
+               "After a few moments, Nadine also leaves the break room."
+            ],"link":["R&D-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-LookAround-OSINT-SysDecision",
+            "content":["HQCameras"],"link":["R&D-LookAround-OSINT-Warning"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"R&D-LookAround-OSINT-Warning","content":[
+               "Nadine remembers the cameras that HealthCorp have set up and is now doubting whether she should wander aimlessly around the floor."
+            ],"link":["R&D-LookAround-Decision"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"R&D-LookAround-Decision","content":[
+               "What should Nadine do?",
+               "Still have a look around.",
+               "Do something else."
+            ],"link":["Tech-LookAround","R&D-LookAround-GoodChoice"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"R&D-LookAround-GoodChoice","content":["Nadine decides to avoid the cameras and think of something else to do"],
+            "link":["R&D-Circular"],"images":[],"music":"","narration":true
          },
          {
             "name":"R&D-NadDanielle-1","content":[
@@ -1006,7 +1147,374 @@
              "Nadine arrives at the Marketing floor.",
              "This floor is minimalistic and modern, there are lots of creative spaces and conference rooms. Nadine feels very out of place. ",
              "She is approached by a woman in a sleek black dress."
-             ],"link":[],"images":[],"music":"","narration":true
+             ],"link":["Marketing-Intro"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Marketing-Intro","content":[
+               "Nadine arrives at the Marketing floor. ",
+               "This floor is minimalistic and modern, there are lots of creative spaces and conference rooms. Nadine feels very out of place. ",
+               "She is approached by a woman in a sleek black dress."
+            ],"link":["Marketing-Approached"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Marketing-Approached","content":[
+               "Marketing-Woman: 'Hello there, you seem lost, can I help you?'"
+            ],"link":["Marketing-A-Decision-SysDecision-1"],"images":[],
+            "characters":["Nadine", "Marketing-Woman"],"music":"","dialogue":true
+         },
+         {
+            "name":"Marketing-A-Decision-SysDecision-1",
+            "content":[
+               "ME-NM-CV-Good"
+            ],
+            "link":[
+               "Marketing-A-Decision",
+               "Marketing-A-Decision-SysDecision-2"
+            ],
+            "images":[
+
+            ],
+            "music":"",
+            "systemDecision":true
+         },
+         {
+            "name":"Marketing-A-Decision-SysDecision-2",
+            "content":[
+               "ME-NM-CV-Bad"
+            ],
+            "link":[
+               "Marketing-A-Decision",
+               "Marketing-A-Decision-NoInterview"
+            ],
+            "images":[
+
+            ],
+            "music":"",
+            "systemDecision":true
+         },
+         {
+            "name":"Marketing-A-Decision","content":[
+               "What does Nadine say?",
+               "Yes.",
+               "No.",
+               "I have an interview."
+            ],"link":["M-A-D-Yes","M-A-D-No","M-A-D-Interview"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"M-A-D-Yes","content":[
+               "Nadine: 'Actually yes, I'm meeting with someone in the break room, do you know where that is?'",
+"Marketing-Woman: 'Of course! I'll take you there!'",
+"Nadine: 'Fab! Thank you.'"
+            ],
+            "link":["M-A-D-BreakRoom"],"images":[],"characters":["Nadine", "Marketing-Woman"],"music":"","dialogue":true
+
+         },
+         {
+            "name":"M-A-D-BreakRoom","content":[
+               "The Woman directs her to the break room. They say their goodbyes and Nadine enters the break room. It's a beautiful space."
+            ],"link":["M-A-D-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"M-A-D-Circular","content":[
+               "What does Nadine do?",
+               "Talk to a random person.",
+               "Take a look around.",
+               "Leave.",
+               "Look at the noticeboard."
+            ],"link":["M-A-D-RandomPerson","M-A-D-LookAround","M-A-D-Leave-SysDecision-1","M-A-D-Notices"],
+            "images":[],"music":"","decision":true
+         },
+         {
+            "name":"M-A-D-Leave-SysDecision-1","content":["M-A-D-RandomPerson"],
+            "link":["Marketing-Leave","M-A-D-Leave-SysDecision-2"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"M-A-D-Leave-SysDecision-2","content":["M-A-D-LookAround"],
+            "link":["Marketing-Leave","M-A-D-Leave-SysDecision-2"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"M-A-D-Leave-SysDecision-3","content":["M-A-D-Notices"],
+            "link":["Marketing-Leave","Marketing-DoSomethingFirst"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"Marketing-Leave","content":[
+               "Nadine decides to leave, she's seen enough here. She returns to the lift."
+            ],"link":["Lift-NoAnonPlans"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Marketing-DoSomethingFirst","content":[
+               "Nadine thinks about leaving but dismisses it, she should investigate this floor at least a little bit before she leaves."
+            ],
+            "link":["M-A-D-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"M-A-D-RandomPerson","content":[
+               "Nadine decides to talk to some of the people in the break room. She approaches a young man."
+            ],
+            "link":["MAD-YoungMan"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"MAD-YoungMan","content":[
+               "Nadine: 'Hi there, how are you? My name is Shontelle, nice to meet you.'",
+"Steve: 'Why hello Shontelle, aren't you a sight for sore eyes? Name's Steve, pleasure.'",
+"Steve: 'Haven't seen you around before, you new?'",
+"Nadine: 'Yeah, I started recently.'",
+"Steve: 'Ah thought so, anyways, what's up?'"
+            ],
+            "link":["MAD-Steve-Decision"],"images":[],"characters":["Nadine", "Steve"],"music":"","dialogue":true
+         },
+         {
+            "name":"MAD-Steve-Decision","content":[
+               "What does Nadine say?",
+               "Tell me about the Server Room.",
+               "What do you know about the Inner Circle?",
+               "HealthCorp marketing strategies."
+            ],
+            "link":["MAD-Steve-ServerRoom","MAD-Steve-InnerCircle","MAD-Steve-MarketingHC"],
+            "images":[],"music":"","decision":true
+         },
+         {
+            "name":"MAD-Steve-ServerRoom","content":[
+               "Nadine: 'What do you know about the server room?'",
+"Steve: 'What, those nerds? Nothing much, just the guys we shout at when the servers are being too slow.'",
+"Steve: 'Why do you care about all that? You're a chick.'",
+"Nadine: 'So what? Chicks can't like technology? Is that what you're saying smart ass?'",
+"Steve: 'Nah of course not, that's not what I mea-'",
+"Nadine: 'Save it, so who do you go to when the server's are being slow?'",
+"Steve: 'Well our guy from Technical is a guy called Simon, I- I- can give him a call for you, see if he can show you around?'",
+"Nadine: 'That would be fantastic, Steve. Please do.'"
+            ],
+            "link":["MAD-Steve-CallSimon"],"images":[],"characters":["Nadine", "Steve"],"music":"","dialogue":true
+         },
+         {
+            "name":"MAD-Steve-CallSimon","content":[
+               "Steve fumbles around his pocket and pulls out his phone to call Simon. ",
+               "Steve talks very loudly on the phone, which makes the other people in the room stare at Steve like the imbecile he really is.",
+               "Steve puts the phone down and looks at Nadine with a wide grin."
+            ],
+            "link":["MAD-Steve-MeetSimon"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"MAD-Steve-MeetSimon","content":[
+               "Steve: 'Good news baby-'",
+"Nadine: 'Mmm don't call me that.'",
+"Steve: 'Noted, does not like babies. Neither do I sweetie'",
+"Nadine: 'Or that, what did Simon say?'",
+"Steve: 'Well, Simon said let's go on a date, that's what he said ;)'",
+"Nadine: 'Oh save it, what did he say?'",
+"Steve: 'Ugh how boring, he said he'd love to - he's gonna meet you outside the lifts in 5.'",
+"Nadine: 'Great.'",
+"Steve: 'So about that date?'",
+"Nadine: 'How about no, Steve. Let's start there.'"
+            ],
+            "link":["MAD-Steve-IsUpset"],"images":[],"characters":["Nadine", "Steve"],"music":"","dialogue":true
+         },
+         {
+            "name":"MAD-Steve-IsUpset","content":[
+               "Steve, rejected, grumbles and returns to whatever he was doing on his phone. ",
+               "Nadine leaves the break room and returns to the foyer.",
+               "A few moments later, a man arrives via one of the lifts. Nadine approaches him."
+            ],
+            "link":["MAD-Simon-Nadine"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"MAD-Simon-Nadine","content":[
+               "Simon: 'Ahh you must be Nadine! Name's Simon, Steve said that you wanted to take a look around the server room?'",
+"Nadine: 'That's right! I love tech and I heard that HealthCorp had some of the finest in the city'",
+"Simon: 'You heard right! Come right this way, let's start the tour!'"
+            ],
+            "link":["MAD-Simon-ServerRoom"],"images":[],"characters":["Nadine", "Simon"],"music":"","dialogue":true
+         },
+         {
+            "name":"MAD-Simon-ServerRoom","content":[
+               "They both enter the lift. ",
+               "Simon scans his pass against the contact point and presses the button for the server room."
+            ],
+            "link":["InTheServerRoom"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"MAD-Steve-InnerCircle","content":[
+               "Nadine: 'I overheard some people talking about the Inner Circle, what's that about?'",
+"Steve: 'Um where did you hear that?'",
+"Nadine: 'Just around the office, why?'",
+"Steve: 'Nothing, I don't know anything about that. I'm sorry, I got to go.'"
+            ],
+            "link":["MAD-Steve-IC-Bye"],"images":[],"characters":["Nadine", "Steve"],"music":"","dialogue":true
+         },
+         {
+            "name":"MAD-Steve-IC-Bye","content":[
+               "Steve quickly left the break room. ",
+               "A few moments later, three security guards came into the break room and apprehended Nadine."
+            ],
+            "link":["Tech-SG-Busted"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"MAD-Steve-MarketingHC","content":[
+               "Nadine: 'How does HealthCorp market itself to people? Yknow, how do they convince people to go for them?'",
+               "Steve: 'Two words: Protect your image.'",
+               "Steve: 'Actually that's three but you know what I mean'",
+               "Nadine: 'Uhhh...'",
+               "Steve: 'Look, HealthCorp spend millions protecting their image, whether that be in R&D or in the press, it's all about protecting their investment'",
+               "Nadine: 'Their investment?'",
+               "Steve: 'You know what I mean, don't act new, okay?'",
+               "Steve: 'Anyways, enough with the shop talk, what else dya wanna know from me, the Oracle of HealthCorp? 😜'"
+            ],
+            "link":["MAD-Steve-Decision"],"images":[],"characters":["Nadine", "Steve"],"music":"","dialogue":true
+         },
+         {
+            "name":"MAD-Steve-MarketingHC-SysDecision","content":["MAD-Steve-MarketingHC"],
+            "link":["MAD-Steve-MHC-AskedBefore","MAD-Steve-MarketingHC"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"MAD-Steve-MHC-AskedBefore","content":["You've already asked Steve this, ask him something else."],
+            "link":["MAD-Steve-Decision"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"M-A-D-LookAround","content":[
+               "She notices an empty conference room with several whiteboards. ",
+               "When Nadine approaches the conference room, she notices that the whiteboards have lots of writing on.",
+               "A curious Nadine enters the conference room to get a closer look at the whiteboards."
+            ],
+            "link":["MAD-Whiteboards"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"MAD-Whiteboards","content":[
+               "From what Nadine can gather, it looks like a basic view at a new targetting tool. ",
+               "It looks like it's somehow using data to target people who are predisposed to certain diseases. ",
+               "Unfortunately, the whiteboards don't describe it in a lot of detail... ",
+               "As Nadine turns to leave, a Security Guard blocks her path at the door."
+            ],"link":["MAD-Whiteboards-SG"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"MAD-Whiteboards-SG","content":[
+               "Security-Guard: 'What are you doing in here? Show me your pass.'"
+            ],
+            "link":["MAD-W-SG-Decision"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"MAD-W-SG-Decision","content":[
+               "What does Nadine say?",
+               "No.",
+               "Yes."
+            ],"link":["MAD-W-SG-Yes","MAD-W-SG-No"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"MAD-W-SG-Yes","content":["Nadine: 'Sure! Hang on.'"],
+            "link":["MAD-W-SG-CC-SysDecision"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"MAD-W-SG-No","content":[
+               "Nadine: 'No you can't. Why should I show you my ID?'",
+"Security-Guard: 'Ma'am if you don't show me your ID, I will be forced to arrest you.'",
+"Nadine: 'You ain't gonna do shit.'",
+"Security-Guard: 'That's it, you're coming with me'"
+            ],"link":["Tech-SG-No-Apprehended"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"MAD-W-SG-CC-SysDecision","content":["DanielleHooksNadUp"],
+            "link":["MAD-W-SG-HasCreds","MAD-W-SG-NoCreds"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"MAD-W-SG-HasCreds","content":[
+               "Nadine hands her pass over to the Security Guard. ",
+               "He inspects it and then hands it back to Nadine."
+            ],"link":["MAD-W-SG-AllClear"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"MAD-W-SG-AllClear","content":[
+               "Security-Guard: 'Everything seems to be in order here, carry on'",
+"Nadine: 'Thank you sir.'"
+            ],
+            "link":["MAD-W-SG-ByeGirl"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"MAD-W-SG-ByeGirl","content":["The Security Guard saunters away."],
+            "link":["M-A-D-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"MAD-W-SG-NoCreds","content":[
+               "Nadine: 'Erm, I can't seem to find it.'",
+"Security-Guard: 'Mmhmm okay, what are you doing here without your pass?'"
+            ],
+            "link":["MAD-W-SG-NC-Decision"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"MAD-W-SG-NC-Decision","content":[
+               "What does Nadine say?",
+               "Nothing.",
+               "It's at my desk."
+            ],"link":["MAD-W-SG-NC-Nothing","TMAD-W-SG-NC-Desk"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"MAD-W-SG-NC-Nothing","content":[
+               "Nadine: 'Nothing really, just reading the noticeboard.'",
+"Security-Guard: 'Oh that's all?'",
+"Security-Guard: 'You're coming with me.'"
+            ],"link":["Tech-SG-Busted"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"MAD-W-SG-NC-Desk","content":[
+"Nadine: 'Just reading the notices, my pass must be at my desk!'",
+"Security-Guard: 'All staff are required to wear their work pass on them at all times, everyone does. I think you should come with me."
+            ],"link":["Tech-SG-Busted"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"M-A-D-Notices","content":[
+               "Nadine takes a look at the noticeboard in the communal area. ",
+               "It's covered with a bunch of mundane notices. ",
+               "Zumba with Karen, Chess lessons from Charlie and someone looking for a Math tutor. "
+            ],"link":["MAD-Notices-Capitalism"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"MAD-Notices-Capitalism","content":[
+               "Nadine wonders why you're wasting time reading this when there are people dying because of capitalism."
+            ],"link":["M-A-D-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"M-A-D-No","content":[
+               "Nadine: 'No thank you, I'm alright, just waiting for someone'",
+"Marketing-Woman: 'Oh okay! Well let me know if you need anything.'"
+            ],
+            "link":["M-A-D-Foyer"],"images":[],"characters":["Nadine", "Marketing-Woman"],"music":"","dialogue":true
+         },
+         {
+            "name":"M-A-D-Foyer","content":["The Woman walks away, leaving Nadine alone in the foyer of the Marketing floor."],
+            "link":["M-A-D-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"M-A-D-Interview","content":[
+               "Nadine: 'Actually yes, I have an interview, would you be able to direct me?'",
+"Marketing-Woman: 'Of course! I think they're happening in Conference Room 3, I'll take you there!'",
+"Nadine: 'Fab! Thank you.'"
+            ],
+            "link":["M-A-D-Interview-CF"],"images":[],"characters":["Nadine", "Marketing-Woman"],"music":"","dialogue":true
+
+         },
+         {
+            "name":"M-A-D-Interview-CF","content":[
+               "The Woman directs her to a room with three people sat at a board room style table. Nadine stops before she goes in"
+            ],
+            "link":["M-A-D-Interview-Bathroom"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"M-A-D-Interview-Bathroom","content":[
+               "Nadine: 'Umm actually, do you know where the bathroom is? I wanna freshen up before I go in.'",
+"Marketing-Woman: 'Oh of course, it's down the hall to the left, I'll just let them know that you'll be a few minutes, ok hon?'",
+"Nadine: 'Okay, thank you so much! Be right back..'"
+            ],
+            "link":["M-A-D-Bathroom"],"images":[],"characters":["Nadine", "Marketing-Woman"],"music":"","dialogue":true
+         },
+         {
+            "name":"M-A-D-Bathroom","content":[
+               "Nadine watches the woman enter the conference room and then power walks to the bathroom."
+            ],"link":["M-A-D-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Marketing-A-Decision-NoInterview","content":[
+               "What does Nadine say?",
+               "Yes.",
+               "No."
+            ],"link":["M-A-D-Yes","M-A-D-No"],"images":[],"music":"","decision":true
          },
          {
            "name":"Lift-9","content":[
@@ -1016,14 +1524,469 @@
              ],"link":["SalesFloor"],"images":[],"music":"","narration":true
          },
          {
-            "name":"SalesFloor","content":[],"link":[],"images":[],"music":"","narration":true
+            "name":"SalesFloor","content":[
+               "The Sales floor is like a circus. There are phones are ringing off the hook, hundreds of people talking into headsets in their cubicles.",
+               "Managers are floating around like spectre, watching over the dead... ",
+               "One of these spectres approaches Nadine."
+            ],"link":["SF-TimeCheck-SysDecision"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"SF-TimeCheck-SysDecision","content":["6PMStartHasCredentials"],
+            "link":["SF-Darren-Late","SF-Darren-OtherLate"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"SF-Darren-Late","content":["Darren: 'You. What are you doing here so late?'"],
+            "link":["SF-Decision"],"images":[],"characters":["Nadine", "Darren"],"music":"","dialogue":true
+         },
+         {
+            "name":"SF-Darren-OtherLate","content":["Darren: 'You. You're late, what time do you call this, eh?'"],
+            "link":["SF-Decision"],"images":[],"characters":["Nadine", "Darren"],"music":"","dialogue":true
+         },
+         {
+            "name":"SF-Decision","content":[
+               "What does Nadine do?",
+               "Hey Darren.",
+               "Check your watch hun 🙄",
+               "I forgot my pass."
+            ],
+            "link":["SF-HeyDarren","SF-CYW","SF-ForgotPass"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"SF-HeyDarren","content":[
+               "Nadine: 'Hey there Darren, good to see you in person.'",
+"Darren: 'I'm sorry, do I know you??'",
+"Nadine: 'I enjoyed our little conversation yesterday.'"
+            ],
+            "link":["SF-DarrenLike-SysDecision"],"images":[],"characters":["Nadine", "Darren"],"music":"","dialogue":true
+         },
+         {
+            "name":"SF-CYW","content":[
+               "Nadine: 'I don't know, how about you check your watch hon'",
+"Darren: 'Ohh how funny and original.'"
+            ],
+            "link":["SF-WhatsYourName"],"images":[],"characters":["Nadine", "Darren"],"music":"","dialogue":true
+         },
+         {
+            "name":"SF-ForgotPass","content":[
+               "Nadine: 'I forgot my pass, I had to wait for security to let me in'",
+"Darren: 'Hmph, what's your name?'"
+            ],
+            "link":["SF-WhatsYourName"],"images":[],"characters":["Nadine", "Darren"],"music":"","dialogue":true
+         },
+         {
+            "name":"SF-WhatsYourName","content":[
+               "Darren: 'What's your name?'",
+"Nadine: 'Name's Jackie, but everyone calls me Jack'"
+            ],
+            "link":["SF-DarrenLike-SysDecision"],"images":[],"characters":["Nadine", "Darren"],"music":"","dialogue":true
+         },
+         {
+            "name":"SF-DarrenLike-SysDecision","content":["ND-NadsTrustsDarren-CHECK"],
+            "link":["SF-DarrenLikesJack","SF-DarrenNoLikeJack"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"SF-DarrenLikesJack","content":[
+               "Darren: 'Wait, you're Jack? I was expecting someone more...'",
+"Nadine: '... more like a man, not the first time let me tell ya'"
+            ],
+            "link":["SF-DarrensOffice"],"images":[],"characters":["Nadine", "Darren"],"music":"","dialogue":true
+         },
+         {
+            "name":"SF-DarrenNoLikeJack","content":[
+               "Darren: 'So you're Jack. Figures, you'd be a liar and a snake too.'",
+"Nadine: 'I'm sorry, things got off on the wrong foot between us.'"
+            ],
+            "link":["SF-DarrenHate-SysDecision"],"images":[],"characters":["Nadine", "Darren"],"music":"","dialogue":true
+         },
+         {
+            "name":"SF-DarrenHate-SysDecision","content":["DarrenIsAThreat"],
+            "link":["SF-DarrenSellsYouOut", "SF-DarrenTriesToGetYourTrust"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"SF-DarrenTriesToGetYourTrust","content":[
+               "Darren: 'I just wanna say that you can trust me, like I want to see HealthCorp pay for what they have done to all those people, it's not right at all.'",
+"Nadine: 'Alright, alright, I believe you, but I need your help to get into the server room.'",
+"Nadine: 'I need a pass to get in there and I have nothing, can you help?'",
+"Darren: 'Of course doll, come with me to my office, I can score you a pass'"
+            ],
+            "link":["SF-DarrensOffice"],"images":[],"characters":["Nadine", "Darren"],"music":"","dialogue":true
+         },
+         {
+            "name":"SF-DarrensOffice","content":[
+               "Darren leads Nadine to a medium sized office.",
+               "He sits behind a desk and offers Nadine a seat. ",
+               "They both sit down and Darren starts typing on his computer.",
+               "After a few moments, Darren prints something."
+            ],"link":["SF-DarrenPass"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"SF-DarrenPass","content":[
+               "Darren: 'Lucky for you, I have some friends up in the Technical department who share our interests.'",
+"Darren: 'I will give this pass to you on one condition'",
+"Nadine: 'What is it?'",
+"Darren: 'You have to expose the Inner Circle. They've messed with enough people's lives. We got a deal?'",
+"Nadine: 'Doesn't look like I have much of a choice, you'd call security on me if I don't, wouldn't you?'",
+"Darren: 'Naturally 🤷‍♂️🤷‍♂️🤷‍♂️'",
+"Nadine: 'Figures. Fine, you got it. One company sized expose coming right up'",
+"Darren: 'That's what I like to hear'"
+               ],"link":["SF-DarrenPass-Gives"],"images":[],"characters":["Nadine", "Darren"],"music":"","dialogue":true
+         },
+         {
+            "name":"SF-DarrenPass-Gives","content":["Darren hands the temporary pass to the server room to Nadine."],
+            "link":["SF-Darren-ServerRoom"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"SF-Darren-ServerRoom","content":[
+               "Darren: ' Server room's on the 26th floor, good luck hon, you're gonna need it to hack in'",
+"Nadine: 'Thanks, see you on the other side'"
+            ],
+            "link":["SF-DarrenOffice-NadineLeaves"],"images":[],"characters":["Nadine", "Darren"],"music":"","dialogue":true
+         },
+         {
+            "name":"SF-DarrenOffice-NadineLeaves","content":[
+               "Nadine leaves Darren's office and returns to the lift. ",
+               "She gets in and presses the button for the server room"
+            ],"link":["InTheServerRoom"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"SF-DarrenSellsYouOut","content":[
+               "Darren: 'Frankly no, why should I help you?'",
+"Nadine: 'Because I made it here! I'm so close to getting in, I just need someone to point me in the right direction.'",
+"Darren: 'Hmph, let me see what I can do.'"
+            ],
+            "link":["SF-DarrenSellsYouOut-2"],"images":[],"characters":["Nadine", "Darren"],"music":"","dialogue":true
+         },
+         {
+            "name":"SF-DarrenSellsYouOut-2","content":[
+               "Darren saunters off and disappears into an office, leaving Nadine on the sales floor looking rather sheepish.",
+               "A few moments later, the lift doors open and four security guards file out. They spot Nadine instantly and grab her.",
+               "She is quickly apprehended and as she is being taken away to the lift, she spots Darren smiling at her menacingly."
+            ],
+            "link":["NadineDevicesSeized"],"images":[],"music":"","narration":true
          },
          {
            "name":"Lift-25","content":[
              "Nadine decides her best shot to mess with HealthCorp is with their server room.",
              "The Technical department is the best place to start.",
              "She presses the button and the lift starts zooming up to the 25th floor."
-             ],"link":[],"images":[],"music":"","narration":true
+             ],"link":["Tech-Arrival"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-Arrival","content":[
+               "Nadine arrives at the Technical department. ",
+               "This floor seems very relaxed with an open working area, filled with whiteboards and computer work stations. ",
+               "It doesn't seem to be that busy right now...",
+               "There are a couple of people typing away at their computers."
+            ],"link":["Tech-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-Circular","content":[
+               "What does Nadine do?",
+               "Find the break room.",
+               "Go to a vacant computer.",
+               "Have a look around.",
+               "Talk to a random person."
+            ],"link":["Tech-BreakRoom-SysDecision","Tech-Computer-SysDecision","Tech-LookAround-OSINTCheck-SysDecision","Tech-RandomHuman"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"Tech-BreakRoom-SysDecision","content":["Tech-BreakRoom"],
+            "link":["Tech-BR-AlreadyBeen","Tech-BreakRoom"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"Tech-BR-AlreadyBeen","content":["Nadine has already been in the break room, she should go somewhere else."],
+            "link":["Tech-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-BreakRoom","content":[
+               "Nadine sees a sign for the break room and wanders over to it. ",
+               "There are two people inside, both pre-occupied with their own devices.",
+               "Nadine goes to talk to one of the men, reading a newspaper."
+            ],"link":["Tech-BR-Daniel"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-BR-Daniel","content":[
+               "Nadine: 'Hi there, my name is Nadine, what's your name?'",
+"Daniel: 'Hm? oh hello, Daniel.'",
+"Nadine: 'Soooo what did you do today?'",
+"Daniel: 'Hm? oh just working on a project'",
+"Nadine: 'Oh cool, what project?'",
+"Daniel: 'Look I'm just trying to enjoy my break.'",
+"Nadine: 'Oh sorry, okay, I'll just-'"
+            ],
+            "link":["Tech-BR-Bye"],"images":[],"characters":["Nadine", "Daniel"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-BR-Bye","content":["Nadine awkwardly leaves the table Daniel is sat at and proceeds to leave the break room."],
+            "link":["Tech-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-Computer-SysDecision","content":["Tech-Computer"],
+            "link":["Tech-Computer-AlreadyBeen","Tech-Computer"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"Tech-Computer-AlreadyBeen","content":["Nadine has already been on a vacant computer, she should do something else."],
+            "link":["Tech-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-Computer","content":[
+               "Nadine finds an empty workstation. No one is logged in."
+            ],"link":["Tech-C-Anon-SysDecision"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-C-Anon-SysDecision","content":["NadineHitsTheJackpot-Anon"],
+            "link":["Tech-C-Anon-AccessGranted","Tech-C-Anon-DA"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"Tech-C-Anon-DA",
+            "minigame":true,
+            "minigame-link":"DA-minigame.html",
+            "content":[
+               "Nadine decides to launch a dictionary attack on the work station in an attempt to gain access.",
+               "Nadine managed to brute force her way into the work station!",
+               "Nadine's attack failed!"
+            ],"link":["Tech-C-Intranet","Tech-C-HackFailed"],"images":[],"music":""
+         },
+         {
+            "name":"Tech-C-HackFailed","content":[
+               "She is locked out from the PC. ",
+               "A message pops up on screen saying 'Security has been notified of this intrusion'. ",
+               "Nadine gets up to make her way to the lift. A Security Guard runs around the corner and pulls out a gun."
+            ],"link":["Tech-C-SG-Gun"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-C-SG-Gun","content":["Security-Guard: 'Stop right there!'"],
+            "link":["Tech-C-SG-Decision"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-C-SG-Decision","content":[
+               "Does Nadine comply?",
+               "Yes.",
+               "No."
+            ],"link":["Tech-C-SG-Yes","Tech-C-SG-No"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"Tech-C-SG-Yes","content":[
+               "Nadine: 'Okay okay! Don't shoot!'",
+               "Security-Guard: 'Hands on your head! Kneel SLOWLY!'"
+            ],
+            "link":["Tech-C-SG-Surrounded"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-C-SG-Surrounded","content":[
+               "Nadine puts her hands behinds her head and kneels to the ground. ",
+               "She is quickly surrounded a team of Security Guards and is apprehended."
+            ],
+            "link":["Tech-SG-Busted"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-C-SG-No","content":["Nadine: 'You won't catch me alive!'"],
+            "link":["Tech-C-SG-ShotsFired"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-C-SG-ShotsFired","content":[
+               "The Security Guard doesn't hesitate to shoot Nadine. ",
+               "She falls to the ground as a team of Security Guards swarm the floor."
+            ],
+            "link":["NadinesDeathNews"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"NadinesDeathNews","content":[
+               "The following day, news of her attempted break-in leak to the press. ",
+               "Although few do report it out of fear of being sued by HealthCorp, Nadine is seen as a martyr by those who look to take HealthCorp down.",
+               "A symbol for some, a waste to others, anonymous to the rest..."
+            ],"link":["GAME OVER"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-C-Anon-AccessGranted","content":[
+               "Thanks to the plans Nadine got from the Anonymous Sender, she has valid credentials to get into the workstation."
+            ],"link":["Tech-C-Intranet"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-C-Intranet","content":[
+               "Once in, she browses to the company network until she finds the company intranet.",
+               "It shows the number of people taking out insurance has gone up since they trialled a new targetting tool."
+            ],"link":["Tech-C-Intranet-2"],"images":[],"music":"","narration":true
+
+         },
+         {
+            "name":"Tech-C-Intranet-2","content":[
+               "The post doesn't really say much more about the tool or if they've deployed it. ",
+               "Nadine couldn't really find anything else of interest. "
+            ],"link":["Tech-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-LookAround-SysDecision","content":["Tech-LookAround"],
+            "link":["Tech-StopLookingAround", "Tech-LookAround"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"Tech-StopLookingAround","content":[
+               "Nadine has already had a look around, she should focus on the task at hand."
+            ],"link":["Tech-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-LookAround-OSINTCheck-SysDecision","content":["HQCameras"],
+            "link":["Tech-LookAround-Warning", "Tech-LookAround-SysDecision"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"Tech-LookAround-Warning","content":[
+               "Nadine remembers the cameras that HealthCorp have set up and is now doubting whether she should wander aimlessly around the floor."
+            ],"link":["Tech-LookAround-Decision"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-LookAround-Decision","content":[
+               "What should Nadine do?",
+               "Still have a look around.",
+               "Do something else."
+            ],"link":["Tech-LookAround","Tech-LookAround-GoodChoice"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"Tech-LookAround-GoodChoice","content":["Nadine decides to avoid the cameras and think of something else to do"],
+            "link":["Tech-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-LookAround","content":[
+               "Nadine decides to have a look around the floor. ",
+               "She turns a corner and starts to read a noticeboard. It has some notices, all fairly mundane community notices, nothing of note really...",
+               "A few moments later, a security guard on patrol approaches her.",
+               ""
+            ],"link":["Tech-SecurityGuard"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-SecurityGuard","content":[
+               "Security-Guard: 'Excuse me, can I see your pass from you please?'"
+            ],
+            "link":["Tech-SecurityGuard-Decision"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-SecurityGuard-Decision","content":[
+               "What does Nadine say?",
+               "Sure thing.",
+               "No."
+            ],"link":["Tech-SG-Yes", "Tech-SG-No"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"Tech-SG-Yes","content":["Nadine: 'Sure! Hang on.'"],
+            "link":["Tech-SG-CC-SysDecision"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-SG-CC-SysDecision","content":["DanielleHooksNadUp"],
+            "link":["Tech-SG-HasCreds","Tech-SG-NoCreds"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"Tech-SG-HasCreds","content":[
+               "Nadine hands her pass over to the Security Guard. ",
+               "He inspects it and then hands it back to Nadine."
+            ],"link":["Tech-SG-AllClear"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-SG-NoCreds","content":[
+               "Nadine: 'Erm, I can't seem to find it.'",
+"Security-Guard: 'Mmhmm okay, what are you doing here without your pass?'"
+            ],
+            "link":["Tech-SG-NC-Decision"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-SG-NC-Decision","content":[
+               "What does Nadine say?",
+               "Nothing.",
+               "It's at my desk.",
+               "Working, duh. 🙄"
+            ],"link":["Tech-SG-NC-Nothing","Tech-SG-NC-Desk","Tech-SG-NC-Working"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"Tech-SG-NC-Nothing","content":[
+               "Nadine: 'Nothing really, just reading the noticeboard.'",
+"Security-Guard: 'Oh that's all?'",
+"Security-Guard: 'You're coming with me.'"
+            ],"link":["Tech-SG-Busted"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-SG-NC-Desk","content":[
+"Nadine: 'Just reading the notices, my pass must be at my desk!'",
+"Security-Guard: 'All staff are required to wear their work pass on them at all times, everyone does. I think you should come with me."
+            ],"link":["Tech-SG-Busted"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-SG-NC-Working","content":[
+               "Nadine: 'Working, what does it look like?'",
+"Security-Guard: 'Sure doesn't look like a whole lot staring at a noticeboard. I think you should come with me"
+            ],"link":["Tech-SG-Busted"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-SG-Busted","content":["Nadine is led away to a room for questioning."],
+            "link":["NadineDevicesSeized"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"NadineDevicesSeized","content":[
+               "After seizing her devices and hours of questioning, it doesn't take them long to figure out why she was there,"
+            ],"link":["UGCarPark-NadineAlone"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-SG-AllClear","content":[
+               "Security-Guard: 'Everything seems to be in order here, carry on'",
+"Nadine: 'Thank you sir.'"
+            ],
+            "link":["Tech-SG-ByeGirl"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-SG-ByeGirl","content":[
+               "The Security Guard saunters away."
+            ],"link":["Tech-Circular"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-SG-No","content":[
+               "Nadine: 'No you can't. Why should I show you my ID?'",
+"Security-Guard: 'Ma'am if you don't show me your ID, I will be forced to arrest you.'",
+"Nadine: 'You ain't gonna do shit.'",
+"Security-Guard: 'That's it, you're coming with me'"
+            ],
+            "link":["Tech-SG-No-Apprehended"],"images":[],"characters":["Nadine","Security-Guard"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-SG-No-Apprehended","content":[
+               "The Security Guard lunges for Nadine and arrests her."
+            ],
+            "link":["Tech-SG-Busted"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-RandomHuman","content":[
+               "Nadine notices someone walking her way texting on their phone and decides that they would be good to talk to."
+            ],"link":["Tech-RandomHuman-1"],"images":[],"music":"","narration":true
+         },
+         {
+            "name":"Tech-RandomHuman-1","content":[
+               "Nadine: 'Hi there! My name is Carol, would you be able to help me?'",
+"Justin: 'Oh, hi Carol, my name is Justin, sure, what's up?'",
+"Nadine: 'I'm an intern, and my boss asked me to meet him in the server room to take a look at an ongoing issue he's been working on. '",
+"Nadine: 'But he didn't tell me how to get there or where it is, guess he just assumed I knew where it was haha 😅'"
+            ],"link":["Tech-RHTime-SysDecision"],"images":[],"characters":["Nadine", "Justin"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-RHTime-SysDecision","content":["6PMStartHasCredentials"],
+            "link":["Tech-RH-InternWorkingLate","Tech-RH-Relatable"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"Tech-RH-InternWorkingLate","content":[
+               "Justin: 'Bit late to be working even for an intern, no?'",
+"Nadine: 'Uhhh, yeah he just makes us work really late.'",
+"Justin: 'Hmm okay, I've got some time, I'll take you up.'",
+"Nadine: 'Ah thank you!'"
+            ],
+            "link":["Tech-RH-Escort"],"images":[],"characters":["Nadine", "Justin"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-RH-Relatable","content":[
+               "Justin: 'Ah, I know that feeling. Tell you what, I've got some time, hwo about I take you there!'",
+"Nadine: 'That would be great! Thank you so much!'"
+            ],
+            "link":["Tech-RH-Escort"],"images":[],"characters":["Nadine", "Justin"],"music":"","dialogue":true
+         },
+         {
+            "name":"Tech-RH-Escort","content":[
+               "Justin leads Nadine into a lift. ",
+               "He scans his pass and presses the button for the 26th floor and they reach the server room floor in no time. "
+            ],
+            "link":["InTheServerRoom"],"images":[],"music":"","narration":true
          },
          {
             "name":"MainEntrance-LookForExploits-Decision",
@@ -1382,12 +2345,8 @@
             "images":[
 
             ],
-            "characters":[
-               "Nadine",
-               "Tammy"
-            ],
             "music":"",
-            "dialogue":true
+            "narration":true
          },
          {
             "name":"ME-NW-GoingIn",
@@ -2467,12 +3426,24 @@
                "Nadine parks in the security bay.",
                "She turns off the engine and watches as the security guard radioes for what she presumes is backup."
             ],
-            "link":[],
+            "link":["UGCarPark-SB-Decision"],
             "images":[
 
             ],
             "music":"",
             "narration":true
+         },
+         {
+            "name":"UGCarPark-SB-Decision","content":[
+               "What does Nadine do?",
+               "*reverses away and leaves*",
+               "Waits in her car."
+            ],
+            "link":["UGCarPark-BookIt","UGCarPark-Waits"],"images":[],"music":"","decision":true
+         },
+         {
+            "name":"UGCarPark-Waits","content":["Nadine decides to wait in her car for Security to arrive."],
+            "link":["UGCarPark-ImpoundedCar"],"images":[],"music":"","narration":true
          },
          {
             "name":"UGCarPark-Decision",
@@ -2500,7 +3471,7 @@
                "Nadine drives down the dark tunnel.",
                "She parks her car and starts to make her way to the nearby lift."
             ],
-            "link":[],
+            "link":["ME-ToTheLifts"],
             "images":[
 
             ],
@@ -2578,12 +3549,8 @@
             "images":[
 
             ],
-            "characters":[
-               "Nadine",
-               "Security-Guard"
-            ],
             "music":"",
-            "dialogue":true
+            "decision":true
          },
          {
             "name":"UGCarPark-BookIt",
@@ -2591,12 +3558,18 @@
                "Nadine shifts her car into reverse and quickly backs it up into the side street.",
                "She floors it and speeds away from the HQ."
             ],
-            "link":[],
+            "link":["UGCarPark-BreakInRuined"],
             "images":[
 
             ],
             "music":"",
             "narration":true
+         },
+         {
+            "name":"UGCarPark-BreakInRuined","content":[
+               "The Break in is ruined, HealthCorp are going to expect her now."
+            ],
+            "link":["GAME OVER"],"images":[],"music":"","narration":true
          },
          {
             "name":"UGCarPark-AggyNadine",

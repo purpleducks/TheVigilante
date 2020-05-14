@@ -1,11 +1,13 @@
 class DictionaryAttack extends Minigame {
 
-	constructor(name, difficulty) {
+	constructor(name, difficulty, failingObj, succeedingObj) {
 		super(name, difficulty);
 		this.words = [];
 		this.shownWords = [];
 		this.score = 0;
 		this.spentWords = 0;
+		this.failingObj = failingObj;
+		this.succeedingObj = succeedingObj;
 		this.gameEnded = false;
 	}
 
@@ -116,7 +118,7 @@ class DictionaryAttack extends Minigame {
 	                musicPlayer.load();
 	                musicPlayer.play();
 					var allActions = JSON.parse(localStorage.getItem("allActions"));
-					allActions.push("In bloggers profile");
+					allActions.push(that.succeedingObj);
 					localStorage.setItem("allActions", JSON.stringify(allActions));
 
 					that.clearScreen();
@@ -139,7 +141,7 @@ class DictionaryAttack extends Minigame {
 	                musicPlayer.load();
 	                musicPlayer.play();
 	                var allActions = JSON.parse(localStorage.getItem("allActions"));
-					allActions.push("Probably a scam");
+					allActions.push(that.failingObj);
 					localStorage.setItem("allActions", JSON.stringify(allActions));
 
 					that.clearScreen();
@@ -171,16 +173,16 @@ class DictionaryAttack extends Minigame {
 	}
 
 	checkFirstVisit() {
-	  if(document.cookie.indexOf('refreshCheck')==-1) {
+	  if(document.cookie.indexOf(this.name)==-1) {
 	    // cookie doesn't exist, create it now
-	    document.cookie = 'refreshCheck=1';
+	    document.cookie = this.name+'=1';
 	    return true;
 	  }
 	  else {
 	    // not first visit, so alert
 	    alert('Refreshing is not allowed.');		// cheating!
 	    var allActions = JSON.parse(localStorage.getItem("allActions"));
-			allActions.push("Probably a scam");	// assume fail
+			allActions.push(this.failingObj);	// assume fail
 			localStorage.setItem("allActions", JSON.stringify(allActions));
 			window.location.replace("./page1.html");	// redirect back to the game
 	    return false;

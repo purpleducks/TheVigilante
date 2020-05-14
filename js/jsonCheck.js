@@ -1,6 +1,6 @@
 
 function testGameJSON(json) {
-	var gameData = json.Introduction.storylines;
+	var gameData = json.OSINT.storylines;
 	var imagelessObjects = [];
 	var quietObjects = [];
 	console.log("IN TEST NOW");
@@ -21,12 +21,16 @@ function testGameJSON(json) {
 		else {
 			var hasAFlag = false;
 			if (speechObject.images.length == 0 || (speechObject.images.length != speechObject.content.length && (speechObject.narration || speechObject.dialogue))) {
-				console.log("The object called '"+speechObject.name+"' has no images linked to it!");
+				//console.log("The object called '"+speechObject.name+"' has no images linked to it!");
 				imagelessObjects.push(speechObject.name);
 			}
 			if (speechObject.music == "") {
-				console.log("The object called '"+speechObject.name+"' has no music on it!");
+				//console.log("The object called '"+speechObject.name+"' has no music on it!");
 				quietObjects.push(speechObject.name);
+			}
+			else if (speechObject.music === undefined) {
+				console.log("no music field - " + speechObject.name);
+				return false;
 			}
 			if (speechObject.dialogue) {
 				hasAFlag = true;
@@ -86,7 +90,7 @@ function testGameJSON(json) {
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'assets/Introduction.json', true);
+    xobj.open('GET', 'assets/OSINT.json', true);
     // Replace 'my_data' with the path to your file
     xobj.onreadystatechange = function() {
         if (xobj.readyState === 4 && xobj.status === 200) {
