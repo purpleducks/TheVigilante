@@ -221,6 +221,23 @@ body {
     z-index: 4;
 }
 
+#musicCredits {
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    font-family: IBMPlex;
+    z-index: 4;
+    left: 1%;
+    font-style: italic;
+    background-color: black;
+    padding: 3px;
+    border-radius: 4px;
+    bottom: 2%;
+    overflow: auto;
+    width: 20vw;
+    text-align: center;
+}
+
 /* Decision elements */
 
 .row {

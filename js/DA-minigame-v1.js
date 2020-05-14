@@ -125,7 +125,7 @@ class DictionaryAttack extends Minigame {
 					clearInterval();
 
 					setTimeout(function() {
-						window.location.replace("./page1.html");
+						window.location.replace("./main.html");
 					}, 2000);
 					return 0;
 				}
@@ -147,7 +147,7 @@ class DictionaryAttack extends Minigame {
 					that.clearScreen();
 					clearInterval();
 
-					window.location.replace("./page1.html");
+					window.location.replace("./main.html");
 					return 0;
 				}
 				if (!that.gameEnded) { // if its not
@@ -184,7 +184,7 @@ class DictionaryAttack extends Minigame {
 	    var allActions = JSON.parse(localStorage.getItem("allActions"));
 			allActions.push(this.failingObj);	// assume fail
 			localStorage.setItem("allActions", JSON.stringify(allActions));
-			window.location.replace("./page1.html");	// redirect back to the game
+			window.location.replace("./main.html");	// redirect back to the game
 	    return false;
 	  }
 	}

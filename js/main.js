@@ -160,13 +160,13 @@ function skipScreen() {
 }
 
 function addLabelToggleEL(labelId) {
-    var musicControl = document.getElementById(labelId);
-    musicControl.addEventListener('mouseenter', function(){
+    var elemWithLabel = document.getElementById(labelId);
+    elemWithLabel.addEventListener('mouseenter', function(){
         var labelId = this.id + "Label";
         var label = document.getElementById(labelId);
         label.style.visibility = "visible";
     });
-    musicControl.addEventListener('mouseleave', function(){
+    elemWithLabel.addEventListener('mouseleave', function(){
         var labelId = this.id + "Label";
         var label = document.getElementById(labelId);
         label.style.visibility = "hidden";
@@ -234,7 +234,8 @@ function main() {
     var gameMan = new GameManager();
     var gameContainer = document.getElementById("gameContainer")
     // gameContainer.style.backgroundImage = "url(images/texting.jpg)"
-    gameMan.dataManager.getData("Introduction");
+    gameMan.dataManager.getData("Introduction","json");
+    gameMan.dataManager.getData("music-credits","text");
     gameContainer.gameMan = gameMan;
     runGame();
 }

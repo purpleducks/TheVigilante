@@ -170,6 +170,27 @@ class GameManager {    // singleton class?
         return false;
     }
 
+    updateCreditLabel(trackName) {
+        var justTrack = trackName.slice((trackName.length*-1),(trackName.length-4));
+        justTrack = justTrack.replace(/-/g,' ');
+        var musicCreditLabel = document.getElementById("musicCredits");
+        var foundTrackIndex = this.dataManager.musicCredits.findIndex(music =>music.name == justTrack);
+        if (foundTrack == -1) {
+            musicCreditLabel.innerHTML = "TRACK NOT FOUND!"
+        } else {
+            var foundTrack = this.dataManager.musicCredits[foundTrackIndex];
+            musicCreditLabel.innerHTML = "MUSIC PLAYING: "+foundTrack.name+"<br> CREDIT TO: "+foundTrack.artist+"</br>";
+            var creditLink = document.getElementById("musicCreditSource");
+            var link;
+            if (foundTrack.link == "(YouTube Audio Library)")
+            {
+                link = "https://www.youtube.com/audiolibrary/music";
+            }
+            else { link = foundTrack.link; }
+            creditLink.onclick = function() { window.open(link,'_blank'); }
+        }
+    }
+
     /**
      *  @TODO: Fix the audio fade in and out!
      */
@@ -180,6 +201,7 @@ class GameManager {    // singleton class?
         var currentSong = gettingSongTitle[gettingSongTitle.length - 1];
         if (currentObject.music != currentSong) {     // if the music string isn't set, continue playing the current track!
             console.log("GAME: Changing the track to " + currentObject.music + "!");
+            this.updateCreditLabel(currentObject.music)
             /*
             setInterval(function() {
                 musicPlayer.volume -= 0.1;

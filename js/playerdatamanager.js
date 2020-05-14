@@ -4,6 +4,7 @@ class PlayerDataManager {
 		this.currentStage = "";
 		this.allActions = [];
         this.playerDecisions = [];
+        this.musicCredits = [];
 	}
 
 	addToAllActions(spName) {
@@ -41,11 +42,14 @@ class PlayerDataManager {
 		console.log(this.playerDecisions);
 	}
 
-	getData(jsonName) {
+	getData(filename, filetype) {
         var tempData = [];
+        var tempType = "";
+        if (filetype == "text") { tempType = "txt"}
+        else if (filetype == "json") { tempType = "json"}
         $.ajax({
-            url: "assets/"+jsonName+".json",
-            dataType: "json",
+            url: "assets/"+filename+"."+tempType,
+            dataType: filetype,
             data: tempData,
             async: false,
             success: function(json)
@@ -54,7 +58,19 @@ class PlayerDataManager {
                 console.log("UHUHU");
             }
         });
-        this.gameData = tempData[jsonName]["storylines"];
-        this.currentStage = jsonName;
+        if (filetype == "json") {
+	        this.gameData = tempData[filename]["storylines"];
+	        this.currentStage = filename;
+    	}
+    	else if (filename == "music-credits") {
+    		console.log(tempData);
+    		var allSongs = tempData.split(',').toString().split("\r\n");
+    		for (var i = allSongs.length - 1; i >= 0; i--) {
+    			var tempArray = allSongs[i].split(',');
+    			var song = {name:tempArray[0],artist:tempArray[1],link:tempArray[2]};
+    			console.log(song);
+    			this.musicCredits.push(song);
+    		}
+    	}
     }
 }
