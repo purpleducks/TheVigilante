@@ -20,18 +20,18 @@
          {
             "name":"CoWorkerDialogueOne",
             "content":[
-               "Co-worker 1: 'Did you hear about the new benefits package HR announced?'",
-               "Co-worker 2: 'Ooooh no I didn't, please tell me they gave us more money for gas, these prices lately have been KILLER'",
-               "Co-worker 1: 'Nah, I was mad about that too, but they did switch our health insurance to HealthCorp'",
-               "Co-worker 2: 'Ugh it's about time! MediKare were the worst, I had my gall bladder removed and they took two weeks to pay out. TWO WEEKS. Like I've heard HealthCorp pay out instantly, like no questions asked, they're great.'",
-               "Co-worker 1: 'oh really? thank god, that's honestly the last thing I wanna be worrying about, dread to think how much medical bills cost nowadays.'"
+               "Co-worker1: 'Did you hear about the new benefits package HR announced?'",
+               "Co-worker2: 'Ooooh no I didn't, please tell me they gave us more money for gas, these prices lately have been KILLER'",
+               "Co-worker1: 'Nah, I was mad about that too, but they did switch our health insurance to HealthCorp'",
+               "Co-worker2: 'Ugh it's about time! MediKare were the worst, I had my gall bladder removed and they took two weeks to pay out. TWO WEEKS. Like I've heard HealthCorp pay out instantly, like no questions asked, they're great.'",
+               "Co-worker1: 'oh really? thank god, that's honestly the last thing I wanna be worrying about, dread to think how much medical bills cost nowadays.'"
             ],
             "link":[
                "NadineInternalDialogue"
             ],
             "characters":[
-               "Co-worker 1",
-               "Co-worker 2"
+               "Co-worker1",
+               "Co-worker2"
             ],
             "images":[
 

@@ -6,6 +6,7 @@
 function runGame(stageChange) {
     var gameMan = document.getElementById("gameContainer").gameMan;
 	console.log(gameMan.dataManager.gameData);	// debug - test that data has JSON data loaded correctly
+
     if (gameMan.dataManager.currentStage == "Introduction") {
         
         document.getElementById("gameContainer").addEventListener("getDecisionObj", getDecisionObj, true);
@@ -14,8 +15,12 @@ function runGame(stageChange) {
 
         // document.getElementById("gameContainer").addEventListener("startTexting", startProcessing, true);    TODO: fix texting / remove it at some point        
     }
+    if (!stageChange && !(gameMan.dataManager.currentStage == "Introduction")) {
+        console.log("MAIN: Loading values from storage to restore save data.")
+        gameMan.dataManager.loadFromStorage();
+        gameMan.dataManager.getData(gameMan.dataManager.currentStage,"json");
+    }
 
-    if (stageChange) { saveToStorage(); }
 
     // gameMan.dataManager.gameData = gameMan.dataManager.gameData["Introduction"]["storylines"];
     if (localStorage.allActions != null && localStorage.playerDecisions != null && !stageChange) {
@@ -32,6 +37,7 @@ function runGame(stageChange) {
         console.log(firstObject);
         // gameMan.allActions.push(firstObject.name);
         gameMan.dataManager.addToAllActions(firstObject.name);
+        if (stageChange) { gameMan.dataManager.saveToStorage(); }
         document.getElementById("gameContainer").currObj = firstObject;
         gameMan.sortSpeech(firstObject);   // only for the first time
     }
@@ -108,6 +114,7 @@ function startProcessing(evt, nextObject) {
             alert("GAME OVER!");
         }
         if (!(gameMan.dataManager.currentStage === undefined)) {
+            gameMan.dataManager.saveToStorage();
             removeAllElements();
             runGame(true);
         }
@@ -169,7 +176,9 @@ function removeAllElements() {
 
 
 function skipScreen() {
-    
+    var gameContainer = document.getElementById("gameContainer");
+    var event = new Event('nextObject');
+    gameContainer.dispatchEvent(event);
 }
 
 function addLabelToggleEL(labelId) {
@@ -244,6 +253,8 @@ function removeTextingView() {
 function main() {
     addLabelToggleEL("musicControl");
     addLabelToggleEL("skipScreen");
+    
+    $("#musicCredits").hover(function(){this.style.opacity=1;},function(){this.style.opacity=0.5;});
     var gameMan = new GameManager();
     var gameContainer = document.getElementById("gameContainer")
     // gameContainer.style.backgroundImage = "url(images/texting.jpg)"

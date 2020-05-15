@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="css/DA-minigame.css">
         <script>
           function startGame() {
-            var minigameObj = new DictionaryAttack("DA",1,"Probably a scammer", "In bloggers profile");
+            var minigameObj = new DictionaryAttack("Socials",3,"Probably a scam", "In bloggers profile",42);
             minigameObj.loadWords();
             document.getElementById("minigameLayer").minigameObj = minigameObj;
           }
@@ -29,7 +29,7 @@
             <h5 id="gOMLabel">SYSTEM LOCKDOWN PROGRESS</h5>
             <progress id="gameOverMeter" value="0" max="100"> 32% </progress>
             <form type="text" onsubmit="checkWordField(); return false;">
-                <input type="text" name="passwordGuess" id="passwordGuess" >
+                <input placeholder="Type the words here..." type="text" name="passwordGuess" id="passwordGuess" >
                 <br><br>
             </form>
             <div id="gameResult" style="visibility: hidden;">

@@ -1,7 +1,7 @@
 class DictionaryAttack extends Minigame {
 
-	constructor(name, difficulty, failingObj, succeedingObj) {
-		super(name, difficulty);
+	constructor(name, difficulty, failingObj, succeedingObj, winningScore) {
+		super(name, difficulty);	// difficulty is on a scale of 1-3 : 1 being hard, 3 being easy
 		this.words = [];
 		this.shownWords = [];
 		this.score = 0;
@@ -9,6 +9,7 @@ class DictionaryAttack extends Minigame {
 		this.failingObj = failingObj;
 		this.succeedingObj = succeedingObj;
 		this.gameEnded = false;
+		this.winningScore = winningScore;
 	}
 
 	loadWords() {
@@ -32,6 +33,7 @@ class DictionaryAttack extends Minigame {
 		this.shownWords = [];
 		this.score = 0;
 		this.gameEnded = false;
+		var difficulty = Minigame.prototype.getDifficulty.call(this);
 		setInterval(function() {
 			var minigameLayer = document.getElementById("minigameLayer");
 			console.log("SPENT WORDS: " + this.spentWords);
@@ -42,7 +44,7 @@ class DictionaryAttack extends Minigame {
 				});
 			}
 			else { clearInterval(); }
-		}, 1000);
+		}, Math.round(1500/difficulty));
 	}
 
 	addNewWord() {
@@ -92,9 +94,10 @@ class DictionaryAttack extends Minigame {
 		var position = 0;
 		var word = this.words[wordIndex];
 		var that = this;
+		var difficulty = Minigame.prototype.getDifficulty.call(this);
 		$('#minigameLayer').append("<div class='word' id=word"+wordIndex+"><p>"+word+"</p></div>");
 		var elem = document.getElementById("word"+wordIndex);
-		var id = setInterval(frame, 50);
+		var id = setInterval(frame, 20*difficulty);
 		elem.style.left = this.getRandomInt(2,90) + 'vw';
 		function frame() {
 			var minigameLayer = document.getElementById("minigameLayer");
@@ -104,8 +107,8 @@ class DictionaryAttack extends Minigame {
 				minigameLayer.dispatchEvent(stopMakingWords);
 				return 0;
 			}
-			if (position >= screen.height || that.score >= 42 || that.spentWords > 70) {
-				if (that.score >= 42 && !that.gameEnded) {	// if the score threshold is reached / too many words have been shown
+			if (position >= screen.height || that.score >= that.winningScore || that.spentWords > 70) {
+				if (that.score >= that.winningScore && !that.gameEnded) {	// if the score threshold is reached / too many words have been shown
 					// alert("YOU WON!");
 					that.gameEnded = true;
 
@@ -147,7 +150,9 @@ class DictionaryAttack extends Minigame {
 					that.clearScreen();
 					clearInterval();
 
-					window.location.replace("./main.html");
+					setTimeout(function() {
+						window.location.replace("./main.html");
+					}, 2000);
 					return 0;
 				}
 				if (!that.gameEnded) { // if its not
@@ -205,7 +210,7 @@ class DictionaryAttack extends Minigame {
 			document.getElementById("scoreboard").innerHTML = "SCORE: "+this.score;
 			var correctWordIndex = this.words.indexOf(guessingValue);
 			this.removeWord(correctWordIndex, true);
-			if (this.score == 42) {
+			if (this.score == this.winningScore) {
 				this.clearScreen();
 				clearInterval();
 			}

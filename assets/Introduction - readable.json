@@ -2,32 +2,13 @@
    "Introduction":{
       "storylines":[
          {
-            "content":[
-               "It's Sunday - 1PM.",
-               "Nadine wakes up late, gets ready and turns on her computer to see what's going on.",
-               "As usual, she does her daily ritual of searching for stories about HealthCorp and anyone trying to sue them like her father did all those years ago.",
-               "This is when she stumbles upon a blog post; it reads 'HealthCorp are EVIL!!'",
-               "Jack talks about how his father had terminal cancer and how HealthCorp cancelled his father's insurance just as he was about to start chemotherapy.",
-               "They couldn't keep up with the payments and Jack had to work two jobs and re-mortgage his house just to make the payments."
+            "name":"Opener","content":[
+               "Welcome to the Vigilante!",
+               "In this game, you will play as the protagonist, Nadine Summers.",
+               "Where you'll have to make the right choices to decide how she should act as...",
+               "The Vigilante..."
             ],
-            "link":[
-               "Investigate blog decision"
-            ],
-            "images":[
-               "bedroom.jpg",
-               "bedroom.jpg",
-               "typing.jpg",
-               "blog-post.jpg",
-               "blog-post.jpg",
-               "blog-post.jpg"
-            ],
-            "characters":[
-               "Nadine",
-               "Jack"
-            ],
-            "narration":true,
-            "name":"Opening Speech",
-            "music":"Another-Dramatic-Scene.mp3"
+            "link":[],"images":[],"music":"Adversary.mp3","narration":true
          },
          {
             "content":[
@@ -89,7 +70,7 @@
             ],
             "narration":true,
             "name":"Opening",
-            "music":"Children-of-MH17-longer.mp3"
+            "music":"Children-of-MH17.mp3"
          },
          {
             "content":[
@@ -225,7 +206,8 @@
             "name": "Social media profile hack explanation",
             "content": [
                "Nadine decides to launch a dictionary attack on Jack's social media profile. ",
-               "In order to gain access to Jack's social media profile, she needs to get a score of 42 to win, why you ask?",
+               "In order to gain access to Jack's social media profile,  Nadine needs to try as many passwords as she can to get into Jack's social media profile.",
+               "She needs to get a score of 42 to win, why you ask?",
                "Because it's the answer to the universe of course. 🤷‍",
                "She needs to get this score before the system locks her out for too many failed attempts, so be quick!"
             ],
@@ -267,7 +249,7 @@
                "He's clean, his story checks out."
             ],
             "link":[
-               "Blogger email hack",
+               "Blogger email hack explanation",
                "Texting Marcus"
             ],
             "images": [
@@ -278,6 +260,26 @@
                "Jack"
             ],
             "name":"Bloggers email",
+            "music":"A-Stranger-Thing.mp3"
+         },
+         {
+            "name": "Blogger email hack explanation",
+            "content": [
+               "Nadine decides to launch a dictionary attack on Jack's email account. ",
+               "In order to gain access to Jack's email account, Nadine needs to try as many passwords as she can to get into Jack's email account.",
+               "She needs to get a score of 50 to win, so be quick!",
+               "Being too slow will mean that Jack is notified and his account will be locked down."
+            ],
+            "link": [
+               "Blogger email hack"
+            ],
+            "images": [
+               "blogger-socials.jpg",
+               "blogger-socials.jpg",
+               "blogger-socials.jpg",
+               "blogger-socials.jpg"
+            ],
+            "narration": true,
             "music":"A-Stranger-Thing.mp3"
          },
          {
@@ -293,7 +295,7 @@
             "images": [
             ],
             "minigame":true,
-            "minigame-link":"DA-minigame.html",
+            "minigame-link":"Email-minigame.html",
             "characters":[
                "Nadine",
                "Jack"

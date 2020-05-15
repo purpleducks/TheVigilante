@@ -70,13 +70,13 @@
 
 img.bottomLeft {
     position:absolute;
-    bottom:0;
+    bottom:-2vw;
     left:0;
 }
 
 img.bottomRight {
     position:absolute;
-    bottom:0;
+    bottom:-2vw;
     right:0;
 }
 /* General elements */
@@ -235,6 +235,7 @@ body {
     top: 0%;
     overflow: auto;
     text-align: left;
+    opacity: 0.5;
 }
 
 /* Decision elements */

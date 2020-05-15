@@ -32,11 +32,13 @@ class PlayerDataManager {
 	saveToStorage() {
 		localStorage.setItem('allActions', JSON.stringify(this.allActions));
 		localStorage.setItem('playerDecisions', JSON.stringify(this.playerDecisions));
+		localStorage.setItem('currentStage', this.currentStage);
 	}
 
 	loadFromStorage() {
 		this.allActions = JSON.parse(localStorage.getItem("allActions"));
 		this.playerDecisions = JSON.parse(localStorage.getItem("playerDecisions"));
+		this.currentStage = localStorage.getItem("currentStage");
 		console.log("PDM - Got data from local storage");
 		console.log(this.allActions);
 		console.log(this.playerDecisions);
@@ -59,8 +61,8 @@ class PlayerDataManager {
             }
         });
         if (filetype == "json") {
+        	this.currentStage = filename;
 	        this.gameData = tempData[filename]["storylines"];
-	        this.currentStage = filename;
     	}
     	else if (filename == "music-credits") {
     		console.log(tempData);
