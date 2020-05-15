@@ -2,3 +2,5 @@
 .eslintrc
 
 Thumbs.db
+*.db
+*.db

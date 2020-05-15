@@ -39,6 +39,23 @@ class PlayerDataManager {
 		this.allActions = JSON.parse(localStorage.getItem("allActions"));
 		this.playerDecisions = JSON.parse(localStorage.getItem("playerDecisions"));
 		this.currentStage = localStorage.getItem("currentStage");
+		switch (this.currentStage) {
+			case "Introduction":
+				this.getData("Introduction","json");
+				break;
+			case "OSINT":
+				this.getData("OSINT","json");
+				break;
+			case "BreakIn":
+				this.getData("BreakIn","json");
+				break;
+			case "TheHack":
+				this.getData("TheHack","json");
+				break;
+			case "TheEscape":
+				this.getData("TheEscape","json");
+				break;
+		}
 		console.log("PDM - Got data from local storage");
 		console.log(this.allActions);
 		console.log(this.playerDecisions);

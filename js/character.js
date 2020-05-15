@@ -35,8 +35,13 @@ class Character {   // factory class
             event.stopPropagation();
         });
         
-        if (currentObject.decision) { this.makeDecisionButtons(gameMan); }
-        currentString = currentObject.content.shift();
+        if (currentObject.decision) { 
+            this.makeDecisionButtons(gameMan); 
+            currentString = currentObject.content[0];
+        }
+        else {
+            currentString = currentObject.content.shift();
+        }
 
         if (currentObject.dialogue || currentObject.narration) {
             justTheSpeech = currentString.split(this.name+": '")[1];
@@ -72,7 +77,6 @@ class Character {   // factory class
                 if (currentObject.decision) { this.showDecisionButtons(); }
                 else if (currentObject.minigame) { 
                     this.typer.destroy(); 
-
                     setTimeout(window.location.replace("./"+currentObject["minigame-link"]), 2000);
                 }
                 else { // decisions and minigames don't need to get the next speech

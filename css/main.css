@@ -182,44 +182,63 @@ body {
     top: 4%;
 }
 
+#bottomButtonArray {
+    position: absolute;
+    bottom: 0%;
+    left: 41%;
+    width: 22vw;
+    height: 7vh;
+}
+
+#pauseGame {
+    left: 21%;
+    bottom: 15% !important;
+    width: 4vw !important;
+}
+
+#pauseGameLabel {
+    bottom: 50%;
+    left: 22%;
+}
 
 #musicControl {
-    height: 5vh;
-    width: 5vw;
-    position: absolute;
-    bottom: 2%;
-    left: 46%;
-    z-index: 2;
+    left: 47%;
 }
 
 #musicControlLabel {
-    position: absolute;
-    color: white;
-    bottom: 6.5%;
-    left: 44.5vw;
-    font-size: 0.6vw;
-    font-family: IBMPlex;
-    z-index: 4;
+    left: 42%;
+    bottom: 114%;
 }
 
 #skipScreen {
-    height: 6vh;
-    width: 3vw;
-    position: absolute;
-    bottom: 1.5%;
-    left: 50.5%;
-    z-index: 2;
+    left: 69%
 }
 
 #skipScreenLabel {
+    bottom: 117%;
+    left: 69%;
+}
+
+#saveGameLabel {
+    bottom: 22%;
+    left: -1%;
+}
+
+#bottomButtonArray img {
     position: absolute;
+    width: 3vw;
+    z-index: 4;
+    bottom: 0%;
+}
+
+#bottomButtonArray h5 {
     color: white;
-    bottom: 6.5%;
-    left: 49vw;
     font-size: 0.6vw;
     font-family: IBMPlex;
     z-index: 4;
+    position: relative;
 }
+
 
 #musicCredits {
     position: absolute;
@@ -237,6 +256,8 @@ body {
     text-align: left;
     opacity: 0.5;
 }
+
+
 
 /* Decision elements */
 

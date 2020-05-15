@@ -15,12 +15,6 @@ function runGame(stageChange) {
 
         // document.getElementById("gameContainer").addEventListener("startTexting", startProcessing, true);    TODO: fix texting / remove it at some point        
     }
-    if (!stageChange && !(gameMan.dataManager.currentStage == "Introduction")) {
-        console.log("MAIN: Loading values from storage to restore save data.")
-        gameMan.dataManager.loadFromStorage();
-        gameMan.dataManager.getData(gameMan.dataManager.currentStage,"json");
-    }
-
 
     // gameMan.dataManager.gameData = gameMan.dataManager.gameData["Introduction"]["storylines"];
     if (localStorage.allActions != null && localStorage.playerDecisions != null && !stageChange) {
@@ -52,6 +46,7 @@ function processNextObj(evt) {
     var gameMan = evt.currentTarget.gameMan;
     var currObj = evt.currentTarget.currObj;
     removeAllElements();
+    // gameMan.dataManager.saveToStorage();
     var nextObject = gameMan.dataManager.gameData.find(speechObj => speechObj.name === currObj.link[0]);
     console.log("MAIN: The next object is: " +nextObject.name);
     // checkForTextingView(nextObject);     TODO: fix texting / remove it at some point
@@ -66,6 +61,7 @@ function processNextObj(evt) {
 function getDecisionObj(evt) {
     console.log("MAIN: Getting the next Decision object!");
     var gameMan = evt.currentTarget.gameMan;
+    // gameMan.dataManager.saveToStorage();
     var linkObjName = gameMan.dataManager.getLastDecision();
     var linkObj = gameMan.dataManager.gameData.find(speechObj => speechObj.name === linkObjName);
     console.log("MAIN: Player chose: " +linkObjName);
@@ -177,8 +173,23 @@ function removeAllElements() {
 
 function skipScreen() {
     var gameContainer = document.getElementById("gameContainer");
-    var event = new Event('nextObject');
-    gameContainer.dispatchEvent(event);
+    var gameMan = gameContainer.gameMan;
+    var currentObj = gameContainer.currObj; 
+    console.log("MAIN: Time to skip! Starting object: "+ currentObj.name);
+    if (currentObj.narration || currentObj.decision) {  // only one character object
+        if (currentObj.charctrsObjs[0].typer.is('started')) {
+            console.log("MAIN: Skipping a narration / decision object: "+ currentObj.name);
+            currentObj.charctrsObjs[0].typer.destroy();
+            currentObj.charctrsObjs[0].getNextSpeech();
+        }
+        //else if (currentObj.charctrsObjs[0].typer.is('completed'))
+    }
+    else if (currentObj.dialogue) { // two character objects
+        console.log("MAIN: Skipping a narration / decision object: "+ currentObj.name);
+    }
+
+    //var event = new Event('nextObject');
+    //gameContainer.dispatchEvent(event);
 }
 
 function addLabelToggleEL(labelId) {
@@ -193,6 +204,24 @@ function addLabelToggleEL(labelId) {
         var label = document.getElementById(labelId);
         label.style.visibility = "hidden";
     });
+}
+
+function saveGame() {
+    var gameMan = document.getElementById("gameContainer").gameMan;
+    gameMan.dataManager.saveToStorage();
+    console.log("MAIN: Game saved at object: " + document.getElementById("gameContainer").currObj.name);
+    alert("Saved your game successfully!");
+}
+
+function pauseGame() {
+    var musicPlayer = document.getElementById("musicPlayer");
+    musicPlayer.pause();
+    if (confirm("GAME PAUSED. Press OK to RESUME.")) {
+        musicPlayer.play();
+    }
+    else {
+        musicPlayer.play();
+    }
 }
 
 function playPauseMusic() {
@@ -253,7 +282,9 @@ function removeTextingView() {
 function main() {
     addLabelToggleEL("musicControl");
     addLabelToggleEL("skipScreen");
-    
+    addLabelToggleEL("pauseGame");
+    addLabelToggleEL("saveGame");
+
     $("#musicCredits").hover(function(){this.style.opacity=1;},function(){this.style.opacity=0.5;});
     var gameMan = new GameManager();
     var gameContainer = document.getElementById("gameContainer")

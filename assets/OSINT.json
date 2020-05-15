@@ -1,1 +1,3243 @@
-{"OSINT":{"storylines":[{"name":"NadineAtWork","content":["Monday - 11AM","Nadine is at work at Romero Casinos.","She's busy working away on a pretty mundane report that Corporate want on the new machines, when she hears her co-workers conversation by the water cooler."],"link":["CoWorkerDialogueOne"],"images":[],"narration":true,"music":""},{"name":"CoWorkerDialogueOne","content":["Co-worker1: 'Did you hear about the new benefits package HR announced?'","Co-worker2: 'Ooooh no I didn't, please tell me they gave us more money for gas, these prices lately have been KILLER'","Co-worker1: 'Nah, I was mad about that too, but they did switch our health insurance to HealthCorp'","Co-worker2: 'Ugh it's about time! MediKare were the worst, I had my gall bladder removed and they took two weeks to pay out. TWO WEEKS. Like I've heard HealthCorp pay out instantly, like no questions asked, they're great.'","Co-worker1: 'oh really? thank god, that's honestly the last thing I wanna be worrying about, dread to think how much medical bills cost nowadays.'"],"link":["NadineInternalDialogue"],"characters":["Co-worker1","Co-worker2"],"images":[],"dialogue":true,"music":""},{"name":"NadineInternalDialogue","content":["Nadine: 'If only they knew how bad HealthCorp really are'","Nadine: 'But no-one really knows what they're capable of'","Nadine: 'Well......'","Nadine: 'I guess I could check it out and see if there's any way for me to expose their shady business!'"],"link":["LetsLookAtHC"],"characters":["Nadine"],"images":[],"dialogue":true,"music":""},{"name":"LetsLookAtHC","content":["Nadine decides to finish up her report and start looking into HealthCorp."],"link":"NadDecisionOne","images":[],"narration":true,"music":""},{"name":"NadDecisionOne","content":["What does Nadine do first?","Google HealthCorp","Text Marcus"],"link":["SearchHC","NadineWasNice"],"images":[],"decision":true,"music":""},{"name":"NadineWasNice","link":["MarcusHasTea","NadineWasNice-2"],"content":["NadineIsStrong"],"images":[],"systemDecision":true,"music":""},{"name":"NadineWasNice-2","content":["RememberingMom"],"link":["MarcusHasTea","MarcusPA"],"images":[],"music":"","systemDecision":true},{"name":"MarcusPA","content":["Nadine: 'hey Marcus, do you know anyone who works at HealthCorp who could, yknow, help us out?'","Marcus: 'I'll ask around Nad but I don't think I know of anyone.'","Nadine: 'Oh. That's too bad, it's alright, I'll find out more another way. Stay safe bro xx'","Marcus: 'You too'"],"link":["SearchHC"],"characters":["Nadine","Marcus"],"images":[],"music":"","dialogue":true},{"name":"SearchHC","content":["Nadine decides to start looking for more info about HealthCorp's headquarters."],"link":["OSINT-Circular"],"images":[],"narration":true,"music":""},{"name":"MarcusHasTea","content":["Nadine: 'hey Marcus, do you know anyone who works at HealthCorp who could, yknow, help us out?'","Marcus: 'hey sis, I was actually just about to text you. After we talked last night, I reached out to my buddy from college, turns out he works for HealthCorp's R&D department'","Marcus: 'She knows about all of the crazy shit that HealthCorp be getting up to.'","Marcus: 'I'll send you her number!'"],"link":["MarcusSendsNumber"],"characters":["Nadine","Marcus"],"images":[],"dialogue":true,"music":""},{"name":"MarcusSendsNumber","content":["Marcus sends Nadine a number for a woman called Danielle.","Nadine starts to talk to her..."],"link":["NadDanielleOne"],"images":[],"narration":true,"music":""},{"name":"NadDanielleOne","content":["Nadine: 'hey, it's Nadine, I'm Marcus' sister, he said you could help me?","Danielle: 'hey! that's me, Marcus filled me in with the details, you serious about HealthCorp?"],"link":["NadDanResponseOne"],"characters":["Nadine","Danielle"],"images":[],"dialogue":true,"music":""},{"name":"NadDanResponseOne","content":["What does Nadine say?","Fuck yeah!","Duh, bitch 🙄","I think it's definitely worth a shot"],"link":["EnthusiasticNadDan","RudeNadDan","NeutralNadDan"],"images":[],"decision":true,"music":""},{"name":"EnthusiasticNadDan","content":["Nadine: 'Fuck yeah! I'm the best hacker for the job, best part is no one will suspect me!'","Danielle: 'That's what I like to hear and true, they always be underestimating us!'"],"link":["ImpressedDanielle"],"characters":["Nadine","Danielle"],"images":[],"dialogue":true,"music":""},{"name":"RudeNadDan","content":["Nadine: 'Duh, why else would I have Marcus reach out? 🙄🙄🙄'"],"link":["OffendedDanielle"],"characters":["Nadine","Danielle"],"images":[],"dialogue":true,"music":""},{"name":"NeutralNadDan","content":["Nadine: 'I think I got what it takes to take em down, I'm ready.'","Danielle: 'That's good to hear, someone needs to stop these guys'","Danielle: 'Anyways, I think I know a way for you to slip inside without anyone knowing.'","Nadine: 'Oh really? What is it?'","Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over'"],"link":["DanielleSpillsTea"],"characters":["Nadine","Danielle"],"images":[],"dialogue":true,"music":""},{"name":"ImpressedDanielle","content":["Danielle likes your attitude."],"link":["ImpressedDanielleSpeech"],"images":[],"narration":true,"music":""},{"name":"OffendedDanielle","content":["Danielle didn't like that."],"link":["OffendedDanielleSpeech"],"images":[],"narration":true,"music":""},{"name":"OffendedDanielleSpeech","content":["Danielle: 'Um okay, rude.'","Danielle: 'Anyways, I think I know a way for you to slip inside without anyone knowing.'","Nadine: 'Oh really? What is it?'","Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over.'"],"link":["DanielleSpillsTea"],"characters":["Nadine","Danielle"],"images":[],"dialogue":true,"music":""},{"name":"ImpressedDanielleSpeech","content":["Danielle: 'Anyways, I think I know a way for you to slip inside without anyone knowing.'","Nadine: 'Oh really? What is it?'","Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over'"],"link":["DanielleSpillsTea"],"characters":["Nadine","Danielle"],"images":[],"dialogue":true,"music":""},{"name":"DanielleSpillsTea","content":["Danielle: 'Now these new lab techs have access to the R&D department floors as well as the Technical departments floors, because some work across departments.'"],"link":["NadDanielleTwo"],"characters":["Nadine","Danielle"],"images":[],"dialogue":true,"music":""},{"name":"NadDanielleTwo","content":["What does Nadine say?","Why are you telling me all this?","Interesting, think you can get me one?"],"link":["NadDanIsRudeTwo","NadDanIsNeutral"],"images":[],"decision":true,"music":""},{"name":"NadDanIsNeutral","content":["Nadine: 'Interesting, think you can get me in?'"],"link":["DanielleHooksNadUp"],"images":[],"characters":["Nadine"],"music":"","dialogue":true},{"name":"NadDanIsRudeTwo","content":["Nadine: 'Okay cool, why are you telling me all this? Are you gonna help me or what?'"],"link":["NadineOffendedDan"],"characters":["Nadine"],"images":[],"dialogue":true,"music":""},{"name":"NadineOffendedDan","content":["OffendedDanielle"],"link":["ReallyOffendedDanielle","OffendedDanielleSpeechTwo"],"images":[],"systemDecision":true,"music":""},{"name":"ReallyOffendedDanielle","content":["Nadine has really pissed off Danielle"],"link":["ReallyOffendedDanielleSpeech"],"images":[],"narration":true,"music":""},{"name":"OffendedDanielleSpeechTwo","content":["Danielle: 'Okay rude, I'm trying to help you out here sis.'"],"link":["DanielleHooksNadUp"],"characters":["Danielle"],"images":[],"dialogue":true,"music":""},{"name":"ReallyOffendedDanielleSpeech","content":["Danielle: 'You know what, no I can't. Clearly you think you know what you're doing.'"],"link":["NadDanTroubleDecision"],"characters":["Danielle"],"images":[],"dialogue":true,"music":""},{"name":"NadDanTroubleDecision","content":["What does Nadine say?","Okay, bye.","Look I'm sorry, I didn't mean it, I'm just frustrated"],"link":["NadDanFinalStraw","NadineTriesToFix"],"images":[],"decision":true,"music":""},{"name":"NadineTriesToFix","content":["Nadine: 'Okay I'm sorry, I'm just really frustrated about this whole situation.'","Nadine: 'Especially since someone who works for the thing I am trying to destroy is helping me.'","Nadine: 'It's just weird.'","Danielle: 'I get that but that doesn't let you be rude to me'","Danielle: 'Like this ain't easy for me either, you have no idea what it's like, you are being watched constantly, they question every move you make and they spend millions in R&D to figure out who is a 'risky' patient and especially in protecting their public image.'","Danielle: 'So forgive me for getting mad, this ain't the little leagues, these guys mean business.'","Nadine: 'I know I'm sorry, can we start from scratch?'","Danielle: 'It's okay, but we gotta work together if we wanna give em the good fight. Deal?'","Nadine: 'Deal.'"],"link":["DanielleHooksNadUp"],"characters":["Nadine","Danielle"],"images":[],"dialogue":true,"music":""},{"name":"NadDanFinalStraw","content":["Nadine: 'Yeah you're right I do'","Danielle: 'Okay, bye then 👋👋'"],"link":["NadDanRegret"],"characters":["Nadine","Danielle"],"images":[],"dialogue":true,"music":""},{"name":"NadDanRegret","content":["'That could have been handled better', Nadine thought.","Too late now, let's try and find out what I can on my own."],"link":["SearchHC"],"images":[],"narration":true,"music":""},{"name":"DanielleHooksNadUp","content":["Danielle: 'I think I'll be able to snag you a uniform and a swipe card.'","Danielle: 'But I'm warning you, the minute you enter the building, you're being watched and even if it looks like you work there, they will question you to see if you actually work there'","Nadine: 'Oh my god, that would be amazing!'","Nadine: 'I can deal with people questioning me, been dealing with that my whole life.'","Danielle: 'Ugh I hear that, I should be able to get everything you'll need to get in.'","Danielle: 'The server room is on Level 29, in the Technical and R&D department.'","Danielle: 'Send me your address so I can drop off the stuff you need.'","Nadine: 'You've been amazing, I can't thank you enough sis!'"],"link":["NadineSendsAddress"],"characters":["Nadine","Danielle"],"images":[],"dialogue":true,"music":""},{"name":"NadineSendsAddress","content":["Nadine sends her address to Danielle"],"link":["StickItToEm"],"images":[],"narration":true,"music":""},{"name":"StickItToEm","content":["Nadine: 'I really appreciate this, how can I repay you?'","Danielle: 'Take those bastards down and make them pay for what they've done.'"],"link":["SearchHC"],"characters":["Nadine","Danielle"],"images":[],"dialogue":true,"music":""},{"name":"OSINT-Circular","content":["Where does Nadine go from here?","A popular recruiting and company review site","Image searches of the HealthCorp headquarters","A business networking site","Finished searching"],"images":[],"link":["CompanyReviewSite","ImagesOfHQ","LinkedIn","IsNadineDone"],"decision":true,"music":""},{"name":"OSINT-Circular-SysDecision","content":["CompanyReviewSite","ImagesOfHQ","LinkedIn"],"link":["NoMoreOptions-OSINT","OSINT-Circular"],"images":[],"music":"","systemDecision":true},{"name":"CompanyReviewSite","content":["Nadine decides to click on a popular company review site to start digging up dirt abput HealthCorp"],"images":[],"link":["NothingBadToSay"],"music":"","narration":true},{"name":"NothingBadToSay","content":["Nadine quickly notices that the company doesn't have a single bad review.","She goes to click on MediKare's review page and she sees fairly mixed reviews but mostly positive."],"images":[],"link":["CRS-NadineWhatTheHeck"],"music":"","narration":true},{"name":"CRS-NadineWhatTheHeck","content":["Nadine: 'What is going on here?'","Nadine: 'Are they really that bad of a company? Their staff can't be happy indirectly killing people everyday...'"],"images":[],"link":["OSINT-Circular-SysDecision"],"characters":["Nadine"],"music":"","dialogue":true},{"name":"ImagesOfHQ","content":["Nadine has decided to look for images of the headquarters","She pulls up the HealthCorp website and does a quick search on Street View to get a better view"],"link":["ImagesOfHQ-Decision"],"images":[],"music":"","narration":true},{"name":"ImagesOfHQ-Decision","content":["Where does Nadine look?","The HealthCorp entrance","The location of the cameras","The building's perimeter"],"link":["HQEntrance","HQPerimeter","HQCameras"],"images":[],"music":"","decision":true},{"name":"HQEntrance","content":["Nadine looks at corporate images of the HealthCorp headquarters","She notes the number of security guards and where they're stationed in the main foyer"],"link":["HQEntranceNadine"],"images":[],"music":"","narration":true},{"name":"HQPerimeter","content":["Nadine looks at Street View images of the buildings perimeter and notices an underground car park","It doesn't look like there's many cameras or security here."],"link":["HQPerimeterNadine"],"images":[],"music":"","narration":true},{"name":"HQCameras","content":["Nadine looks at the street images of the HealthCorp headquarters and notes the locations of the external cameras.","The place is littered with them, hardly surprising. Any protests held outside are usually shut down pretty quickly thanks to them."],"link":["HQCamerasNadine"],"images":[],"music":"","narration":true},{"name":"HQEntranceNadine","content":["Nadine: 'Looks like a decent number of security at the entrance, I'll need to be careful.'","Nadine: 'And looks like they've got security gates, I'll have to find a way around that too.'"],"link":["DoneSearchingYet-SysDecision"],"characters":["Nadine"],"images":[],"music":"","dialogue":true},{"name":"HQPerimeterNadine","content":["Nadine: 'Hmmm with the right credentials, that could be a great way in!'","Nadine: 'Just need to talk my way past the security guard...'"],"link":["DoneSearchingYet-SysDecision"],"images":[],"music":"","narration":true},{"name":"HQCamerasNadine","content":["Nadine: 'Must remember to avoid cameras where I can, don't want to attract any unwanted attention'","Nadine: 'Or worse, get arrested.'"],"link":["DoneSearchingYet-SysDecision"],"images":[],"music":"","narration":true},{"name":"DoneSearchingYet-SysDecision","content":["HQEntrance","HQCameras","HQPerimeter"],"link":["HQ-FullyResearched","DoneSearchingYet"],"images":[],"music":"","systemDecision":true},{"name":"DoneSearchingYet","content":["Does Nadine want to keep looking into the HQ?","Yes","No"],"link":["ImagesOfHQ-Decision","OSINT-Circular-SysDecision"],"images":[],"music":"","decision":true},{"name":"NoMoreOptions-OSINT","content":["Nadine feels confident to go into the HealthCorp HQ, she decides to finish up what she's doing and get back to work.","HealthCorp aren't gonna know what hit em.","She hopes........"],"link":["FINISH"],"images":[],"music":"","narration":true},{"name":"HQ-FullyResearched","content":["Nadine has done enough research on the HealthCorp HQ","There's nothing more to find"],"link":["OSINT-Circular-SysDecision"],"images":[],"music":"","narration":true},{"name":"FINISH","content":["FINISH"],"link":["FINISH"],"images":["end.jpg"],"narration":true,"music":""},{"name":"LinkedIn","content":["Nadine decides to have a look on a popular professional networking site to see if there is anyone for her to exploit"],"link":["FirstBloggerSysDecision"],"images":[],"music":"","narration":true},{"name":"FirstBloggerSysDecision","content":["Blog email"],"link":["BloggersAnonContact","SecondBloggerSysDecision"],"images":[],"music":"","systemDecision":true},{"name":"SecondBloggerSysDecision","content":["Darren email"],"link":["BloggerAndDarren","ExploitRecruiter"],"images":[],"music":"","systemDecision":true},{"name":"BloggersAnonContact","content":["Nadine searches through a list of HealthCorp on the site when she remembers something. ","Nadine pauses ..........."],"link":["NadineEpiphany-speech"],"images":[],"music":"","narration":true},{"name":"NadineEpiphany-speech","content":["Nadine: 'The inbox!!'","Co-worker: 'Erm, you ok honey?'","Nadine: 'Sorry! My bad, didn't mean to scare you.'"],"link":["NadineEpiphany"],"images":[],"characters":["Nadine","Co-worker"],"music":"","dialogue":true},{"name":"NadineEpiphany","content":["Nadine smiles awkwardly at her confused co-workers, it's pretty awkward.","Ugh, why am I like this?","She continues to work at her computer.","She opens the captured folder and finds the email she remembered","It came from an anonymous throwaway account and they didn't leave a name or anything.","Nadine searches for anybody using the email for any accounts but finds nothing, looks pretty suspicious...."],"link":["AnonChatDecision"],"images":[],"music":"","narration":true},{"name":"AnonChatDecision","content":["Does Nadine attempt to talk to this person?","Yes","No"],"link":["LetsTalkToAStranger","ExploitRecruiter"],"images":[],"music":"","decision":true},{"name":"LetsTalkToAStranger","content":["Nadine decides to talk to them, she starts to read the email to refresh her memory."],"link":["AnonEmail-1"],"images":[],"music":"","narration":true},{"name":"AnonEmail-1","content":["Anonymous-Sender: 'I can't let them get away with it. Not again.'","Anonymous-Sender: 'BOTH of my friend's parents were murdered by HealthCorp. None of them could afford those crazy medical bills'"],"link":["AnonEmail-2"],"images":[],"characters":["Anonymous-Sender"],"music":"","dialogue":true},{"name":"AnonEmail-2","content":["Anonymous-Sender: 'The rep on the phone didn't even care, she said that 'there was nothing she could do'.'","Anonymous-Sender: 'Dumb bitch didn't even know she was sentencing this man's parents death warrant'"],"link":["AnonEmail-2"],"images":[],"characters":["Anonymous-Sender"],"music":"","dialogue":true},{"name":"AnonEmail-3","content":["Anonymous-Sender: 'After that, he was real fucked up yknow? That's when he decided to do something about it.'","Anonymous-Sender: 'That's why I'm emailing you, you gotta leak this so other people know what they're capable of'"],"link":["AnonEmail-NadinesThoughts"],"images":[],"characters":["Anonymous-Sender"],"music":"","dialogue":true},{"name":"AnonEmail-NadinesThoughts","content":["Nadine: 'Damn, Dad was right, they're are others who are trying to fight them.'","Nadine: 'Wish I listened to him, he might still be here now ...'","Nadine: 'Let's reach out, but I guess I'll have to pretend to be Jack, but from a different account.'"],"link":["AnonEmail-NadineReachesOut-1"],"characters":["Nadine"],"images":[],"music":"","dialogue":true},{"name":"AnonEmail-NadineReachesOut-1","content":["Nadine makes an email account that looks similar to Jack's email address."],"link":["AnonEmail-NadineReachesOut-2"],"images":[],"music":"","narration":true},{"name":"AnonEmail-NadineReachesOut-2","content":["Nadine: 'Hi there! It's Jack, I got your email but I lost access to my inbox, which is why I'm emailing you from this address.'","Nadine: 'Would you mind texting me instead? I'm easier to reach on there, so here's my number if you want to talk!'","Nadine: 'Talk soon! Jack.'"],"link":["AnonEmail-NadineReachesOut-3"],"images":[],"characters":["Nadine"],"music":"","dialogue":true},{"name":"AnonEmail-NadineReachesOut-3","content":["Nadine sends the email, she's not optimistic that they'll reply."," ......... ","After about 15 minutes, the Anonymous person replies to Nadine's email with just a phone number.","Nothing else. Nadine is suspicious.","She opens her phone and introduces herself as Jack to the Anonymous person"],"link":["AnonEmail-NadineReachesOut-4"],"images":[],"characters":["Nadine"],"music":"","narration":true},{"name":"AnonEmail-NadineReachesOut-4","content":["Nadine: 'hi there! it's Jack, thanks for your email'","Nadine: 'when I got your email, I was so happy, like I knew there had to be others!'","Anonymous-Sender: 'my pleasure, and yeah i know it's not my story but I care for my friend yknow?'"],"link":["AnonEmail-Decision"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"AnonEmail-Decision","content":["What does Nadine say to the anonymous sender?","Don't bother man.","Why do you even care?","Share his story on the blog"],"link":["GiveItUpAnon","ThisAintYourFightAnon","ShareAnonsStory"],"images":[],"music":"","texting":true,"decision":true},{"name":"ThisAintYourFightAnon","content":["Nadine: 'if this ain't your story, why do you even care? Like HealthCorp didn't do this to you'","Nadine: 'it was your friend that got hit by this, not you.'"],"link":["PrettyMeanToAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"GiveItUpAnon","content":["Nadine: 'I know you got love for your friend but honestly man don't bother.'","Nadine: 'The amount of letters and emails I get from HealthCorp's legal team about my one post?'","Nadine: 'It's not worth it, whatever we do isn't gonna change anything, we're little fish in this big ass pond'","Anonymous-Sender: 'What's that supposed to mean?'","Anonymous-Sender: 'You don't wanna take them down and get revenge for all of the people that have been fucked over by them?'"],"link":["IsNadineSerious-Anon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"ShareAnonsStory","content":["Nadine: 'hey, man that's horrible, I can't imagine the amount of pain and suffering that they put him through'","Nadine: 'how is he doing now? what did he do?'","Nadine: 'With his permission, I would love to publicise his story on the blog, it's about time we told people what HealthCorp have been up to.'"],"link":["AnonsFriendArrested"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"PrettyMeanToAnon","content":["Nadine was pretty mean to the Anonymous sender."],"link":["AnonSenderIsMad"],"images":[],"music":"","badtrait":true,"texting":true,"narration":true},{"name":"AnonSenderIsMad","content":["Anonymous-Sender: 'What's that supposed to mean?!'","Anonymous-Sender: 'I thought you cared about HealthCorp fucking everyone over, or are you a liar just like them?'"],"link":["MakeAnonEvenMadder-Decision"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"MakeAnonEvenMadder-Decision","content":["What does Nadine say?","I hate them just as much as you do!","This isn't your fight."],"link":["BacktrackingOnAnon","DoublingDownOnAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"decision":true},{"name":"BacktrackingOnAnon","content":["Nadine: 'Of course I care! I hate them just as much as you do!'","Nadine: 'Why else would I write an article about them fucking over my family?'","Nadine: 'Putting my family in thousands of dollars of debt?'","Nadine: 'I wanna see them pay for what they've done to my family and probably countless others!'"],"link":["RedeemedForAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"DoublingDownOnAnon","content":["Nadine: 'If you know what's good for you, you'll stay as far away as you can from HealthCorp.'","Nadine: 'They didn't get you, I'm sorry they got your friend but you need to stay out of this for your own protection'","Nadine: 'You don't want to end up like your friend.'"],"link":["YouHaveReallyDoneItNow"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"RedeemedForAnon","content":["Anonymous-Sender: 'Okay but why are you dismissing me just because I didn't go through the same thing?'","Anonymous-Sender: 'He was my best friend, we shared everything with each other. Seeing him go through that...'","Anonymous-Sender: 'It was hard to watch him go through that.'"],"link":["NadineFeelsBadForAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"NadineFeelsBadForAnon","content":["Nadine: 'Look I'm sorry, I didn't mean it like that.'","Nadine: 'I've seen so many blogs in support of HealthCorp, so I get really defensive when it comes to people don't know what it's like to experience that first hand, yknow?.'"],"link":["AnonLostTrust-RudeNadine"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"AnonLostTrust-RudeNadine","content":["Anonymous-Sender: 'okay I get that but if you can't trust me, then I can't trust you, sorry.'","Anonymous-Sender: 'But before I do go, I have to ask.'","Anonymous-Sender: 'Are you serious about revenge on HealthCorp?'"],"link":["SuspiciousAnon-HealthCorpBreakIn-Decision"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"SuspiciousAnon-HealthCorpBreakIn-Decision","content":["What does Nadine say?","Definitely","No way man!"],"link":["NadineBreakIn-Sus","NadineIsJustABlogger"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"decision":true},{"name":"NadineBreakIn-Sus","content":["Nadine: 'Of course!'","Nadine: 'I wanna see them pay for all the hurt they've caused to people like us.'","Anonymous-Sender: 'Right, well my friend found out that the underground car park wasn't very well guarded when he was doing some 'research' shall we say.'","Anonymous-Sender: 'Apparently, the security guards rotate around 2PM, just after everyone comes back from lunch.'","Anonymous-Sender: 'So if you were thinking about bringing the fight to them, that would be your way in.'","Anonymous-Sender: 'Feel free to publicise his story, people need to know the pure evil that that company is...'"],"link":["NadineHasFinishedWithAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"NadineIsJustABlogger","content":["Nadine: 'No way man! I'm not capable of that kinda shit.'","Nadine: 'I'm just gonna expose HealthCorp through telling stories like yours on my blog.'","Nadine: 'I'm not looking to break in or anything.'","Anonymous-Sender: 'Suit yourself, well you know my story, so feel free to put it on your blog, have a nice life.'","Nadine: 'You too, stay safe'"],"link":["NadineHasFinishedWithAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"NadineHasFinishedWithAnon","content":["Nadine closes the conversation and returns back to her desktop. Did she just make a big mistake?"],"link":["OSINT-Circular-SysDecision"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"narration":true},{"name":"YouHaveReallyDoneItNow","content":["Nadine has REALLY pised off the Anonymous sender."],"link":["AnonIsReallyMadNow"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","badtrait":true,"texting":true,"narration":true},{"name":"AnonIsReallyMadNow","content":["Anonymous-Sender: 'You know what? Fuck you!'","Anonymous-Sender: 'You can't tell me what to do, especially when it comes to getting payback for my friend, who the FUCK do you think you are??'","Anonymous-Sender: 'Forget it man, you know my story now, so you can blog about that if you want. I'm done.'"],"link":["ThatCouldHaveGoneBetter-Anon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"ThatCouldHaveGoneBetter-Anon","content":["Well, that could have been handled better..."],"link":["NadineHasFinishedWithAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","narration":true},{"name":"AnonsFriendArrested","content":["Anonymous-Sender: 'well......'","Anonymous-Sender: 'they managed to arrest him.'","Anonymous-Sender: 'see after his parents died, the crazy fucker decided that he was going to break into their big swanky offices'","Anonymous-Sender: 'all Robin Hood and shit, yknow steal from the rich and re-distribute it among the poor'","Anonymous-Sender: 'but somehow they caught wind of what he was doing.'","Nadine: 'fuuuck, that's wild man.'","Anonymous-Sender: 'next thing you know the police is kicking his door in and he's serving a 10 year sentence on trumped up charges'","Nadine: 'I can't even imagine what that would be like, I'm so sorry that you had to go through that.'","Nadine: 'man fuck HealthCorp, I wish we could do something about them'","Nadine: 'I have to ask, was your friend working with anyone to break into HealthCorp?'","Nadine: 'It might really help if someone wanted to carry on from where he left it'","Anonymous-Sender: 'What are you talking about? Are you telling me that you wanna break into HealthCorp?'"],"link":["NadineBreakIn-Normal"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"NadineBreakIn-Normal","content":["What does Nadine say?","Yes","No"],"link":["HonestNadineBreakIn","NadineLiesAbtBreakIn"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"decision":true},{"name":"NadineLiesAbtBreakIn","content":["Nadine: 'Definitely not!'","Nadine: 'I'm not looking to be even more on their radar than I already am.'","Nadine: 'I get enough emails and letters from their Legal team than I'd like'","Anonymous-Sender: 'Ah what a shame, that's fair I suppose, can't put that on you...'","Anonymous-Sender: 'Well feel free to share his story, people need to know, stay safe man.'","Nadine: 'Thank you, you too.'"],"link":["NadineHasFinishedWithAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"HonestNadineBreakIn","content":["Nadine: 'If there's a way to break in and fix all the horrible things that they've done, best believe that I'm gonna do it.'","Anonymous-Sender: 'That's what I like to hear, finally someone willing to take some serious action.'","Anonymous-Sender: 'I'll send over his plans on one content'","Nadine: 'What's that?'","Anonymous-Sender: 'If you agree to do this, you have to transfer $100 million dollars into an account, the rest is yours to take'"],"link":["MoneyOrRevenge-Decision"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"MoneyOrRevenge-Decision","content":["What does Nadine say?","Fuck. NO.","I'm down."],"link":["NadineHasMorals-Anon","NadineQuestionableMorals-Anon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"decision":true},{"name":"NadineHasMorals-Anon","content":["Nadine: 'No way! I can't do that, that money belongs to all the people HealthCorp ripped off!'","Anonymous-Sender: 'You think they don't got enough money for everyone who got screwed by them??'","Anonymous-Sender: 'Man you're more naive than I thought.'","Anonymous-Sender: 'If you're too much of a pussy to do that then there's nothing I can do for you. Stay safe man.'"],"link":["NadineHasFinishedWithAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"NadineQuestionableMorals-Anon","content":["Nadine: 'I'm in.'","Anonymous-Sender: 'Good, and before you think of being smart, if you think about running away with the money, I will expose you and have you arrested.'","Anonymous-Sender: 'Or worse, I got connections, so don't even THINK about crossing me.'","Nadine: 'Alright, got it'","Anonymous-Sender: 'Good, I'll send over a file to your email."],"link":["NadineHitsTheJackpot-Anon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"NadineHitsTheJackpot-Anon","content":["The anonymous person sends her a ZIP file containing an extensive view into the HealthCorp HQ","Floor plans, Camera locations, the location of the main server room.","Nadine is SHOOKETH about the detail of the plans. She's gonna have no trouble getting around the HQ","But at what cost? She's not sure..."],"link":["NadineAnon-Closing"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"narration":true},{"name":"NadineAnon-Closing","content":["Nadine: 'Wow these plans are really detailed, thank you so much!!'","Anonymous-Sender: 'No problem, but remember our deal, I'll send over the account details for the transfer. Good luck.'"],"link":["NadineHasFinishedWithAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"IsNadineSerious-Anon","content":["What does Nadine say?","Of course I do!","Yeah... but I'm just a blogger"],"link":["NadineIsAHypocrite-Anon","NadineIsJustABlogger"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"decision":true},{"name":"NadineIsAHypocrite-Anon","content":["Anonymous-Sender: 'Man I don't understand you'","Anonymous-Sender: 'You were saying how bad HealthCorp is but you're not doing anything about it?'","Anonymous-Sender: 'that don't make any sense.'"],"link":["NadinesExplanationAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"NadinesExplanationAnon","content":["What does Nadine say?","I'm powerless against them","My blog is my power","You know what? I will fight them."],"link":["NadineIsPowerless-Anon","JournalismAtItsFinest-Anon","TakeTheFightToThem-Anon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"decision":true},{"name":"NadineIsPowerless-Anon","content":["Nadine: 'I wanna stop them but how? '","Nadine: 'There is nothing we can do to stop these people, they've got way too much power, too many people in their pocket and too much money.'","Nadine: 'All I can hope for is that people read the blog and that it gets more publicity'"],"link":["UnconvincedAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"JournalismAtItsFinest-Anon","content":["Nadine: 'My blog is my voice, I can fight them by exposing all of the stories of the people who HealthCorp have fucked over.'","Nadine: 'Then no-one can ignore the sheer amount of evidence that I have mounted against them'"],"link":["UnconvincedAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"TakeTheFightToThem-Anon","content":["Nadine: 'You know what you're right. I shouldn't rely on exposing HealthCorp just on my blog'","Nadine: 'What do you have in mind?'","Anonymous-Sender: 'Finally, that's what I like to hear! Well if you're serious about breaking in, my buddy sent me a bunch of plans when he was... erm'","Anonymous-Sender: 'Researching, shall we say?'","Anonymous-Sender: 'I'll give em to you on one content. You transfer $250 million to an account of my choosing.'"],"link":["MoneyOrRevenge-Decision"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"UnconvincedAnon","content":["Anonymous-Sender: 'Hm, suit yourself. Good luck with that, hope it works out for you.'"],"link":["NadineHasFinishedWithAnon"],"images":[],"characters":["Nadine","Anonymous-Sender"],"music":"","texting":true,"dialogue":true},{"name":"BloggerAndDarren","content":["Nadine remembers reading emails from a man called Darren, that Jack was talking to.","'He worked in their Sales department! He must know what really goes on in there', Nadine thought","So she searches for him on the site...","After a lot of searching, Nadine manages to find him and discovers that he's a Manager in their Sales department."],"link":["NadineTalksToDarren"],"images":[],"music":"","narration":true},{"name":"ExploitRecruiter","content":["Nadine decides to make a fake account on the site that makes it look like she just started working at HealthCorp","Nadine makes her account look like she's been working at HealthCorp for a very long time","Nadine finds a HealthCorp recruiter to talk to and starts asking questions."],"link":["FirstTalkingToRecruiter"],"images":[],"music":"","narration":true},{"name":"FirstTalkingToRecruiter","content":["Nadine: 'Hi there! I'm graduating this summer in Computer Science and I was wondering if you guys had any openings?'","Recruiter: 'Hello there. Yes we do! Our applications are also open so please send a resume to recruitment@healthcorp.com'","Nadine: 'Awesome! Thank you so much, I just have a couple questions about HealthCorp if that's okay?'","Recruiter: 'Of course! I'd love to answer any questions you have.'"],"link":["RecruiterCircular"],"images":[],"characters":["Nadine","Recruiter"],"music":"","dialogue":true},{"name":"RecruiterCircular","content":["What does Nadine say?","What technology do they use?","What time does everyone start?","What's it like to work at HealthCorp?","I think that's everything!"],"link":["TechInTheDept-SysDecision","WhatTimeDoIStart","WorkingLifeAtHC","NadineFinishesWithRecruiter"],"images":[],"characters":[],"music":"","decision":true},{"name":"TechInTheDept-SysDecision-FIRST","content":["RecruiterIsSus-ONE"],"link":["TechInTheDept-Suspicious","TechInTheDept-SysDecision-SECOND"],"images":[],"characters":[],"music":"","systemDecision":true},{"name":"WhatTimeDoIStart","content":["Nadine:'So what time does everyone typically start?'","Recruiter: 'Well the building is open 24 hours but most staff are in around 9AM.'","Recruiter: 'We operate on a Flexihour schedule, so for Technical, you would be expected to be in by around 9AM and most people are gone by 6PM'","Recruiter: 'After hours, you'll only find the essential staff and stragglers really.'"],"link":["WhatTimeDoIStart-Decision"],"images":[],"characters":["Nadine","Recruiter"],"music":"","dialogue":true},{"name":"WorkingLifeAtHC","content":["Nadine: 'So what's it like to work at HealthCorp?'","Recruiter: 'HealthCorp is Number 1 for Employee Satisfaction in the country and that was all from feedback from our employees!'","Recruiter: 'I couldn't recommend it more for a graduate, it's a great step into the world of work! 😊'"],"link":["WLAtHC-Decision"],"images":[],"characters":["Nadine","Recruiter"],"music":"","dialogue":true},{"name":"RecruiterIsSus-ONE","content":["Nadine has made the Recruiter suspicious."],"link":["NadineProbesRecruiter"],"images":[],"music":"","narration":true},{"name":"RecruiterIsSus-TWO","content":["Nadine has made the Recruiter suspicious"],"link":["RecruiterEM-Response"],"images":[],"characters":[],"music":"","narration":true},{"name":"TechInTheDept-SysDecision-SECOND","content":["RecruiterIsSus-TWO"],"link":["TechInTheDept-Suspicious","TechInTheDept-Normal"],"images":[],"characters":[],"music":"","systemDecision":true},{"name":"TechInTheDept-Suspicious","content":["Nadine: 'Do you know what kinds of technology they use at HealthCorp?'","Recruiter: 'I'm afraid not, I don't really know those kinds of details.'","Recruiter: 'Sorry about that!'"],"link":["RecruiterCircular-SysDecision"],"images":[],"characters":["Nadine","Recruiter"],"music":"","dialogue":true},{"name":"TechInTheDept-Normal","content":["Nadine: 'Do you know what kinds of technology they use at HealthCorp?'","Recruiter: 'Oh all sorts! Just depends on the business needs, I think I have a document that might help...'","Recruiter: '..... Found it! I'll send it over to you, should give you an overview of the sorts of things you'll be working on!'","Nadine: 'That would be great! Thank you.'"],"link":["RecruiterDocInfo"],"images":[],"characters":["Nadine","Recruiter"],"music":"","dialogue":true},{"name":"WLAtHC-Decision","content":["What does Nadine say?","What about yourself?","*nothing*"],"link":["RecruiterIsSus-ONE","GhostsRecruiter"],"images":[],"characters":["Nadine","Recruiter"],"music":"","decision":true},{"name":"NadineProbesRecruiter","content":["Nadine: 'Interesting! What about yourself? What do you think of HealthCorp?'","Recruiter: 'Like I said, it's a great place to work, lots of benefits and support for staff - overall couldn't recommend it more!'","Recruiter: 'Hope that answers your question! 😊'"],"link":["RecruiterCircular-SysDecision"],"images":[],"characters":["Nadine","Recruiter"],"music":"","dialogue":true},{"name":"RecruiterCircular-SysDecision","content":["TechInTheDept-SysDecision","WhatTimeDoIStart","WorkingLifeAtHC"],"link":["NadineFinishesWithRecruiter"],"images":[],"characters":[],"music":"","systemDecision":true},{"name":"NadineFinishesWithRecruiter","content":["Nadine: 'I think that's all the questions I had, thank you so much for your help!'","Recruiter: 'No problem darlin! Don't forget to send in your application!'","Nadine: 'Oh don't worry I will.'"],"link":["OSINT-Circular-SysDecision"],"images":[],"characters":["Nadine","Recruiter"],"music":"","dialogue":true},{"name":"GhostsRecruiter","content":["Nadine doesn't reply to the Recruiter..."],"link":["RecruiterCircular-SysDecision"],"images":[],"characters":[],"music":"","narration":true},{"name":"RecruiterDocInfo","content":["The recruiter sends a document detailing some of the key systems of the HealthCorp systems.","Nothing business critical, but useful nonetheless."],"link":["RecruiterCircular-SysDecision"],"images":[],"characters":[],"music":"","narration":true},{"name":"WhatTimeDoIStart-Decision","content":["What does Nadine ask next?","When does the Reception open?","What time do the managers and executives come in?"],"link":["FrontDeskIsOpen","RecruiterExecsAndManagers"],"images":[],"characters":[],"music":"","decision":true},{"name":"FrontDeskIsOpen","content":["Nadine: 'Okay cool! Also, what time would I expect the front desk to close?'","Recruiter: 'Typically the front desk is open from 8AM to 6PM and we have 24 hour security of course.'","Nadine: 'Good to know! Thank you.'"],"link":["RecruiterCircular-SysDecision"],"images":[],"characters":["Nadine","Recruiter"],"music":"","dialogue":true},{"name":"RecruiterExecsAndManagers","content":["Nadine: 'Okay cool! Also, what time would I expect my manager or executives to come in?'"],"link":["RecruiterIsSus-TWO"],"images":[],"characters":["Nadine","Recruiter"],"music":"","dialogue":true},{"name":"RecruiterEM-Response","content":["Recruiter: 'Oh they come in whenever really, depends what meetings they have that day.'","Nadine: 'Oh okay! Good to know, thanks.'"],"link":["RecruiterCircular-SysDecision"],"images":[],"characters":["Nadine","Recruiter"],"music":"","dialogue":true},{"name":"NadineTalksToDarren","content":["Nadine: 'hey it's Jack, the blogger?'","Nadine: 'I tried to email you but it wouldn't let me for some reason, so I thought I would reach out on here.'","Nadine: 'I've been looking into HealthCorp, I'm trying to do an expose of sorts on their shady business practices, think you can help?'"],"link":["NadineWaitsForDarren"],"images":[],"characters":["Nadine"],"music":"","dialogue":true},{"name":"NadineWaitsForDarren","content":["Shortly after Nadine sent the message, Darren replies."],"link":["DarrenRepliesToNadine"],"images":[],"characters":[],"music":"","narration":true},{"name":"DarrenRepliesToNadine","content":["Darren: 'hi there, long time no see haha! how have you been lately?'","Darren: 'I'd love to help, you already know how I feel about them ugh'","Darren: 'but out of curiosity how did you find me? you kinda stopped talking to me after a while 😅😅'"],"link":["NadineDarren-Decision"],"images":[],"characters":["Darren"],"music":"","dialogue":true},{"name":"NadineDarren-Decision","content":["What does Nadine say?","I saw some of your other posts and found you","The site recommended you to me!"],"link":["NadineStalkedDarren","SiteRecommendedDarren"],"images":[],"music":"","decision":true},{"name":"NadineStalkedDarren","content":["Nadine: 'well I stumbled across our emails while I was going through my inbox, and I thought I'd search you up and reach out!'","Nadine: 'I hope that's not too weird, I thought you could help me out.'","Darren: 'Ahhh I see, I don't think I'll be much help to you really, sorry!'"],"link":["NadineIsShutDownByDarren"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"SiteRecommendedDarren","content":["Darren: 'oh that is weird! fair enough haha'","Darren: 'well you already know I work at in sales at HealthCorp and that a lot of shady stuff that happens here'","Nadine: 'Of course, everyone does'","Darren: 'like I'm used to dealing with shady sales tactics but targeting families that are pre-disposed to get cancer'","Darren: 'just to rip them off later?'","Darren: 'that's not what I signed up for. and there's way more to it than you could even imagine!'","Nadine: 'What are you talking about??'","Darren: 'HealthCorp are fucked up more than you could even imagine.'","Darren: 'Their whole business model is centred around exploiting the weak and getting all they can from them'","Darren: 'but none of us can prove it, we just do what the System tells us.'","Darren: 'Only the Inner Circle really know how it works.'","Nadine: 'the Inner Circle? Who are they?'","Darren: 'Oh they're the fat cats at the top, the ones who run the whole show.'","Darren: 'They're a group of shareholders; rumour has it that collectively they control what the media puts out about HealthCorp'"],"link":["WhoAreTheInnerCircle"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"WhoAreTheInnerCircle","content":["What does Nadine say?","What are you talking about?","That's crazy."],"link":["IC-WhatAreYouTalkingAbout","IC-ThatsCrazy"],"images":[],"music":"","decision":true},{"name":"IC-WhatAreYouTalkingAbout","content":["Darren: 'They're the ones running HealthCorp, THEY own everyone, nothing goes in this city without their say so.","Darren: 'Don't you see? They're the ones you need to go for"],"link":["NadineDarren-DecisionTwo"],"images":[],"characters":["Darren"],"music":"","dialogue":true},{"name":"IC-ThatsCrazy","content":["Darren: 'They're the ones who run the show over at HealthCorp, the rest of us are just following what the System tells us to do.'","Darren: 'We're not allowed to talk about it so I could get into a so much trouble by talking to you about all this.'"],"link":["NadineDarren-DecisionTwo"],"images":[],"characters":["Darren"],"music":"","dialogue":true},{"name":"NadineDarren-DecisionTwo","content":["What does Nadine say?","Why didn't you speak up earlier?","I'm glad you're telling me all this"],"link":["ND-WhyYouTakeLong","ND-ImGladYouTalked"],"images":[],"characters":[],"music":"","decision":true},{"name":"ND-ImGladYouTalked","content":["Nadine: 'well I'm glad you told me all of this, it really helps :)'","Darren: 'I'm glad, hopefully you can find a way to get some evidence and expose them for the scum that they are.'","Darren: 'Only reason why I'm still working there is because the pay is good and I'm locked in for another 2 years'","Nadine: 'What do you mean? They can't force you to work there surely?'","Darren: 'Cmon Jack you've seen what HealthCorp is capable of, they do what they like.'","Nadine: 'well someone's gotta do something about it, that might as wel be me.'","Darren: 'You can't be serious? You're not gonna be able to just waltz in and press the big red button yknow?'"],"link":["NadineBeingUnderEst"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-WhyYouTakeLong","content":["Nadine: 'so why did it take you this long to speak up now?'"],"link":["DarrenDidntLikeThat"],"images":[],"characters":["Nadine"],"music":"","dialogue":true},{"name":"DarrenDidntLikeThat","content":["Darren didn't like that"],"link":["DarrenIsUpset"],"images":[],"characters":[],"music":"","narration":true},{"name":"DarrenIsUpset","content":["Darren: 'hey remember I'm sticking my neck out for you here'","Darren: 'I'm trying to help you out so you can fight these guys'","Nadine: 'I just don't believe that you were powerless to do nothing to change anything, you work there!'","Darren: 'I get that but they own us, they can ruin all of our lives if we speak out and the worst part is, it wouldn't even make a difference.'","Darren: 'I've heard rumours that they've sealed court cases of people who have spoken out and used their ties to big media companies to squash any negative press about them.'","Darren: 'Like some craaazy shit.'"],"link":["IsNadineMeanToDarren"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"NadineBeingUnderEst","content":["Nadine is getting tired of people underestimating her"],"link":["ND-WeNeedAction"],"images":[],"characters":[],"music":"","narration":true},{"name":"ND-WeNeedAction","content":["Nadine: 'Writing a bunch of inflammatory articles sure as hell ain't gonna cut it. Someone needs to take proper action.'","Darren: 'If you're serious about going ahead with this, then you should know that the security at the front desk changes over at 1:30 everyday for lunch'","Darren: 'If you come then, you can usually slip past and tailgate somebody.'","Darren: 'I can tell the front desk to expect you and then you'll be able to do whatever you need to do.'"],"link":["IsNadineMeanToDarren"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"IsNadineMeanToDarren","content":["What does Nadine think of Darren?","I don't trust him at all, something doesn't add up here","I'm not sure of this guy, I'm gonna be cautious.","I believe him, he seems pretty trustworthy"],"link":["ND-NadineDoesntTrustDarren","ND-NadineIsntSureOfDarren","ND-NadineTrustsDarren"],"images":[],"characters":[],"music":"","decision":true},{"name":"ND-NadineDoesntTrustDarren","content":["Nadine: 'I don't trust you, how do I know anything you've told me is true?'","Nadine: 'For all I know, you could be a spy for HealthCorp!'"],"link":["OOP-NadineAccusedDarren"],"images":[],"characters":["Nadine"],"music":"","dialogue":true},{"name":"ND-NadineIsntSureOfDarren","content":["Nadine: 'Hmmm I don't know, how do I know you're not lying to me?'"],"link":["ND-DarrenKnowsNoTrust"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-NadineTrustsDarren","content":["Nadine: 'Okay, I trust you and know that it takes a lot for me to do that.'"],"link":["ND-NadsTrustsDarren-CHECK"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"OOP-NadineAccusedDarren","content":["Darren will remember that you accused him of being a spy"],"link":["ND-DarrenIsMad"],"images":[],"characters":[],"music":"","narration":true},{"name":"ND-DarrenIsMad","content":["Darren: 'Are you accusing me of being a spy? For HealthCorp??'","Darren: 'That is crazy! Do you think I like telling the families of dying people that we're pulling the plug for them??'","Darren: 'What kind of sick monster do you take me for?'"],"link":["ND-DIM-Decision-One"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-DIM-Decision-One","content":["What does Nadine say?","Well what else am I meant to think?","I just don't trust you"],"link":["ND-NadineRlyDoesntTrustHim","ND-NadineJustDontTrustYou"],"images":[],"characters":[],"music":"","decision":true},{"name":"ND-NadineRlyDoesntTrustHim","content":["Nadine: 'What else am I meant to think Darren?'","Nadine: 'You work at HealthCorp, how can I trust anything you say?'","Darren: 'I'm not some sort of predator, I wanna get HealthCorp just like you do!'","Darren: 'And I genuinely like you Jack, why would I fake that? I'm not some corporate puppet!'"],"link":["ND-DIM-Decision-Two"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-NadineJustDontTrustYou","content":["Nadine: 'I just have a bad feeling, like I think you're trying to play me here.'","Nadine: 'You popped up to me after I posted my post about HealthCorp, and were acting really sweet. Would you blame me for being suspicious?'","Nadine: 'Like what else am I meant to think?'","Darren: 'Whatever, good luck then. You better watch your back, Jack.'"],"link":["DarrenIsAThreat"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"DarrenIsAThreat","content":["That didn't end well at all. Nadine should watch out for Darren."],"link":["NadineLogsOut"],"images":[],"music":"","narration":true},{"name":"NadineLogsOut","content":["Nadine logs off her account"],"link":["OSINT-Circular-SysDecision"],"images":[],"characters":[],"music":"","narration":true},{"name":"ND-DarrenKnowsNoTrust","content":["Darren will remember that you didn't completely trust him"],"link":["ND-DarrenTriesToRedeem"],"images":[],"characters":[],"music":"","narration":true},{"name":"ND-DarrenTriesToRedeem","content":["Darren: 'Why? I've told you everything you need to get in the building, I wanna see HealthCorp pay for what they've been doing just as much as you do!'"],"link":["ND-DoesNadineBelieveHim"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-DoesNadineBelieveHim","content":["What does Nadine say?","Don't believe you","Hmm maybe you are trustworthy","Still not convinced"],"link":["ND-NadDoesntBeliveDarren","ND-NadGivesBOD","ND-NadIsntConvincedPERIOD"],"images":[],"characters":[],"music":"","decision":true},{"name":"ND-NadIsntConvincedPERIOD","content":["Nadine: 'I'm just sceptical, like if I was in your position, I wouldn't be able to live with myself doing that everyday.'","Darren: 'I don't really, like I hate my job, I hate coming here and ripping people off everyday. But what else can I do? I can't quit, they'll ruin my life.'"],"link":["ND-DoesDarrenLikeNad-SysDecision"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-NadGivesBOD","content":["Nadine: 'I don't know maybe I'm being too quick to judge you, I'm just sceptical yknow?'","Darren: 'I get that but I'm putting my livelihood on the line so you better not mess this up.'"],"link":["ND-NadineBeingUnderEst-Two"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-NadDoesntBeliveDarren","content":["Nadine: 'I don't believe you, like how can you work for HealthCorp and rip people off everyday?'","Nadine: 'Then stand in front of me and say how much you hate them? It doesn't make sense to me.'","Darren: 'I don't know what I can say to you to convince you that I'm on your side, like I'm forced to work there.'","Nadine: 'There is nothing you can say, you've proven that you aren't to be trusted.'","Darren: 'Whatever, good luck then. You better watch your back, Jack.'"],"link":["DarrenIsAThreat"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-DoesDarrenLikeNad-SysDecision","content":["ND-WhyYouTakeLong"],"link":["ND-DarrenDoesntLikeNad","ND-DarrenDoesntMindNad"],"images":[],"characters":[],"music":"","systemDecision":true},{"name":"ND-DarrenDoesntLikeNad","content":["Darren: 'And who are you to question me? You're not the one in my position so you are in no position to critique me or what I do.'","Darren: 'If you wanna get in, I'll help you but don't expect anything else.'"],"link":["DarrenIsAThreat"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-DarrenDoesntMindNad","content":["Darren: 'Look I have no beef with you, I don't want that to start now.'","Darren: 'If you're still serious about going after HealthCorp, then I'll make the arrangements, but don't come looking for me.'","Darren: 'I don't wanna lose my job because of your fuck up. I got bills to pay.'","Nadine: 'Alright cool, thanks...'"],"link":["NadineLogsOut"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-NadsTrustsDarren-CHECK","content":["Darren will remember that you trusted him."],"link":["ND-DarrenAppreciatesThat"],"images":[],"characters":[],"music":"","narration":true},{"name":"ND-DarrenAppreciatesThat","content":["Darren: 'Well I really appreciate that. The world needs to know how evil HealthCorp really are.'","Nadine: 'You're damn right they do, I hope we can expose them.'","Darren: 'You bet, anyways, talk soon. Stay safe Jack xx'"],"link":["NadineLogsOut"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-NadineBeingUnderEst-Two","content":["Nadine is getting tired of people underestimating her. "],"link":["ND-PassiveAggressiveNad"],"images":[],"characters":[],"music":"","narration":true},{"name":"ND-PassiveAggressiveNad","content":["Nadine: 'Don't be worrying about me, I'm good.'","Darren: 'Hmm, I bet, talk soon Jack xx'"],"link":["NadineLogsOut"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-DIM-Decision-Two","content":["What does Nadine say?","I just don't trust you","I don't know what to believe","*ghosts Darren*"],"link":["ND-NadineJustDontTrustYou","ND-NadineIsConfused","ND-NadineGhostsDarren"],"images":[],"characters":[],"music":"","decision":true},{"name":"ND-NadineIsConfused","content":["Nadine: 'I just don't know what to believe with you'","Nadine: 'It's all a bit too suspicious for me though'","Darren: 'Whatever, I was only trying to help but good luck anyway.'","Darren: 'Watch your back Jack.'"],"link":["DarrenIsAThreat"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"ND-NadineGhostsDarren","content":["Darren: 'So that's how it is? Real mature Jack'","Darren: 'Whatever, you better watch yourself.'"],"link":["DarrenIsAThreat"],"images":[],"characters":["Nadine","Darren"],"music":"","dialogue":true},{"name":"NadineIsShutDownByDarren","content":["Nadine decides that she's not gonna be getting anything useful out of Darren now.","Or ever for that matter."],"link":["OSINT-Circular-SysDecision"],"images":[],"music":"","narration":true}]}}
+{
+   "OSINT":{
+      "storylines":[
+         {
+            "name":"NadineAtWork",
+            "content":[
+               "Monday - 11AM",
+               "Nadine is at work at Romero Casinos.",
+               "She's busy working away on a pretty mundane report that Corporate want on the new machines, when she hears her co-workers conversation by the water cooler."
+            ],
+            "link":[
+               "CoWorkerDialogueOne"
+            ],
+            "images":[
+            	"romero-casinos.jpg",
+            	"romero-casinos.jpg",
+            	"romero-offices.jpg"
+            ],
+            "narration":true,
+            "music":"Brand-New-Paradigm.mp3"
+         },
+         {
+            "name":"CoWorkerDialogueOne",
+            "content":[
+               "Co-worker1: 'Did you hear about the new benefits package HR announced?'",
+               "Co-worker2: 'Ooooh no I didn't! PLEASE tell me they gave us more money for gas, these prices lately have been KILLER!'",
+               "Co-worker1: 'Nah, I was mad about that too, but they did switch our corporate health insurance to HealthCorp.'",
+               "Co-worker2: 'Ugh it's about time! MediKare were the worst, I had my gall bladder removed and they took MONTHS to pay out. Like I've heard HealthCorp pay out instantly, like no questions asked, they're great.'",
+               "Co-worker1: 'Oh really? Thank god, that's honestly the last thing I wanna be worrying about, dread to think how much medical bills cost nowadays....'"
+            ],
+            "link":[
+               "NadineInternalDialogue"
+            ],
+            "characters":[
+               "Co-worker1",
+               "Co-worker2"
+            ],
+            "images":[
+            	"romero-offices.jpg",
+            	"romero-offices.jpg",
+            	"romero-offices.jpg",
+            	"romero-offices.jpg",
+            	"romero-offices.jpg"
+            ],
+            "dialogue":true,
+            "music":"Brand-New-Paradigm.mp3"
+         },
+         {
+            "name":"NadineInternalDialogue",
+            "content":[
+               "Nadine: 'If only they knew how bad HealthCorp really are....'",
+               "Nadine: 'But no-one really knows what they're capable of...'",
+               "Nadine: 'Well......'",
+               "Nadine: 'I guess I could check it out and see if there's any way for me to expose their shady business!'"
+            ],
+            "link":[
+               "LetsLookAtHC"
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "images":[
+            	"romero-offices.jpg",
+            	"romero-offices.jpg",
+            	"romero-offices.jpg",
+            	"romero-offices.jpg"
+            ],
+            "dialogue":true,
+            "music":"Brand-New-Paradigm.mp3"
+         },
+         {
+            "name":"LetsLookAtHC",
+            "content":[
+               "Nadine decides to finish up her report and start looking into HealthCorp."
+            ],
+            "link":[
+               "NadDecisionOne"
+            ],
+            "images":[
+            	"nadine-work-report.jpg"
+            ],
+            "narration":true,
+            "music":"Brand-New-Paradigm.mp3"
+         },
+         {
+            "name":"NadDecisionOne",
+            "content":[
+               "What does Nadine do first?",
+               "Google HealthCorp",
+               "Text Marcus"
+            ],
+            "link":[
+               "SearchHC",
+               "NadineWasNice"
+            ],
+            "images":[
+            	"nadine-work-report.jpg"
+            ],
+            "decision":true,
+            "music":"Brand-New-Paradigm.mp3"
+         },
+         {
+            "name":"NadineWasNice",
+            "link":[
+               "MarcusHasTea",
+               "NadineWasNice-2"
+            ],
+            "content":[
+               "NadineIsStrong"
+
+            ],
+            "systemDecision":true
+         },
+         {
+           "name":"NadineWasNice-2","content":["RememberingMom"],
+           "link":["MarcusHasTea", "MarcusPA"],"systemDecision":true
+         },
+         {
+            "name":"MarcusPA",
+            "content":[
+               "Nadine: 'hey Marcus, do you know anyone who works at HealthCorp who could, yknow, help us out?'",
+               "Marcus: 'I'll ask around Nad but I don't think I know anyone that would be willing to help....'",
+               "Nadine: 'Oh. That's too bad, it's alright, I'll find out more another way. Stay safe bro xx'",
+               "Marcus: 'You too, Nadine, you too.'"
+            ],
+            "link":[
+               "SearchHC"
+            ],
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "images":[
+            	"nadine-work-report-blur.jpg",
+            	"nadine-work-report-blur.jpg",
+            	"nadine-work-report-blur.jpg",
+            	"nadine-work-report-blur.jpg",
+            ],
+            "music":"Brand-New-Paradigm.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"SearchHC",
+            "content":[
+               "Nadine decides to start looking for more info about HealthCorp's headquarters."
+            ],
+            "link":[
+               "OSINT-Circular"
+            ],
+            "images":[
+            	"nadine-work-healthcorp-search.jpg"
+            ],
+            "narration":true,
+            "music":"Brand-New-Paradigm.mp3"
+         },
+         {
+            "name":"MarcusHasTea",
+            "content":[
+               "Nadine: 'hey Marcus, do you know anyone who works at HealthCorp who could, yknow, help us out?'",
+               "Marcus: 'hey sis, I was actually just about to text you. After we talked last night, I reached out to my buddy from college, turns out he works for HealthCorp's R&D department'",
+               "Marcus: 'She knows about all of the crazy shit that HealthCorp be getting up to.'",
+               "Marcus: 'I'll send you her number!'"
+            ],
+            "link":[
+               "MarcusSendsNumber"
+            ],
+            "characters":[
+               "Nadine",
+               "Marcus"
+            ],
+            "images":[
+            	"nadine-work-report-blur.jpg",
+            	"nadine-work-report-blur.jpg",
+            	"nadine-work-report-blur.jpg",
+            	"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"MarcusSendsNumber",
+            "content":[
+               "Marcus sends Nadine a number for a woman called Danielle.",
+               "Nadine starts to talk to her..."
+            ],
+            "link":[
+               "NadDanielleOne"
+            ],
+            "images":[
+            	"nadine-work-report-blur.jpg",
+            	"nadine-work-report-blur.jpg"
+            ],
+            "narration":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"NadDanielleOne",
+            "content":[
+               "Nadine: 'hey, it's Nadine, I'm Marcus' sister, he said you could help me?",
+               "Danielle: 'hey! that's me, Marcus filled me in with the details, you serious about HealthCorp?"
+            ],
+            "link":[
+               "NadDanResponseOne"
+            ],
+            "characters":[
+               "Nadine",
+               "Danielle"
+            ],
+            "images":[
+            	"nadine-work-report-blur.jpg",
+            	"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"NadDanResponseOne",
+            "content":[
+               "What does Nadine say?",
+               "Fuck yeah!",
+               "Duh, bitch 🙄",
+               "I think it's definitely worth a shot"
+            ],
+            "link":[
+               "EnthusiasticNadDan",
+               "RudeNadDan",
+               "NeutralNadDan"
+            ],
+            "images":[
+            	"nadine-work-report-blur.jpg"
+            ],
+            "decision":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"EnthusiasticNadDan",
+            "content":[
+               "Nadine: 'Fuck yeah! I'm the best hacker for the job, best part is no one will suspect me!'",
+               "Danielle: 'That's what I like to hear and true, they always be underestimating us!'"
+            ],
+            "link":[
+               "ImpressedDanielle"
+            ],
+            "characters":[
+               "Nadine",
+               "Danielle"
+            ],
+            "images":[
+            	"nadine-work-report-blur.jpg",
+            	"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"RudeNadDan",
+            "content":[
+               "Nadine: 'Duh, why else would I have Marcus reach out? 🙄🙄🙄'"
+            ],
+            "link":[
+               "OffendedDanielle"
+            ],
+            "characters":[
+               "Nadine",
+               "Danielle"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"NeutralNadDan",
+            "content":[
+               "Nadine: 'I think I got what it takes to take em down, I'm ready.'",
+               "Danielle: 'That's good to hear, someone needs to stop these guys'",
+               "Danielle: 'Anyways, I think I know a way for you to slip inside without anyone knowing.'",
+               "Nadine: 'Oh really? What is it?'",
+               "Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over'"
+            ],
+            "link":[
+               "DanielleSpillsTea"
+            ],
+            "characters":[
+               "Nadine",
+               "Danielle"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"ImpressedDanielle",
+            "content":[
+               "Danielle likes your attitude."
+            ],
+            "link":[
+               "ImpressedDanielleSpeech"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg"
+            ],
+            "narration":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"OffendedDanielle",
+            "content":[
+               "Danielle didn't like that."
+            ],
+            "link":[
+               "OffendedDanielleSpeech"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg"
+            ],
+            "narration":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"OffendedDanielleSpeech",
+            "content":[
+               "Danielle: 'Um okay, rude.'",
+               "Danielle: 'Anyways, I think I know a way for you to slip inside without anyone knowing.'",
+               "Nadine: 'Oh really? What is it?'",
+               "Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over.'"
+            ],
+            "link":[
+               "DanielleSpillsTea"
+            ],
+            "characters":[
+               "Nadine",
+               "Danielle"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"ImpressedDanielleSpeech",
+            "content":[
+               "Danielle: 'Anyways, I think I know a way for you to slip inside without anyone knowing.'",
+               "Nadine: 'Oh really? What is it?'",
+               "Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over'"
+            ],
+            "link":[
+               "DanielleSpillsTea"
+            ],
+            "characters":[
+               "Nadine",
+               "Danielle"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"DanielleSpillsTea",
+            "content":[
+               "Danielle: 'Now these new lab techs have access to the R&D department floors as well as the Technical departments floors, because some work across departments.'"
+            ],
+            "link":[
+               "NadDanielleTwo"
+            ],
+            "characters":[
+               "Nadine",
+               "Danielle"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"NadDanielleTwo",
+            "content":[
+               "What does Nadine say?",
+               "Why are you telling me all this?",
+               "Interesting, think you can get me one?"
+            ],
+            "link":[
+               "NadDanIsRudeTwo",
+               "NadDanIsNeutral"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg"
+            ],
+            "decision":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+           "name":"NadDanIsNeutral",
+           "content": [
+             "Nadine: 'Interesting, think you can get me in?'"
+           ],
+           "link": [
+             "DanielleHooksNadUp"
+           ],
+           "images": [
+"nadine-work-report-blur.jpg"
+           ],
+           "characters": [
+             "Nadine"
+           ],
+           "music":"An-Appearance-Of-Normality.mp3",
+           "dialogue": true
+         },
+         {
+            "name":"NadDanIsRudeTwo",
+            "content":[
+               "Nadine: 'Okay cool, why are you telling me all this? Are you gonna help me or what?'"
+            ],
+            "link":[
+               "NadineOffendedDan"
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"NadineOffendedDan",
+            "content":[
+               "OffendedDanielle"
+            ],
+            "link":[
+               "ReallyOffendedDanielle",
+               "OffendedDanielleSpeechTwo"
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"ReallyOffendedDanielle",
+            "content":[
+               "Nadine has really pissed off Danielle"
+            ],
+            "link":[
+               "ReallyOffendedDanielleSpeech"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg"
+            ],
+            "narration":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"OffendedDanielleSpeechTwo",
+            "content":[
+               "Danielle: 'Okay rude, I'm trying to help you out here sis.'"
+            ],
+            "link":[
+               "DanielleHooksNadUp"
+            ],
+            "characters":[
+               "Danielle"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"ReallyOffendedDanielleSpeech",
+            "content":[
+               "Danielle: 'You know what, no I can't. Clearly you think you know what you're doing.'"
+            ],
+            "link":[
+               "NadDanTroubleDecision"
+            ],
+            "characters":[
+               "Danielle"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"NadDanTroubleDecision",
+            "content":[
+               "What does Nadine say?",
+               "Okay, bye.",
+               "Look I'm sorry, I didn't mean it, I'm just frustrated"
+            ],
+            "link":[
+               "NadDanFinalStraw",
+               "NadineTriesToFix"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg"
+            ],
+            "decision":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"NadineTriesToFix",
+            "content":[
+               "Nadine: 'Okay I'm sorry, I'm just really frustrated about this whole situation.'",
+               "Nadine: 'Especially since someone who works for the thing I am trying to destroy is helping me.'",
+               "Nadine: 'It's just weird.'",
+               "Danielle: 'I get that but that doesn't let you be rude to me'",
+               "Danielle: 'Like this ain't easy for me either, you have no idea what it's like, you are being watched constantly, they question every move you make and they spend millions in R&D to figure out who is a 'risky' patient and especially in protecting their public image.'",
+               "Danielle: 'So forgive me for getting mad, this ain't the little leagues, these guys mean business.'",
+               "Nadine: 'I know I'm sorry, can we start from scratch?'",
+               "Danielle: 'It's okay, but we gotta work together if we wanna give em the good fight. Deal?'",
+               "Nadine: 'Deal.'"
+            ],
+            "link":[
+               "DanielleHooksNadUp"
+            ],
+            "characters":[
+               "Nadine",
+               "Danielle"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"NadDanFinalStraw",
+            "content":[
+               "Nadine: 'Yeah you're right I do'",
+               "Danielle: 'Okay, bye then 👋👋'"
+            ],
+            "link":[
+               "NadDanRegret"
+            ],
+            "characters":[
+               "Nadine",
+               "Danielle"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"NadDanRegret",
+            "content":[
+               "'That could have been handled better', Nadine thought.",
+               "Too late now, let's try and find out what I can on my own."
+            ],
+            "link":[
+               "SearchHC"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+            ],
+            "narration":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"DanielleHooksNadUp",
+            "content":[
+               "Danielle: 'I think I'll be able to snag you a uniform and a swipe card.'",
+               "Danielle: 'But I'm warning you, the minute you enter the building, you're being watched and even if it looks like you work there, they will question you to see if you actually work there'",
+               "Nadine: 'Oh my god, that would be amazing!'",
+               "Nadine: 'I can deal with people questioning me, been dealing with that my whole life.'",
+               "Danielle: 'Ugh I hear that, I should be able to get everything you'll need to get in.'",
+               "Danielle: 'The server room is on Level 29, in the Technical and R&D department.'",
+               "Danielle: 'Send me your address so I can drop off the stuff you need.'",
+               "Nadine: 'You've been amazing, I can't thank you enough sis!'"
+            ],
+            "link":[
+               "NadineSendsAddress"
+            ],
+            "characters":[
+               "Nadine",
+               "Danielle"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg"
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"NadineSendsAddress",
+            "content":[
+               "Nadine sends her address to Danielle"
+            ],
+            "link":[
+               "StickItToEm"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg"
+            ],
+            "narration":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"StickItToEm",
+            "content":[
+               "Nadine: 'I really appreciate this, how can I repay you?'",
+               "Danielle: 'Take those bastards down and make them pay for what they've done.'"
+            ],
+            "link":[
+               "SearchHC"
+            ],
+            "characters":[
+               "Nadine",
+               "Danielle"
+            ],
+            "images":[
+"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg",
+            ],
+            "dialogue":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"OSINT-Circular",
+            "content":[
+               "Where does Nadine go from here?",
+               "A popular recruiting and company review site",
+               "Image searches of the HealthCorp headquarters",
+               "A business networking site",
+               "Finished searching"
+            ],
+            "images":[
+            	"nadine-work-healthcorp-search.jpg",
+            ],
+            "link":[
+               "CompanyReviewSite",
+               "ImagesOfHQ",
+               "LinkedIn",
+               "IsNadineDone"
+            ],
+            "decision":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"OSINT-Circular-SysDecision",
+            "content":[
+               "CompanyReviewSite",
+               "ImagesOfHQ",
+               "LinkedIn"
+            ],
+            "link":[
+               "NoMoreOptions-OSINT",
+               "OSINT-Circular"
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"CompanyReviewSite",
+            "content":[
+               "Nadine decides to click on a popular company review site to start digging up dirt about HealthCorp."
+            ],
+            "images":[
+            	"nadine-work-glassdoor.jpg"
+            ],
+            "link":[
+               "NothingBadToSay"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"NothingBadToSay",
+            "content":[
+               "Nadine quickly notices that HealthCorp doesn't have a single bad review.",
+               "She goes to click on MediKare's review page and she sees fairly mixed reviews but mostly positive."
+            ],
+            "images":[
+            	"nadine-work-gd-healthcorp.jpg",
+            	"nadine-work-gd-medikare.jpg"
+            ],
+            "link":[
+               "CRS-NadineWhatTheHeck"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"CRS-NadineWhatTheHeck",
+            "content":[
+               "Nadine: 'What is going on here?'",
+               "Nadine: 'Are they really that bad of a company? Their staff can't be happy ripping people off and indirectly killing people everyday...'"
+            ],
+            "images":[
+            	"nadine-work-gd-medikare.jpg",
+            	"nadine-work-gd-healthcorp.jpg"
+            ],
+            "link":[
+               "OSINT-Circular-SysDecision"
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ImagesOfHQ",
+            "content":[
+               "Nadine has decided to look for images of the headquarters",
+               "She pulls up the HealthCorp website and does a quick search on Street View to get a better view"
+            ],
+            "link":[
+               "ImagesOfHQ-Decision"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"ImagesOfHQ-Decision",
+            "content":[
+               "Where does Nadine look?",
+               "The HealthCorp entrance",
+               "The location of the cameras",
+               "The building's perimeter"
+            ],
+            "link":[
+               "HQEntrance",
+               "HQPerimeter",
+               "HQCameras"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"HQEntrance",
+            "content":[
+               "Nadine looks at corporate images of the HealthCorp headquarters",
+               "She notes the number of security guards and where they're stationed in the main foyer"
+            ],
+            "link":[
+               "HQEntranceNadine"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"HQPerimeter",
+            "content":[
+               "Nadine looks at Street View images of the buildings perimeter and notices an underground car park",
+               "It doesn't look like there's many cameras or security here."
+            ],
+            "link":[
+               "HQPerimeterNadine"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"HQCameras",
+            "content":[
+               "Nadine looks at the street images of the HealthCorp headquarters and notes the locations of the external cameras.",
+               "The place is littered with them, hardly surprising. Any protests held outside are usually shut down pretty quickly thanks to them."
+            ],
+            "link":[
+               "HQCamerasNadine"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"HQEntranceNadine",
+            "content":[
+               "Nadine: 'Looks like a decent number of security at the entrance, I'll need to be careful.'",
+               "Nadine: 'And looks like they've got security gates, I'll have to find a way around that too.'"
+            ],
+            "link":[
+               "DoneSearchingYet-SysDecision"
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"HQPerimeterNadine",
+            "content":[
+               "Nadine: 'Hmmm with the right credentials, that could be a great way in!'",
+               "Nadine: 'Just need to talk my way past the security guard...'"
+            ],
+            "link":[
+               "DoneSearchingYet-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "characters": [
+            	"Nadine"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"HQCamerasNadine",
+            "content":[
+               "Nadine: 'Must remember to avoid cameras where I can, don't want to attract any unwanted attention'",
+               "Nadine: 'Or worse, get arrested.'"
+            ],
+            "link":[
+               "DoneSearchingYet-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"DoneSearchingYet-SysDecision",
+            "content":[
+               "HQEntrance",
+               "HQCameras",
+               "HQPerimeter"
+            ],
+            "link":[
+               "HQ-FullyResearched",
+               "DoneSearchingYet"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "systemDecision":true
+         },
+         {
+            "name":"DoneSearchingYet",
+            "content":[
+               "Does Nadine want to keep looking into the HQ?",
+               "Yes",
+               "No"
+            ],
+            "link":[
+               "ImagesOfHQ-Decision",
+               "OSINT-Circular-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"NoMoreOptions-OSINT",
+            "content":[
+               "Nadine feels confident to go into the HealthCorp HQ, she decides to finish up what she's doing and get back to work.",
+               "HealthCorp aren't gonna know what hit em.",
+               "She hopes........"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"HQ-FullyResearched",
+            "content":[
+               "Nadine has done enough research on the HealthCorp HQ",
+               "There's nothing more to find"
+            ],
+            "link":[
+               "OSINT-Circular-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"FINISH",
+            "content":[
+               "FINISH"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+               "end.jpg"
+            ],
+            "narration":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"LinkedIn",
+            "content":[
+               "Nadine decides to have a look on a popular professional networking site to see if there is anyone for her to exploit"
+            ],
+            "link":[
+               "FirstBloggerSysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"FirstBloggerSysDecision",
+            "content":[
+               "Blog email"
+            ],
+            "link":[
+               "BloggersAnonContact",
+               "SecondBloggerSysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "systemDecision":true
+         },
+         {
+            "name":"SecondBloggerSysDecision",
+            "content":[
+               "Darren email"
+            ],
+            "link":[
+               "BloggerAndDarren",
+               "ExploitRecruiter"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "systemDecision":true
+         },
+         {
+            "name":"BloggersAnonContact",
+            "content":[
+               "Nadine searches through a list of HealthCorp on the site when she remembers something. ",
+               "Nadine pauses ..........."
+            ],
+            "link":[
+               "NadineEpiphany-speech"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"NadineEpiphany-speech",
+            "content":[
+               "Nadine: 'The inbox!!'",
+               "Co-worker: 'Erm, you ok honey?'",
+               "Nadine: 'Sorry! My bad, didn't mean to scare you.'"
+            ],
+            "link":[
+               "NadineEpiphany"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Co-worker"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"NadineEpiphany",
+            "content":[
+               "Nadine smiles awkwardly at her confused co-workers, it's pretty awkward.",
+               "Ugh, why am I like this?",
+               "She continues to work at her computer.",
+               "She opens the captured folder and finds the email she remembered",
+               "It came from an anonymous throwaway account and they didn't leave a name or anything.",
+               "Nadine searches for anybody using the email for any accounts but finds nothing, looks pretty suspicious...."
+            ],
+            "link":[
+               "AnonChatDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"AnonChatDecision",
+            "content":[
+               "Does Nadine attempt to talk to this person?",
+               "Yes",
+               "No"
+            ],
+            "link":[
+               "LetsTalkToAStranger",
+               "ExploitRecruiter"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"LetsTalkToAStranger",
+            "content":[
+               "Nadine decides to talk to them, she starts to read the email to refresh her memory."
+            ],
+            "link":[
+               "AnonEmail-1"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"AnonEmail-1",
+            "content":[
+               "Anonymous-Sender: 'I can't let them get away with it. Not again.'",
+               "Anonymous-Sender: 'BOTH of my friend's parents were murdered by HealthCorp. None of them could afford those crazy medical bills'"
+            ],
+            "link":[
+               "AnonEmail-2"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"AnonEmail-2",
+            "content":[
+               "Anonymous-Sender: 'The rep on the phone didn't even care, she said that 'there was nothing she could do'.'",
+               "Anonymous-Sender: 'Dumb bitch didn't even know she was sentencing this man's parents death warrant'"
+            ],
+            "link":[
+               "AnonEmail-2"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"AnonEmail-3",
+            "content":[
+               "Anonymous-Sender: 'After that, he was real fucked up yknow? That's when he decided to do something about it.'",
+               "Anonymous-Sender: 'That's why I'm emailing you, you gotta leak this so other people know what they're capable of'"
+            ],
+            "link":[
+               "AnonEmail-NadinesThoughts"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"AnonEmail-NadinesThoughts",
+            "content":[
+               "Nadine: 'Damn, Dad was right, they're are others who are trying to fight them.'",
+               "Nadine: 'Wish I listened to him, he might still be here now ...'",
+               "Nadine: 'Let's reach out, but I guess I'll have to pretend to be Jack, but from a different account.'"
+            ],
+            "link":[
+               "AnonEmail-NadineReachesOut-1"
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"AnonEmail-NadineReachesOut-1",
+            "content":[
+               "Nadine makes an email account that looks similar to Jack's email address."
+            ],
+            "link":[
+               "AnonEmail-NadineReachesOut-2"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"AnonEmail-NadineReachesOut-2",
+            "content":[
+               "Nadine: 'Hi there! It's Jack, I got your email but I lost access to my inbox, which is why I'm emailing you from this address.'",
+               "Nadine: 'Would you mind texting me instead? I'm easier to reach on there, so here's my number if you want to talk!'",
+               "Nadine: 'Talk soon! Jack.'"
+            ],
+            "link":[
+               "AnonEmail-NadineReachesOut-3"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"AnonEmail-NadineReachesOut-3",
+            "content":[
+               "Nadine sends the email, she's not optimistic that they'll reply.",
+               " ......... ",
+               "After about 15 minutes, the Anonymous person replies to Nadine's email with just a phone number.",
+               "Nothing else. Nadine is suspicious.",
+               "She opens her phone and introduces herself as Jack to the Anonymous person"
+            ],
+            "link":[
+               "AnonEmail-NadineReachesOut-4"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"AnonEmail-NadineReachesOut-4",
+            "content":[
+               "Nadine: 'hi there! it's Jack, thanks for your email'",
+               "Nadine: 'when I got your email, I was so happy, like I knew there had to be others!'",
+               "Anonymous-Sender: 'my pleasure, and yeah i know it's not my story but I care for my friend yknow?'"
+            ],
+            "link":[
+               "AnonEmail-Decision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"AnonEmail-Decision",
+            "content":[
+               "What does Nadine say to the anonymous sender?",
+               "Don't bother man.",
+               "Why do you even care?",
+               "Share his story on the blog"
+            ],
+            "link":[
+               "GiveItUpAnon",
+               "ThisAintYourFightAnon",
+               "ShareAnonsStory"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "decision":true
+         },
+         {
+            "name":"ThisAintYourFightAnon",
+            "content":[
+               "Nadine: 'if this ain't your story, why do you even care? Like HealthCorp didn't do this to you'",
+               "Nadine: 'it was your friend that got hit by this, not you.'"
+            ],
+            "link":[
+               "PrettyMeanToAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"GiveItUpAnon",
+            "content":[
+               "Nadine: 'I know you got love for your friend but honestly man don't bother.'",
+               "Nadine: 'The amount of letters and emails I get from HealthCorp's legal team about my one post?'",
+               "Nadine: 'It's not worth it, whatever we do isn't gonna change anything, we're little fish in this big ass pond'",
+               "Anonymous-Sender: 'What's that supposed to mean?'",
+               "Anonymous-Sender: 'You don't wanna take them down and get revenge for all of the people that have been fucked over by them?'"
+            ],
+            "link":[
+               "IsNadineSerious-Anon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"ShareAnonsStory",
+            "content":[
+               "Nadine: 'hey, man that's horrible, I can't imagine the amount of pain and suffering that they put him through'",
+               "Nadine: 'how is he doing now? what did he do?'",
+               "Nadine: 'With his permission, I would love to publicise his story on the blog, it's about time we told people what HealthCorp have been up to.'"
+            ],
+            "link":[
+               "AnonsFriendArrested"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"PrettyMeanToAnon",
+            "content":[
+               "Nadine was pretty mean to the Anonymous sender."
+            ],
+            "link":[
+               "AnonSenderIsMad"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "badtrait":true,
+            "texting":true,
+            "narration":true
+         },
+         {
+            "name":"AnonSenderIsMad",
+            "content":[
+               "Anonymous-Sender: 'What's that supposed to mean?!'",
+               "Anonymous-Sender: 'I thought you cared about HealthCorp fucking everyone over, or are you a liar just like them?'"
+            ],
+            "link":[
+               "MakeAnonEvenMadder-Decision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"MakeAnonEvenMadder-Decision",
+            "content":[
+               "What does Nadine say?",
+               "I hate them just as much as you do!",
+               "This isn't your fight."
+            ],
+            "link":[
+               "BacktrackingOnAnon",
+               "DoublingDownOnAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "decision":true
+         },
+         {
+            "name":"BacktrackingOnAnon",
+            "content":[
+               "Nadine: 'Of course I care! I hate them just as much as you do!'",
+               "Nadine: 'Why else would I write an article about them fucking over my family?'",
+               "Nadine: 'Putting my family in thousands of dollars of debt?'",
+               "Nadine: 'I wanna see them pay for what they've done to my family and probably countless others!'"
+            ],
+            "link":[
+               "RedeemedForAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"DoublingDownOnAnon",
+            "content":[
+               "Nadine: 'If you know what's good for you, you'll stay as far away as you can from HealthCorp.'",
+               "Nadine: 'They didn't get you, I'm sorry they got your friend but you need to stay out of this for your own protection'",
+               "Nadine: 'You don't want to end up like your friend.'"
+            ],
+            "link":[
+               "YouHaveReallyDoneItNow"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"RedeemedForAnon",
+            "content":[
+               "Anonymous-Sender: 'Okay but why are you dismissing me just because I didn't go through the same thing?'",
+               "Anonymous-Sender: 'He was my best friend, we shared everything with each other. Seeing him go through that...'",
+               "Anonymous-Sender: 'It was hard to watch him go through that.'"
+            ],
+            "link":[
+               "NadineFeelsBadForAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"NadineFeelsBadForAnon",
+            "content":[
+               "Nadine: 'Look I'm sorry, I didn't mean it like that.'",
+               "Nadine: 'I've seen so many blogs in support of HealthCorp, so I get really defensive when it comes to people don't know what it's like to experience that first hand, yknow?.'"
+            ],
+            "link":[
+               "AnonLostTrust-RudeNadine"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"AnonLostTrust-RudeNadine",
+            "content":[
+               "Anonymous-Sender: 'okay I get that but if you can't trust me, then I can't trust you, sorry.'",
+               "Anonymous-Sender: 'But before I do go, I have to ask.'",
+               "Anonymous-Sender: 'Are you serious about revenge on HealthCorp?'"
+            ],
+            "link":[
+               "SuspiciousAnon-HealthCorpBreakIn-Decision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"SuspiciousAnon-HealthCorpBreakIn-Decision",
+            "content":[
+               "What does Nadine say?",
+               "Definitely",
+               "No way man!"
+            ],
+            "link":[
+               "NadineBreakIn-Sus",
+               "NadineIsJustABlogger"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "decision":true
+         },
+         {
+            "name":"NadineBreakIn-Sus",
+            "content":[
+               "Nadine: 'Of course!'",
+               "Nadine: 'I wanna see them pay for all the hurt they've caused to people like us.'",
+               "Anonymous-Sender: 'Right, well my friend found out that the underground car park wasn't very well guarded when he was doing some 'research' shall we say.'",
+               "Anonymous-Sender: 'Apparently, the security guards rotate around 2PM, just after everyone comes back from lunch.'",
+               "Anonymous-Sender: 'So if you were thinking about bringing the fight to them, that would be your way in.'",
+               "Anonymous-Sender: 'Feel free to publicise his story, people need to know the pure evil that that company is...'"
+            ],
+            "link":[
+               "NadineHasFinishedWithAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"NadineIsJustABlogger",
+            "content":[
+               "Nadine: 'No way man! I'm not capable of that kinda shit.'",
+               "Nadine: 'I'm just gonna expose HealthCorp through telling stories like yours on my blog.'",
+               "Nadine: 'I'm not looking to break in or anything.'",
+               "Anonymous-Sender: 'Suit yourself, well you know my story, so feel free to put it on your blog, have a nice life.'",
+               "Nadine: 'You too, stay safe'"
+            ],
+            "link":[
+               "NadineHasFinishedWithAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"NadineHasFinishedWithAnon",
+            "content":[
+               "Nadine closes the conversation and returns back to her desktop. Did she just make a big mistake?"
+            ],
+            "link":[
+               "OSINT-Circular-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "narration":true
+         },
+         {
+            "name":"YouHaveReallyDoneItNow",
+            "content":[
+               "Nadine has REALLY pised off the Anonymous sender."
+            ],
+            "link":[
+               "AnonIsReallyMadNow"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "badtrait":true,
+            "texting":true,
+            "narration":true
+         },
+         {
+            "name":"AnonIsReallyMadNow",
+            "content":[
+               "Anonymous-Sender: 'You know what? Fuck you!'",
+               "Anonymous-Sender: 'You can't tell me what to do, especially when it comes to getting payback for my friend, who the FUCK do you think you are??'",
+               "Anonymous-Sender: 'Forget it man, you know my story now, so you can blog about that if you want. I'm done.'"
+            ],
+            "link":[
+               "ThatCouldHaveGoneBetter-Anon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"ThatCouldHaveGoneBetter-Anon",
+            "content":[
+               "Well, that could have been handled better..."
+            ],
+            "link":[
+               "NadineHasFinishedWithAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"AnonsFriendArrested",
+            "content":[
+               "Anonymous-Sender: 'well......'",
+               "Anonymous-Sender: 'they managed to arrest him.'",
+               "Anonymous-Sender: 'see after his parents died, the crazy fucker decided that he was going to break into their big swanky offices'",
+               "Anonymous-Sender: 'all Robin Hood and shit, yknow steal from the rich and re-distribute it among the poor'",
+               "Anonymous-Sender: 'but somehow they caught wind of what he was doing.'",
+               "Nadine: 'fuuuck, that's wild man.'",
+               "Anonymous-Sender: 'next thing you know the police is kicking his door in and he's serving a 10 year sentence on trumped up charges'",
+               "Nadine: 'I can't even imagine what that would be like, I'm so sorry that you had to go through that.'",
+               "Nadine: 'man fuck HealthCorp, I wish we could do something about them'",
+               "Nadine: 'I have to ask, was your friend working with anyone to break into HealthCorp?'",
+               "Nadine: 'It might really help if someone wanted to carry on from where he left it'",
+               "Anonymous-Sender: 'What are you talking about? Are you telling me that you wanna break into HealthCorp?'"
+            ],
+            "link":[
+               "NadineBreakIn-Normal"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"NadineBreakIn-Normal",
+            "content":[
+               "What does Nadine say?",
+               "Yes",
+               "No"
+            ],
+            "link":[
+               "HonestNadineBreakIn",
+               "NadineLiesAbtBreakIn"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "decision":true
+         },
+         {
+            "name":"NadineLiesAbtBreakIn",
+            "content":[
+               "Nadine: 'Definitely not!'",
+               "Nadine: 'I'm not looking to be even more on their radar than I already am.'",
+               "Nadine: 'I get enough emails and letters from their Legal team than I'd like'",
+               "Anonymous-Sender: 'Ah what a shame, that's fair I suppose, can't put that on you...'",
+               "Anonymous-Sender: 'Well feel free to share his story, people need to know, stay safe man.'",
+               "Nadine: 'Thank you, you too.'"
+            ],
+            "link":[
+               "NadineHasFinishedWithAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"HonestNadineBreakIn",
+            "content":[
+               "Nadine: 'If there's a way to break in and fix all the horrible things that they've done, best believe that I'm gonna do it.'",
+               "Anonymous-Sender: 'That's what I like to hear, finally someone willing to take some serious action.'",
+               "Anonymous-Sender: 'I'll send over his plans on one content'",
+               "Nadine: 'What's that?'",
+               "Anonymous-Sender: 'If you agree to do this, you have to transfer $100 million dollars into an account, the rest is yours to take'"
+            ],
+            "link":[
+               "MoneyOrRevenge-Decision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"MoneyOrRevenge-Decision",
+            "content":[
+               "What does Nadine say?",
+               "Fuck. NO.",
+               "I'm down."
+            ],
+            "link":[
+               "NadineHasMorals-Anon",
+               "NadineQuestionableMorals-Anon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "decision":true
+         },
+         {
+            "name":"NadineHasMorals-Anon",
+            "content":[
+               "Nadine: 'No way! I can't do that, that money belongs to all the people HealthCorp ripped off!'",
+               "Anonymous-Sender: 'You think they don't got enough money for everyone who got screwed by them??'",
+               "Anonymous-Sender: 'Man you're more naive than I thought.'",
+               "Anonymous-Sender: 'If you're too much of a pussy to do that then there's nothing I can do for you. Stay safe man.'"
+            ],
+            "link":[
+               "NadineHasFinishedWithAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"NadineQuestionableMorals-Anon",
+            "content":[
+               "Nadine: 'I'm in.'",
+               "Anonymous-Sender: 'Good, and before you think of being smart, if you think about running away with the money, I will expose you and have you arrested.'",
+               "Anonymous-Sender: 'Or worse, I got connections, so don't even THINK about crossing me.'",
+               "Nadine: 'Alright, got it'",
+               "Anonymous-Sender: 'Good, I'll send over a file to your email."
+            ],
+            "link":[
+               "NadineHitsTheJackpot-Anon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"NadineHitsTheJackpot-Anon",
+            "content":[
+               "The anonymous person sends her a ZIP file containing an extensive view into the HealthCorp HQ",
+               "Floor plans, Camera locations, the location of the main server room.",
+               "Nadine is SHOOKETH about the detail of the plans. She's gonna have no trouble getting around the HQ",
+               "But at what cost? She's not sure..."
+            ],
+            "link":[
+               "NadineAnon-Closing"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "narration":true
+         },
+         {
+            "name":"NadineAnon-Closing",
+            "content":[
+               "Nadine: 'Wow these plans are really detailed, thank you so much!!'",
+               "Anonymous-Sender: 'No problem, but remember our deal, I'll send over the account details for the transfer. Good luck.'"
+            ],
+            "link":[
+               "NadineHasFinishedWithAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"IsNadineSerious-Anon",
+            "content":[
+               "What does Nadine say?",
+               "Of course I do!",
+               "Yeah... but I'm just a blogger"
+            ],
+            "link":[
+               "NadineIsAHypocrite-Anon",
+               "NadineIsJustABlogger"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "decision":true
+         },
+         {
+            "name":"NadineIsAHypocrite-Anon",
+            "content":[
+               "Anonymous-Sender: 'Man I don't understand you'",
+               "Anonymous-Sender: 'You were saying how bad HealthCorp is but you're not doing anything about it?'",
+               "Anonymous-Sender: 'that don't make any sense.'"
+            ],
+            "link":[
+               "NadinesExplanationAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"NadinesExplanationAnon",
+            "content":[
+               "What does Nadine say?",
+               "I'm powerless against them",
+               "My blog is my power",
+               "You know what? I will fight them."
+            ],
+            "link":[
+               "NadineIsPowerless-Anon",
+               "JournalismAtItsFinest-Anon",
+               "TakeTheFightToThem-Anon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "decision":true
+         },
+         {
+            "name":"NadineIsPowerless-Anon",
+            "content":[
+               "Nadine: 'I wanna stop them but how? '",
+               "Nadine: 'There is nothing we can do to stop these people, they've got way too much power, too many people in their pocket and too much money.'",
+               "Nadine: 'All I can hope for is that people read the blog and that it gets more publicity'"
+            ],
+            "link":[
+               "UnconvincedAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"JournalismAtItsFinest-Anon",
+            "content":[
+               "Nadine: 'My blog is my voice, I can fight them by exposing all of the stories of the people who HealthCorp have fucked over.'",
+               "Nadine: 'Then no-one can ignore the sheer amount of evidence that I have mounted against them'"
+            ],
+            "link":[
+               "UnconvincedAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"TakeTheFightToThem-Anon",
+            "content":[
+               "Nadine: 'You know what you're right. I shouldn't rely on exposing HealthCorp just on my blog'",
+               "Nadine: 'What do you have in mind?'",
+               "Anonymous-Sender: 'Finally, that's what I like to hear! Well if you're serious about breaking in, my buddy sent me a bunch of plans when he was... erm'",
+               "Anonymous-Sender: 'Researching, shall we say?'",
+               "Anonymous-Sender: 'I'll give em to you on one content. You transfer $250 million to an account of my choosing.'"
+            ],
+            "link":[
+               "MoneyOrRevenge-Decision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"UnconvincedAnon",
+            "content":[
+               "Anonymous-Sender: 'Hm, suit yourself. Good luck with that, hope it works out for you.'"
+            ],
+            "link":[
+               "NadineHasFinishedWithAnon"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Anonymous-Sender"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "texting":true,
+            "dialogue":true
+         },
+         {
+            "name":"BloggerAndDarren",
+            "content":[
+               "Nadine remembers reading emails from a man called Darren, that Jack was talking to.",
+               "'He worked in their Sales department! He must know what really goes on in there', Nadine thought",
+               "So she searches for him on the site...",
+               "After a lot of searching, Nadine manages to find him and discovers that he's a Manager in their Sales department."
+            ],
+            "link":[
+               "NadineTalksToDarren"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"ExploitRecruiter",
+            "content":[
+               "Nadine decides to make a fake account on the site that makes it look like she just started working at HealthCorp",
+               "Nadine makes her account look like she's been working at HealthCorp for a very long time",
+               "Nadine finds a HealthCorp recruiter to talk to and starts asking questions."
+            ],
+            "link":[
+               "FirstTalkingToRecruiter"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"FirstTalkingToRecruiter",
+            "content":[
+               "Nadine: 'Hi there! I'm graduating this summer in Computer Science and I was wondering if you guys had any openings?'",
+               "Recruiter: 'Hello there. Yes we do! Our applications are also open so please send a resume to recruitment@healthcorp.com'",
+               "Nadine: 'Awesome! Thank you so much, I just have a couple questions about HealthCorp if that's okay?'",
+               "Recruiter: 'Of course! I'd love to answer any questions you have.'"
+            ],
+            "link":[
+               "RecruiterCircular"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Recruiter"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"RecruiterCircular",
+            "content":[
+               "What does Nadine say?",
+               "What technology do they use?",
+               "What time does everyone start?",
+               "What's it like to work at HealthCorp?",
+               "I think that's everything!"
+            ],
+            "link":[
+               "TechInTheDept-SysDecision-FIRST",
+               "WhatTimeDoIStart",
+               "WorkingLifeAtHC",
+               "NadineFinishesWithRecruiter"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"TechInTheDept-SysDecision-FIRST",
+            "content":[
+               "RecruiterIsSus-ONE"
+            ],
+            "link":[
+               "TechInTheDept-Suspicious",
+               "TechInTheDept-SysDecision-SECOND"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "systemDecision":true
+         },
+         {
+            "name":"WhatTimeDoIStart",
+            "content":[
+               "Nadine: 'So what time does everyone typically start?'",
+               "Recruiter: 'Well the building is open 24 hours but most staff are in around 9AM.'",
+               "Recruiter: 'We operate on a Flexihour schedule, so for Technical, you would be expected to be in by around 9AM and most people are gone by 6PM'",
+               "Recruiter: 'After hours, you'll only find the essential staff and stragglers really.'"
+            ],
+            "link":[
+               "WhatTimeDoIStart-Decision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Recruiter"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"WorkingLifeAtHC",
+            "content":[
+               "Nadine: 'So what's it like to work at HealthCorp?'",
+               "Recruiter: 'HealthCorp is Number 1 for Employee Satisfaction in the country and that was all from feedback from our employees!'",
+               "Recruiter: 'I couldn't recommend it more for a graduate, it's a great step into the world of work! 😊'"
+            ],
+            "link":[
+               "WLAtHC-Decision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Recruiter"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"RecruiterIsSus-ONE",
+            "content":[
+               "Nadine has made the Recruiter suspicious."
+            ],
+            "link":[
+               "NadineProbesRecruiter"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"RecruiterIsSus-TWO",
+            "content":[
+               "Nadine has made the Recruiter suspicious"
+            ],
+            "link":[
+               "RecruiterEM-Response"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"TechInTheDept-SysDecision-SECOND",
+            "content":[
+               "RecruiterIsSus-TWO"
+            ],
+            "link":[
+               "TechInTheDept-Suspicious",
+               "TechInTheDept-Normal"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "systemDecision":true
+         },
+         {
+            "name":"TechInTheDept-Suspicious",
+            "content":[
+               "Nadine: 'Do you know what kinds of technology they use at HealthCorp?'",
+               "Recruiter: 'I'm afraid not, I don't really know those kinds of details.'",
+               "Recruiter: 'Sorry about that!'"
+            ],
+            "link":[
+               "RecruiterCircular-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Recruiter"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"TechInTheDept-Normal",
+            "content":[
+               "Nadine: 'Do you know what kinds of technology they use at HealthCorp?'",
+               "Recruiter: 'Oh all sorts! Just depends on the business needs, I think I have a document that might help...'",
+               "Recruiter: '..... Found it! I'll send it over to you, should give you an overview of the sorts of things you'll be working on!'",
+               "Nadine: 'That would be great! Thank you.'"
+            ],
+            "link":[
+               "RecruiterDocInfo"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Recruiter"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"WLAtHC-Decision",
+            "content":[
+               "What does Nadine say?",
+               "What about yourself?",
+               "*nothing*"
+            ],
+            "link":[
+               "RecruiterIsSus-ONE",
+               "GhostsRecruiter"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Recruiter"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"NadineProbesRecruiter",
+            "content":[
+               "Nadine: 'Interesting! What about yourself? What do you think of HealthCorp?'",
+               "Recruiter: 'Like I said, it's a great place to work, lots of benefits and support for staff - overall couldn't recommend it more!'",
+               "Recruiter: 'Hope that answers your question! 😊'"
+            ],
+            "link":[
+               "RecruiterCircular-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Recruiter"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"RecruiterCircular-SysDecision",
+            "content":[
+               "TechInTheDept-SysDecision",
+               "WhatTimeDoIStart",
+               "WorkingLifeAtHC"
+            ],
+            "link":[
+               "NadineFinishesWithRecruiter",
+               "RecruiterCircular"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "systemDecision":true
+         },
+         {
+            "name":"NadineFinishesWithRecruiter",
+            "content":[
+               "Nadine: 'I think that's all the questions I had, thank you so much for your help!'",
+               "Recruiter: 'No problem darlin! Don't forget to send in your application!'",
+               "Nadine: 'Oh don't worry I will.'"
+            ],
+            "link":[
+               "OSINT-Circular-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Recruiter"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"GhostsRecruiter",
+            "content":[
+               "Nadine doesn't reply to the Recruiter..."
+            ],
+            "link":[
+               "RecruiterCircular-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"RecruiterDocInfo",
+            "content":[
+               "The recruiter sends a document detailing some of the key systems of the HealthCorp systems.",
+               "Nothing business critical, but useful nonetheless."
+            ],
+            "link":[
+               "RecruiterCircular-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"WhatTimeDoIStart-Decision",
+            "content":[
+               "What does Nadine ask next?",
+               "When does the Reception open?",
+               "What time do the managers and executives come in?"
+            ],
+            "link":[
+               "FrontDeskIsOpen",
+               "RecruiterExecsAndManagers"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"FrontDeskIsOpen",
+            "content":[
+               "Nadine: 'Okay cool! Also, what time would I expect the front desk to close?'",
+               "Recruiter: 'Typically the front desk is open from 8AM to 6PM and we have 24 hour security of course.'",
+               "Nadine: 'Good to know! Thank you.'"
+            ],
+            "link":[
+               "RecruiterCircular-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Recruiter"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"RecruiterExecsAndManagers",
+            "content":[
+               "Nadine: 'Okay cool! Also, what time would I expect my manager or executives to come in?'"
+            ],
+            "link":[
+               "RecruiterIsSus-TWO"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Recruiter"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"RecruiterEM-Response",
+            "content":[
+               "Recruiter: 'Oh they come in whenever really, depends what meetings they have that day.'",
+               "Nadine: 'Oh okay! Good to know, thanks.'"
+            ],
+            "link":[
+               "RecruiterCircular-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Recruiter"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"NadineTalksToDarren",
+            "content":[
+               "Nadine: 'hey it's Jack, the blogger?'",
+               "Nadine: 'I tried to email you but it wouldn't let me for some reason, so I thought I would reach out on here.'",
+               "Nadine: 'I've been looking into HealthCorp, I'm trying to do an expose of sorts on their shady business practices, think you can help?'"
+            ],
+            "link":[
+               "NadineWaitsForDarren"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"NadineWaitsForDarren",
+            "content":[
+               "Shortly after Nadine sent the message, Darren replies."
+            ],
+            "link":[
+               "DarrenRepliesToNadine"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"DarrenRepliesToNadine",
+            "content":[
+               "Darren: 'hi there, long time no see haha! how have you been lately?'",
+               "Darren: 'I'd love to help, you already know how I feel about them ugh'",
+               "Darren: 'but out of curiosity how did you find me? you kinda stopped talking to me after a while 😅😅'"
+            ],
+            "link":[
+               "NadineDarren-Decision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"NadineDarren-Decision",
+            "content":[
+               "What does Nadine say?",
+               "I saw some of your other posts and found you",
+               "The site recommended you to me!"
+            ],
+            "link":[
+               "NadineStalkedDarren",
+               "SiteRecommendedDarren"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"NadineStalkedDarren",
+            "content":[
+               "Nadine: 'well I stumbled across our emails while I was going through my inbox, and I thought I'd search you up and reach out!'",
+               "Nadine: 'I hope that's not too weird, I thought you could help me out.'",
+               "Darren: 'Ahhh I see, I don't think I'll be much help to you really, sorry!'"
+            ],
+            "link":[
+               "NadineIsShutDownByDarren"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"SiteRecommendedDarren",
+            "content":[
+               "Darren: 'oh that is weird! fair enough haha'",
+               "Darren: 'well you already know I work at in sales at HealthCorp and that a lot of shady stuff that happens here'",
+               "Nadine: 'Of course, everyone does'",
+               "Darren: 'like I'm used to dealing with shady sales tactics but targeting families that are pre-disposed to get cancer'",
+               "Darren: 'just to rip them off later?'",
+               "Darren: 'that's not what I signed up for. and there's way more to it than you could even imagine!'",
+               "Nadine: 'What are you talking about??'",
+               "Darren: 'HealthCorp are fucked up more than you could even imagine.'",
+               "Darren: 'Their whole business model is centred around exploiting the weak and getting all they can from them'",
+               "Darren: 'but none of us can prove it, we just do what the System tells us.'",
+               "Darren: 'Only the Inner Circle really know how it works.'",
+               "Nadine: 'the Inner Circle? Who are they?'",
+               "Darren: 'Oh they're the fat cats at the top, the ones who run the whole show.'",
+               "Darren: 'They're a group of shareholders; rumour has it that collectively they control what the media puts out about HealthCorp'"
+            ],
+            "link":[
+               "WhoAreTheInnerCircle"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"WhoAreTheInnerCircle",
+            "content":[
+               "What does Nadine say?",
+               "What are you talking about?",
+               "That's crazy."
+            ],
+            "link":[
+               "IC-WhatAreYouTalkingAbout",
+               "IC-ThatsCrazy"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"IC-WhatAreYouTalkingAbout",
+            "content":[
+               "Darren: 'They're the ones running HealthCorp, THEY own everyone, nothing goes in this city without their say so.",
+               "Darren: 'Don't you see? They're the ones you need to go for"
+            ],
+            "link":[
+               "NadineDarren-DecisionTwo"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"IC-ThatsCrazy",
+            "content":[
+               "Darren: 'They're the ones who run the show over at HealthCorp, the rest of us are just following what the System tells us to do.'",
+               "Darren: 'We're not allowed to talk about it so I could get into a so much trouble by talking to you about all this.'"
+            ],
+            "link":[
+               "NadineDarren-DecisionTwo"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"NadineDarren-DecisionTwo",
+            "content":[
+               "What does Nadine say?",
+               "Why didn't you speak up earlier?",
+               "I'm glad you're telling me all this"
+            ],
+            "link":[
+               "ND-WhyYouTakeLong",
+               "ND-ImGladYouTalked"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"ND-ImGladYouTalked",
+            "content":[
+               "Nadine: 'well I'm glad you told me all of this, it really helps :)'",
+               "Darren: 'I'm glad, hopefully you can find a way to get some evidence and expose them for the scum that they are.'",
+               "Darren: 'Only reason why I'm still working there is because the pay is good and I'm locked in for another 2 years'",
+               "Nadine: 'What do you mean? They can't force you to work there surely?'",
+               "Darren: 'Cmon Jack you've seen what HealthCorp is capable of, they do what they like.'",
+               "Nadine: 'well someone's gotta do something about it, that might as wel be me.'",
+               "Darren: 'You can't be serious? You're not gonna be able to just waltz in and press the big red button yknow?'"
+            ],
+            "link":[
+               "NadineBeingUnderEst"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-WhyYouTakeLong",
+            "content":[
+               "Nadine: 'so why did it take you this long to speak up now?'"
+            ],
+            "link":[
+               "DarrenDidntLikeThat"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"DarrenDidntLikeThat",
+            "content":[
+               "Darren didn't like that"
+            ],
+            "link":[
+               "DarrenIsUpset"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"DarrenIsUpset",
+            "content":[
+               "Darren: 'hey remember I'm sticking my neck out for you here'",
+               "Darren: 'I'm trying to help you out so you can fight these guys'",
+               "Nadine: 'I just don't believe that you were powerless to do nothing to change anything, you work there!'",
+               "Darren: 'I get that but they own us, they can ruin all of our lives if we speak out and the worst part is, it wouldn't even make a difference.'",
+               "Darren: 'I've heard rumours that they've sealed court cases of people who have spoken out and used their ties to big media companies to squash any negative press about them.'",
+               "Darren: 'Like some craaazy shit.'"
+            ],
+            "link":[
+               "IsNadineMeanToDarren"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"NadineBeingUnderEst",
+            "content":[
+               "Nadine is getting tired of people underestimating her"
+            ],
+            "link":[
+               "ND-WeNeedAction"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"ND-WeNeedAction",
+            "content":[
+               "Nadine: 'Writing a bunch of inflammatory articles sure as hell ain't gonna cut it. Someone needs to take proper action.'",
+               "Darren: 'If you're serious about going ahead with this, then you should know that the security at the front desk changes over at 1:30 everyday for lunch'",
+               "Darren: 'If you come then, you can usually slip past and tailgate somebody.'",
+               "Darren: 'I can tell the front desk to expect you and then you'll be able to do whatever you need to do.'"
+            ],
+            "link":[
+               "IsNadineMeanToDarren"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"IsNadineMeanToDarren",
+            "content":[
+               "What does Nadine think of Darren?",
+               "I don't trust him at all, something doesn't add up here",
+               "I'm not sure of this guy, I'm gonna be cautious.",
+               "I believe him, he seems pretty trustworthy"
+            ],
+            "link":[
+               "ND-NadineDoesntTrustDarren",
+               "ND-NadineIsntSureOfDarren",
+               "ND-NadineTrustsDarren"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"ND-NadineDoesntTrustDarren",
+            "content":[
+               "Nadine: 'I don't trust you, how do I know anything you've told me is true?'",
+               "Nadine: 'For all I know, you could be a spy for HealthCorp!'"
+            ],
+            "link":[
+               "OOP-NadineAccusedDarren"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-NadineIsntSureOfDarren",
+            "content":[
+               "Nadine: 'Hmmm I don't know, how do I know you're not lying to me?'"
+            ],
+            "link":[
+               "ND-DarrenKnowsNoTrust"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-NadineTrustsDarren",
+            "content":[
+               "Nadine: 'Okay, I trust you and know that it takes a lot for me to do that.'"
+            ],
+            "link":[
+               "ND-NadsTrustsDarren-CHECK"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"OOP-NadineAccusedDarren",
+            "content":[
+               "Darren will remember that you accused him of being a spy"
+            ],
+            "link":[
+               "ND-DarrenIsMad"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"ND-DarrenIsMad",
+            "content":[
+               "Darren: 'Are you accusing me of being a spy? For HealthCorp??'",
+               "Darren: 'That is crazy! Do you think I like telling the families of dying people that we're pulling the plug for them??'",
+               "Darren: 'What kind of sick monster do you take me for?'"
+            ],
+            "link":[
+               "ND-DIM-Decision-One"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-DIM-Decision-One",
+            "content":[
+               "What does Nadine say?",
+               "Well what else am I meant to think?",
+               "I just don't trust you"
+            ],
+            "link":[
+               "ND-NadineRlyDoesntTrustHim",
+               "ND-NadineJustDontTrustYou"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"ND-NadineRlyDoesntTrustHim",
+            "content":[
+               "Nadine: 'What else am I meant to think Darren?'",
+               "Nadine: 'You work at HealthCorp, how can I trust anything you say?'",
+               "Darren: 'I'm not some sort of predator, I wanna get HealthCorp just like you do!'",
+               "Darren: 'And I genuinely like you Jack, why would I fake that? I'm not some corporate puppet!'"
+            ],
+            "link":[
+               "ND-DIM-Decision-Two"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-NadineJustDontTrustYou",
+            "content":[
+               "Nadine: 'I just have a bad feeling, like I think you're trying to play me here.'",
+               "Nadine: 'You popped up to me after I posted my post about HealthCorp, and were acting really sweet. Would you blame me for being suspicious?'",
+               "Nadine: 'Like what else am I meant to think?'",
+               "Darren: 'Whatever, good luck then. You better watch your back, Jack.'"
+            ],
+            "link":[
+               "DarrenIsAThreat"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"DarrenIsAThreat",
+            "content":[
+               "That didn't end well at all. Nadine should watch out for Darren."
+            ],
+            "link":[
+               "NadineLogsOut"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"NadineLogsOut",
+            "content":[
+               "Nadine logs off her account"
+            ],
+            "link":[
+               "OSINT-Circular-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"ND-DarrenKnowsNoTrust",
+            "content":[
+               "Darren will remember that you didn't completely trust him"
+            ],
+            "link":[
+               "ND-DarrenTriesToRedeem"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"ND-DarrenTriesToRedeem",
+            "content":[
+               "Darren: 'Why? I've told you everything you need to get in the building, I wanna see HealthCorp pay for what they've been doing just as much as you do!'"
+            ],
+            "link":[
+               "ND-DoesNadineBelieveHim"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-DoesNadineBelieveHim",
+            "content":[
+               "What does Nadine say?",
+               "Don't believe you",
+               "Hmm maybe you are trustworthy",
+               "Still not convinced"
+            ],
+            "link":[
+               "ND-NadDoesntBeliveDarren",
+               "ND-NadGivesBOD",
+               "ND-NadIsntConvincedPERIOD"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"ND-NadIsntConvincedPERIOD",
+            "content":[
+               "Nadine: 'I'm just sceptical, like if I was in your position, I wouldn't be able to live with myself doing that everyday.'",
+               "Darren: 'I don't really, like I hate my job, I hate coming here and ripping people off everyday. But what else can I do? I can't quit, they'll ruin my life.'"
+            ],
+            "link":[
+               "ND-DoesDarrenLikeNad-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-NadGivesBOD",
+            "content":[
+               "Nadine: 'I don't know maybe I'm being too quick to judge you, I'm just sceptical yknow?'",
+               "Darren: 'I get that but I'm putting my livelihood on the line so you better not mess this up.'"
+            ],
+            "link":[
+               "ND-NadineBeingUnderEst-Two"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-NadDoesntBeliveDarren",
+            "content":[
+               "Nadine: 'I don't believe you, like how can you work for HealthCorp and rip people off everyday?'",
+               "Nadine: 'Then stand in front of me and say how much you hate them? It doesn't make sense to me.'",
+               "Darren: 'I don't know what I can say to you to convince you that I'm on your side, like I'm forced to work there.'",
+               "Nadine: 'There is nothing you can say, you've proven that you aren't to be trusted.'",
+               "Darren: 'Whatever, good luck then. You better watch your back, Jack.'"
+            ],
+            "link":[
+               "DarrenIsAThreat"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-DoesDarrenLikeNad-SysDecision",
+            "content":[
+               "ND-WhyYouTakeLong"
+            ],
+            "link":[
+               "ND-DarrenDoesntLikeNad",
+               "ND-DarrenDoesntMindNad"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "systemDecision":true
+         },
+         {
+            "name":"ND-DarrenDoesntLikeNad",
+            "content":[
+               "Darren: 'And who are you to question me? You're not the one in my position so you are in no position to critique me or what I do.'",
+               "Darren: 'If you wanna get in, I'll help you but don't expect anything else.'"
+            ],
+            "link":[
+               "DarrenIsAThreat"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-DarrenDoesntMindNad",
+            "content":[
+               "Darren: 'Look I have no beef with you, I don't want that to start now.'",
+               "Darren: 'If you're still serious about going after HealthCorp, then I'll make the arrangements, but don't come looking for me.'",
+               "Darren: 'I don't wanna lose my job because of your fuck up. I got bills to pay.'",
+               "Nadine: 'Alright cool, thanks...'"
+            ],
+            "link":[
+               "NadineLogsOut"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-NadsTrustsDarren-CHECK",
+            "content":[
+               "Darren will remember that you trusted him."
+            ],
+            "link":[
+               "ND-DarrenAppreciatesThat"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"ND-DarrenAppreciatesThat",
+            "content":[
+               "Darren: 'Well I really appreciate that. The world needs to know how evil HealthCorp really are.'",
+               "Nadine: 'You're damn right they do, I hope we can expose them.'",
+               "Darren: 'You bet, anyways, talk soon. Stay safe Jack xx'"
+            ],
+            "link":[
+               "NadineLogsOut"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-NadineBeingUnderEst-Two",
+            "content":[
+               "Nadine is getting tired of people underestimating her. "
+            ],
+            "link":[
+               "ND-PassiveAggressiveNad"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         },
+         {
+            "name":"ND-PassiveAggressiveNad",
+            "content":[
+               "Nadine: 'Don't be worrying about me, I'm good.'",
+               "Darren: 'Hmm, I bet, talk soon Jack xx'"
+            ],
+            "link":[
+               "NadineLogsOut"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-DIM-Decision-Two",
+            "content":[
+               "What does Nadine say?",
+               "I just don't trust you",
+               "I don't know what to believe",
+               "*ghosts Darren*"
+            ],
+            "link":[
+               "ND-NadineJustDontTrustYou",
+               "ND-NadineIsConfused",
+               "ND-NadineGhostsDarren"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "decision":true
+         },
+         {
+            "name":"ND-NadineIsConfused",
+            "content":[
+               "Nadine: 'I just don't know what to believe with you'",
+               "Nadine: 'It's all a bit too suspicious for me though'",
+               "Darren: 'Whatever, I was only trying to help but good luck anyway.'",
+               "Darren: 'Watch your back Jack.'"
+            ],
+            "link":[
+               "DarrenIsAThreat"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"ND-NadineGhostsDarren",
+            "content":[
+               "Darren: 'So that's how it is? Real mature Jack'",
+               "Darren: 'Whatever, you better watch yourself.'"
+            ],
+            "link":[
+               "DarrenIsAThreat"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine",
+               "Darren"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"NadineIsShutDownByDarren",
+            "content":[
+               "Nadine decides that she's not gonna be getting anything useful out of Darren now.",
+               "Or ever for that matter."
+            ],
+            "link":[
+               "OSINT-Circular-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
+         }
+      ]
+   }
+}

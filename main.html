@@ -17,18 +17,28 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body onload="main()">
-        <div id="gameContainer" class="center">
-            <a id="musicCreditSource">
+        <a id="musicCreditSource">
                 <h5 id="musicCredits">MUSIC PLAYING: CREDIT TO: </h5>
-            </a>
-            <a onclick="playPauseMusic()">
-                <img src="images/pause-music-icon.png" id="musicControl"/>
-            </a>
-            <a onclick="skipScreen()">
-                <img src="images/thank-u-next.png" id="skipScreen"/>
-            </a>
-            <h5 style="visibility:hidden" id="musicControlLabel">MUSIC PLAY/PAUSE</h5>
-            <h5 style="visibility:hidden" id="skipScreenLabel">SKIP TO NEXT SCENE</h5>
+        </a>
+        <div id="gameContainer" class="center">
+            <div id="bottomButtonArray">
+                <h5 style="visibility:hidden" id="saveGameLabel">SAVE GAME</h5>
+                <a onclick="saveGame()">
+                    <img id="saveGame" src="images/save.png">
+                </a> 
+                <h5 style="visibility:hidden" id="pauseGameLabel">PAUSE GAME</h5>
+                <a onclick="pauseGame()">
+                    <img id="pauseGame" src="images/pause-game.png">
+                </a> 
+                <h5 style="visibility:hidden" id="musicControlLabel">MUSIC PLAY/PAUSE</h5>
+                <a onclick="playPauseMusic()">
+                    <img src="images/pause-music-icon.png" id="musicControl"/>
+                </a>
+                <h5 style="visibility:hidden" id="skipScreenLabel">SKIP TO NEXT SCENE</h5>
+                <a onclick="skipScreen()">
+                    <img src="images/thank-u-next.png" id="skipScreen"/>
+                </a>
+            </div>
             <audio autoplay loop id="musicPlayer"><source src="" type="audio/mpeg"></audio>
             <!--<img src="images/Nadine.png" id="characterOne" class="bottomLeft characterImg"/>-->
             <!--<div id="narrator">
@@ -39,22 +49,22 @@
                     </div>
             </div>
                 
-                <div class="col-sm-12">
-                    <div class="pull-left">
-                        <button class="btn btn-primary leftBtn"> test button 1 </button>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary"> test button 1 </button>
-                    </div>
+            <div class="col-sm-12">
+                <div class="pull-left">
+                    <button class="btn btn-primary leftBtn"> test button 1 </button>
                 </div>
-                <div class="col-sm-12">
-                    <div class="pull-left">
-                        <button class="btn btn-primary leftBtn"> test button 1 </button>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary" > test button 1 </button>
-                    </div>
+                <div>
+                    <button class="btn btn-primary"> test button 1 </button>
                 </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="pull-left">
+                    <button class="btn btn-primary leftBtn"> test button 1 </button>
+                </div>
+                <div>
+                    <button class="btn btn-primary" > test button 1 </button>
+                </div>
+            </div>
             </div>-->
             <!--<div id="characterOne" class="characterSpeech topLeft">
                 <div class="chatWindowBG">
