@@ -1,0 +1,27 @@
+<html> <!-- ADAPTED FROM THE FOLLOWING SOURCE: https://github.com/dheineman/pipes -->
+    <head>
+        <link rel="stylesheet" href="css/pipes.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="js/pipe-game.js"></script>
+        <script type="text/javascript" src="js/pipe-grid.js"></script>
+        <script type="text/javascript">
+        	function initGame() {
+        		var grid = new Grid(); 
+        		grid.init(5); 
+        		document.getElementById("grid").gridObj = grid;
+        	}
+        	function rotatePipe(element) {
+        		var grid = document.getElementById("grid").gridObj;
+			    var x = element.dataset.x;
+			    var y = element.dataset.y;
+
+			    grid.getPipe(x,y).rotate();
+			    grid.checkPipes();
+			    grid.draw();
+			}
+        </script>
+    </head>
+    <body onload="initGame()">
+        <div id="grid"></div>
+    </body>
+</html>

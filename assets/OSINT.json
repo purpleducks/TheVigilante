@@ -666,13 +666,55 @@
             	"nadine-work-healthcorp-search.jpg"
             ],
             "link":[
-               "CompanyReviewSite",
-               "ImagesOfHQ",
-               "LinkedIn",
+               "CompanyReviewSite-SysDecision",
+               "ImagesOfHQ-SysDecision",
+               "LinkedIn-SysDecision",
                "IsNadineDone"
             ],
             "decision":true,
             "music":"An-Appearance-Of-Normality.mp3"	
+         },
+         {
+            "name":"CompanyReviewSite-SysDecision",
+            "content":[
+               "CompanyReviewSite"
+            ],
+            "link":[
+               "OSINT-BeenThere",
+               "CompanyReviewSite"
+            ],
+            "systemDecision":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"ImagesOfHQ-SysDecision",
+            "content":[
+               "ImagesOfHQ"
+            ],
+            "link":[
+               "OSINT-BeenThere",
+               "ImagesOfHQ"
+            ],
+            "systemDecision":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"LinkedIn-SysDecision",
+            "content":[
+               "LinkedIn"
+            ],
+            "link":[
+               "OSINT-BeenThere",
+               "LinkedIn"
+            ],
+            "systemDecision":true,
+            "music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
+            "name":"OSINT-BeenThere","content":[
+               "Nadine has already had a look at this site before, she should look at something else."
+            ],"link":["OSINT-Circular"],"images":["nadine-work-healthcorp-search.jpg"],
+            "music":"An-Appearance-Of-Normality.mp3","narration":true
          },
          {
             "name":"OSINT-Circular-SysDecision",

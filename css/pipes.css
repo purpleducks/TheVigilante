@@ -1,10 +1,20 @@
 #grid{  /* ADAPTED FROM SOURCE: https://github.com/dheineman/pipes */
+    position: absolute;
+    left: 31%;
+    top: 7%;
+    background-color: rgba(60,60,60,0.6);
+    border-radius: 27px;
+}
 
+body {
+    background-image: url("../images/server-room-3.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pipe{
     font-size: 0px;
-    background-color: white;
+    background-color: transparent;
     display: inline-block;
 
     width: 135px;
@@ -15,9 +25,8 @@
     background-position: center;
 }
 
-.row {
-    width: 100vw;
-    height: 12vh;
+.row_pipes {
+    width: 100%;
 }
 
 /* end points */
@@ -25,42 +34,20 @@
     transform: rotate(180deg);
 }
 
-.u.a{
-}
-
 .d {
     transform: rotate(0deg);
-}
-
-.d.a{
 }
 
 .r {
     transform: rotate(270deg);
 }
 
-.r.a{
-}
-
 .l{
     transform: rotate(90deg);
 }
 
-.l.a{
-}
-
-/* straight */
-.u.d{
-}
-
-.u.d.a{
-}
-
 .l.r{
     transform: rotate(90deg);
-}
-
-.l.r.a{
 }
 
 /* Corners */
@@ -68,28 +55,17 @@
     transform: rotate(0deg);
 }
 
-.u.r.a{
-}
-
 .u.l{
     transform: rotate(270deg);
-}
-
-.u.l.a{
 }
 
 .d.r{
     transform: rotate(90deg);
 }
 
-.d.r.a{
-}
 
 .d.l{
     transform: rotate(180deg);
-}
-
-.d.l.a{
 }
 
 /* T split */
@@ -97,33 +73,17 @@
     transform: rotate(270deg);
 }
 
-.u.r.l.a{
-}
 
 .r.d.l{
     transform: rotate(90deg);
 }
 
-.r.d.l.a{
-}
 
 .d.l.u{
     transform: rotate(180deg);
 }
 
-.d.l.u.a{
-}
 
 .u.r.d{
     transform: rotate(0deg);
-}
-
-.u.r.d.a{
-}
-
-/* Cross */
-.u.r.d.l{
-}
-
-.u.r.d.l.a{
 }

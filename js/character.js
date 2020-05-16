@@ -77,7 +77,7 @@ class Character {   // factory class
                 if (currentObject.decision) { this.showDecisionButtons(); }
                 else if (currentObject.minigame) { 
                     this.typer.destroy(); 
-                    setTimeout(window.location.replace("./"+currentObject["minigame-link"]), 2000);
+                    setTimeout(window.location.replace("./minigames/"+currentObject["minigame-link"]), 2000);
                 }
                 else { // decisions and minigames don't need to get the next speech
                     console.log("CHARACTER: Let's get the next thing.");

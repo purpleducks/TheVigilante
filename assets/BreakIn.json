@@ -1678,7 +1678,28 @@
             "dialogue":true
          },
          {
-            "name":"R&D-P-Finneas-Decision",
+            "name":"R&D-P-Finneas-SysDecision","content":["WhoAreTheInnerCircle"],
+            "link":["R&D-P-Finneas-Decision-IC","R&D-P-Finneas-Decision"],
+            "images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"R&D-P-Finneas-Decision","content":[
+               "What does Nadine say?",
+               "About the Server Room.",
+               "HealthCorp targets."
+            ],
+            "link":[
+               "R&D-P-ServerRoom",
+               "R&D-P-HealthCorp",
+            ],
+            "images":[
+
+            ],
+            "music":"",
+            "decision":true
+         },
+         {
+            "name":"R&D-P-Finneas-Decision-IC",
             "content":[
                "What does Nadine say?",
                "About the Server Room.",
@@ -1688,7 +1709,7 @@
             "link":[
                "R&D-P-ServerRoom",
                "R&D-P-InnerCircle",
-               "R&D-P-HealthCorp"
+               "R&D-P-HealthCorp",
             ],
             "images":[
 
@@ -2351,7 +2372,7 @@
                "Steve: 'Ah thought so, anyways, what's up?'"
             ],
             "link":[
-               "MAD-Steve-Decision"
+               "MAD-Steve-SysDecision"
             ],
             "images":[
 
@@ -2364,7 +2385,11 @@
             "dialogue":true
          },
          {
-            "name":"MAD-Steve-Decision",
+            "name":"MAD-Steve-SysDecision","content":["WhoAreTheInnerCircle"],
+            "link":["MAD-Steve-Decision-IC","MAD-Steve-Decision"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"MAD-Steve-Decision-IC",
             "content":[
                "What does Nadine say?",
                "Tell me about the Server Room.",
@@ -2374,6 +2399,23 @@
             "link":[
                "MAD-Steve-ServerRoom",
                "MAD-Steve-InnerCircle",
+               "MAD-Steve-MarketingHC"
+            ],
+            "images":[
+
+            ],
+            "music":"",
+            "decision":true
+         },
+         {
+            "name":"MAD-Steve-Decision",
+            "content":[
+               "What does Nadine say?",
+               "Tell me about the Server Room.",
+               "HealthCorp marketing strategies."
+            ],
+            "link":[
+               "MAD-Steve-ServerRoom",
                "MAD-Steve-MarketingHC"
             ],
             "images":[
