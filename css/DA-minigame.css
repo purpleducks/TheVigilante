@@ -172,9 +172,9 @@ progress[value]::-moz-progress-bar {
 #musicControlLabel, #gOMLabel {
   position: absolute;
   color: white;
-  bottom: 7.5%;
-  right: 6vw;
-  font-size: 0.6vw;
+  bottom: 7%;
+  right: 4vw;
+  font-size: 0.8vw;
   font-family: IBMPlex;
   z-index: 4;
 }
@@ -186,10 +186,10 @@ progress[value]::-moz-progress-bar {
 }
 
 #musicControl {
-  height: 6vh;
-  width: 6vw;
+  height: 11vh;
+  width: 5vw;
   position: absolute;
-  bottom: 3%;
+  bottom: 0%;
   right: 6%;
   z-index: 2;
 }

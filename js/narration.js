@@ -47,9 +47,9 @@ class Narration extends Character {
 
         var idealSpeed = Math.round(maxTime / currentString.length);
         console.log("Character: current string length is "+currentString.length+" ideal speed is "+ idealSpeed);
-
+        var tempTyper = null;
         setTimeout(function() { // wait for image to load
-            let temp = new TypeIt("#narrationContent", {
+            tempTyper = new TypeIt("#narrationContent", {
             strings: currentString,
             speed: idealSpeed,
             breakLines: false,
@@ -63,7 +63,7 @@ class Narration extends Character {
                     setTimeout(function() {
                         var gameMan = document.getElementById("gameContainer").gameMan;
                         console.log("We're at image number "+gameMan.soIndex+" out of "+(that.speech.length+gameMan.soIndex));
-                        temp.reset();
+                        tempTyper.reset();
                         that.name = "narration";
                         that.getNextSpeech();
                         
@@ -74,7 +74,9 @@ class Narration extends Character {
             }
         })
         .go();
+        that.typer = tempTyper;
         }, 500);
+
     }
 
     animateSpeech(elemId, leavingFlag) {

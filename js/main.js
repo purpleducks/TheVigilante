@@ -215,13 +215,12 @@ function saveGame() {
 
 function pauseGame() {
     var musicPlayer = document.getElementById("musicPlayer");
+    var gameMan = document.getElementById("gameContainer").gameMan;
+    var currObj = document.getElementById("gameContainer").currObj;
+
     musicPlayer.pause();
-    if (confirm("GAME PAUSED. Press OK to RESUME.")) {
-        musicPlayer.play();
-    }
-    else {
-        musicPlayer.play();
-    }
+    // confirm("GAME PAUSED. Press OK to RESUME.");
+    musicPlayer.play();
 }
 
 function playPauseMusic() {

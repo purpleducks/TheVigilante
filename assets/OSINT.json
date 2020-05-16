@@ -109,11 +109,12 @@
                "NadineIsStrong"
 
             ],
-            "systemDecision":true
+            "systemDecision":true,
+            "music":"Brand-New-Paradigm.mp3"
          },
          {
            "name":"NadineWasNice-2","content":["RememberingMom"],
-           "link":["MarcusHasTea", "MarcusPA"],"systemDecision":true
+           "link":["MarcusHasTea", "MarcusPA"],"systemDecision":true,"music":"Brand-New-Paradigm.mp3"
          },
          {
             "name":"MarcusPA",
@@ -134,7 +135,7 @@
             	"nadine-work-report-blur.jpg",
             	"nadine-work-report-blur.jpg",
             	"nadine-work-report-blur.jpg",
-            	"nadine-work-report-blur.jpg",
+            	"nadine-work-report-blur.jpg"
             ],
             "music":"Brand-New-Paradigm.mp3",
             "dialogue":true
@@ -448,7 +449,8 @@
                "ReallyOffendedDanielle",
                "OffendedDanielleSpeechTwo"
             ],
-            "systemDecision":true
+            "systemDecision":true,
+            "music":"An-Appearance-Of-Normality.mp3"
          },
          {
             "name":"ReallyOffendedDanielle",
@@ -564,7 +566,7 @@
             ],
             "images":[
 "nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -580,7 +582,7 @@
             ],
             "images":[
 "nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg"
             ],
             "narration":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -646,7 +648,7 @@
             ],
             "images":[
 "nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
+"nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -661,7 +663,7 @@
                "Finished searching"
             ],
             "images":[
-            	"nadine-work-healthcorp-search.jpg",
+            	"nadine-work-healthcorp-search.jpg"
             ],
             "link":[
                "CompanyReviewSite",
@@ -670,7 +672,7 @@
                "IsNadineDone"
             ],
             "decision":true,
-            "music":"An-Appearance-Of-Normality.mp3"
+            "music":"An-Appearance-Of-Normality.mp3"	
          },
          {
             "name":"OSINT-Circular-SysDecision",
@@ -683,7 +685,8 @@
                "NoMoreOptions-OSINT",
                "OSINT-Circular"
             ],
-            "systemDecision":true
+            "systemDecision":true,
+            "music":"An-Appearance-Of-Normality.mp3"
          },
          {
             "name":"CompanyReviewSite",
@@ -744,7 +747,7 @@
                "ImagesOfHQ-Decision"
             ],
             "images":[
-
+            	""
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -861,8 +864,11 @@
             "images":[
 
             ],
+            "characters": [
+            	"Nadine"
+            ],
             "music":"An-Appearance-Of-Normality.mp3",
-            "narration":true
+            "dialogue":true
          },
          {
             "name":"DoneSearchingYet-SysDecision",
@@ -884,7 +890,7 @@
          {
             "name":"DoneSearchingYet",
             "content":[
-               "Does Nadine want to keep looking into the HQ?",
+               "Has Nadine want to finished her research of HealthCorp and does she want to get back to work?",
                "Yes",
                "No"
             ],

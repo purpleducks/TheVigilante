@@ -1,0 +1,129 @@
+#grid{  /* ADAPTED FROM SOURCE: https://github.com/dheineman/pipes */
+
+}
+
+.pipe{
+    font-size: 0px;
+    background-color: white;
+    display: inline-block;
+
+    width: 135px;
+    height: 135px;
+    box-sizing: content-box;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.row {
+    width: 100vw;
+    height: 12vh;
+}
+
+/* end points */
+.u {
+    transform: rotate(180deg);
+}
+
+.u.a{
+}
+
+.d {
+    transform: rotate(0deg);
+}
+
+.d.a{
+}
+
+.r {
+    transform: rotate(270deg);
+}
+
+.r.a{
+}
+
+.l{
+    transform: rotate(90deg);
+}
+
+.l.a{
+}
+
+/* straight */
+.u.d{
+}
+
+.u.d.a{
+}
+
+.l.r{
+    transform: rotate(90deg);
+}
+
+.l.r.a{
+}
+
+/* Corners */
+.u.r{
+    transform: rotate(0deg);
+}
+
+.u.r.a{
+}
+
+.u.l{
+    transform: rotate(270deg);
+}
+
+.u.l.a{
+}
+
+.d.r{
+    transform: rotate(90deg);
+}
+
+.d.r.a{
+}
+
+.d.l{
+    transform: rotate(180deg);
+}
+
+.d.l.a{
+}
+
+/* T split */
+.u.r.l{
+    transform: rotate(270deg);
+}
+
+.u.r.l.a{
+}
+
+.r.d.l{
+    transform: rotate(90deg);
+}
+
+.r.d.l.a{
+}
+
+.d.l.u{
+    transform: rotate(180deg);
+}
+
+.d.l.u.a{
+}
+
+.u.r.d{
+    transform: rotate(0deg);
+}
+
+.u.r.d.a{
+}
+
+/* Cross */
+.u.r.d.l{
+}
+
+.u.r.d.l.a{
+}
