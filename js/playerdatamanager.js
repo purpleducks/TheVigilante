@@ -64,6 +64,8 @@ class PlayerDataManager {
 	getData(filename, filetype) {
         var tempData = [];
         var tempType = "";
+        var that = this;
+        
         if (filetype == "text") { tempType = "txt"}
         else if (filetype == "json") { tempType = "json"}
         $.ajax({
@@ -75,21 +77,21 @@ class PlayerDataManager {
             {
                 tempData = json;
                 console.log("UHUHU");
+                if (filetype == "json") {
+		        	that.currentStage = filename;
+			        that.gameData = tempData[filename]["storylines"];
+		    	}
+		    	else if (filename == "music-credits") {
+		    		console.log(tempData);
+		    		var allSongs = tempData.split(',').toString().split("\r\n");
+		    		for (var i = allSongs.length - 1; i >= 0; i--) {
+		    			var tempArray = allSongs[i].split(',');
+		    			var song = {name:tempArray[0],artist:tempArray[1],link:tempArray[2]};
+		    			console.log(song);
+		    			that.musicCredits.push(song);
+		    		}
+		    	}
             }
         });
-        if (filetype == "json") {
-        	this.currentStage = filename;
-	        this.gameData = tempData[filename]["storylines"];
-    	}
-    	else if (filename == "music-credits") {
-    		console.log(tempData);
-    		var allSongs = tempData.split(',').toString().split("\r\n");
-    		for (var i = allSongs.length - 1; i >= 0; i--) {
-    			var tempArray = allSongs[i].split(',');
-    			var song = {name:tempArray[0],artist:tempArray[1],link:tempArray[2]};
-    			console.log(song);
-    			this.musicCredits.push(song);
-    		}
-    	}
     }
 }

@@ -1,6 +1,8 @@
-class Grid {	// ADAPTED FROM THE FOLLOWING SOURCE: https://github.com/dheineman/pipes
+class Grid extends Minigame {	// ADAPTED FROM THE FOLLOWING SOURCE: https://github.com/dheineman/pipes
 	
-	constructor() {
+	constructor(failingObj, succeedingObj) {
+        var name = window.location.href.split("/")[6].split(".")[0];
+        super(name, 0);
 		this.size = 0;
 		this.pipes = [];
 		this.direction = {
@@ -15,6 +17,10 @@ class Grid {	// ADAPTED FROM THE FOLLOWING SOURCE: https://github.com/dheineman/
 	        1: 3,
 	        0: 2
 	    };
+        this.noOfAttempts = getCookie(name + "Attempts", true);
+        this.time = getCookie(name + "Time", true);
+        this.failingObj = failingObj;
+        this.succeedingObj = succeedingObj;
 	}
 
 	init(size) {
@@ -183,7 +189,24 @@ class Grid {	// ADAPTED FROM THE FOLLOWING SOURCE: https://github.com/dheineman/
 
         // Check if the user has won
         if (connected_pipes.length == (this.size * this.size)) {
-            alert("Winner");
+            var that = this;
+            setTimeout(function(){
+                document.getElementById("gameResult").style.visibility = "visible";
+                document.getElementById("gameResultSpeech").innerHTML = "YOU'RE IN! 👩‍💻👨‍💻👨‍💻";
+                document.getElementById("gameResultSpeech").style.color = "limegreen";
+                var musicPlayer = $("#musicPlayer").get(0);
+                musicPlayer.pause();
+                musicPlayer.setAttribute('src', "../music/success.mp3");
+                musicPlayer.load();
+                musicPlayer.play();
+                var allActions = JSON.parse(localStorage.getItem("allActions"));
+                allActions.push(that.succeedingObj);
+                localStorage.setItem("allActions", JSON.stringify(allActions));
+
+                setTimeout(function() {
+                    window.location.replace("../main.html");
+                }, 2000);
+            })
         }
 	}
 
@@ -232,13 +255,13 @@ class Grid {	// ADAPTED FROM THE FOLLOWING SOURCE: https://github.com/dheineman/
                     console.log(pipe.connections);
                     switch(entryPoints) {
                         case 1:
-                            pipe_div.src = "images/end_a.png";
+                            pipe_div.src = "../images/end_a.png";
                             break;
                         case 3:
-                            pipe_div.src = "images/tsplit_a.png";
+                            pipe_div.src = "../images/tsplit_a.png";
                             break;
                         case 4:
-                            pipe_div.src = "images/cross_a.png";
+                            pipe_div.src = "../images/cross_a.png";
                             break;
                         default:
                             edgeCase = true;
@@ -247,13 +270,13 @@ class Grid {	// ADAPTED FROM THE FOLLOWING SOURCE: https://github.com/dheineman/
                 } else {
                     switch(entryPoints) {
                         case 1:
-                            pipe_div.src = "images/end.png";
+                            pipe_div.src = "../images/end.png";
                             break;
                         case 3:
-                            pipe_div.src = "images/tsplit.png";
+                            pipe_div.src = "../images/tsplit.png";
                             break;
                         case 4:
-                            pipe_div.src = "images/cross.png";
+                            pipe_div.src = "../images/cross.png";
                             break;
                         default:
                             edgeCase = true;
@@ -263,13 +286,13 @@ class Grid {	// ADAPTED FROM THE FOLLOWING SOURCE: https://github.com/dheineman/
                 if (edgeCase) {
                     if ((pipe.connections[0] && pipe.connections[2]) || (pipe.connections[1] && pipe.connections[3])) {   // Up and Down / Left to Right ie a straight pipe
                         
-                        if (pipe.active) { pipe_div.src = "images/straight_a.png"; }
-                        else { pipe_div.src = "images/straight.png"; }
+                        if (pipe.active) { pipe_div.src = "../images/straight_a.png"; }
+                        else { pipe_div.src = "../images/straight.png"; }
                     } else if ((pipe.connections[0] && (pipe.connections[1] || pipe.connections[3])) ||     // Up and ( Left OR Right ) corners!
                                     (pipe.connections[2] && (pipe.connections[1] || pipe.connections[3]))) {   // Down and ( Left OR Right )
 
-                        if (pipe.active) { pipe_div.src = "images/corner_a.png"; }
-                        else { pipe_div.src = "images/corner.png"; }
+                        if (pipe.active) { pipe_div.src = "../images/corner_a.png"; }
+                        else { pipe_div.src = "../images/corner.png"; }
                     } 
                 }
                 
@@ -282,3 +305,113 @@ class Grid {	// ADAPTED FROM THE FOLLOWING SOURCE: https://github.com/dheineman/
 	}
 
 }
+
+function failedGame(grid) {
+    document.getElementById("gameResult").style.visibility = "visible";
+    if (grid.noOfAttempts > 0) {    // if the player has more chances, let them play on.
+        document.getElementById("gameResultSpeech").style.color = "darkorange";
+        document.getElementById("gameResultSpeech").innerHTML = "YOUR HACK FAILED.. BUT YOU HAVE ANOTHER CHANCE TO TRY AGAIN!";
+        document.cookie = grid.name+"Attempts="+grid.noOfAttempts+";path=/";
+        setTimeout(function() {
+            window.location.replace("../minigames/"+grid.name+".html");
+        }, 2000);
+    }
+    else {
+        document.getElementById("gameResultSpeech").style.color = "red";
+        document.getElementById("gameResultSpeech").innerHTML = "YOUR HACK FAILED! THE SYSTEM HAS LOCKED YOU OUT. 🔒🔒🔒"
+        var musicPlayer = $("#musicPlayer").get(0);
+        musicPlayer.pause();
+        musicPlayer.setAttribute('src', "../music/fail.mp3");
+        musicPlayer.load();
+        musicPlayer.play();
+        var allActions = JSON.parse(localStorage.getItem("allActions"));
+        allActions.push(grid.failingObj);
+        localStorage.setItem("allActions", JSON.stringify(allActions));
+
+        setTimeout(function() {
+            window.location.replace("../main.html");
+        }, 2000);
+        return 0;
+    }
+}
+
+function checkFirstVisit() {
+        if (performance.navigation.type == 1) {
+            console.info( "This page is reloaded" );
+            // not first visit, so alert
+            alert('Refreshing is not allowed.');        // cheating!
+            var allActions = JSON.parse(localStorage.getItem("allActions"));
+            allActions.push(this.failingObj);   // assume fail
+            localStorage.setItem("allActions", JSON.stringify(allActions));
+            window.location.replace("../main.html");    // redirect back to the game
+            return false;
+        } 
+        else {
+            console.info( "This page is not reloaded");
+            return true;
+        }
+        /*
+        if(this.getCookie(this.name, false) && this.) {
+            // cookie doesn't exist, create it now
+            document.cookie = this.name+'=1';
+            return true;
+        }
+        else {
+            
+        }*/
+    }
+
+function initGame(gridSize, failingObj,succeedingObj) {
+    addLabelToggleEL("musicControl");
+    var grid = new Grid(failingObj,succeedingObj); 
+    grid.noOfAttempts--;
+    if (checkFirstVisit()) {
+        console.info( "This page is reloaded" );
+        // not first visit, so alert
+        alert('Refreshing is not allowed.');        // cheating!
+        var allActions = JSON.parse(localStorage.getItem("allActions"));
+        allActions.push(this.failingObj);   // assume fail
+        localStorage.setItem("allActions", JSON.stringify(allActions));
+        window.location.replace("../main.html");    // redirect back to the game
+        return false;
+    }
+    else {
+        grid.init(gridSize);
+        document.getElementById("grid").gridObj = grid;
+        var label = document.getElementById("gameTimerLabel");
+        label.innerHTML = grid.time;
+        var timer = setInterval(function () {
+            if (parseInt(label.innerHTML) <= 0) {
+                alert("Times up!");
+                failedGame(grid);
+                clearInterval(timer);
+            }
+            else {
+                label.innerHTML = parseInt(label.innerHTML) - 1;
+            }
+        }, 1000);
+    }
+}
+function rotatePipe(element) {
+    var grid = document.getElementById("grid").gridObj;
+    var x = element.dataset.x;
+    var y = element.dataset.y;
+
+    grid.getPipe(x,y).rotate();
+    grid.checkPipes();
+    grid.draw();
+}
+
+function getCookie(name, valueFlag)
+    {
+        var initCookieArray = document.cookie.split(";");
+        var cookieObjs = [];
+        for (var i = 0; i < initCookieArray.length; i++) {
+            var tempCookieArray = initCookieArray[i].split("=");
+            cookieObjs.push({name:tempCookieArray[0].trim(),value:tempCookieArray[1]});
+        }
+        var index = cookieObjs.findIndex(cookieObj => cookieObj.name == name);
+        var result;
+        valueFlag ? result=cookieObjs[index].value : result = index;
+        return result;
+    }

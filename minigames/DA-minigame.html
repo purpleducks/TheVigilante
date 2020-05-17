@@ -5,14 +5,16 @@
         <title>The Vigilante</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
-        <script src="js/minigame.js" charset="utf-8"></script>
-        <script src="js/DA-minigame-v1.js" charset="utf-8"></script>
-        <link rel="icon" type="image/png" href="favicon.ico">
+        <script src="../js/minigame.js" charset="utf-8"></script>
+        <script src="../js/DA-minigame-v1.js" charset="utf-8"></script>
+        <script type="text/javascript" src="../js/main.js" charset="utf-8"></script>
+        <link rel="icon" type="image/png" href="../favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/DA-minigame.css">
+        <link rel="stylesheet" type="text/css" href="../css/DA-minigame.css">
         <script>
           function startGame() {
-            var minigameObj = new DictionaryAttack("Socials",3,"Probably a scam", "In bloggers profile",42);
+            var minigameName = window.location.href.split("/")[6].split(".")[0];
+            var minigameObj = new DictionaryAttack(minigameName,3,"Probably a scam", "In bloggers profile",42);
             minigameObj.loadWords();
             document.getElementById("minigameLayer").minigameObj = minigameObj;
           }
@@ -23,7 +25,7 @@
         </script>
     </head>
     <body onload="startGame()">
-        <img id="matrixBg" src="images/matrix.gif">
+        <img id="matrixBg" src="../images/matrix.gif">
         <div id="minigameLayer">
             <h1 id="scoreboard"> SCORE: 0</h1>
             <h5 id="gOMLabel">SYSTEM LOCKDOWN PROGRESS</h5>
@@ -40,10 +42,10 @@
                     </div>
             </div>
             <a onclick="playPauseMusic()">
-                <img src="images/pause-music-icon.png" id="musicControl"/>
+                <img src="../images/pause-music-icon.png" id="musicControl"/>
             </a>
             <h5 style="visibility:hidden" id="musicControlLabel">MUSIC PLAY/PAUSE</h5>
-            <audio autoplay loop id="musicPlayer"><source src="music/Cold-Fire.mp3" type="audio/mpeg"></audio>
+            <audio autoplay loop id="musicPlayer"><source src="../music/Cold-Fire.mp3" type="audio/mpeg"></audio>
         </div>
     </body>
 </html>

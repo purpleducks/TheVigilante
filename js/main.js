@@ -85,7 +85,7 @@ function startProcessing(evt, nextObject) {
         currObj = nextObject;
     }
     // var nextObject = gameMan.dataManager.gameData.find(speechObj => speechObj.name === currObj.link[0]);
-    if (currObj.name != "FINISH") {
+    if (currObj.content[0] != "FINISH") {
          document.getElementById("gameContainer").currObj = currObj;
         // evt.currentTarget.currObj = nextObject;
         // gameMan.allActions.push(nextObject.name);
@@ -176,16 +176,21 @@ function skipScreen() {
     var gameMan = gameContainer.gameMan;
     var currentObj = gameContainer.currObj; 
     console.log("MAIN: Time to skip! Starting object: "+ currentObj.name);
-    if (currentObj.narration || currentObj.decision) {  // only one character object
-        if (currentObj.charctrsObjs[0].typer.is('started')) {
+    if (currentObj.narration || currentObj.dialogue) {  // only one character object
+        if (currentObj.content.length == 0) {
+            console.log("MAIN: No point skipping here!");
+        }
+        else if (currentObj.charctrsObjs[0].typer.is('started')) {
             console.log("MAIN: Skipping a narration / decision object: "+ currentObj.name);
             currentObj.charctrsObjs[0].typer.destroy();
+            currentObj.content = [];
             currentObj.charctrsObjs[0].getNextSpeech();
+
         }
         //else if (currentObj.charctrsObjs[0].typer.is('completed'))
     }
-    else if (currentObj.dialogue) { // two character objects
-        console.log("MAIN: Skipping a narration / decision object: "+ currentObj.name);
+    else if (currentObj.decision) {
+        alert("You cannot skip this scene, you need to make a decision here!");
     }
 
     //var event = new Event('nextObject');
@@ -219,7 +224,7 @@ function pauseGame() {
     var currObj = document.getElementById("gameContainer").currObj;
 
     musicPlayer.pause();
-    // confirm("GAME PAUSED. Press OK to RESUME.");
+    confirm("GAME PAUSED. Press OK to RESUME.");
     musicPlayer.play();
 }
 

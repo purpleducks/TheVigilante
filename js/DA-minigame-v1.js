@@ -10,6 +10,7 @@ class DictionaryAttack extends Minigame {
 		this.succeedingObj = succeedingObj;
 		this.gameEnded = false;
 		this.winningScore = winningScore;
+		this.noOfAttempts = this.getCookie(name+"Attempts", true);
 	}
 
 	loadWords() {
@@ -17,13 +18,27 @@ class DictionaryAttack extends Minigame {
 		this.addLabelToggleEL("musicControl");
 		if (this.checkFirstVisit()) {	// if this is their first visit then ....
 			var client = new XMLHttpRequest();
-			client.open('GET', 'assets/common-passwords.txt');
+			client.open('GET', '../assets/common-passwords.txt');
 			client.onloadend = function() {
 				that.words = client.responseText.split('\n');
 				that.runGame();
 			}
 			client.send();
 		}
+	}
+
+	getCookie(name, valueFlag)
+	{
+		var initCookieArray = document.cookie.split(";");
+		var cookieObjs = [];
+		for (var i = 0; i < initCookieArray.length; i++) {
+			var tempCookieArray = initCookieArray[i].split("=");
+			cookieObjs.push({name:tempCookieArray[0].trim(),value:tempCookieArray[1]});
+		}
+		var index = cookieObjs.findIndex(cookieObj => cookieObj.name == name);
+		var result;
+		valueFlag ? result=cookieObjs[index].value : result = index;
+		return result;
 	}
 
 	runGame() {
@@ -33,7 +48,10 @@ class DictionaryAttack extends Minigame {
 		this.shownWords = [];
 		this.score = 0;
 		this.gameEnded = false;
+		this.noOfAttempts--;
+		console.log("Number of attempts: "+this.noOfAttempts);
 		var difficulty = Minigame.prototype.getDifficulty.call(this);
+
 		setInterval(function() {
 			var minigameLayer = document.getElementById("minigameLayer");
 			console.log("SPENT WORDS: " + this.spentWords);
@@ -44,7 +62,7 @@ class DictionaryAttack extends Minigame {
 				});
 			}
 			else { clearInterval(); }
-		}, Math.round(1500/difficulty));
+		}, Math.round(6000/difficulty));
 	}
 
 	addNewWord() {
@@ -117,7 +135,7 @@ class DictionaryAttack extends Minigame {
 					document.getElementById("gameResultSpeech").style.color = "limegreen";
 					var musicPlayer = $("#musicPlayer").get(0);
 					musicPlayer.pause();
-	                musicPlayer.setAttribute('src', "./music/success.mp3");
+	                musicPlayer.setAttribute('src', "../music/success.mp3");
 	                musicPlayer.load();
 	                musicPlayer.play();
 					var allActions = JSON.parse(localStorage.getItem("allActions"));
@@ -128,7 +146,7 @@ class DictionaryAttack extends Minigame {
 					clearInterval();
 
 					setTimeout(function() {
-						window.location.replace("./main.html");
+						window.location.replace("../main.html");
 					}, 2000);
 					return 0;
 				}
@@ -136,24 +154,37 @@ class DictionaryAttack extends Minigame {
 					// alert("YOU LOST!");
 					that.gameEnded = true;
 					document.getElementById("gameResult").style.visibility = "visible";
-					document.getElementById("gameResultSpeech").innerHTML = "YOUR HACK FAILED!";
-					document.getElementById("gameResultSpeech").style.color = "red";
-					var musicPlayer = $("#musicPlayer").get(0);
-					musicPlayer.pause();
-	                musicPlayer.setAttribute('src', "./music/fail.mp3");
-	                musicPlayer.load();
-	                musicPlayer.play();
-	                var allActions = JSON.parse(localStorage.getItem("allActions"));
-					allActions.push(that.failingObj);
-					localStorage.setItem("allActions", JSON.stringify(allActions));
 
-					that.clearScreen();
-					clearInterval();
+					if (that.noOfAttempts > 0) {	// if the player has more chances, let them play on.
+						document.getElementById("gameResultSpeech").style.color = "darkorange";
+						document.getElementById("gameResultSpeech").innerHTML = "YOUR HACK FAILED.. BUT YOU HAVE ANOTHER CHANCE TO TRY AGAIN!";
+						document.cookie = that.name+"Attempts="+that.noOfAttempts+";path=/";
+						that.clearScreen();
+						clearInterval();
+						setTimeout(function() {
+							window.location.replace("../minigames/"+that.name+".html");
+						}, 2000);
+					}
+					else {
+						document.getElementById("gameResultSpeech").style.color = "red";
+						document.getElementById("gameResultSpeech").innerHTML = "YOUR HACK FAILED! THE SYSTEM HAS LOCKED YOU OUT. 🔒🔒🔒"
+						var musicPlayer = $("#musicPlayer").get(0);
+						musicPlayer.pause();
+		                musicPlayer.setAttribute('src', "../music/fail.mp3");
+		                musicPlayer.load();
+		                musicPlayer.play();
+		                var allActions = JSON.parse(localStorage.getItem("allActions"));
+						allActions.push(that.failingObj);
+						localStorage.setItem("allActions", JSON.stringify(allActions));
 
-					setTimeout(function() {
-						window.location.replace("./main.html");
-					}, 2000);
-					return 0;
+						that.clearScreen();
+						clearInterval();
+
+						setTimeout(function() {
+							window.location.replace("../main.html");
+						}, 2000);
+						return 0;
+					}
 				}
 				if (!that.gameEnded) { // if its not
 					clearInterval(id);
@@ -178,20 +209,29 @@ class DictionaryAttack extends Minigame {
 	}
 
 	checkFirstVisit() {
-	  if(document.cookie.indexOf(this.name)==-1) {
-	    // cookie doesn't exist, create it now
-	    document.cookie = this.name+'=1';
-	    return true;
-	  }
-	  else {
-	    // not first visit, so alert
-	    alert('Refreshing is not allowed.');		// cheating!
-	    var allActions = JSON.parse(localStorage.getItem("allActions"));
+		if (performance.navigation.type == 1) {
+		    console.info( "This page is reloaded" );
+		    // not first visit, so alert
+			alert('Refreshing is not allowed.');		// cheating!
+			var allActions = JSON.parse(localStorage.getItem("allActions"));
 			allActions.push(this.failingObj);	// assume fail
 			localStorage.setItem("allActions", JSON.stringify(allActions));
-			window.location.replace("./main.html");	// redirect back to the game
-	    return false;
-	  }
+			window.location.replace("../main.html");	// redirect back to the game
+			return false;
+		} 
+		else {
+		    console.info( "This page is not reloaded");
+		    return true;
+	  	}
+	  	/*
+		if(this.getCookie(this.name, false) && this.) {
+			// cookie doesn't exist, create it now
+			document.cookie = this.name+'=1';
+			return true;
+		}
+		else {
+			
+		}*/
 	}
 
 	checkWord() {

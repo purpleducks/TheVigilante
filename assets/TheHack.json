@@ -27,7 +27,7 @@
 					"Nadine has alerted the Technical department to her intrusion, she must now escape."
 				],
 				"link":["SRC-HaveNetworkLayout","HACK FAILED"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"NW-Pipe-minigame.html"
+				"minigame":true,"minigame-link":"NL-pipes.html","minigame-time":"180","minigame-attempts":"2"
 			},
 			{
 				"name":"SRC-HaveNetworkLayout","content":[
@@ -144,7 +144,7 @@
 					"Nadine couldn't get a view of the Financial network. "
 				],
 				"link":["SRC-FN-WeIn","SRC-FN-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"SRC-FN-minigame.html"
+				"minigame":true,"minigame-link":"SRC-FN-pipes.html","minigame-time":"150","minigame-attempts":"2"
 			},
 			{
 				"name":"SRC-FN-WeIn","content":[
@@ -158,7 +158,7 @@
 					"Nadine couldn't hack into the Finance servers...."
 				],
 				"link":["SRC-FN-DA-Success","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"Finance-DA-Minigame.html"
+				"minigame":true,"minigame-link":"Finance-DA-Minigame.html","minigame-attempts":"2"
 			},
 			{
 				"name":"SRC-FN-DA-Success","content":[
@@ -246,7 +246,7 @@
 					"Nadine couldn't get a view of the Executive network."
 				],
 				"link":["SRC-EN-WeIn","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"SRC-EN-Minigame.html"
+				"minigame":true,"minigame-link":"SRC-EN-pipes.html","minigame-time":"150","minigame-attempts":"2"
 			},
 			{
 				"name":"SRC-EN-WeIn","content":[
@@ -261,7 +261,7 @@
 					"Nadine couldn't hack into the Finance servers...."
 				],
 				"link":["SRC-EN-DA-Success","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"Executive-DA-Minigame.html"
+				"minigame":true,"minigame-link":"Executive-DA-Minigame.html","minigame-attempts":"2"
 			},
 			{
 				"name":"SRC-EN-DA-Success","content":[
@@ -323,7 +323,7 @@
 					"Nadine couldn't get a view of the R&D network. "
 				],
 				"link":["SRC-RDN-WeIn","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"SRC-RDN-Minigame.html"
+				"minigame":true,"minigame-link":"SRC-RDN-pipes.html","minigame-time":"150","minigame-attempts":"2"
 			},
 			{
 				"name":"SRC-RDN-WeIn","content":[
@@ -338,7 +338,7 @@
 				],
 				"link":["SRC-RDN-DA-Success","SRC-Fail"],
 				"images":[],"music":"",
-				"minigame":true,"minigame-link":"RD-DA-Minigame.html"
+				"minigame":true,"minigame-link":"RD-DA-Minigame.html","minigame-time":"150","minigame-attempts":"2"
 			},
 			{
 				"name":"SRC-RDN-DA-Success","content":[
@@ -354,6 +354,13 @@
 "Nadine: 'Now we'll be able to prove that HealthCorp are targetting the vulnerable.'",
 "Nadine: 'Time to get out of here!'"
 ],"link":["SRC-Done"],"images":[],"characters":["Nadine"],"music":"","dialogue":true
+			},
+			{
+				"name":"HACK FAILED","content":["FINISH"],"link":[],
+				"images":[],"music":"","narration":true
+			},
+			{
+				"name":"HACK SUCCESS","content":[],"link":[],"images":[],"music":"","narration":true
 			}
      	]
 	}

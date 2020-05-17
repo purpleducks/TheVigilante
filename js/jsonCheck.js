@@ -1,6 +1,6 @@
 
 function testGameJSON(json) {
-	var gameData = json.TheHack.storylines;
+	var gameData = json.OSINT.storylines;
 	var imagelessObjects = [];
 	var quietObjects = [];
 	console.log("IN TEST NOW");
@@ -14,21 +14,24 @@ function testGameJSON(json) {
 			console.log("link object is not defined or is empty at " + speechObject.name);
 			return false;
 		}
-		if (speechObject.images == undefined) {
+		if (speechObject.images == undefined && !speechObject.systemDecision) {
 			console.log("images array doesn't exist at "+ speechObject.name);
 			return false;
 		}
+		else if (speechObject.systemDecision) {
+
+		}
 		else {
 			var hasAFlag = false;
-			if ((speechObject.images.length == 0 && !speechObject.systemDecision)|| (speechObject.images.length != speechObject.content.length && (speechObject.narration || speechObject.dialogue))) {
+			if ((speechObject.images.length == 0)|| (speechObject.images.length != speechObject.content.length && (speechObject.narration || speechObject.dialogue))) {
 				//console.log("The object called '"+speechObject.name+"' has no images linked to it!");
 				imagelessObjects.push(speechObject.name);
 			}
-			if (speechObject.music == "" && !speechObject.systemDecision) {
+			if (speechObject.music == "") {
 				//console.log("The object called '"+speechObject.name+"' has no music on it!");
 				quietObjects.push(speechObject.name);
 			}
-			else if (speechObject.music === undefined && !speechObject.systemDecision) {
+			else if (speechObject.music === undefined) {
 				console.log("no music field - " + speechObject.name);
 				return false;
 			}
@@ -90,7 +93,7 @@ function testGameJSON(json) {
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'assets/TheHack.json', true);
+    xobj.open('GET', 'assets/OSINT.json', true);
     // Replace 'my_data' with the path to your file
     xobj.onreadystatechange = function() {
         if (xobj.readyState === 4 && xobj.status === 200) {

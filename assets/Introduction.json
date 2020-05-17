@@ -4,12 +4,21 @@
          {
             "name":"Opener","content":[
                "Welcome to the Vigilante!",
+               "Your game progress can be saved using the SAVE icon at the bottom of the page",
+               "It is automatically saved before each minigame.",
+               "You can also skip the current scene you're in to get to the next, should you wish",
                "In this game, you will play as the protagonist, Nadine Summers.",
                "Where you'll have to make the right choices to decide how she should act as...",
                "The Vigilante..."
             ],
             "link":["Opening"],"images":[
-               ""
+               "splash-screen.jpg",
+               "splash-screen.jpg",
+               "splash-screen.jpg",
+               "splash-screen.jpg",
+               "splash-screen.jpg",
+               "splash-screen.jpg",
+               "splash-screen.jpg"
             ],"music":"Reach-Out-And-Take-It.mp3","narration":true
          },
          {
@@ -41,7 +50,7 @@
                "They run this town, but that's all about to change."
             ],
             "images":[
-               "",
+               "undefined.jpg",
                "black-bride.jpg",
                "baby-being-born.jpg",
                "happy-family.jpg",
@@ -49,7 +58,7 @@
                "black-mom.jpg",
                "bullied-at-school.jpg",
                "classroom.jpg",
-               "",
+               "undefined.jpg",
                "doctors-office-1.jpg",
                "doctors-office-2.jpg",
                "rejected-insurance-claim.jpg",
@@ -91,6 +100,7 @@
                "bedroom.jpg",
                "bedroom.jpg",
                "typing.jpg",
+               "blog-post.jpg",
                "blog-post.jpg",
                "blog-post.jpg",
                "blog-post.jpg"
@@ -197,6 +207,7 @@
             ],
             "minigame":true,
             "minigame-link":"DA-minigame.html",
+            "minigame-attempts":"2",
             "characters":[
                "Nadine",
                "Jack"
@@ -217,10 +228,11 @@
                "Social media profile hack"
             ],
             "images": [
-               "blogger-socials.jpg",
-               "blogger-socials.jpg",
-               "blogger-socials.jpg",
-               "blogger-socials.jpg"
+               "nadine-typing.jpg",
+               "nadine-typing.jpg",
+               "nadine-typing.jpg",
+               "nadine-typing.jpg",
+               "nadine-typing.jpg"
             ],
             "narration": true,
             "music":"A-Stranger-Thing.mp3"
@@ -258,7 +270,7 @@
                "Texting Marcus"
             ],
             "images": [
-               "nadine-pc-silhoutte.jpg"
+               "nadine-typing.jpg"
             ],
             "decision":true,
             "characters":[
@@ -272,7 +284,7 @@
             "name": "Blogger email hack explanation",
             "content": [
                "Nadine decides to launch a dictionary attack on Jack's email account. ",
-               "In order to gain access to Jack's email account, Nadine needs to try as many passwords as she can to get into Jack's email account.",
+               "In order to gain access to Jack's email account, Nadine needs to try as many passwords as she can to get in.",
                "She needs to get a score of 50 to win, so be quick!",
                "Being too slow will mean that Jack is notified and his account will be locked down."
             ],
@@ -280,10 +292,10 @@
                "Blogger email hack"
             ],
             "images": [
-               "nadine-pc-silhoutte.jpg",
-               "nadine-pc-silhoutte.jpg",
-               "nadine-pc-silhoutte.jpg",
-               "nadine-pc-silhoutte.jpg"
+               "nadine-typing.jpg",
+               "nadine-typing.jpg",
+               "nadine-typing.jpg",
+               "nadine-typing.jpg"
             ],
             "narration": true,
             "music":"A-Stranger-Thing.mp3"
@@ -299,10 +311,11 @@
                "Texting Marcus"
             ],
             "images": [
-               "nadine-pc-silhoutte.jpg"
+               "nadine-typing.jpg"
             ],
             "minigame":true,
             "minigame-link":"Email-minigame.html",
+            "minigame-attempts":"2",
             "characters":[
                "Nadine",
                "Jack"
@@ -358,6 +371,7 @@
                "Email intrusion detected"
             ],
             "images": [
+               "darren-email.jpg",
                "darren-email.jpg"
             ],
             "narration":true,
@@ -485,7 +499,7 @@
             ],
             "link": [
                "NadineReply1",
-               "NadineReply1-NoHackOne"
+               "NadineReply1-NoHackOne"   
             ],
             "images": [
                "laptop-desk.jpg"

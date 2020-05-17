@@ -30,12 +30,15 @@
             <div id="bottomButtonArray">
                 <h5 style="visibility:hidden" id="musicControlLabel">MUSIC PLAY/PAUSE</h5>
                 <a onclick="playPauseMusic()">
-
                     <img src="images/pause-music-icon.png" id="musicControl"/>
                 </a>
                 <h5 style="visibility:hidden" id="showModalLabel">NEED HELP?</h5>
                 <a onclick="showModal()">
                     <img id="showModal" src="images/info.png"/>
+                </a>
+                <h5 style="visibility:hidden" id="deleteSaveLabel"> DELETE SAVED GAME </h5>
+                <a onclick="deleteSave()">
+                    <img src="images/delete-save.png" id="deleteSave">
                 </a>
             </div>
             <audio autoplay loop id="musicPlayer"><source src="music/Beam-Me-Up.mp3" type="audio/mpeg"></audio>

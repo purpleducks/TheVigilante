@@ -107,7 +107,6 @@
             ],
             "content":[
                "NadineIsStrong"
-
             ],
             "systemDecision":true,
             "music":"Brand-New-Paradigm.mp3"
@@ -675,6 +674,28 @@
             "music":"An-Appearance-Of-Normality.mp3"	
          },
          {
+            "name":"IsNadineDone","content":["ImagesOfHQ"],
+            "link":["NadineIsDone","IsNadineDone-2"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"IsNadineDone-2","content":["CompanyReviewSite"],"link":["NadineIsDone","IsNadineDone-3"],"systemDecision":true
+         },
+         {
+            "name":"IsNadineDone-3","content":["LinkedIn"],"link":["NadineIsDone","NadineIsntDone"],"systemDecision":true
+         },
+         {
+            "name":"NadineIsDone","content":[
+               "Nadine feels like she knows enough to break into HealthCorp."
+            ],
+            "link":["FINISH"],"images":["nadine-work-report.jpg"],"music":"An-Appearance-Of-Normality.mp3","narration":true
+         },
+         {
+            "name":"NadineIsntDone","content":[
+               "Nadine hasn't done any research yet. She better get to it!"
+            ],"link":["OSINT-Circular"],"images":["nadine-work-healthcorp-search.jpg"],
+            "narration":true,"music":"An-Appearance-Of-Normality.mp3"
+         },
+         {
             "name":"CompanyReviewSite-SysDecision",
             "content":[
                "CompanyReviewSite"
@@ -789,7 +810,8 @@
                "ImagesOfHQ-Decision"
             ],
             "images":[
-            	""
+               "nadine-work-healthcorp-search.jpg",
+            	"healthcorp-streetview.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -808,7 +830,7 @@
                "HQCameras"
             ],
             "images":[
-
+               "searchengine-empty.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -823,7 +845,8 @@
                "HQEntranceNadine"
             ],
             "images":[
-
+               "nadine-work-healthcorp-search.jpg",
+               "nadine-work-healthcorp-search.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -838,7 +861,6 @@
                "HQPerimeterNadine"
             ],
             "images":[
-
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true

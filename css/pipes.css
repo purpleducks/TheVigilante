@@ -1,7 +1,7 @@
 #grid{  /* ADAPTED FROM SOURCE: https://github.com/dheineman/pipes */
     position: absolute;
-    left: 31%;
-    top: 7%;
+    left: 27%;
+    top: 6%;
     background-color: rgba(60,60,60,0.6);
     border-radius: 27px;
 }
@@ -23,6 +23,48 @@ body {
 
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#musicControl {
+    bottom: 20%!important;
+}
+
+#musicControlLabel {
+    bottom: 80%!important;
+}
+
+#gameResult {
+    position: absolute;
+    width: 95%;
+    height: 25%;
+    top: 2%;
+    left: 5%;
+}
+
+#gameResultSpeech {
+    font-size: 3vw;
+}
+
+#gameTimerLabel {
+    top: 7%;
+    position: absolute;
+    color: red;
+    font-size: 5vw;
+    font-family: IBMPlex;
+    left: 9.5%;
+}
+
+#gameTimerTitle {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    font-family: IBMPlex;
+    top: 5%;
+    left: 5%;
+}
+
+.chatWindowBG {
+    opacity: 1!important;
 }
 
 .row_pipes {

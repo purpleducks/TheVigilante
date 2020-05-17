@@ -3619,6 +3619,7 @@
             "name":"Tech-C-Anon-DA",
             "minigame":true,
             "minigame-link":"DA-minigame.html",
+            "minigame-attempts":"2",
             "content":[
                "Nadine decides to launch a dictionary attack on the work station in an attempt to gain access.",
                "Nadine managed to brute force her way into the work station!",

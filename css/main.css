@@ -224,6 +224,15 @@ body {
     left: -1%;
 }
 
+#deleteSave {
+    bottom: 12%;
+}
+
+#deleteSaveLabel {
+    bottom: 60%;
+    right: 8%;
+}
+
 #bottomButtonArray img {
     position: absolute;
     width: 3vw;

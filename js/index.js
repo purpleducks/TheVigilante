@@ -12,6 +12,7 @@ function main() {
 
     addLabelToggleEL("musicControl");
     addLabelToggleEL("showModal");
+    addLabelToggleEL("deleteSave");
 
     var gameInfo = document.getElementById("gameInfo");
     var closeButton = document.getElementsByClassName("close")[0];
@@ -92,6 +93,16 @@ function animateElemsIn() {
             pos++;
             button.style.left = pos + 'vw';
         }
+    }
+}
+
+function deleteSave() {
+    if (localStorage.getItem("allActions") == null) {
+        alert("No save game detected!");
+    }
+    if (confirm("Are you sure you want to delete your saved game?")) {
+        localStorage.clear();
+        alert("Save game deleted!");
     }
 }
 
