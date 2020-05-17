@@ -1,0 +1,33 @@
+<html lang="en" dir="ltr"> <!-- ADAPTED FROM THE FOLLOWING SOURCE: https://github.com/dheineman/pipes -->
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+        <title>The Vigilante</title>
+        <link rel="stylesheet" href="../css/pipes.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script type="text/javascript" src="../js/minigame.js"></script>
+        <script type="text/javascript" src="../js/pipe-game.js"></script>
+        <script type="text/javascript" src="../js/pipe-grid.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body onload="initGame(7,'SRC-Fail', 'SRC-RDN-WeIn')">
+        <h3 id="gameTimerTitle"> GAME TIMER </h3>
+        <h3 id="gameTimerLabel"> --- </h3>
+        <div id="gameResult" style="visibility: hidden;">
+            <div class="chatWindowBG">
+            </div>
+            <div class="chatWindowFG">
+                <p id="gameResultSpeech"></p>
+            </div>
+        </div>
+        <div id="grid"></div>
+        <div id="bottomButtonArray">
+            <a onclick="playPauseMusic()">
+                <img src="../images/pause-music-icon.png" id="musicControl"/>
+            </a>
+            <h5 style="visibility:hidden" id="musicControlLabel">MUSIC PLAY/PAUSE</h5>
+            <audio autoplay loop id="musicPlayer"><source src="../music/Cold-Fire.mp3" type="audio/mpeg"></audio>
+        </div>
+    </body>
+</html>
