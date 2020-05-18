@@ -360,7 +360,7 @@
 				"images":[],"music":"","narration":true
 			},
 			{
-				"name":"HACK SUCCESS","content":[],"link":[],"images":[],"music":"","narration":true
+				"name":"HACK SUCCESS","content":["FINISH"],"link":[],"images":[],"music":"","narration":true
 			}
      	]
 	}

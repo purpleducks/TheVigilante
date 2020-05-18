@@ -1,0 +1,72 @@
+{
+	"TheEscape":{
+		"storylines":[ 
+			{
+				"name":"NadineHack-SysDecision","content":["HACK SUCCESS"],
+				"link":["NadineHackWorked","NadineHackFailed"],"images":[],"music":"","systemDecision":true
+			},
+			{
+				"name":"NadineHackWorked","content":[
+					"Nadine's hack worked! ",
+					"She pulled it off, now she needs to get out of here, before she gets caught!"
+				],
+				"link":[],"images":[],"music":"","narration":true
+			},
+			{
+				"name":"NadineHackFailed","content":[
+					"Security are now enroute! ",
+					"Nadine will need a distraction of some sort in order to escape."
+				],
+				"link":[],"images":[],"music":"","narration":true
+			},
+			{
+				"name":"ServerRoom-Surroundings","content":[
+					"Nadine sees a fire escape and the corridor which she came down from before."," She also sees a fire alarm button."
+				],
+				"link":[],"images":[],"music":"","narration":true
+			},
+			{
+				"name":"SR-Escape-Decision","content":[
+					"What does Nadine do?",
+					"Hit the fire alarm.",
+					"Go back to the lifts.",
+					"Get to the fire escape.",
+					"Disrupt the building's power supply system."
+				],
+				"link":["SR-FireAlarm","SR-Lifts","SR-FireEscape","SR-BuildingPower-SysDecision"],"images":[],"music":"","decision":true
+			},
+			{
+				"name":"SR-FireAlarm","content":[
+					"Nadine hits the fire alarm button outside the server room cages. ",
+					"The fire alarm sounds and the fire exit door swings open."
+				],"link":[],"images":[],"music":"","narration":true
+			},
+			{
+				"name":"SR-Lifts","content":[
+					"Nadine decides to pack her stuff and back towards the mantrap.",
+					"As she turns the corner, she sees Security Guards just leaving the mantrap. ",
+					"She turns and runs but there's nowhere to run. ",
+					"She's quickly apprehended and arrested by the guards."
+				],"link":[],"images":[],"music":"","narration":true
+			},
+			{
+				"name":"SR-FireEscape","content":[
+					"Nadine collects her things and runs to the fire exit. ",
+					"It leads to a stairwell that seems to go on forever."
+				],"link":[],"images":[],"music":"","narration":true
+			},
+			{
+				"name":"SR-BuildingPower-SysDecision","content":["SR-BuildingPower"],
+				"link":["SR-BuildingPower-BeenThere","SR-BuildingPower"],"images":[],"music":"","systemDecision":true
+			},
+			{
+				"name":"SR-BuildingPower-BeenThere"
+			},
+			{
+				"name":"SR-BuildingPower","content":[
+
+				],"link":[],"images":[],"music":"","narration":true
+			},
+		]
+	}
+}
