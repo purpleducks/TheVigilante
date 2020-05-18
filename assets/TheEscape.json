@@ -83,7 +83,7 @@
 				],
 				"link":["SR-BP-WeIn","SR-BP-TourGuide-SysDecision"],"images":[],"music":"Prelude and Action.mp3",
 				"minigame":true,"minigame-link":"pipes-minigame.html",
-				"minigame-time":"180","minigame-attempts":"2","minigame-grid":"7"
+				"minigame-time":"100","minigame-attempts":"2","minigame-grid":"7"
 			},
 			{
 				"name":"SR-BP-TourGuide-SysDecision","content":["ITSR-SR-Run"],

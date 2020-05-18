@@ -3,7 +3,7 @@ class Grid extends Minigame {	// ADAPTED FROM THE FOLLOWING SOURCE: https://gith
 	constructor() {
         var tempCurrObj = JSON.parse(localStorage.getItem("currentObject"));
         super(tempCurrObj.name, 0);
-		this.size = tempCurrObj["minigame-size"];
+		this.size = parseInt(tempCurrObj["minigame-grid"]);
 		this.pipes = [];
 		this.direction = {
 	        DOWN: 2,
@@ -17,8 +17,8 @@ class Grid extends Minigame {	// ADAPTED FROM THE FOLLOWING SOURCE: https://gith
 	        1: 3,
 	        0: 2
 	    };
-        this.noOfAttempts = tempCurrObj["minigame-attempts"];
-        this.time = tempCurrObj["minigame-time"];
+        this.noOfAttempts = parseInt(tempCurrObj["minigame-attempts"]);
+        this.time = parseInt(tempCurrObj["minigame-time"]);
         this.failingObj = tempCurrObj.link[1];
         this.succeedingObj = tempCurrObj.link[0];
 	}

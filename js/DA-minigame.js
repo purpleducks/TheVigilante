@@ -103,7 +103,19 @@ class DictionaryAttack extends Minigame {
 		var difficulty = Minigame.prototype.getDifficulty.call(this);
 		$('#minigameLayer').append("<div class='word' id=word"+wordIndex+"><p>"+word+"</p></div>");
 		var elem = document.getElementById("word"+wordIndex);
-		var id = setInterval(frame, Math.round(80/difficulty));
+		var framerate = 0;
+		switch(difficulty) {
+			case 1:
+				framerate = 70;
+				break;
+			case 2: 
+				framerate = 50;
+				break;
+			case 3: 
+				framerate = 35;
+				break;
+		}
+		var id = setInterval(frame, framerate);
 		elem.style.left = this.getRandomInt(2,90) + 'vw';
 		function frame() {
 			var minigameLayer = document.getElementById("minigameLayer");

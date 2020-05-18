@@ -30,7 +30,7 @@
 				],
 				"link":["SRC-HaveNetworkLayout","HACK FAILED"],"images":[],"music":"",
 				"minigame":true,"minigame-link":"pipes-minigame.html",
-				"minigame-time":"180","minigame-attempts":"2","minigame-grid":"7"
+				"minigame-time":"120","minigame-attempts":"2","minigame-grid":"7"
 			},
 			{
 				"name":"SRC-HaveNetworkLayout","content":[
@@ -149,7 +149,7 @@
 				],
 				"link":["SRC-FN-WeIn","SRC-FN-Fail"],"images":[],"music":"",
 				"minigame":true,"minigame-link":"pipes-minigame.html",
-				"minigame-time":"150","minigame-attempts":"2","minigame-grid":"7"
+				"minigame-time":"90","minigame-attempts":"2","minigame-grid":"7"
 			},
 			{
 				"name":"SRC-FN-WeIn","content":[
@@ -163,7 +163,9 @@
 					"Nadine couldn't hack into the Finance servers...."
 				],
 				"link":["SRC-FN-DA-Success","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"DA-minigame.html","minigame-attempts":"2"
+				"minigame":true,"minigame-link":"DA-minigame.html","minigame-attempts":"2",
+				"minigame-score":"60",
+            	"minigame-difficulty":"1"
 			},
 			{
 				"name":"SRC-FN-DA-Success","content":[
@@ -252,7 +254,7 @@
 				],
 				"link":["SRC-EN-WeIn","SRC-Fail"],"images":[],"music":"",
 				"minigame":true,"minigame-link":"pipes-minigame.html",
-				"minigame-time":"150","minigame-attempts":"2","minigame-grid":"7"
+				"minigame-time":"90","minigame-attempts":"2","minigame-grid":"7"
 			},
 			{
 				"name":"SRC-EN-WeIn","content":[
@@ -267,7 +269,9 @@
 					"Nadine couldn't hack into the Finance servers...."
 				],
 				"link":["SRC-EN-DA-Success","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"DA-minigame.html","minigame-attempts":"2"
+				"minigame":true,"minigame-link":"DA-minigame.html","minigame-attempts":"2",
+				"minigame-score":"60",
+            	"minigame-difficulty":"1"
 			},
 			{
 				"name":"SRC-EN-DA-Success","content":[
@@ -330,7 +334,7 @@
 				],
 				"link":["SRC-RDN-WeIn","SRC-Fail"],"images":[],"music":"",
 				"minigame":true,"minigame-link":"pipes-minigame.html",
-				"minigame-time":"150","minigame-attempts":"2","minigame-grid":"7"
+				"minigame-time":"90","minigame-attempts":"2","minigame-grid":"7"
 			},
 			{
 				"name":"SRC-RDN-WeIn","content":[
@@ -345,7 +349,9 @@
 				],
 				"link":["SRC-RDN-DA-Success","SRC-Fail"],
 				"images":[],"music":"",
-				"minigame":true,"minigame-link":"DA-minigame.html","minigame-time":"150","minigame-attempts":"2"
+				"minigame":true,"minigame-link":"DA-minigame.html","minigame-time":"90","minigame-attempts":"2",
+				"minigame-score":"60",
+            	"minigame-difficulty":"1"
 			},
 			{
 				"name":"SRC-RDN-DA-Success","content":[

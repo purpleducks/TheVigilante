@@ -1372,10 +1372,10 @@
          {
             "name":"ITSR-TG-Simon-5",
             "content":[
-               "Richard scans his card and then hands it to Nadine.",
+               "Simon scans his card and then hands it to Nadine.",
                "Nadine enters the mantrap and watches as it closes on her.",
                "After it closes, a contact point flashes red angrily at her. ",
-               "She swipes Richard's pass and it goes a happy green colour.",
+               "She swipes Simon's pass and it goes a happy green colour.",
                "The other side of the mantrap opens, releasing Nadine into the server room"
             ],
             "link":[
@@ -1390,10 +1390,10 @@
          {
             "name":"ITSR-TG-Justin-5",
             "content":[
-               "Richard scans his card and then hands it to Nadine.",
+               "Justin scans his card and then hands it to Nadine.",
                "Nadine enters the mantrap and watches as it closes on her.",
                "After it closes, a contact point flashes red angrily at her. ",
-               "She swipes Richard's pass and it goes a happy green colour.",
+               "She swipes Justin's pass and it goes a happy green colour.",
                "The other side of the mantrap opens, releasing Nadine into the server room"
             ],
             "link":[
@@ -1428,7 +1428,7 @@
             "content":[
                "What does Nadine do?",
                "Run away into the server room.",
-               "Press the SEAL button on the mantrap."
+               "Press the SEAL button on the mantrap, in order to lock the mantrap."
             ],
             "link":[
                "ITSR-SR-Run",
