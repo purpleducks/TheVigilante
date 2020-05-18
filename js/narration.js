@@ -69,7 +69,7 @@ class Narration extends Character {
                         
                     }, 500)
                     
-                }, 2000);
+                }, 3000);
                 
             }
         })

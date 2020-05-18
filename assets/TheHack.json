@@ -17,7 +17,9 @@
 				"name":"SRC-ClosestServer","content":[
 					"Nadine picks the server closest to her. ",
 					"She pulls out her laptop and plugs it into the server. ",
-					"To get a layout of the network and find where everything is, Nadine needs to hack."
+					"To get a layout of the network and find where everything is, Nadine needs to hack.",
+					"In order to hack, she must interact into the different parts of the network so she can get a full network map.",
+					"Your job is to click on each of the elements and create a complete, connected network map for Nadine."
 				],"link":["SRC-NetworkLayout-Minigame"],"images":[],"music":"","narration":true
 			},
 			{
@@ -27,11 +29,13 @@
 					"Nadine has alerted the Technical department to her intrusion, she must now escape."
 				],
 				"link":["SRC-HaveNetworkLayout","HACK FAILED"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"NL-pipes.html","minigame-time":"180","minigame-attempts":"2"
+				"minigame":true,"minigame-link":"pipes-minigame.html",
+				"minigame-time":"180","minigame-attempts":"2","minigame-grid":"7"
 			},
 			{
 				"name":"SRC-HaveNetworkLayout","content":[
-					"She needs to decide what she wants to expose about HealthCorp or send their money to."
+					"Now that Nadine has a good view of the HealthCorp network..",
+					"...she needs to decide what she wants to expose about HealthCorp or send their money to."
 				],"link":["SRC-AnonPlan-SysDecision"],"images":[],"music":"","narration":true
 			},
 			{
@@ -144,7 +148,8 @@
 					"Nadine couldn't get a view of the Financial network. "
 				],
 				"link":["SRC-FN-WeIn","SRC-FN-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"SRC-FN-pipes.html","minigame-time":"150","minigame-attempts":"2"
+				"minigame":true,"minigame-link":"pipes-minigame.html",
+				"minigame-time":"150","minigame-attempts":"2","minigame-grid":"7"
 			},
 			{
 				"name":"SRC-FN-WeIn","content":[
@@ -158,7 +163,7 @@
 					"Nadine couldn't hack into the Finance servers...."
 				],
 				"link":["SRC-FN-DA-Success","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"Finance-DA-Minigame.html","minigame-attempts":"2"
+				"minigame":true,"minigame-link":"DA-minigame.html","minigame-attempts":"2"
 			},
 			{
 				"name":"SRC-FN-DA-Success","content":[
@@ -227,7 +232,7 @@
 				"name":"SRC-ExecutiveNetwork-SysDecision","content":[
 					"WhoAreTheInnerCircle"
 				],
-				"link":["SRC-EN-Yes","SRC-EN-No"],"images":[],"music":"","narration":true
+				"link":["SRC-EN-Yes","SRC-EN-No"],"images":[],"music":"","systemDecision":true
 			},
 			{
 				"name":"SRC-EN-Yes","content":[
@@ -246,7 +251,8 @@
 					"Nadine couldn't get a view of the Executive network."
 				],
 				"link":["SRC-EN-WeIn","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"SRC-EN-pipes.html","minigame-time":"150","minigame-attempts":"2"
+				"minigame":true,"minigame-link":"pipes-minigame.html",
+				"minigame-time":"150","minigame-attempts":"2","minigame-grid":"7"
 			},
 			{
 				"name":"SRC-EN-WeIn","content":[
@@ -261,7 +267,7 @@
 					"Nadine couldn't hack into the Finance servers...."
 				],
 				"link":["SRC-EN-DA-Success","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"Executive-DA-Minigame.html","minigame-attempts":"2"
+				"minigame":true,"minigame-link":"DA-minigame.html","minigame-attempts":"2"
 			},
 			{
 				"name":"SRC-EN-DA-Success","content":[
@@ -323,7 +329,8 @@
 					"Nadine couldn't get a view of the R&D network. "
 				],
 				"link":["SRC-RDN-WeIn","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"SRC-RDN-pipes.html","minigame-time":"150","minigame-attempts":"2"
+				"minigame":true,"minigame-link":"pipes-minigame.html",
+				"minigame-time":"150","minigame-attempts":"2","minigame-grid":"7"
 			},
 			{
 				"name":"SRC-RDN-WeIn","content":[
@@ -338,7 +345,7 @@
 				],
 				"link":["SRC-RDN-DA-Success","SRC-Fail"],
 				"images":[],"music":"",
-				"minigame":true,"minigame-link":"RD-DA-Minigame.html","minigame-time":"150","minigame-attempts":"2"
+				"minigame":true,"minigame-link":"DA-minigame.html","minigame-time":"150","minigame-attempts":"2"
 			},
 			{
 				"name":"SRC-RDN-DA-Success","content":[
@@ -356,11 +363,11 @@
 ],"link":["SRC-Done"],"images":[],"characters":["Nadine"],"music":"","dialogue":true
 			},
 			{
-				"name":"HACK FAILED","content":["FINISH"],"link":[],
+				"name":"HACK FAILED","content":["FINISH"],"link":["FINISH"],
 				"images":[],"music":"","narration":true
 			},
 			{
-				"name":"HACK SUCCESS","content":["FINISH"],"link":[],"images":[],"music":"","narration":true
+				"name":"HACK SUCCESS","content":["FINISH"],"link":["FINISH"],"images":[],"music":"","narration":true
 			}
      	]
 	}

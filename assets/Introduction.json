@@ -4,7 +4,7 @@
          {
             "name":"Opener","content":[
                "Welcome to the Vigilante!",
-               "Your game progress can be saved using the SAVE icon at the bottom of the page",
+               "Your game progress can be saved using the SAVE icon at the bottom of the page.",
                "It is automatically saved before each minigame.",
                "You can also skip the current scene you're in to get to the next, should you wish",
                "In this game, you will play as the protagonist, Nadine Summers.",
@@ -208,6 +208,8 @@
             "minigame":true,
             "minigame-link":"DA-minigame.html",
             "minigame-attempts":"2",
+            "minigame-difficulty":"2",
+            "minigame-score":"42",
             "characters":[
                "Nadine",
                "Jack"
@@ -219,7 +221,7 @@
             "name": "Social media profile hack explanation",
             "content": [
                "Nadine decides to launch a dictionary attack on Jack's social media profile. ",
-               "In order to gain access to Jack's social media profile,  Nadine needs to try as many passwords as she can to get into Jack's social media profile.",
+               "In order to gain access to Jack's social media profile,  Nadine needs to try as many passwords as she can to get in.",
                "She needs to get a score of 42 to win, why you ask?",
                "Because it's the answer to the universe of course. 🤷‍",
                "She needs to get this score before the system locks her out for too many failed attempts, so be quick!"
@@ -314,8 +316,10 @@
                "nadine-typing.jpg"
             ],
             "minigame":true,
-            "minigame-link":"Email-minigame.html",
+            "minigame-link":"DA-minigame.html",
             "minigame-attempts":"2",
+            "minigame-score":"50",
+            "minigame-difficulty":"2",
             "characters":[
                "Nadine",
                "Jack"
@@ -364,7 +368,7 @@
          },
          {
             "content":[
-               "Nadine discovers that Jack is dating a HealthCorp employee called Darren Anderson",
+               "Nadine discovers that Jack is dating a HealthCorp employee called Darren Anderson.",
                "Based on the emails, it looks like Darren works in HealthCorp's sales department. Nadine notes this down just in case ;)"
             ],
             "link":[
@@ -560,7 +564,7 @@
          {
             "content":[
                "Nadine: 'I looked into him, he's legit. We should reach out.'",
-               "Marcus: 'Ahhh I knew you couldn't resist tryna hack him haha'",
+               "Marcus: 'Ahhh I knew you couldn't resist tryna hack him!'",
                "Marcus: 'I thought you stopped all that?'",
                "Marcus: 'So what'd you find?'"
             ],
@@ -945,8 +949,8 @@
          },
          {
             "content":[
-               "Nadine: 'Turns out our blogger is dating a HealthCorp employee called Darren Anderson'",
-               "Nadine: 'Works in sales, probably used them to see what they knew about HealthCorp's tactics'",
+               "Nadine: 'Turns out our blogger is dating a HealthCorp employee called Darren Anderson.'",
+               "Nadine: 'Works in sales, probably used them to see what they knew about HealthCorp's tactics.'",
                "Nadine: 'Could be a good way into their HQ 👀👀👀'"
             ],
             "link":[
@@ -1094,11 +1098,11 @@
          },
          {
             "content":[
-               "Marcus: 'Nadine, don't be saying that'",
-               "Marcus: 'Man it's like you wanna get on the wrong side of these people'",
-               "Marcus: 'These aren't people you wanna be playin with sis! these are the most dangerous people in the country'",
-               "Marcus: 'They own Supreme judges, politicians, police chiefs, all the way down to the fuckin parking attendants'",
-               "Marcus: 'They will mess your life up just like they did when Mom died'"
+               "Marcus: 'Nadine, don't be saying that.'",
+               "Marcus: 'Man it's like you wanna get on the wrong side of these people!'",
+               "Marcus: 'These aren't people you wanna be playin with sis! These are the most dangerous people in the country!'",
+               "Marcus: 'They own Supreme judges, politicians, police chiefs, all the way down to the fuckin parking attendants...'",
+               "Marcus: 'They will mess your life up just like they did when Mom died.'"
             ],
             "link":[
                "NadineDarrenDecisionOne"
@@ -1142,8 +1146,8 @@
          {
             "content":[
                "Nadine: 'Bro, you need to chill.'",
-               "Marcus: 'I'm sorry sis but I'm just keepin it real with you'",
-               "Marcus: 'I don't want anything happening to you'"
+               "Marcus: 'I'm sorry sis but I'm just keepin it real with you.'",
+               "Marcus: 'I don't want anything happening to you.'"
             ],
             "link":[
                "NadineDarrenDecisionThree"
@@ -1211,6 +1215,7 @@
          },
          {
             "content":[
+               "What does Nadine say?",
                "Nadine: 'I know but I can handle myself'",
                "(ignores Marcus)"
             ],
@@ -1232,9 +1237,9 @@
          },
          {
             "content":[
-               "Marcus: 'yeah you are, guess I gotta treat you like a woman since you all grown'",
-               "Marcus: 'just stay safe sis'",
-               "Marcus: 'and call me if you need anything'",
+               "Marcus: 'Yeah you are, guess I gotta treat you like a woman since you all grown.'",
+               "Marcus: 'Just stay safe sis...'",
+               "Marcus: '... and call me if you need anything.'",
                "Nadine: 'I really appreciate that Marcus, stay safe big bro x'"
             ],
             "link":[
@@ -1257,8 +1262,8 @@
          },
          {
             "content":[
-               "Marcus: 'look I'm sorry sis, just want you to stay safe okay'",
-               "Marcus: '... call me if you need anything or just wanna talk i guess'"
+               "Marcus: 'Look I'm sorry sis, just want you to stay safe okay.'",
+               "Marcus: '... call me if you need anything or just wanna talk I guess.'"
             ],
             "link":[
                "Ghosted"
@@ -1315,7 +1320,7 @@
             "content":[
                "Nadine: 'I can handle myself you know?'",
                "Marcus: 'you know what, you're right, you can. you don't need me anymore.'",
-               "Marcus: 'so pop off, go hack HealthCorp or whatever'"
+               "Marcus: 'so pop off, go hack HealthCorp or whatever.'"
             ],
             "link":[
                "TooAggressiveStub"

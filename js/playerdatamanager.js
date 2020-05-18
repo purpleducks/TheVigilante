@@ -78,6 +78,7 @@ class PlayerDataManager {
                 tempData = json;
                 console.log("UHUHU");
                 if (filetype == "json") {
+                	console.log("PDM: Get next game data!");
 		        	that.currentStage = filename;
 			        that.gameData = tempData[filename]["storylines"];
 		    	}

@@ -1,16 +1,18 @@
 class DictionaryAttack extends Minigame {
 
-	constructor(name, difficulty, failingObj, succeedingObj, winningScore) {
-		super(name, difficulty);	// difficulty is on a scale of 1-3 : 1 being hard, 3 being easy
+	constructor() {
+		var tempCurrObj = JSON.parse(localStorage.getItem("currentObject"));
+
+		super(tempCurrObj.name, tempCurrObj["minigame-difficulty"]);	// difficulty is on a scale of 1-3 : 1 being easy, 3 being hard
 		this.words = [];
 		this.shownWords = [];
 		this.score = 0;
 		this.spentWords = 0;
-		this.failingObj = failingObj;
-		this.succeedingObj = succeedingObj;
+		this.failingObj = tempCurrObj.link[1];
+		this.succeedingObj = tempCurrObj.link[0];
 		this.gameEnded = false;
-		this.winningScore = winningScore;
-		this.noOfAttempts = this.getCookie(name+"Attempts", true);
+		this.winningScore = parseInt(tempCurrObj["minigame-score"]);
+		this.noOfAttempts = parseInt(tempCurrObj["minigame-attempts"]);
 	}
 
 	loadWords() {
@@ -25,20 +27,6 @@ class DictionaryAttack extends Minigame {
 			}
 			client.send();
 		}
-	}
-
-	getCookie(name, valueFlag)
-	{
-		var initCookieArray = document.cookie.split(";");
-		var cookieObjs = [];
-		for (var i = 0; i < initCookieArray.length; i++) {
-			var tempCookieArray = initCookieArray[i].split("=");
-			cookieObjs.push({name:tempCookieArray[0].trim(),value:tempCookieArray[1]});
-		}
-		var index = cookieObjs.findIndex(cookieObj => cookieObj.name == name);
-		var result;
-		valueFlag ? result=cookieObjs[index].value : result = index;
-		return result;
 	}
 
 	runGame() {
@@ -62,7 +50,7 @@ class DictionaryAttack extends Minigame {
 				});
 			}
 			else { clearInterval(); }
-		}, Math.round(6000/difficulty));
+		}, Math.round(2000/difficulty));
 	}
 
 	addNewWord() {
@@ -115,7 +103,7 @@ class DictionaryAttack extends Minigame {
 		var difficulty = Minigame.prototype.getDifficulty.call(this);
 		$('#minigameLayer').append("<div class='word' id=word"+wordIndex+"><p>"+word+"</p></div>");
 		var elem = document.getElementById("word"+wordIndex);
-		var id = setInterval(frame, 20*difficulty);
+		var id = setInterval(frame, Math.round(80/difficulty));
 		elem.style.left = this.getRandomInt(2,90) + 'vw';
 		function frame() {
 			var minigameLayer = document.getElementById("minigameLayer");
@@ -129,25 +117,8 @@ class DictionaryAttack extends Minigame {
 				if (that.score >= that.winningScore && !that.gameEnded) {	// if the score threshold is reached / too many words have been shown
 					// alert("YOU WON!");
 					that.gameEnded = true;
-
-					document.getElementById("gameResult").style.visibility = "visible";
-					document.getElementById("gameResultSpeech").innerHTML = "YOU'RE IN! 👨‍💻👩‍💻";
-					document.getElementById("gameResultSpeech").style.color = "limegreen";
-					var musicPlayer = $("#musicPlayer").get(0);
-					musicPlayer.pause();
-	                musicPlayer.setAttribute('src', "../music/success.mp3");
-	                musicPlayer.load();
-	                musicPlayer.play();
-					var allActions = JSON.parse(localStorage.getItem("allActions"));
-					allActions.push(that.succeedingObj);
-					localStorage.setItem("allActions", JSON.stringify(allActions));
-
-					that.clearScreen();
-					clearInterval();
-
-					setTimeout(function() {
-						window.location.replace("../main.html");
-					}, 2000);
+					that.wonGame();
+					
 					return 0;
 				}
 				if (that.spentWords > 70 && !that.gameEnded) { // if the game is over ...
@@ -156,33 +127,10 @@ class DictionaryAttack extends Minigame {
 					document.getElementById("gameResult").style.visibility = "visible";
 
 					if (that.noOfAttempts > 0) {	// if the player has more chances, let them play on.
-						document.getElementById("gameResultSpeech").style.color = "darkorange";
-						document.getElementById("gameResultSpeech").innerHTML = "YOUR HACK FAILED.. BUT YOU HAVE ANOTHER CHANCE TO TRY AGAIN!";
-						document.cookie = that.name+"Attempts="+that.noOfAttempts+";path=/";
-						that.clearScreen();
-						clearInterval();
-						setTimeout(function() {
-							window.location.replace("../minigames/"+that.name+".html");
-						}, 2000);
+						that.anotherChance();
 					}
 					else {
-						document.getElementById("gameResultSpeech").style.color = "red";
-						document.getElementById("gameResultSpeech").innerHTML = "YOUR HACK FAILED! THE SYSTEM HAS LOCKED YOU OUT. 🔒🔒🔒"
-						var musicPlayer = $("#musicPlayer").get(0);
-						musicPlayer.pause();
-		                musicPlayer.setAttribute('src', "../music/fail.mp3");
-		                musicPlayer.load();
-		                musicPlayer.play();
-		                var allActions = JSON.parse(localStorage.getItem("allActions"));
-						allActions.push(that.failingObj);
-						localStorage.setItem("allActions", JSON.stringify(allActions));
-
-						that.clearScreen();
-						clearInterval();
-
-						setTimeout(function() {
-							window.location.replace("../main.html");
-						}, 2000);
+						that.gameOver();
 						return 0;
 					}
 				}
@@ -208,6 +156,62 @@ class DictionaryAttack extends Minigame {
 		}
 	}
 
+	wonGame() {
+		document.getElementById("gameResult").style.visibility = "visible";
+		document.getElementById("gameResultSpeech").innerHTML = "YOU'RE IN! 👨‍💻👩‍💻";
+		document.getElementById("gameResultSpeech").style.color = "limegreen";
+		var musicPlayer = $("#musicPlayer").get(0);
+		musicPlayer.pause();
+        musicPlayer.setAttribute('src', "../music/success.mp3");
+        musicPlayer.load();
+        musicPlayer.play();
+		var allActions = JSON.parse(localStorage.getItem("allActions"));
+		allActions.push(this.succeedingObj);
+		localStorage.setItem("allActions", JSON.stringify(allActions));
+		localStorage.removeItem("currentObject");
+		this.clearScreen();
+		clearInterval();
+
+		setTimeout(function() {
+			window.location.replace("../main.html");
+		}, 2000);
+	}
+
+	anotherChance() {
+		var that = this;
+		document.getElementById("gameResultSpeech").style.color = "darkorange";
+		document.getElementById("gameResultSpeech").innerHTML = "YOUR HACK FAILED.. BUT YOU HAVE ANOTHER CHANCE TO TRY AGAIN!";
+		this.noOfAttempts--;
+		var tempCurrObj = JSON.parse(localStorage.getItem("currentObject"));
+		tempCurrObj.noOfAttempts = this.noOfAttempts;
+		localStorage.setItem("currentObject", JSON.stringify(tempCurrObj))
+		this.clearScreen();
+		clearInterval();
+		setTimeout(function() {
+			window.location.replace("../minigames/DA-minigame.html");
+		}, 2000);
+	}
+
+	gameOver() {
+		document.getElementById("gameResultSpeech").style.color = "red";
+		document.getElementById("gameResultSpeech").innerHTML = "YOUR HACK FAILED! THE SYSTEM HAS LOCKED YOU OUT. 🔒🔒🔒"
+		var musicPlayer = $("#musicPlayer").get(0);
+		musicPlayer.pause();
+        musicPlayer.setAttribute('src', "../music/fail.mp3");
+        musicPlayer.load();
+        musicPlayer.play();
+        var allActions = JSON.parse(localStorage.getItem("allActions"));
+		allActions.push(this.failingObj);
+		localStorage.setItem("allActions", JSON.stringify(allActions));
+		localStorage.removeItem("currentObject");
+		this.clearScreen();
+		clearInterval();
+
+		setTimeout(function() {
+			window.location.replace("../main.html");
+		}, 2000);
+	}
+
 	checkFirstVisit() {
 		if (performance.navigation.type == 1) {
 		    console.info( "This page is reloaded" );
@@ -223,15 +227,6 @@ class DictionaryAttack extends Minigame {
 		    console.info( "This page is not reloaded");
 		    return true;
 	  	}
-	  	/*
-		if(this.getCookie(this.name, false) && this.) {
-			// cookie doesn't exist, create it now
-			document.cookie = this.name+'=1';
-			return true;
-		}
-		else {
-			
-		}*/
 	}
 
 	checkWord() {

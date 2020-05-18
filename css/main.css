@@ -160,6 +160,7 @@ body {
     z-index: 3;
     margin-left: 1vw;
     margin-right: 1vw;
+    top: -1%;
 }
 
 @media screen and (max-width: 800px) {

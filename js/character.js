@@ -77,12 +77,7 @@ class Character {   // factory class
                 if (currentObject.decision) { this.showDecisionButtons(); }
                 else if (currentObject.minigame) { 
                     this.typer.destroy(); 
-                    var tempLen = currentObject["minigame-link"].length;
-                    var minigameName = currentObject["minigame-link"].slice(0,tempLen-5);
-                    document.cookie = minigameName+"Attempts=" +currentObject["minigame-attempts"]+";path=/;";
-                    if (currentObject["minigame-time"] != null) { 
-                        document.cookie = minigameName+"Time=" +currentObject["minigame-time"]+";path=/;"; 
-                    }
+                    localStorage.setItem("currentObject", JSON.stringify(currentObject));
                     setTimeout(window.location.replace("./minigames/"+currentObject["minigame-link"]), 2000);
                 }
                 else { // decisions and minigames don't need to get the next speech

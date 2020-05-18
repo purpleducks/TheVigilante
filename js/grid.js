@@ -1,9 +1,9 @@
 class Grid extends Minigame {	// ADAPTED FROM THE FOLLOWING SOURCE: https://github.com/dheineman/pipes
 	
-	constructor(failingObj, succeedingObj) {
-        var name = window.location.href.split("/")[6].split(".")[0];
-        super(name, 0);
-		this.size = 0;
+	constructor() {
+        var tempCurrObj = JSON.parse(localStorage.getItem("currentObject"));
+        super(tempCurrObj.name, 0);
+		this.size = tempCurrObj["minigame-size"];
 		this.pipes = [];
 		this.direction = {
 	        DOWN: 2,
@@ -17,19 +17,19 @@ class Grid extends Minigame {	// ADAPTED FROM THE FOLLOWING SOURCE: https://gith
 	        1: 3,
 	        0: 2
 	    };
-        this.noOfAttempts = getCookie(name + "Attempts", true);
-        this.time = getCookie(name + "Time", true);
-        this.failingObj = failingObj;
-        this.succeedingObj = succeedingObj;
+        this.noOfAttempts = tempCurrObj["minigame-attempts"];
+        this.time = tempCurrObj["minigame-time"];
+        this.failingObj = tempCurrObj.link[1];
+        this.succeedingObj = tempCurrObj.link[0];
 	}
 
-	init(size) {
-		if (size % 2 == false) {
+	init() {
+		if (this.size % 2 == false) {
             console.log("Cannot create grid with even number of rows/columns");
             return;
         }
         
-        this.initPipes(size);
+        this.initPipes();
         this.buildPipes();
         this.scramblePipes();
         this.checkPipes();
@@ -53,12 +53,11 @@ class Grid extends Minigame {	// ADAPTED FROM THE FOLLOWING SOURCE: https://gith
         return pipes;
 	}
 
-	initPipes(size) {
-		this.size = size;
+	initPipes() {
         this.pipes = [];
-        for (var x = 1; x <= size; x++) {
+        for (var x = 1; x <= this.size; x++) {
             this.pipes[x] = [];
-            for (var y = 1; y <= size; y++) {
+            for (var y = 1; y <= this.size; y++) {
                 var pipe = new Pipe();
                 pipe.x = x;
                 pipe.y = y;
@@ -313,7 +312,7 @@ function failedGame(grid) {
         document.getElementById("gameResultSpeech").innerHTML = "YOUR HACK FAILED.. BUT YOU HAVE ANOTHER CHANCE TO TRY AGAIN!";
         document.cookie = grid.name+"Attempts="+grid.noOfAttempts+";path=/";
         setTimeout(function() {
-            window.location.replace("../minigames/"+grid.name+".html");
+            window.location.replace("../minigames/pipes-minigame.html");
         }, 2000);
     }
     else {
@@ -350,33 +349,14 @@ function checkFirstVisit() {
             console.info( "This page is not reloaded");
             return true;
         }
-        /*
-        if(this.getCookie(this.name, false) && this.) {
-            // cookie doesn't exist, create it now
-            document.cookie = this.name+'=1';
-            return true;
-        }
-        else {
-            
-        }*/
     }
 
-function initGame(gridSize, failingObj,succeedingObj) {
+function initGame(failingObj,succeedingObj) {
     addLabelToggleEL("musicControl");
     var grid = new Grid(failingObj,succeedingObj); 
     grid.noOfAttempts--;
     if (checkFirstVisit()) {
-        console.info( "This page is reloaded" );
-        // not first visit, so alert
-        alert('Refreshing is not allowed.');        // cheating!
-        var allActions = JSON.parse(localStorage.getItem("allActions"));
-        allActions.push(this.failingObj);   // assume fail
-        localStorage.setItem("allActions", JSON.stringify(allActions));
-        window.location.replace("../main.html");    // redirect back to the game
-        return false;
-    }
-    else {
-        grid.init(gridSize);
+        grid.init();
         document.getElementById("grid").gridObj = grid;
         var label = document.getElementById("gameTimerLabel");
         label.innerHTML = grid.time;
@@ -391,6 +371,16 @@ function initGame(gridSize, failingObj,succeedingObj) {
             }
         }, 1000);
     }
+    else {
+        console.info( "This page is reloaded" );
+        // not first visit, so alert
+        alert('Refreshing is not allowed.');        // cheating!
+        var allActions = JSON.parse(localStorage.getItem("allActions"));
+        allActions.push(this.failingObj);   // assume fail
+        localStorage.setItem("allActions", JSON.stringify(allActions));
+        window.location.replace("../main.html");    // redirect back to the game
+        return false;
+    }
 }
 function rotatePipe(element) {
     var grid = document.getElementById("grid").gridObj;
@@ -401,17 +391,3 @@ function rotatePipe(element) {
     grid.checkPipes();
     grid.draw();
 }
-
-function getCookie(name, valueFlag)
-    {
-        var initCookieArray = document.cookie.split(";");
-        var cookieObjs = [];
-        for (var i = 0; i < initCookieArray.length; i++) {
-            var tempCookieArray = initCookieArray[i].split("=");
-            cookieObjs.push({name:tempCookieArray[0].trim(),value:tempCookieArray[1]});
-        }
-        var index = cookieObjs.findIndex(cookieObj => cookieObj.name == name);
-        var result;
-        valueFlag ? result=cookieObjs[index].value : result = index;
-        return result;
-    }

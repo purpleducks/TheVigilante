@@ -27,7 +27,7 @@
                "Co-worker1: 'Nah, I was mad about that too, but they did switch our corporate health insurance to HealthCorp.'",
                "Co-worker2: 'Ugh it's about time! MediKare were the worst, I had my gall bladder removed and they took MONTHS to pay out. Like I've heard HealthCorp pay out instantly, like no questions asked, they're great.'",
                "Co-worker1: 'Oh really? Thank god, that's honestly the last thing I wanna be worrying about, dread to think how much medical bills cost nowadays....'"
-            ],
+            ], 
             "link":[
                "NadineInternalDialogue"
             ],
@@ -36,11 +36,11 @@
                "Co-worker2"
             ],
             "images":[
-            	"romero-offices.jpg",
-            	"romero-offices.jpg",
-            	"romero-offices.jpg",
-            	"romero-offices.jpg",
-            	"romero-offices.jpg"
+            	"water-cooler.jpg",
+            	"water-cooler.jpg",
+            	"water-cooler.jpg",
+            	"water-cooler.jpg",
+            	"water-cooler.jpg"
             ],
             "dialogue":true,
             "music":"Brand-New-Paradigm.mp3"
@@ -157,7 +157,7 @@
             "name":"MarcusHasTea",
             "content":[
                "Nadine: 'hey Marcus, do you know anyone who works at HealthCorp who could, yknow, help us out?'",
-               "Marcus: 'hey sis, I was actually just about to text you. After we talked last night, I reached out to my buddy from college, turns out he works for HealthCorp's R&D department'",
+               "Marcus: 'hey sis, I was actually just about to text you. After we talked last night, I reached out to my buddy from College, turns out she works for HealthCorp's R&D department'",
                "Marcus: 'She knows about all of the crazy shit that HealthCorp be getting up to.'",
                "Marcus: 'I'll send you her number!'"
             ],
@@ -594,7 +594,7 @@
                "Nadine: 'Oh my god, that would be amazing!'",
                "Nadine: 'I can deal with people questioning me, been dealing with that my whole life.'",
                "Danielle: 'Ugh I hear that, I should be able to get everything you'll need to get in.'",
-               "Danielle: 'The server room is on Level 29, in the Technical and R&D department.'",
+               "Danielle: 'The server room is on Level 26, in the Technical and R&D department.'",
                "Danielle: 'Send me your address so I can drop off the stuff you need.'",
                "Nadine: 'You've been amazing, I can't thank you enough sis!'"
             ],
@@ -636,7 +636,7 @@
             "name":"StickItToEm",
             "content":[
                "Nadine: 'I really appreciate this, how can I repay you?'",
-               "Danielle: 'Take those bastards down and make them pay for what they've done.'"
+               "Danielle: 'Take those bastards down and make them pay for what they've done...'"
             ],
             "link":[
                "SearchHC"
@@ -675,15 +675,15 @@
          },
          {
             "name":"IsNadineDone","content":["ImagesOfHQ"],
-            "link":["NadineIsDone","IsNadineDone-2"],"images":[],"music":"","systemDecision":true
+            "link":["NadineIsDone","IsNadineDone-2"],"images":[],"music":"An-Appearance-Of-Normality.mp3","systemDecision":true
          },
          {
-            "name":"IsNadineDone-2","content":["CompanyReviewSite"],"link":["NadineIsDone","IsNadineDone-3"],"systemDecision":true
+            "name":"IsNadineDone-2","content":["CompanyReviewSite"],"link":["NadineIsDone","IsNadineDone-3"],"systemDecision":true,"music":"An-Appearance-Of-Normality.mp3"
          },
          {
-            "name":"IsNadineDone-3","content":["LinkedIn"],"link":["NadineIsDone","NadineIsntDone"],"systemDecision":true
+            "name":"IsNadineDone-3","content":["LinkedIn"],"link":["NadineIsDone","NadineIsntDone"],"systemDecision":true,"music":"An-Appearance-Of-Normality.mp3"
          },
-         {
+        {
             "name":"NadineIsDone","content":[
                "Nadine feels like she knows enough to break into HealthCorp."
             ],
@@ -861,6 +861,8 @@
                "HQPerimeterNadine"
             ],
             "images":[
+               "HQ-perimeter.jpg",
+               "HQ-perimeter.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -875,7 +877,8 @@
                "HQCamerasNadine"
             ],
             "images":[
-
+               "HQ-camera.jpg",
+               "HQ-camera.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -893,7 +896,7 @@
                "Nadine"
             ],
             "images":[
-
+               ""
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "dialogue":true
@@ -908,7 +911,8 @@
                "DoneSearchingYet-SysDecision"
             ],
             "images":[
-
+               "HQ-perimeter.jpg",
+               "HQ-perimeter.jpg"
             ],
             "characters": [
             	"Nadine"
@@ -926,7 +930,8 @@
                "DoneSearchingYet-SysDecision"
             ],
             "images":[
-
+               "HQ-camera.jpg",
+               "HQ-camera.jpg"
             ],
             "characters": [
             	"Nadine"

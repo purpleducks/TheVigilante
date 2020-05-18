@@ -13,8 +13,7 @@
         <link rel="stylesheet" type="text/css" href="../css/DA-minigame.css">
         <script>
           function startGame() {
-            var minigameName = window.location.href.split("/")[6].split(".")[0];
-            var minigameObj = new DictionaryAttack(minigameName,3,"Probably a scam", "In bloggers profile",42);
+            var minigameObj = new DictionaryAttack();
             minigameObj.loadWords();
             document.getElementById("minigameLayer").minigameObj = minigameObj;
           }

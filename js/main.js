@@ -93,6 +93,11 @@ function startProcessing(evt, nextObject) {
         gameMan.dataManager.addToAllActions(currObj.name);
         gameMan.sortSpeech(currObj, 0);
     }
+    else if (currObj.content[0] == "END GAME") {
+        console.log("MAIN: Ending the game and clearing LocalStorage!");
+        localStorage.clear();
+        window.location.replace("./index.html");
+    }
     else {
         if (gameMan.dataManager.currentStage == "Introduction") {
             gameMan.dataManager.getData("OSINT","json");

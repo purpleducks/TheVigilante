@@ -14,7 +14,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "narration":true
          },
          {
@@ -29,7 +29,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "systemDecision":true
          },
          {
@@ -44,7 +44,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "narration":true
          },
          {
@@ -59,7 +59,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "systemDecision":true
          },
          {
@@ -77,7 +77,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "narration":true
          },
          {
@@ -92,7 +92,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "systemDecision":true
          },
          {
@@ -107,7 +107,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "narration":true
          },
          {
@@ -123,7 +123,7 @@
 
             ],
             "systemDecision":true,
-            "music":""
+            "music":"Jane-Fonda.mp3"
          },
          {
             "name":"UGCarPark-SysDecision-1",
@@ -137,7 +137,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "systemDecision":true
          },
          {
@@ -152,7 +152,7 @@
 
             ],
             "narration":true,
-            "music":""
+            "music":"Jane-Fonda.mp3"
          },
          {
             "name":"SheHasNoPlan",
@@ -167,7 +167,7 @@
                "NadineHasNoPlan"
             ],
             "narration":true,
-            "music":""
+            "music":"Jane-Fonda.mp3"
          },
          {
             "name":"NadineHasNoPlan",
@@ -181,7 +181,7 @@
                "DanielleAndNadine-SysDecision"
             ],
             "narration":true,
-            "music":""
+            "music":"Jane-Fonda.mp3"
          },
          {
             "name":"NadDanAtTheDoor",
@@ -200,7 +200,7 @@
                "Nadine",
                "Danielle"
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "dialogue":true
          },
          {
@@ -216,7 +216,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "narration":true
          },
          {
@@ -231,7 +231,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "systemDecision":true
          },
          {
@@ -246,7 +246,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "narration":true
          },
          {
@@ -261,7 +261,7 @@
                "6PMStartHasCredentials",
                "CheckForTime-SysDecision"
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "systemDecision":true
          },
          {
@@ -273,7 +273,7 @@
                "6PMStartHasCredentials",
                "BlogFolder-SysDecision-1"
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "images":[
 
             ],
@@ -291,7 +291,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "systemDecision":true
          },
          {
@@ -306,7 +306,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "systemDecision":true
          },
          {
@@ -321,7 +321,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "systemDecision":true
          },
          {
@@ -336,7 +336,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Jane-Fonda.mp3",
             "systemDecision":true
          },
          {
@@ -352,7 +352,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -369,7 +369,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -384,7 +384,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -401,7 +401,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "decision":true
          },
          {
@@ -417,7 +417,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -432,7 +432,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -447,7 +447,7 @@
                "6PM-UGCarPark-NadineGivesPass",
                "UGCarPark-NoCredentials"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "systemDecision":true
          },
          {
@@ -466,7 +466,7 @@
                "Nadine",
                "Security-Guard"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "dialogue":true
          },
          {
@@ -480,7 +480,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -498,7 +498,7 @@
                "Nadine",
                "Security-Guard"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "dialogue":true
          },
          {
@@ -517,7 +517,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "decision":true
          },
          {
@@ -536,7 +536,7 @@
                "Nadine",
                "Security-Guard"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "dialogue":true
          },
          {
@@ -556,7 +556,7 @@
                "Nadine",
                "Security-Guard"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "dialogue":true
          },
          {
@@ -576,7 +576,7 @@
                "Nadine",
                "Security-Guard"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "dialogue":true
          },
          {
@@ -591,7 +591,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "systemDecision":true
          },
          {
@@ -605,7 +605,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -619,7 +619,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -638,7 +638,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "decision":true
          },
          {
@@ -655,7 +655,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -670,7 +670,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -684,7 +684,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -699,7 +699,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "systemDecision":true
          },
          {
@@ -714,7 +714,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "systemDecision":true
          },
          {
@@ -736,7 +736,7 @@
                "Nadine",
                "Receptionist"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "dialogue":true
          },
          {
@@ -751,7 +751,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -770,7 +770,7 @@
                "Nadine",
                "Receptionist"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "dialogue":true
          },
          {
@@ -785,7 +785,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "systemDecision":true
          },
          {
@@ -807,7 +807,7 @@
                "Nadine",
                "Receptionist"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "dialogue":true
          },
          {
@@ -822,7 +822,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -841,7 +841,7 @@
                "Nadine",
                "Receptionist"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "dialogue":true
          },
          {
@@ -856,7 +856,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "systemDecision":true
          },
          {
@@ -878,7 +878,7 @@
                "Nadine",
                "Receptionist"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "dialogue":true
          },
          {
@@ -893,7 +893,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "narration":true
          },
          {
@@ -912,7 +912,7 @@
                "Nadine",
                "Receptionist"
             ],
-            "music":"",
+            "music":"Memory-Lapse.mp3",
             "dialogue":true
          },
          {
@@ -1690,7 +1690,7 @@
             ],
             "link":[
                "R&D-P-ServerRoom",
-               "R&D-P-HealthCorp",
+               "R&D-P-HealthCorp"
             ],
             "images":[
 
@@ -1709,7 +1709,7 @@
             "link":[
                "R&D-P-ServerRoom",
                "R&D-P-InnerCircle",
-               "R&D-P-HealthCorp",
+               "R&D-P-HealthCorp"
             ],
             "images":[
 
@@ -3620,6 +3620,8 @@
             "minigame":true,
             "minigame-link":"DA-minigame.html",
             "minigame-attempts":"2",
+            "minigame-score":"50",
+            "minigame-difficulty":"2",
             "content":[
                "Nadine decides to launch a dictionary attack on the work station in an attempt to gain access.",
                "Nadine managed to brute force her way into the work station!",
@@ -3757,7 +3759,8 @@
             "content":[
                "The following day, news of her attempted break-in leak to the press. ",
                "Although few do report it out of fear of being sued by HealthCorp, Nadine is seen as a martyr by those who look to take HealthCorp down.",
-               "A symbol for some, a waste to others, anonymous to the rest..."
+               "A symbol for some, a waste to others, anonymous to the rest...",
+               "....but did she act too rashly?"
             ],
             "link":[
                "GAME OVER"
@@ -3906,8 +3909,7 @@
             "content":[
                "Nadine decides to have a look around the floor. ",
                "She turns a corner and starts to read a noticeboard. It has some notices, all fairly mundane community notices, nothing of note really...",
-               "A few moments later, a security guard on patrol approaches her.",
-               ""
+               "A few moments later, a security guard on patrol approaches her."
             ],
             "link":[
                "Tech-SecurityGuard"
@@ -4817,7 +4819,7 @@
                "Tammy continues towards the lift, and more security guards are swarming Nadine.",
                "They whisk Nadine off to a room with nothing but a table. a chair and a one way mirror.",
                "After seizing her devices and hours of questioning, it doesn't take them long to figure out why she was there",
-               "Later, the police came and arrested Nadine on an attempted burglary and corporate espionage."
+               "Later, the police came and arrested Nadine for attempted burglary and corporate espionage."
             ],
             "link":[
                "GAME OVER"
@@ -6284,7 +6286,7 @@
             "name":"DanielleGotGot",
             "content":[
                "They found out her source was Danielle, who was also questioned and fired on the spot.",
-               "Later, the police came and arrested Nadine and Danielle on an attempted burglary and corporate espionage."
+               "Later, the police came and arrested Nadine and Danielle for attempted burglary, aiding and abetting and corporate espionage."
             ],
             "link":[
                "GAME OVER"
@@ -6300,7 +6302,7 @@
             "content":[
                "They found out her source was Darren, who was also questioned and fired on the spot.",
                "He was very confused and denied it, because he didn't know Nadine was impersonating Jack.",
-               "Nevertheless, the police came and arrested Nadine and Darren on an attempted burglary and corporate espionage."
+               "Nevertheless, the police came and arrested Nadine and Darren for attempted burglary, aiding and abetting and corporate espionage."
             ],
             "link":[
                "GAME OVER"
@@ -6314,10 +6316,11 @@
          {
             "name":"GAME OVER",
             "content":[
-               "GAME OVER"
+               "Thank you for playing the Vigilante!",
+               "This isn't the end, your save game is cleared so you can play again!"
             ],
             "link":[
-               "FINISH"
+               "END GAME"
             ],
             "images":[
 
@@ -6326,9 +6329,12 @@
             "narration":true
          },
          {
+            "name":"END GAME","content":["END GAME"],"link":["END GAME"],"images":[],"music":"","systemDecision":true
+         },
+         {
             "name":"UGCarPark-NadineAlone",
             "content":[
-               "Later, the police came and arrested Nadine on an attempted burglary and corporate espionage."
+               "Later, the police came and arrested Nadine for attempted burglary and corporate espionage."
             ],
             "link":[
                "GAME OVER"
