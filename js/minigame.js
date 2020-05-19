@@ -6,4 +6,16 @@ class Minigame {
 	}
 
 
+	getDifficulty() {
+		return this.difficulty;
+	}
+
+	getScore() {
+		return this.score;
+	}
+
+	setScore(score) {
+		this.score = score;
+		return true;
+	}
 }

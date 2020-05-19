@@ -14,6 +14,8 @@ class Character {   // factory class
         var currentString;
         var justTheSpeech;
         var that = this;
+        var maxTime;
+        var idealSpeed;
 
         if (charElem != null) {   // if the element exists, then delete it and make a new one
             charElem.remove();
@@ -33,10 +35,15 @@ class Character {   // factory class
             event.stopPropagation();
         });
         
-        if (currentObject.decision) { this.makeDecisionButtons(gameMan); }
-        currentString = currentObject.content.shift();
+        if (currentObject.decision) { 
+            this.makeDecisionButtons(gameMan); 
+            currentString = currentObject.content[0];
+        }
+        else {
+            currentString = currentObject.content.shift();
+        }
 
-        if (!currentObject.decision) {
+        if (currentObject.dialogue || currentObject.narration) {
             justTheSpeech = currentString.split(this.name+": '")[1];
             justTheSpeech = justTheSpeech.slice(0, (justTheSpeech.length - 1));
         }
@@ -44,21 +51,39 @@ class Character {   // factory class
             justTheSpeech = currentString;
         }
 
+        if (!currentObject.minigame) {  // we want the player to read the minigame notes before playing!
+            if (justTheSpeech.length <= 50) { maxTime = 1500; }     // variable typing speed based on the length of the speech string
+            else if (justTheSpeech.length <= 100) { maxTime = 3500; }
+            else if (justTheSpeech.length <= 150) { maxTime = 7500; }
+            else if (justTheSpeech.length <= 200) { maxTime = 8500; }
+            else { maxTime = 9500; }
+            idealSpeed = Math.round(maxTime / justTheSpeech.length);
+        }
+        else {
+            idealSpeed = 70;
+
+        }
+        console.log("Character: current string length is "+currentString.length+" ideal speed is "+ idealSpeed);
+
         console.log("CHARACTER: Sending this to screen: " +justTheSpeech);
         this.typer = new TypeIt("#"+this.name+"Speech", {
             strings: justTheSpeech,
-            speed: 70,
+            speed: idealSpeed,
             breakLines: false,
             lifeLike: true,
             nextStringDelay: [4000,500],
             afterComplete: async (step, instance) => {
-                console.log("CHARACTER: Finished typing! Leaving the scene...");  
-
+                console.log("CHARACTER: Finished typing! Leaving the scene..."); 
                 if (currentObject.decision) { this.showDecisionButtons(); }
-                else {  // decisions don't need this
+                else if (currentObject.minigame) { 
+                    this.typer.destroy(); 
+                    localStorage.setItem("currentObject", JSON.stringify(currentObject));
+                    setTimeout(window.location.replace("./minigames/"+currentObject["minigame-link"]), 2000);
+                }
+                else { // decisions and minigames don't need to get the next speech
                     console.log("CHARACTER: Let's get the next thing.");
                     this.typer.destroy();
-                    that.leaveScene();  // once the character has stopped talking, leave the scene.
+                    that.getNextSpeech();  // once the character has stopped talking, leave the scene.
                 }
             }
         })
@@ -68,7 +93,7 @@ class Character {   // factory class
 
     backgroundImgCheck(currentObject) {
         var soIndex = document.getElementById("gameContainer").gameMan.soIndex;
-        if (currentObject.narration || currentObject.decision || currentObject.cinematic) {
+        if (currentObject.narration || currentObject.decision || currentObject.minigame) {
             var bgURL = "url('./images/"+currentObject.images[soIndex]+"')";
             document.getElementById("gameContainer").style.backgroundImage = bgURL; // change the background image
         }
@@ -79,7 +104,7 @@ class Character {   // factory class
     This subroutine calls an event called remove which removes the element and calls the game manager sort speech function again
 
     */
-    leaveScene() {
+    getNextSpeech() {
         // make your character leave the scene
         var tempName = "textingContainer";
         var textingView = document.getElementById(tempName);
@@ -169,9 +194,9 @@ class Character {   // factory class
     processDecision(evt) {
         var gameContainer = document.getElementById("gameContainer");
         var gameMan = gameContainer.gameMan;
-        var currObjIndex = gameMan.introData.findIndex(speechObj => speechObj.name === gameContainer.currObj.name);
+        var currObjIndex = gameMan.dataManager.gameData.findIndex(speechObj => speechObj.name === gameContainer.currObj.name);
         var linkObjIndex = evt.currentTarget.id;
-        var linkObjName = gameMan.introData[currObjIndex].link[linkObjIndex];
+        var linkObjName = gameMan.dataManager.gameData[currObjIndex].link[linkObjIndex];
         // gameMan.playerDecisions.push(linkObjName);
         gameMan.dataManager.addPlayerDecision(linkObjName);
 

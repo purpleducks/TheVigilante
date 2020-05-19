@@ -1,6 +1,6 @@
 
 function testGameJSON(json) {
-	var gameData = json.OSINT.storylines;
+	var gameData = json.TheHack.storylines;
 	var imagelessObjects = [];
 	var quietObjects = [];
 	console.log("IN TEST NOW");
@@ -14,20 +14,28 @@ function testGameJSON(json) {
 			console.log("link object is not defined or is empty at " + speechObject.name);
 			return false;
 		}
-		if (speechObject.images == undefined) {
+		if (speechObject.images == undefined && !speechObject.systemDecision) {
 			console.log("images array doesn't exist at "+ speechObject.name);
 			return false;
 		}
+		else if (speechObject.systemDecision) {
+
+		}
 		else {
 			var hasAFlag = false;
-			if (speechObject.images.length == 0 || (speechObject.images.length != speechObject.content.length && (speechObject.narration || speechObject.dialogue))) {
-				console.log("The object called '"+speechObject.name+"' has no images linked to it!");
+			if ((speechObject.images.length == 0)|| (speechObject.images.length != speechObject.content.length && (speechObject.narration || speechObject.dialogue))) {
+				//console.log("The object called '"+speechObject.name+"' has no images linked to it!");
 				imagelessObjects.push(speechObject.name);
 			}
 			if (speechObject.music == "") {
-				console.log("The object called '"+speechObject.name+"' has no music on it!");
+				//console.log("The object called '"+speechObject.name+"' has no music on it!");
 				quietObjects.push(speechObject.name);
 			}
+			else if (speechObject.music === undefined) {
+				console.log("no music field - " + speechObject.name);
+				return false;
+			}
+			
 			if (speechObject.dialogue) {
 				hasAFlag = true;
 				var charctrsObjs = speechObject.characters;
@@ -83,10 +91,21 @@ function testGameJSON(json) {
 	return true;
 }
 
+function imageExists(image_url){
+
+    var http = new XMLHttpRequest();
+
+    http.open('HEAD', image_url, false);
+    http.send();
+
+    return http.status != 404;
+
+}
+
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'assets/OSINT.json', true);
+    xobj.open('GET', 'assets/TheHack.json', true);
     // Replace 'my_data' with the path to your file
     xobj.onreadystatechange = function() {
         if (xobj.readyState === 4 && xobj.status === 200) {

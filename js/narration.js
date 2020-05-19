@@ -6,6 +6,7 @@ class Narration extends Character {
         var currentObject = document.getElementById("gameContainer").currObj;
         var that = this; 
         var currentString = currentObject.content.shift();
+        var maxTime;
 
         switch(gameMan.soIndex % 4) {   // decides where the narration is gonna be
             case 0: // top left
@@ -37,13 +38,20 @@ class Narration extends Character {
             event.stopPropagation();
         });
 
-        this.backgroundImgCheck(currentObject);
-        
+        this.backgroundImgCheck(currentObject); 
+        if (currentString.length <= 50) { maxTime = 1500; }  // variable typing speed based on the length of the speech string
+        else if (currentString.length <= 100) { maxTime = 3500; }
+        else if (currentString.length <= 150) { maxTime = 6000; }
+        else if (currentString.length <= 200) { maxTime = 7000; }
+        else { maxTime = 9000; }
 
+        var idealSpeed = Math.round(maxTime / currentString.length);
+        console.log("Character: current string length is "+currentString.length+" ideal speed is "+ idealSpeed);
+        var tempTyper = null;
         setTimeout(function() { // wait for image to load
-            let temp = new TypeIt("#narrationContent", {
+            tempTyper = new TypeIt("#narrationContent", {
             strings: currentString,
-            speed: 70,
+            speed: idealSpeed,
             breakLines: false,
             lifeLike: true,
             nextStringDelay: [5000,500],
@@ -55,18 +63,20 @@ class Narration extends Character {
                     setTimeout(function() {
                         var gameMan = document.getElementById("gameContainer").gameMan;
                         console.log("We're at image number "+gameMan.soIndex+" out of "+(that.speech.length+gameMan.soIndex));
-                        temp.reset();
+                        tempTyper.reset();
                         that.name = "narration";
-                        that.leaveScene();
+                        that.getNextSpeech();
                         
                     }, 500)
                     
-                }, 2000);
+                }, 3000);
                 
             }
         })
         .go();
-        }, 1500);
+        that.typer = tempTyper;
+        }, 500);
+
     }
 
     animateSpeech(elemId, leavingFlag) {

@@ -1,16 +1,18 @@
 function main() {
     if (document.cookie.indexOf('firstTime') == -1) { // if its the first time... 
         setTimeout(animateElemsIn, 7000);
+        localStorage.clear();   // clear previous save if this is the first time.
     }
     else {
         animateElemsIn();
     }
     document.getElementById("startButton").onclick = function () {
-        location.href = "./page1.html";
+        location.href = "./main.html";
     };
 
     addLabelToggleEL("musicControl");
     addLabelToggleEL("showModal");
+    addLabelToggleEL("deleteSave");
 
     var gameInfo = document.getElementById("gameInfo");
     var closeButton = document.getElementsByClassName("close")[0];
@@ -91,6 +93,16 @@ function animateElemsIn() {
             pos++;
             button.style.left = pos + 'vw';
         }
+    }
+}
+
+function deleteSave() {
+    if (localStorage.getItem("allActions") == null) {
+        alert("No save game detected!");
+    }
+    if (confirm("Are you sure you want to delete your saved game?")) {
+        localStorage.clear();
+        alert("Save game deleted!");
     }
 }
 

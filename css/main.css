@@ -7,6 +7,7 @@
     font-family: SourceCodePro;
     src: url("../assets/SourceCodePro-Regular.ttf");
 }
+
 /* -------- Positioning classes  -------- */
 .center {
     padding: 0;        /* gotten this from https://stackoverflow.com/a/7782251 */
@@ -44,13 +45,13 @@
 }
 
 .topLeft {
-    top: 2%;
+    top: 4%;
     left: 2%;
     position: absolute;
 }
 
 .topRight {
-    top: 2%;
+    top: 4%;
     right: 2%;
     position: absolute;
 }
@@ -69,13 +70,13 @@
 
 img.bottomLeft {
     position:absolute;
-    bottom:0;
+    bottom:-2vw;
     left:0;
 }
 
 img.bottomRight {
     position:absolute;
-    bottom:0;
+    bottom:-2vw;
     right:0;
 }
 /* General elements */
@@ -86,7 +87,7 @@ button {
 }
 
 body {
-    background-color: black;        
+    background-color: #333;        
     overflow: hidden;
 }
 
@@ -159,6 +160,7 @@ body {
     z-index: 3;
     margin-left: 1vw;
     margin-right: 1vw;
+    top: -1%;
 }
 
 @media screen and (max-width: 800px) {
@@ -173,52 +175,99 @@ body {
   }
 }
 
-#narrator, #decision {
+#decision, #minigame {
     position: absolute;
     width: 95%;
     height: 25%;
-    top: 2%;
     left: 5%;
+    top: 4%;
 }
 
+#bottomButtonArray {
+    position: absolute;
+    bottom: 0%;
+    left: 41%;
+    width: 22vw;
+    height: 7vh;
+}
+
+#pauseGame {
+    left: 21%;
+    bottom: 15% !important;
+    width: 4vw !important;
+}
+
+#pauseGameLabel {
+    bottom: 50%;
+    left: 22%;
+}
 
 #musicControl {
-    height: 5vh;
-    width: 5vw;
-    position: absolute;
-    bottom: 2%;
-    left: 46%;
-    z-index: 2;
+    left: 47%;
 }
 
 #musicControlLabel {
-    position: absolute;
-    color: white;
-    bottom: 6.5%;
-    left: 44.5vw;
-    font-size: 0.6vw;
-    font-family: IBMPlex;
-    z-index: 4;
+    left: 42%;
+    bottom: 114%;
 }
 
 #skipScreen {
-    height: 6vh;
-    width: 3vw;
-    position: absolute;
-    bottom: 1.5%;
-    left: 50.5%;
-    z-index: 2;
+    left: 69%
 }
 
 #skipScreenLabel {
+    bottom: 117%;
+    left: 69%;
+}
+
+#saveGameLabel {
+    bottom: 22%;
+    left: -1%;
+}
+
+#deleteSave {
+    bottom: 12%;
+}
+
+#deleteSaveLabel {
+    bottom: 60%;
+    right: 8%;
+}
+
+#bottomButtonArray img {
     position: absolute;
+    width: 3vw;
+    z-index: 4;
+    bottom: 0%;
+}
+
+#bottomButtonArray h5 {
     color: white;
-    bottom: 6.5%;
-    left: 49vw;
     font-size: 0.6vw;
     font-family: IBMPlex;
     z-index: 4;
+    position: relative;
 }
+
+
+#musicCredits {
+    position: absolute;
+    color: white;
+    font-size: 0.8vw;
+    font-family: IBMPlex;
+    z-index: 4;
+    left: 1%;
+    font-style: italic;
+    background-color: black;
+    padding: 3px;
+    border-radius: 4px;
+    top: 0%;
+    overflow: auto;
+    text-align: left;
+    opacity: 0.5;
+}
+
+
 
 /* Decision elements */
 
@@ -256,8 +305,6 @@ body {
     /*margin-right: 4vw;*/
 }
 
-
-/* Cinematic elements */
 
 #narration {
     width: 45%;

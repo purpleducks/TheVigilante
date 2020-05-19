@@ -1,5 +1,14 @@
 /* Dictionary Attack minigame specific elements */
 
+@font-face {
+  font-family: IBMPlex;
+  src: url("../assets/IBMPlexMono-Regular.ttf");
+}
+
+body {
+  overflow: hidden;
+}
+
 #minigameLayer {    
     background-color: black;
     position: absolute;
@@ -27,14 +36,164 @@
   height: 100%;
   display: block;
   opacity: 0.7;
+  z-index: 1;
+  position: absolute;
 }
 
 .word {
   position: absolute;
-  width: 8vw;
   height: 5vh;
   background-color: white;
   border-radius: 25px;
   opacity: 0.6;
   font-family: IBMPlex;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  z-index: 1; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#scoreboard {
+  z-index: 3;
+  position: absolute;
+  font-size: 2vw;
+  color: white;
+  font-family: IBMPlex;
+  background-color: gray;
+  border-radius: 7px; 
+  bottom: 0.5vh;
+  left: 1vw;
+  padding: 7px; 
+}
+
+#passwordGuess {
+  position: absolute;
+  bottom: 3vh;
+  width: 70%;
+  left: 14vw;
+  height: 6%;
+  border-radius: 17px;
+  color: white;
+  background-color: darkgreen;
+  font-size: 3vh;
+  font-family: IBMPlex;
+  z-index: 2;
+  padding-left: 1%;
+}
+
+#gameOverMeter {
+  position: absolute;
+  bottom: 11vh;
+  width: 70%;
+  left: 14.5vw;
+  height: 4%;
+  background-color: #626262;
+  border-radius: 17px;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+   appearance: none;
+   -moz-appearance: none;
+   border: none;
+   z-index: 1;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: red;
+  opacity: 0.7;
+  border-radius: 1;
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;*/
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: red;
+  opacity: 0.7  ;
+  border-radius: 17px;
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;*/
+}
+
+.chatWindowBG {
+  position: absolute;
+  width: 95%;
+  height: 99%;
+  background: #474747;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.chatWindowFG {
+  position: absolute;
+  width: 95%;
+  height: 99%;
+  top: 5%;
+  left: 1%;
+  background: #474747;
+  opacity: 0.7;
+  z-index: 2;
+  font-family: IBMPlex;
+}
+
+.chatWindowFG p {
+  position: absolute;
+  color: limegreen;
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  font-size: 5vw;
+  font-weight: 900;
+  font-family: IBMPlex;
+  margin-top: 2vh;
+  z-index: 3;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  opacity: 1;
+}
+
+#gameResult {
+  visibility: visible;
+  position: absolute;
+  width: 95%;
+  height: 25%;
+  top: 2%;
+  left: 5%;
+}
+
+#gameResultSpeech {
+  position: absolute;
+  width: 95%;
+  height: 80%;
+  top: 1%;
+  left: 3%;
+  font-size: 4vw;
+}
+
+#musicControlLabel, #gOMLabel {
+  position: absolute;
+  color: white;
+  bottom: 13%;
+  right: 5%;
+  font-size: 0.8vw;
+  font-family: IBMPlex;
+  z-index: 4;
+}
+
+#gOMLabel {
+  bottom: 13%;
+  right: 44vw;
+  font-size: 1vw;
+}
+
+#musicControl {
+  height: 11vh;
+  width: 5vw;
+  position: absolute;
+  bottom: 2%;
+  right: 6%;
+  z-index: 2;
+  background-color: #7d7d7d;
+  padding: 10px;
+  border-radius: 10px;
 }

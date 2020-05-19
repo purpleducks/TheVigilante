@@ -1,37 +1,10 @@
 class GameManager {    // singleton class?
-    
+
     constructor() {
-        this.introData = []
-        this.allActions = [];
-        this.playerDecisions = [];
         this.dataManager = new PlayerDataManager();
         this.soIndex = 0;
     }
-    
-    loadGame() {
-        // load the player's game from the HTML5 LocalStorage    
-    }
-    
-    saveGame() {
-        // save the player's game into the HTML5 LocalStorage
-    }
-    
-    getIntro() {
-        var tempData = [];
-        $.ajax({
-            url: "assets/Introduction.json",
-            dataType: "json",
-            data: tempData,
-            async: false,
-            success: function(json)
-            {
-                tempData = json;
-                console.log("UHUHU");
-            }
-        });
-        this.introData = tempData;
-    }
-    
+
     incrementSOIndex() {
         this.soIndex++;
         return 0;
@@ -56,7 +29,7 @@ class GameManager {    // singleton class?
                 }
             }
             /*if (currentObject.narration) {
-                currentObject.charctrsObjs[0].talk(this.soIndex); 
+                currentObject.charctrsObjs[0].talk(this.soIndex);
             }*/
             if (currentObject.narration) {
                 currentObject.charctrsObjs[0].startNarration(this.soIndex);
@@ -75,14 +48,14 @@ class GameManager {    // singleton class?
             }
         }
     }
-    
+
     sortSpeech(currentObject) {
         var objSpeechArr = currentObject["content"];
         var characters = currentObject["characters"];
         var charctrsObjs = [];
-        var conversationFlow = [];  // keeps track on who is speaking when 
-        
-        this.musicCheck();
+        var conversationFlow = [];  // keeps track on who is speaking when
+
+        if (!currentObject.systemDecision) { this.musicCheck(); }
         this.soIndex = 0;
 
         console.log("GAME: Current object being SORTED: " + currentObject.name);
@@ -90,7 +63,7 @@ class GameManager {    // singleton class?
             charctrsObjs.push(new Narration("narration","",""));
             currentObject.charctrsObjs = charctrsObjs;
             currentObject.charctrsObjs[0].speech = objSpeechArr;
-            currentObject.charctrsObjs[0].img = currentObject["images"]; // save the images array in this object's field 
+            currentObject.charctrsObjs[0].img = currentObject["images"]; // save the images array in this object's field
             currentObject.charctrsObjs[0].startNarration();
         }
         else {
@@ -123,34 +96,34 @@ class GameManager {    // singleton class?
                     var whereIsMain = 'L';
                     var altCharacter = 'R';
                     /*
-                    if (currentObject.texting) { 
-                        whereIsMain = 'R'; 
-                        altCharacter = 'L'; 
+                    if (currentObject.texting) {
+                        whereIsMain = 'R';
+                        altCharacter = 'L';
                     }*/
-                    for (var i = 0; i < characters.length; i++) {   
+                    for (var i = 0; i < characters.length; i++) {
                         var side = '';
                         if (i == 0) { side = whereIsMain; }
                         else { side = altCharacter; }
                         /*
                         if (currentObject["texting"]) { charctrsObjs.push(new Texting(characters[i], "images/"+characters[i]+".png", side)); }  // makes a new character object and saves it in an array
                         else { charctrsObjs.push(new Character(characters[i], "images/"+characters[i]+".png", side)); }     TODO: fix texting / remove it at some point
-                        */   
+                        */
                         charctrsObjs.push(new Character(characters[i], "images/"+characters[i]+".png", side));
                     }
 
                     // ---- sorts the speech between characters ---------
 
-                    for (var j = 0; j < objSpeechArr.length; j++) { 
+                    for (var j = 0; j < objSpeechArr.length; j++) {
                         var currentString = objSpeechArr[j];
                         var firstWord = currentString.substr(0, currentString.indexOf(" "));
                         if(firstWord === (charctrsObjs[0].name+":")) { // if the string is Character 1 dialogue
                             charctrsObjs[0].loadSpeech(objSpeechArr[j]);   // add the bit of dialogue to the character's array and store it's place in the flow of the conversation
-                            conversationFlow.push(0);   
+                            conversationFlow.push(0);
                         }
                         else {  // else it must be character 2 dialogue
                             charctrsObjs[1].loadSpeech(objSpeechArr[j]); // likewise as previous
-                            conversationFlow.push(1);   
-                        } 
+                            conversationFlow.push(1);
+                        }
                     }
                     currentObject.charctrsObjs = charctrsObjs;
                     currentObject.conversationFlow = conversationFlow;
@@ -161,21 +134,52 @@ class GameManager {    // singleton class?
             } else if (currentObject["minigame"]) {  // TODO
                 // -------- Minigames --------
                 console.log("GAME: Loading the minigame.");
+                this.dataManager.saveToStorage();
+                charctrsObjs.push(new Character("minigame", null, 'M'));
+                currentObject.charctrsObjs = charctrsObjs;
+                currentObject.charctrsObjs[0].speech = objSpeechArr;
+                currentObject.charctrsObjs[0].talk();
+
             }
         }
     }
 
+    /*
+     * This function checks if all of the conditions in the System Decision object have been
+     * satisfied. 
+     */
     checkSDCondition() {
         var currentObject = document.getElementById("gameContainer").currObj;
         if (currentObject.systemDecision) {
             for (var i = 0; i < currentObject.content.length; i++) {
-                if (this.dataManager.checkForDecision(currentObject.content[i]) === undefined) {    // if the condition does not exist, then return false
+                if (this.dataManager.checkForAction(currentObject.content[i]) === undefined) {    // if the condition does not exist, then return false
                     return false;
                 }
-            }   
+            }
             return true;    // else return true
         }
         return false;
+    }
+
+    updateCreditLabel(trackName) {
+        var justTrack = trackName.slice((trackName.length*-1),(trackName.length-4));
+        justTrack = justTrack.replace(/-/g,' ');
+        var musicCreditLabel = document.getElementById("musicCredits");
+        var foundTrackIndex = this.dataManager.musicCredits.findIndex(music =>music.name == justTrack);
+        if (foundTrackIndex == -1) {
+            musicCreditLabel.innerHTML = "TRACK NOT FOUND!"
+        } else {
+            var foundTrack = this.dataManager.musicCredits[foundTrackIndex];
+            musicCreditLabel.innerHTML = "MUSIC PLAYING: "+foundTrack.name+"<br> CREDIT TO: "+foundTrack.artist+" <br> CLICK HERE FOR LINK</br>";
+            var creditLink = document.getElementById("musicCreditSource");
+            var link;
+            if (foundTrack.link == "(YouTube Audio Library)")
+            {
+                link = "https://www.youtube.com/audiolibrary/music";
+            }
+            else { link = foundTrack.link; }
+            creditLink.onclick = function() { window.open(link,'_blank'); }
+        }
     }
 
     /**
@@ -188,10 +192,11 @@ class GameManager {    // singleton class?
         var currentSong = gettingSongTitle[gettingSongTitle.length - 1];
         if (currentObject.music != currentSong) {     // if the music string isn't set, continue playing the current track!
             console.log("GAME: Changing the track to " + currentObject.music + "!");
+            this.updateCreditLabel(currentObject.music)
             /*
             setInterval(function() {
                 musicPlayer.volume -= 0.1;
-                if (musicPlayer.volume == 0) {  
+                if (musicPlayer.volume == 0) {
                     clearInterval();
                     setTimeout(function() {
                         musicPlayer.pause();
@@ -210,7 +215,7 @@ class GameManager {    // singleton class?
                 // musicPlayer.volume = 1;
                 musicPlayer.play();
             // }, 3500);
-            
+
         }
         else {
             console.log("GAME: Continuing playing this track: " +currentSong+ "!");

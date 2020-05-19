@@ -74,23 +74,39 @@
   z-index: 3;
 }
 
+#bottomButtonArray {
+  bottom: 1%!important;
+}
+
+#musicControl {
+  bottom: 5%!important;
+  left: 20%!important;
+}
+
+#musicControlLabel {
+  position: absolute!important;
+  left: 15%!important;
+  bottom: 100%!important;
+}
+
 #showModal {
   width: 3vw;
   height: 5vh;
   position: absolute;
-  bottom: 1.5%;
-  left: 50%;
+  bottom: 10.5%!important;
+  left: 50%!important;
   z-index: 2;
+  left: 39%!important;
 }
 
 #showModalLabel {
-    position: absolute;
-    color: white;
-    bottom: 6.5%;
-    left: 49.8%;
-    font-size: 0.6vw;
-    font-family: IBMPlex;
-    z-index: 4;
+  position: absolute;
+  color: white;
+  bottom: 24%;
+  left: 39%;
+  font-size: 0.6vw;
+  font-family: IBMPlex;
+  z-index: 4;
 }
 
 /* Modal Content/Box */

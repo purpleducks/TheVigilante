@@ -1,0 +1,130 @@
+#grid{  /* ADAPTED FROM SOURCE: https://github.com/dheineman/pipes */
+    position: absolute;
+    left: 27%;
+    top: 6%;
+    background-color: rgba(60,60,60,0.6);
+    border-radius: 27px;
+}
+
+body {
+    background-image: url("../images/server-room-3.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pipe{
+    font-size: 0px;
+    background-color: transparent;
+    display: inline-block;
+
+    width: 120px;
+    box-sizing: content-box;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#musicControl {
+    bottom: 20%!important;
+}
+
+#musicControlLabel {
+    bottom: 80%!important;
+}
+
+#gameResult {
+    position: absolute;
+    width: 95%;
+    height: 25%;
+    top: 2%;
+    left: 5%;
+}
+
+#gameResultSpeech {
+    font-size: 3vw;
+}
+
+#gameTimerLabel {
+    top: 7%;
+    position: absolute;
+    color: red;
+    font-size: 5vw;
+    font-family: IBMPlex;
+    left: 9.5%;
+}
+
+#gameTimerTitle {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    font-family: IBMPlex;
+    top: 5%;
+    left: 5%;
+}
+
+.chatWindowBG {
+    opacity: 1!important;
+}
+
+.row_pipes {
+    width: 100%;
+}
+
+/* end points */
+.u {
+    transform: rotate(180deg);
+}
+
+.d {
+    transform: rotate(0deg);
+}
+
+.r {
+    transform: rotate(270deg);
+}
+
+.l{
+    transform: rotate(90deg);
+}
+
+.l.r{
+    transform: rotate(90deg);
+}
+
+/* Corners */
+.u.r{
+    transform: rotate(0deg);
+}
+
+.u.l{
+    transform: rotate(270deg);
+}
+
+.d.r{
+    transform: rotate(90deg);
+}
+
+
+.d.l{
+    transform: rotate(180deg);
+}
+
+/* T split */
+.u.r.l{
+    transform: rotate(270deg);
+}
+
+
+.r.d.l{
+    transform: rotate(90deg);
+}
+
+
+.d.l.u{
+    transform: rotate(180deg);
+}
+
+
+.u.r.d{
+    transform: rotate(0deg);
+}
