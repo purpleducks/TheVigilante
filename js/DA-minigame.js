@@ -105,13 +105,13 @@ class DictionaryAttack extends Minigame {
 		var elem = document.getElementById("word"+wordIndex);
 		var framerate = 0;
 		switch(difficulty) {
-			case 1:
+			case "1":
 				framerate = 70;
 				break;
-			case 2: 
+			case "2": 
 				framerate = 50;
 				break;
-			case 3: 
+			case "3": 
 				framerate = 35;
 				break;
 		}

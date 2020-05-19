@@ -4,7 +4,7 @@
          {
             "name":"NadineAtWork",
             "content":[
-               "Monday - 11AM",
+               "Monday - 11AM.",
                "Nadine is at work at Romero Casinos.",
                "She's busy working away on a pretty mundane report that Corporate want on the new machines, when she hears her co-workers conversation by the water cooler."
             ],
@@ -12,9 +12,9 @@
                "CoWorkerDialogueOne"
             ],
             "images":[
-            	"romero-casinos.jpg",
-            	"romero-casinos.jpg",
-            	"romero-offices.jpg"
+               "romero-casinos.jpg",
+               "romero-casinos.jpg",
+               "romero-offices.jpg"
             ],
             "narration":true,
             "music":"Brand-New-Paradigm.mp3"
@@ -27,7 +27,7 @@
                "Co-worker1: 'Nah, I was mad about that too, but they did switch our corporate health insurance to HealthCorp.'",
                "Co-worker2: 'Ugh it's about time! MediKare were the worst, I had my gall bladder removed and they took MONTHS to pay out. Like I've heard HealthCorp pay out instantly, like no questions asked, they're great.'",
                "Co-worker1: 'Oh really? Thank god, that's honestly the last thing I wanna be worrying about, dread to think how much medical bills cost nowadays....'"
-            ], 
+            ],
             "link":[
                "NadineInternalDialogue"
             ],
@@ -36,11 +36,11 @@
                "Co-worker2"
             ],
             "images":[
-            	"water-cooler.jpg",
-            	"water-cooler.jpg",
-            	"water-cooler.jpg",
-            	"water-cooler.jpg",
-            	"water-cooler.jpg"
+               "water-cooler.jpg",
+               "water-cooler.jpg",
+               "water-cooler.jpg",
+               "water-cooler.jpg",
+               "water-cooler.jpg"
             ],
             "dialogue":true,
             "music":"Brand-New-Paradigm.mp3"
@@ -60,10 +60,10 @@
                "Nadine"
             ],
             "images":[
-            	"romero-offices.jpg",
-            	"romero-offices.jpg",
-            	"romero-offices.jpg",
-            	"romero-offices.jpg"
+               "romero-offices.jpg",
+               "romero-offices.jpg",
+               "romero-offices.jpg",
+               "romero-offices.jpg"
             ],
             "dialogue":true,
             "music":"Brand-New-Paradigm.mp3"
@@ -77,7 +77,7 @@
                "NadDecisionOne"
             ],
             "images":[
-            	"nadine-work-report.jpg"
+               "nadine-work-report.jpg"
             ],
             "narration":true,
             "music":"Brand-New-Paradigm.mp3"
@@ -86,15 +86,15 @@
             "name":"NadDecisionOne",
             "content":[
                "What does Nadine do first?",
-               "Google HealthCorp",
-               "Text Marcus"
+               "Google HealthCorp.",
+               "Text Marcus."
             ],
             "link":[
                "SearchHC",
                "NadineWasNice"
             ],
             "images":[
-            	"nadine-work-report.jpg"
+               "nadine-work-report.jpg"
             ],
             "decision":true,
             "music":"Brand-New-Paradigm.mp3"
@@ -112,8 +112,16 @@
             "music":"Brand-New-Paradigm.mp3"
          },
          {
-           "name":"NadineWasNice-2","content":["RememberingMom"],
-           "link":["MarcusHasTea", "MarcusPA"],"systemDecision":true,"music":"Brand-New-Paradigm.mp3"
+            "name":"NadineWasNice-2",
+            "content":[
+               "RememberingMom"
+            ],
+            "link":[
+               "MarcusHasTea",
+               "MarcusPA"
+            ],
+            "systemDecision":true,
+            "music":"Brand-New-Paradigm.mp3"
          },
          {
             "name":"MarcusPA",
@@ -131,10 +139,10 @@
                "Marcus"
             ],
             "images":[
-            	"nadine-work-report-blur.jpg",
-            	"nadine-work-report-blur.jpg",
-            	"nadine-work-report-blur.jpg",
-            	"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "music":"Brand-New-Paradigm.mp3",
             "dialogue":true
@@ -148,7 +156,7 @@
                "OSINT-Circular"
             ],
             "images":[
-            	"nadine-work-healthcorp-search.jpg"
+               "nadine-work-healthcorp-search.jpg"
             ],
             "narration":true,
             "music":"Brand-New-Paradigm.mp3"
@@ -157,7 +165,7 @@
             "name":"MarcusHasTea",
             "content":[
                "Nadine: 'hey Marcus, do you know anyone who works at HealthCorp who could, yknow, help us out?'",
-               "Marcus: 'hey sis, I was actually just about to text you. After we talked last night, I reached out to my buddy from College, turns out she works for HealthCorp's R&D department'",
+               "Marcus: 'hey sis, I was actually just about to text you. After we talked last night, I reached out to my buddy from College, turns out she works for HealthCorp's R&D department.'",
                "Marcus: 'She knows about all of the crazy shit that HealthCorp be getting up to.'",
                "Marcus: 'I'll send you her number!'"
             ],
@@ -169,10 +177,10 @@
                "Marcus"
             ],
             "images":[
-            	"nadine-work-report-blur.jpg",
-            	"nadine-work-report-blur.jpg",
-            	"nadine-work-report-blur.jpg",
-            	"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -187,8 +195,8 @@
                "NadDanielleOne"
             ],
             "images":[
-            	"nadine-work-report-blur.jpg",
-            	"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "narration":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -207,8 +215,8 @@
                "Danielle"
             ],
             "images":[
-            	"nadine-work-report-blur.jpg",
-            	"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -219,7 +227,7 @@
                "What does Nadine say?",
                "Fuck yeah!",
                "Duh, bitch 🙄",
-               "I think it's definitely worth a shot"
+               "I think it's definitely worth a shot."
             ],
             "link":[
                "EnthusiasticNadDan",
@@ -227,7 +235,7 @@
                "NeutralNadDan"
             ],
             "images":[
-            	"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg"
             ],
             "decision":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -246,8 +254,8 @@
                "Danielle"
             ],
             "images":[
-            	"nadine-work-report-blur.jpg",
-            	"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -265,7 +273,7 @@
                "Danielle"
             ],
             "images":[
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -274,10 +282,10 @@
             "name":"NeutralNadDan",
             "content":[
                "Nadine: 'I think I got what it takes to take em down, I'm ready.'",
-               "Danielle: 'That's good to hear, someone needs to stop these guys'",
+               "Danielle: 'That's good to hear, someone needs to stop these guys.'",
                "Danielle: 'Anyways, I think I know a way for you to slip inside without anyone knowing.'",
                "Nadine: 'Oh really? What is it?'",
-               "Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over'"
+               "Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over.'"
             ],
             "link":[
                "DanielleSpillsTea"
@@ -287,11 +295,11 @@
                "Danielle"
             ],
             "images":[
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -305,7 +313,7 @@
                "ImpressedDanielleSpeech"
             ],
             "images":[
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg"
             ],
             "narration":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -319,7 +327,7 @@
                "OffendedDanielleSpeech"
             ],
             "images":[
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg"
             ],
             "narration":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -340,10 +348,10 @@
                "Danielle"
             ],
             "images":[
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -353,7 +361,7 @@
             "content":[
                "Danielle: 'Anyways, I think I know a way for you to slip inside without anyone knowing.'",
                "Nadine: 'Oh really? What is it?'",
-               "Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over'"
+               "Danielle: 'Well back in a couple weeks ago, HealthCorp brought in a whole load of lab techs from some company they took over.'"
             ],
             "link":[
                "DanielleSpillsTea"
@@ -363,9 +371,9 @@
                "Danielle"
             ],
             "images":[
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -383,7 +391,7 @@
                "Danielle"
             ],
             "images":[
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -400,27 +408,27 @@
                "NadDanIsNeutral"
             ],
             "images":[
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg"
             ],
             "decision":true,
             "music":"An-Appearance-Of-Normality.mp3"
          },
          {
-           "name":"NadDanIsNeutral",
-           "content": [
-             "Nadine: 'Interesting, think you can get me in?'"
-           ],
-           "link": [
-             "DanielleHooksNadUp"
-           ],
-           "images": [
-"nadine-work-report-blur.jpg"
-           ],
-           "characters": [
-             "Nadine"
-           ],
-           "music":"An-Appearance-Of-Normality.mp3",
-           "dialogue": true
+            "name":"NadDanIsNeutral",
+            "content":[
+               "Nadine: 'Interesting, think you can get me in?'"
+            ],
+            "link":[
+               "DanielleHooksNadUp"
+            ],
+            "images":[
+               "nadine-work-report-blur.jpg"
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "dialogue":true
          },
          {
             "name":"NadDanIsRudeTwo",
@@ -434,7 +442,7 @@
                "Nadine"
             ],
             "images":[
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -460,7 +468,7 @@
                "ReallyOffendedDanielleSpeech"
             ],
             "images":[
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg"
             ],
             "narration":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -477,7 +485,7 @@
                "Danielle"
             ],
             "images":[
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -494,7 +502,7 @@
                "Danielle"
             ],
             "images":[
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -504,14 +512,14 @@
             "content":[
                "What does Nadine say?",
                "Okay, bye.",
-               "Look I'm sorry, I didn't mean it, I'm just frustrated"
+               "Look I'm sorry, I didn't mean it, I'm just frustrated."
             ],
             "link":[
                "NadDanFinalStraw",
                "NadineTriesToFix"
             ],
             "images":[
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg"
             ],
             "decision":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -537,15 +545,15 @@
                "Danielle"
             ],
             "images":[
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -564,8 +572,8 @@
                "Danielle"
             ],
             "images":[
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -580,8 +588,8 @@
                "SearchHC"
             ],
             "images":[
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "narration":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -590,7 +598,7 @@
             "name":"DanielleHooksNadUp",
             "content":[
                "Danielle: 'I think I'll be able to snag you a uniform and a swipe card.'",
-               "Danielle: 'But I'm warning you, the minute you enter the building, you're being watched and even if it looks like you work there, they will question you to see if you actually work there'",
+               "Danielle: 'But I'm warning you, the minute you enter the building, you're being watched and even if it looks like you work there, they will question you to see if you actually work there.'",
                "Nadine: 'Oh my god, that would be amazing!'",
                "Nadine: 'I can deal with people questioning me, been dealing with that my whole life.'",
                "Danielle: 'Ugh I hear that, I should be able to get everything you'll need to get in.'",
@@ -606,14 +614,14 @@
                "Danielle"
             ],
             "images":[
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -621,13 +629,13 @@
          {
             "name":"NadineSendsAddress",
             "content":[
-               "Nadine sends her address to Danielle"
+               "Nadine sends her address to Danielle."
             ],
             "link":[
                "StickItToEm"
             ],
             "images":[
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg"
             ],
             "narration":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -646,8 +654,8 @@
                "Danielle"
             ],
             "images":[
-"nadine-work-report-blur.jpg",
-"nadine-work-report-blur.jpg"
+               "nadine-work-report-blur.jpg",
+               "nadine-work-report-blur.jpg"
             ],
             "dialogue":true,
             "music":"An-Appearance-Of-Normality.mp3"
@@ -656,13 +664,13 @@
             "name":"OSINT-Circular",
             "content":[
                "Where does Nadine go from here?",
-               "A popular recruiting and company review site",
-               "Image searches of the HealthCorp headquarters",
-               "A business networking site",
-               "Finished searching"
+               "A popular recruiting and company review site.",
+               "Image searches of the HealthCorp headquarters.",
+               "A business networking site.",
+               "Finished searching."
             ],
             "images":[
-            	"nadine-work-healthcorp-search.jpg"
+               "nadine-work-healthcorp-search.jpg"
             ],
             "link":[
                "CompanyReviewSite-SysDecision",
@@ -671,29 +679,74 @@
                "IsNadineDone"
             ],
             "decision":true,
-            "music":"An-Appearance-Of-Normality.mp3"	
+            "music":"An-Appearance-Of-Normality.mp3"
          },
          {
-            "name":"IsNadineDone","content":["ImagesOfHQ"],
-            "link":["NadineIsDone","IsNadineDone-2"],"images":[],"music":"An-Appearance-Of-Normality.mp3","systemDecision":true
+            "name":"IsNadineDone",
+            "content":[
+               "ImagesOfHQ"
+            ],
+            "link":[
+               "NadineIsDone",
+               "IsNadineDone-2"
+            ],
+            "images":[
+
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "systemDecision":true
          },
          {
-            "name":"IsNadineDone-2","content":["CompanyReviewSite"],"link":["NadineIsDone","IsNadineDone-3"],"systemDecision":true,"music":"An-Appearance-Of-Normality.mp3"
+            "name":"IsNadineDone-2",
+            "content":[
+               "CompanyReviewSite"
+            ],
+            "link":[
+               "NadineIsDone",
+               "IsNadineDone-3"
+            ],
+            "systemDecision":true,
+            "music":"An-Appearance-Of-Normality.mp3"
          },
          {
-            "name":"IsNadineDone-3","content":["LinkedIn"],"link":["NadineIsDone","NadineIsntDone"],"systemDecision":true,"music":"An-Appearance-Of-Normality.mp3"
+            "name":"IsNadineDone-3",
+            "content":[
+               "LinkedIn"
+            ],
+            "link":[
+               "NadineIsDone",
+               "NadineIsntDone"
+            ],
+            "systemDecision":true,
+            "music":"An-Appearance-Of-Normality.mp3"
          },
-        {
-            "name":"NadineIsDone","content":[
+         {
+            "name":"NadineIsDone",
+            "content":[
                "Nadine feels like she knows enough to break into HealthCorp."
             ],
-            "link":["FINISH"],"images":["nadine-work-report.jpg"],"music":"An-Appearance-Of-Normality.mp3","narration":true
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+               "nadine-work-report.jpg"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
          },
          {
-            "name":"NadineIsntDone","content":[
+            "name":"NadineIsntDone",
+            "content":[
                "Nadine hasn't done any research yet. She better get to it!"
-            ],"link":["OSINT-Circular"],"images":["nadine-work-healthcorp-search.jpg"],
-            "narration":true,"music":"An-Appearance-Of-Normality.mp3"
+            ],
+            "link":[
+               "OSINT-Circular"
+            ],
+            "images":[
+               "nadine-work-healthcorp-search.jpg"
+            ],
+            "narration":true,
+            "music":"An-Appearance-Of-Normality.mp3"
          },
          {
             "name":"CompanyReviewSite-SysDecision",
@@ -732,10 +785,18 @@
             "music":"An-Appearance-Of-Normality.mp3"
          },
          {
-            "name":"OSINT-BeenThere","content":[
+            "name":"OSINT-BeenThere",
+            "content":[
                "Nadine has already had a look at this site before, she should look at something else."
-            ],"link":["OSINT-Circular"],"images":["nadine-work-healthcorp-search.jpg"],
-            "music":"An-Appearance-Of-Normality.mp3","narration":true
+            ],
+            "link":[
+               "OSINT-Circular"
+            ],
+            "images":[
+               "nadine-work-healthcorp-search.jpg"
+            ],
+            "music":"An-Appearance-Of-Normality.mp3",
+            "narration":true
          },
          {
             "name":"OSINT-Circular-SysDecision",
@@ -757,7 +818,7 @@
                "Nadine decides to click on a popular company review site to start digging up dirt about HealthCorp."
             ],
             "images":[
-            	"nadine-work-glassdoor.jpg"
+               "nadine-work-glassdoor.jpg"
             ],
             "link":[
                "NothingBadToSay"
@@ -772,8 +833,8 @@
                "She goes to click on MediKare's review page and she sees fairly mixed reviews but mostly positive."
             ],
             "images":[
-            	"nadine-work-gd-healthcorp.jpg",
-            	"nadine-work-gd-medikare.jpg"
+               "nadine-work-gd-healthcorp.jpg",
+               "nadine-work-gd-medikare.jpg"
             ],
             "link":[
                "CRS-NadineWhatTheHeck"
@@ -788,8 +849,8 @@
                "Nadine: 'Are they really that bad of a company? Their staff can't be happy ripping people off and indirectly killing people everyday...'"
             ],
             "images":[
-            	"nadine-work-gd-medikare.jpg",
-            	"nadine-work-gd-healthcorp.jpg"
+               "nadine-work-gd-medikare.jpg",
+               "nadine-work-gd-healthcorp.jpg"
             ],
             "link":[
                "OSINT-Circular-SysDecision"
@@ -803,15 +864,15 @@
          {
             "name":"ImagesOfHQ",
             "content":[
-               "Nadine has decided to look for images of the headquarters",
-               "She pulls up the HealthCorp website and does a quick search on Street View to get a better view"
+               "Nadine has decided to look for images of the headquarters.",
+               "She pulls up the HealthCorp website and does a quick search on Street View to get a better view."
             ],
             "link":[
                "ImagesOfHQ-Decision"
             ],
             "images":[
                "nadine-work-healthcorp-search.jpg",
-            	"healthcorp-streetview.jpg"
+               "healthcorp-streetview.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -820,9 +881,9 @@
             "name":"ImagesOfHQ-Decision",
             "content":[
                "Where does Nadine look?",
-               "The HealthCorp entrance",
-               "The location of the cameras",
-               "The building's perimeter"
+               "The HealthCorp entrance.",
+               "The location of the cameras.",
+               "The building's perimeter."
             ],
             "link":[
                "HQEntrance",
@@ -838,15 +899,15 @@
          {
             "name":"HQEntrance",
             "content":[
-               "Nadine looks at corporate images of the HealthCorp headquarters",
-               "She notes the number of security guards and where they're stationed in the main foyer"
+               "Nadine looks at corporate images of the HealthCorp headquarters.",
+               "She notes the number of security guards and where they're stationed in the main foyer."
             ],
             "link":[
                "HQEntranceNadine"
             ],
             "images":[
-               "nadine-work-healthcorp-search.jpg",
-               "nadine-work-healthcorp-search.jpg"
+               "healthcorp-hq.jpg",
+               "healthcorp-foyer.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -854,7 +915,7 @@
          {
             "name":"HQPerimeter",
             "content":[
-               "Nadine looks at Street View images of the buildings perimeter and notices an underground car park",
+               "Nadine looks at Street View images of the buildings perimeter and notices an underground car park.",
                "It doesn't look like there's many cameras or security here."
             ],
             "link":[
@@ -896,7 +957,8 @@
                "Nadine"
             ],
             "images":[
-               ""
+               "nadine-work-healthcorp-search.jpg",
+               "nadine-work-healthcorp-search.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "dialogue":true
@@ -914,8 +976,8 @@
                "HQ-perimeter.jpg",
                "HQ-perimeter.jpg"
             ],
-            "characters": [
-            	"Nadine"
+            "characters":[
+               "Nadine"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "dialogue":true
@@ -923,7 +985,7 @@
          {
             "name":"HQCamerasNadine",
             "content":[
-               "Nadine: 'Must remember to avoid cameras where I can, don't want to attract any unwanted attention'",
+               "Nadine: 'Must remember to avoid cameras where I can, don't want to attract any unwanted attention.'",
                "Nadine: 'Or worse, get arrested.'"
             ],
             "link":[
@@ -933,8 +995,8 @@
                "HQ-camera.jpg",
                "HQ-camera.jpg"
             ],
-            "characters": [
-            	"Nadine"
+            "characters":[
+               "Nadine"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "dialogue":true
@@ -951,7 +1013,7 @@
                "DoneSearchingYet"
             ],
             "images":[
-
+               "undefined.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
@@ -960,15 +1022,15 @@
             "name":"DoneSearchingYet",
             "content":[
                "Has Nadine want to finished her research of HealthCorp and does she want to get back to work?",
-               "Yes",
-               "No"
+               "Yes.",
+               "No."
             ],
             "link":[
                "ImagesOfHQ-Decision",
                "OSINT-Circular-SysDecision"
             ],
             "images":[
-
+               "nadine-work-desktop.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -984,7 +1046,9 @@
                "FINISH"
             ],
             "images":[
-
+               "nadine-work-report.jpg",
+               "nadine-work-report.jpg",
+               "nadine-work-report.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -992,14 +1056,15 @@
          {
             "name":"HQ-FullyResearched",
             "content":[
-               "Nadine has done enough research on the HealthCorp HQ",
-               "There's nothing more to find"
+               "Nadine has done enough research on the HealthCorp HQ.",
+               "There's nothing more to find."
             ],
             "link":[
                "OSINT-Circular-SysDecision"
             ],
             "images":[
-
+               "nadine-work-healthcorp-search.jpg",
+               "nadine-work-healthcorp-search.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -1021,13 +1086,13 @@
          {
             "name":"LinkedIn",
             "content":[
-               "Nadine decides to have a look on a popular professional networking site to see if there is anyone for her to exploit"
+               "Nadine decides to have a look on a popular professional networking site to see if there is anyone for her to exploit."
             ],
             "link":[
                "FirstBloggerSysDecision"
             ],
             "images":[
-
+               "linkedin-home.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -1042,7 +1107,7 @@
                "SecondBloggerSysDecision"
             ],
             "images":[
-
+               "linkedin-home.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
@@ -1057,7 +1122,7 @@
                "ExploitRecruiter"
             ],
             "images":[
-
+               "linkedin-home.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
@@ -1072,7 +1137,8 @@
                "NadineEpiphany-speech"
             ],
             "images":[
-
+               "linkedin-healthcorp.jpg",
+               "linkedin-healthcorp.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -1081,18 +1147,20 @@
             "name":"NadineEpiphany-speech",
             "content":[
                "Nadine: 'The inbox!!'",
-               "Co-worker: 'Erm, you ok honey?'",
+               "Co-worker2: 'Erm, you ok honey?'",
                "Nadine: 'Sorry! My bad, didn't mean to scare you.'"
             ],
             "link":[
                "NadineEpiphany"
             ],
             "images":[
-
+               "romero-offices.jpg",
+               "romero-offices.jpg",
+               "romero-offices.jpg"
             ],
             "characters":[
                "Nadine",
-               "Co-worker"
+               "Co-worker2"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "dialogue":true
@@ -1103,7 +1171,7 @@
                "Nadine smiles awkwardly at her confused co-workers, it's pretty awkward.",
                "Ugh, why am I like this?",
                "She continues to work at her computer.",
-               "She opens the captured folder and finds the email she remembered",
+               "She opens the captured folder and finds the email she remembered.",
                "It came from an anonymous throwaway account and they didn't leave a name or anything.",
                "Nadine searches for anybody using the email for any accounts but finds nothing, looks pretty suspicious...."
             ],
@@ -1111,7 +1179,12 @@
                "AnonChatDecision"
             ],
             "images":[
-
+               "romero-offices.jpg",
+               "romero-offices.jpg",
+               "nadine-work-desktop.jpg",
+               "anon-linkedin-email.jpg",
+               "anon-linkedin-email.jpg",
+               "anon-linkedin-email.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -1120,15 +1193,15 @@
             "name":"AnonChatDecision",
             "content":[
                "Does Nadine attempt to talk to this person?",
-               "Yes",
-               "No"
+               "Yes.",
+               "No."
             ],
             "link":[
                "LetsTalkToAStranger",
                "ExploitRecruiter"
             ],
             "images":[
-
+               "anon-linkedin-email.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -1142,7 +1215,7 @@
                "AnonEmail-1"
             ],
             "images":[
-
+               "anon-linkedin-email.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -1151,13 +1224,14 @@
             "name":"AnonEmail-1",
             "content":[
                "Anonymous-Sender: 'I can't let them get away with it. Not again.'",
-               "Anonymous-Sender: 'BOTH of my friend's parents were murdered by HealthCorp. None of them could afford those crazy medical bills'"
+               "Anonymous-Sender: 'BOTH of my friend's parents were murdered by HealthCorp. None of them could afford those crazy medical bills.'"
             ],
             "link":[
                "AnonEmail-2"
             ],
             "images":[
-
+               "anon-linkedin-email.jpg",
+               "anon-linkedin-email.jpg"
             ],
             "characters":[
                "Anonymous-Sender"
@@ -1169,13 +1243,14 @@
             "name":"AnonEmail-2",
             "content":[
                "Anonymous-Sender: 'The rep on the phone didn't even care, she said that 'there was nothing she could do'.'",
-               "Anonymous-Sender: 'Dumb bitch didn't even know she was sentencing this man's parents death warrant'"
+               "Anonymous-Sender: 'Dumb bitch didn't even know she was sentencing this man's parents death warrant.'"
             ],
             "link":[
                "AnonEmail-2"
             ],
             "images":[
-
+               "anon-linkedin-email.jpg",
+               "anon-linkedin-email.jpg"
             ],
             "characters":[
                "Anonymous-Sender"
@@ -1187,13 +1262,14 @@
             "name":"AnonEmail-3",
             "content":[
                "Anonymous-Sender: 'After that, he was real fucked up yknow? That's when he decided to do something about it.'",
-               "Anonymous-Sender: 'That's why I'm emailing you, you gotta leak this so other people know what they're capable of'"
+               "Anonymous-Sender: 'That's why I'm emailing you, you gotta leak this so other people know what they're capable of.'"
             ],
             "link":[
                "AnonEmail-NadinesThoughts"
             ],
             "images":[
-
+               "anon-linkedin-email.jpg",
+               "anon-linkedin-email.jpg"
             ],
             "characters":[
                "Anonymous-Sender"
@@ -1215,7 +1291,9 @@
                "Nadine"
             ],
             "images":[
-
+               "anon-linkedin-email.jpg",
+               "anon-linkedin-email.jpg",
+               "anon-linkedin-email.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "dialogue":true
@@ -1229,7 +1307,7 @@
                "AnonEmail-NadineReachesOut-2"
             ],
             "images":[
-
+               "nadine-work-desktop.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -1245,7 +1323,9 @@
                "AnonEmail-NadineReachesOut-3"
             ],
             "images":[
-
+               "anon-linkedin-email-blur.jpg",
+               "anon-linkedin-email-blur.jpg",
+               "anon-linkedin-email-blur.jpg"
             ],
             "characters":[
                "Nadine"
@@ -1260,13 +1340,17 @@
                " ......... ",
                "After about 15 minutes, the Anonymous person replies to Nadine's email with just a phone number.",
                "Nothing else. Nadine is suspicious.",
-               "She opens her phone and introduces herself as Jack to the Anonymous person"
+               "She opens her phone and introduces herself as Jack to the Anonymous person."
             ],
             "link":[
                "AnonEmail-NadineReachesOut-4"
             ],
             "images":[
-
+               "anon-linkedin-email.jpg",
+               "anon-linkedin-email.jpg",
+               "anon-linkedin-email.jpg",
+               "anon-linkedin-email.jpg",
+               "anon-linkedin-email.jpg"
             ],
             "characters":[
                "Nadine"
@@ -1277,7 +1361,7 @@
          {
             "name":"AnonEmail-NadineReachesOut-4",
             "content":[
-               "Nadine: 'hi there! it's Jack, thanks for your email'",
+               "Nadine: 'hi there! it's Jack, thanks for your email.'",
                "Nadine: 'when I got your email, I was so happy, like I knew there had to be others!'",
                "Anonymous-Sender: 'my pleasure, and yeah i know it's not my story but I care for my friend yknow?'"
             ],
@@ -1285,7 +1369,9 @@
                "AnonEmail-Decision"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1301,7 +1387,7 @@
                "What does Nadine say to the anonymous sender?",
                "Don't bother man.",
                "Why do you even care?",
-               "Share his story on the blog"
+               "Share his story on the blog."
             ],
             "link":[
                "GiveItUpAnon",
@@ -1309,7 +1395,7 @@
                "ShareAnonsStory"
             ],
             "images":[
-
+               "texting.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "texting":true,
@@ -1318,14 +1404,15 @@
          {
             "name":"ThisAintYourFightAnon",
             "content":[
-               "Nadine: 'if this ain't your story, why do you even care? Like HealthCorp didn't do this to you'",
+               "Nadine: 'if this ain't your story, why do you even care? Like HealthCorp didn't do this to you.'",
                "Nadine: 'it was your friend that got hit by this, not you.'"
             ],
             "link":[
                "PrettyMeanToAnon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1340,7 +1427,7 @@
             "content":[
                "Nadine: 'I know you got love for your friend but honestly man don't bother.'",
                "Nadine: 'The amount of letters and emails I get from HealthCorp's legal team about my one post?'",
-               "Nadine: 'It's not worth it, whatever we do isn't gonna change anything, we're little fish in this big ass pond'",
+               "Nadine: 'It's not worth it, whatever we do isn't gonna change anything, we're little fish in this big ass pond.'",
                "Anonymous-Sender: 'What's that supposed to mean?'",
                "Anonymous-Sender: 'You don't wanna take them down and get revenge for all of the people that have been fucked over by them?'"
             ],
@@ -1348,7 +1435,11 @@
                "IsNadineSerious-Anon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1361,7 +1452,7 @@
          {
             "name":"ShareAnonsStory",
             "content":[
-               "Nadine: 'hey, man that's horrible, I can't imagine the amount of pain and suffering that they put him through'",
+               "Nadine: 'hey, man that's horrible, I can't imagine the amount of pain and suffering that they put him through.'",
                "Nadine: 'how is he doing now? what did he do?'",
                "Nadine: 'With his permission, I would love to publicise his story on the blog, it's about time we told people what HealthCorp have been up to.'"
             ],
@@ -1369,7 +1460,9 @@
                "AnonsFriendArrested"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1388,7 +1481,7 @@
                "AnonSenderIsMad"
             ],
             "images":[
-
+               "texting.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "badtrait":true,
@@ -1405,7 +1498,8 @@
                "MakeAnonEvenMadder-Decision"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1427,11 +1521,7 @@
                "DoublingDownOnAnon"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "Nadine",
-               "Anonymous-Sender"
+               "texting.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "texting":true,
@@ -1449,7 +1539,10 @@
                "RedeemedForAnon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1463,14 +1556,16 @@
             "name":"DoublingDownOnAnon",
             "content":[
                "Nadine: 'If you know what's good for you, you'll stay as far away as you can from HealthCorp.'",
-               "Nadine: 'They didn't get you, I'm sorry they got your friend but you need to stay out of this for your own protection'",
+               "Nadine: 'They didn't get you, I'm sorry they got your friend but you need to stay out of this for your own protection.'",
                "Nadine: 'You don't want to end up like your friend.'"
             ],
             "link":[
                "YouHaveReallyDoneItNow"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1491,7 +1586,9 @@
                "NadineFeelsBadForAnon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1511,7 +1608,8 @@
                "AnonLostTrust-RudeNadine"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1532,7 +1630,9 @@
                "SuspiciousAnon-HealthCorpBreakIn-Decision"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1554,11 +1654,7 @@
                "NadineIsJustABlogger"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "Nadine",
-               "Anonymous-Sender"
+               "texting.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "texting":true,
@@ -1578,7 +1674,12 @@
                "NadineHasFinishedWithAnon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1601,7 +1702,11 @@
                "NadineHasFinishedWithAnon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1620,7 +1725,7 @@
                "OSINT-Circular-SysDecision"
             ],
             "images":[
-
+               "nadine-work-desktop.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1639,7 +1744,7 @@
                "AnonIsReallyMadNow"
             ],
             "images":[
-
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1661,7 +1766,9 @@
                "ThatCouldHaveGoneBetter-Anon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1680,7 +1787,7 @@
                "NadineHasFinishedWithAnon"
             ],
             "images":[
-
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1694,22 +1801,33 @@
             "content":[
                "Anonymous-Sender: 'well......'",
                "Anonymous-Sender: 'they managed to arrest him.'",
-               "Anonymous-Sender: 'see after his parents died, the crazy fucker decided that he was going to break into their big swanky offices'",
-               "Anonymous-Sender: 'all Robin Hood and shit, yknow steal from the rich and re-distribute it among the poor'",
+               "Anonymous-Sender: 'see after his parents died, the crazy fucker decided that he was going to break into their big swanky offices.'",
+               "Anonymous-Sender: 'all Robin Hood and shit, yknow steal from the rich and re-distribute it among the poor.'",
                "Anonymous-Sender: 'but somehow they caught wind of what he was doing.'",
                "Nadine: 'fuuuck, that's wild man.'",
-               "Anonymous-Sender: 'next thing you know the police is kicking his door in and he's serving a 10 year sentence on trumped up charges'",
+               "Anonymous-Sender: 'next thing you know the police is kicking his door in and he's serving a 10 year sentence on trumped up charges.'",
                "Nadine: 'I can't even imagine what that would be like, I'm so sorry that you had to go through that.'",
-               "Nadine: 'man fuck HealthCorp, I wish we could do something about them'",
+               "Nadine: 'man fuck HealthCorp, I wish we could do something about them.'",
                "Nadine: 'I have to ask, was your friend working with anyone to break into HealthCorp?'",
-               "Nadine: 'It might really help if someone wanted to carry on from where he left it'",
+               "Nadine: 'It might really help if someone wanted to carry on from where he left it.'",
                "Anonymous-Sender: 'What are you talking about? Are you telling me that you wanna break into HealthCorp?'"
             ],
             "link":[
                "NadineBreakIn-Normal"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1731,11 +1849,7 @@
                "NadineLiesAbtBreakIn"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "Nadine",
-               "Anonymous-Sender"
+               "texting.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "texting":true,
@@ -1746,7 +1860,7 @@
             "content":[
                "Nadine: 'Definitely not!'",
                "Nadine: 'I'm not looking to be even more on their radar than I already am.'",
-               "Nadine: 'I get enough emails and letters from their Legal team than I'd like'",
+               "Nadine: 'I get enough emails and letters from their Legal team than I'd like.'",
                "Anonymous-Sender: 'Ah what a shame, that's fair I suppose, can't put that on you...'",
                "Anonymous-Sender: 'Well feel free to share his story, people need to know, stay safe man.'",
                "Nadine: 'Thank you, you too.'"
@@ -1755,7 +1869,12 @@
                "NadineHasFinishedWithAnon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1772,13 +1891,17 @@
                "Anonymous-Sender: 'That's what I like to hear, finally someone willing to take some serious action.'",
                "Anonymous-Sender: 'I'll send over his plans on one content'",
                "Nadine: 'What's that?'",
-               "Anonymous-Sender: 'If you agree to do this, you have to transfer $100 million dollars into an account, the rest is yours to take'"
+               "Anonymous-Sender: 'If you agree to do this, you have to transfer $100 million dollars into an account, the rest is yours to take.'"
             ],
             "link":[
                "MoneyOrRevenge-Decision"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1800,11 +1923,7 @@
                "NadineQuestionableMorals-Anon"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "Nadine",
-               "Anonymous-Sender"
+               "texting.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "texting":true,
@@ -1822,7 +1941,10 @@
                "NadineHasFinishedWithAnon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1838,14 +1960,18 @@
                "Nadine: 'I'm in.'",
                "Anonymous-Sender: 'Good, and before you think of being smart, if you think about running away with the money, I will expose you and have you arrested.'",
                "Anonymous-Sender: 'Or worse, I got connections, so don't even THINK about crossing me.'",
-               "Nadine: 'Alright, got it'",
+               "Nadine: 'Alright, got it.'",
                "Anonymous-Sender: 'Good, I'll send over a file to your email."
             ],
             "link":[
                "NadineHitsTheJackpot-Anon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1858,16 +1984,19 @@
          {
             "name":"NadineHitsTheJackpot-Anon",
             "content":[
-               "The anonymous person sends her a ZIP file containing an extensive view into the HealthCorp HQ",
+               "The anonymous person sends her a ZIP file containing an extensive view into the HealthCorp HQ.",
                "Floor plans, Camera locations, the location of the main server room.",
-               "Nadine is SHOOKETH about the detail of the plans. She's gonna have no trouble getting around the HQ",
+               "Nadine is SHOOKETH about the detail of the plans. She's gonna have no trouble getting around the HQ.",
                "But at what cost? She's not sure..."
             ],
             "link":[
                "NadineAnon-Closing"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1887,7 +2016,8 @@
                "NadineHasFinishedWithAnon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1902,18 +2032,14 @@
             "content":[
                "What does Nadine say?",
                "Of course I do!",
-               "Yeah... but I'm just a blogger"
+               "Yeah... but I'm just a blogger."
             ],
             "link":[
                "NadineIsAHypocrite-Anon",
                "NadineIsJustABlogger"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "Nadine",
-               "Anonymous-Sender"
+               "texting.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "texting":true,
@@ -1922,7 +2048,7 @@
          {
             "name":"NadineIsAHypocrite-Anon",
             "content":[
-               "Anonymous-Sender: 'Man I don't understand you'",
+               "Anonymous-Sender: 'Man I don't understand you.'",
                "Anonymous-Sender: 'You were saying how bad HealthCorp is but you're not doing anything about it?'",
                "Anonymous-Sender: 'that don't make any sense.'"
             ],
@@ -1930,7 +2056,9 @@
                "NadinesExplanationAnon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1944,8 +2072,8 @@
             "name":"NadinesExplanationAnon",
             "content":[
                "What does Nadine say?",
-               "I'm powerless against them",
-               "My blog is my power",
+               "I'm powerless against them.",
+               "My blog is my power.",
                "You know what? I will fight them."
             ],
             "link":[
@@ -1954,11 +2082,7 @@
                "TakeTheFightToThem-Anon"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "Nadine",
-               "Anonymous-Sender"
+               "texting.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "texting":true,
@@ -1969,13 +2093,15 @@
             "content":[
                "Nadine: 'I wanna stop them but how? '",
                "Nadine: 'There is nothing we can do to stop these people, they've got way too much power, too many people in their pocket and too much money.'",
-               "Nadine: 'All I can hope for is that people read the blog and that it gets more publicity'"
+               "Nadine: 'All I can hope for is that people read the blog and that it gets more publicity.'"
             ],
             "link":[
                "UnconvincedAnon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -1989,13 +2115,14 @@
             "name":"JournalismAtItsFinest-Anon",
             "content":[
                "Nadine: 'My blog is my voice, I can fight them by exposing all of the stories of the people who HealthCorp have fucked over.'",
-               "Nadine: 'Then no-one can ignore the sheer amount of evidence that I have mounted against them'"
+               "Nadine: 'Then no-one can ignore the sheer amount of evidence that I have mounted against them.'"
             ],
             "link":[
                "UnconvincedAnon"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2008,9 +2135,9 @@
          {
             "name":"TakeTheFightToThem-Anon",
             "content":[
-               "Nadine: 'You know what you're right. I shouldn't rely on exposing HealthCorp just on my blog'",
+               "Nadine: 'You know what you're right. I shouldn't rely on exposing HealthCorp just on my blog.'",
                "Nadine: 'What do you have in mind?'",
-               "Anonymous-Sender: 'Finally, that's what I like to hear! Well if you're serious about breaking in, my buddy sent me a bunch of plans when he was... erm'",
+               "Anonymous-Sender: 'Finally, that's what I like to hear! Well if you're serious about breaking in, my buddy sent me a bunch of plans when he was... erm.'",
                "Anonymous-Sender: 'Researching, shall we say?'",
                "Anonymous-Sender: 'I'll give em to you on one content. You transfer $250 million to an account of my choosing.'"
             ],
@@ -2018,7 +2145,11 @@
                "MoneyOrRevenge-Decision"
             ],
             "images":[
-
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg",
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2037,7 +2168,7 @@
                "NadineHasFinishedWithAnon"
             ],
             "images":[
-
+               "texting.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2051,7 +2182,7 @@
             "name":"BloggerAndDarren",
             "content":[
                "Nadine remembers reading emails from a man called Darren, that Jack was talking to.",
-               "'He worked in their Sales department! He must know what really goes on in there', Nadine thought",
+               "He worked in their Sales department! He must know what really goes on in there', Nadine thought.",
                "So she searches for him on the site...",
                "After a lot of searching, Nadine manages to find him and discovers that he's a Manager in their Sales department."
             ],
@@ -2059,7 +2190,10 @@
                "NadineTalksToDarren"
             ],
             "images":[
-
+               "osint-darren-email.jpg",
+               "osint-darren-email.jpg",
+               "osint-darren-email.jpg",
+               "linkedin-darren.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -2067,15 +2201,17 @@
          {
             "name":"ExploitRecruiter",
             "content":[
-               "Nadine decides to make a fake account on the site that makes it look like she just started working at HealthCorp",
-               "Nadine makes her account look like she's been working at HealthCorp for a very long time",
+               "Nadine decides to make a fake account on the site that makes it look like she just started working at HealthCorp.",
+               "Nadine makes her account look like she's been working at HealthCorp for a very long time.",
                "Nadine finds a HealthCorp recruiter to talk to and starts asking questions."
             ],
             "link":[
                "FirstTalkingToRecruiter"
             ],
             "images":[
-
+               "linkedin-new-account.jpg",
+               "linkedin-new-account.jpg",
+               "linkeedin-main-page.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -2092,7 +2228,10 @@
                "RecruiterCircular"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2117,10 +2256,7 @@
                "NadineFinishesWithRecruiter"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -2135,7 +2271,7 @@
                "TechInTheDept-SysDecision-SECOND"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "characters":[
 
@@ -2148,14 +2284,17 @@
             "content":[
                "Nadine: 'So what time does everyone typically start?'",
                "Recruiter: 'Well the building is open 24 hours but most staff are in around 9AM.'",
-               "Recruiter: 'We operate on a Flexihour schedule, so for Technical, you would be expected to be in by around 9AM and most people are gone by 6PM'",
+               "Recruiter: 'We operate on a Flexihour schedule, so for Technical, you would be expected to be in by around 9AM and most people are gone by 6PM.'",
                "Recruiter: 'After hours, you'll only find the essential staff and stragglers really.'"
             ],
             "link":[
                "WhatTimeDoIStart-Decision"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2175,7 +2314,9 @@
                "WLAtHC-Decision"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2193,7 +2334,7 @@
                "NadineProbesRecruiter"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -2201,16 +2342,13 @@
          {
             "name":"RecruiterIsSus-TWO",
             "content":[
-               "Nadine has made the Recruiter suspicious"
+               "Nadine has made the Recruiter suspicious."
             ],
             "link":[
                "RecruiterEM-Response"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -2225,10 +2363,7 @@
                "TechInTheDept-Normal"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
@@ -2244,7 +2379,9 @@
                "RecruiterCircular-SysDecision"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2265,7 +2402,10 @@
                "RecruiterDocInfo"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2286,11 +2426,7 @@
                "GhostsRecruiter"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "Nadine",
-               "Recruiter"
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -2306,7 +2442,9 @@
                "RecruiterCircular-SysDecision"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2327,10 +2465,7 @@
                "RecruiterCircular"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
@@ -2346,7 +2481,9 @@
                "OSINT-Circular-SysDecision"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2364,10 +2501,7 @@
                "RecruiterCircular-SysDecision"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -2382,10 +2516,8 @@
                "RecruiterCircular-SysDecision"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -2402,10 +2534,7 @@
                "RecruiterExecsAndManagers"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -2421,7 +2550,9 @@
                "RecruiterCircular-SysDecision"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2439,7 +2570,7 @@
                "RecruiterIsSus-TWO"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2458,7 +2589,8 @@
                "RecruiterCircular-SysDecision"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2478,7 +2610,9 @@
                "NadineWaitsForDarren"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine"
@@ -2495,7 +2629,7 @@
                "DarrenRepliesToNadine"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "characters":[
 
@@ -2507,14 +2641,16 @@
             "name":"DarrenRepliesToNadine",
             "content":[
                "Darren: 'hi there, long time no see haha! how have you been lately?'",
-               "Darren: 'I'd love to help, you already know how I feel about them ugh'",
+               "Darren: 'I'd love to help, you already know how I feel about them ugh.'",
                "Darren: 'but out of curiosity how did you find me? you kinda stopped talking to me after a while 😅😅'"
             ],
             "link":[
                "NadineDarren-Decision"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Darren"
@@ -2526,7 +2662,7 @@
             "name":"NadineDarren-Decision",
             "content":[
                "What does Nadine say?",
-               "I saw some of your other posts and found you",
+               "I saw some of your other posts and found you.",
                "The site recommended you to me!"
             ],
             "link":[
@@ -2534,7 +2670,7 @@
                "SiteRecommendedDarren"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -2550,7 +2686,9 @@
                "NadineIsShutDownByDarren"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2562,26 +2700,39 @@
          {
             "name":"SiteRecommendedDarren",
             "content":[
-               "Darren: 'oh that is weird! fair enough haha'",
-               "Darren: 'well you already know I work at in sales at HealthCorp and that a lot of shady stuff that happens here'",
-               "Nadine: 'Of course, everyone does'",
-               "Darren: 'like I'm used to dealing with shady sales tactics but targeting families that are pre-disposed to get cancer'",
-               "Darren: 'just to rip them off later?'",
-               "Darren: 'that's not what I signed up for. and there's way more to it than you could even imagine!'",
+               "Darren: 'Oh that is weird! Fair enough.'",
+               "Darren: 'Well you already know I work at in sales at HealthCorp and that a lot of shady stuff that happens here.'",
+               "Nadine: 'Of course, everyone does.'",
+               "Darren: 'Like I'm used to dealing with shady sales tactics but targeting families that are pre-disposed to get cancer.'",
+               "Darren: 'Just to rip them off later?'",
+               "Darren: 'That's not what I signed up for. and there's way more to it than you could even imagine!'",
                "Nadine: 'What are you talking about??'",
                "Darren: 'HealthCorp are fucked up more than you could even imagine.'",
-               "Darren: 'Their whole business model is centred around exploiting the weak and getting all they can from them'",
-               "Darren: 'but none of us can prove it, we just do what the System tells us.'",
+               "Darren: 'Their whole business model is centred around exploiting the weak and getting all they can from them.'",
+               "Darren: 'But none of us can prove it, we just do what the System tells us.'",
                "Darren: 'Only the Inner Circle really know how it works.'",
                "Nadine: 'the Inner Circle? Who are they?'",
                "Darren: 'Oh they're the fat cats at the top, the ones who run the whole show.'",
-               "Darren: 'They're a group of shareholders; rumour has it that collectively they control what the media puts out about HealthCorp'"
+               "Darren: 'They're a group of shareholders; rumour has it that collectively they control what the media puts out about HealthCorp.'"
             ],
             "link":[
                "WhoAreTheInnerCircle"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2602,7 +2753,7 @@
                "IC-ThatsCrazy"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -2611,13 +2762,14 @@
             "name":"IC-WhatAreYouTalkingAbout",
             "content":[
                "Darren: 'They're the ones running HealthCorp, THEY own everyone, nothing goes in this city without their say so.",
-               "Darren: 'Don't you see? They're the ones you need to go for"
+               "Darren: 'Don't you see? They're the ones you need to go for."
             ],
             "link":[
                "NadineDarren-DecisionTwo"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Darren"
@@ -2635,7 +2787,8 @@
                "NadineDarren-DecisionTwo"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Darren"
@@ -2648,17 +2801,14 @@
             "content":[
                "What does Nadine say?",
                "Why didn't you speak up earlier?",
-               "I'm glad you're telling me all this"
+               "I'm glad you're telling me all this."
             ],
             "link":[
                "ND-WhyYouTakeLong",
                "ND-ImGladYouTalked"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -2666,19 +2816,25 @@
          {
             "name":"ND-ImGladYouTalked",
             "content":[
-               "Nadine: 'well I'm glad you told me all of this, it really helps :)'",
+               "Nadine: 'Well I'm glad you told me all of this, it really helps :)'",
                "Darren: 'I'm glad, hopefully you can find a way to get some evidence and expose them for the scum that they are.'",
-               "Darren: 'Only reason why I'm still working there is because the pay is good and I'm locked in for another 2 years'",
+               "Darren: 'Only reason why I'm still working there is because the pay is good and I'm locked in for another 2 years.'",
                "Nadine: 'What do you mean? They can't force you to work there surely?'",
                "Darren: 'Cmon Jack you've seen what HealthCorp is capable of, they do what they like.'",
-               "Nadine: 'well someone's gotta do something about it, that might as wel be me.'",
+               "Nadine: 'Well someone's gotta do something about it, that might as wel be me.'",
                "Darren: 'You can't be serious? You're not gonna be able to just waltz in and press the big red button yknow?'"
             ],
             "link":[
                "NadineBeingUnderEst"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2690,13 +2846,13 @@
          {
             "name":"ND-WhyYouTakeLong",
             "content":[
-               "Nadine: 'so why did it take you this long to speak up now?'"
+               "Nadine: 'So why did it take you this long to speak up now?'"
             ],
             "link":[
                "DarrenDidntLikeThat"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine"
@@ -2713,7 +2869,7 @@
                "DarrenIsUpset"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "characters":[
 
@@ -2724,7 +2880,7 @@
          {
             "name":"DarrenIsUpset",
             "content":[
-               "Darren: 'hey remember I'm sticking my neck out for you here'",
+               "Darren: 'Hey remember I'm sticking my neck out for you here.'",
                "Darren: 'I'm trying to help you out so you can fight these guys'",
                "Nadine: 'I just don't believe that you were powerless to do nothing to change anything, you work there!'",
                "Darren: 'I get that but they own us, they can ruin all of our lives if we speak out and the worst part is, it wouldn't even make a difference.'",
@@ -2735,7 +2891,12 @@
                "IsNadineMeanToDarren"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2753,7 +2914,7 @@
                "ND-WeNeedAction"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "characters":[
 
@@ -2765,7 +2926,7 @@
             "name":"ND-WeNeedAction",
             "content":[
                "Nadine: 'Writing a bunch of inflammatory articles sure as hell ain't gonna cut it. Someone needs to take proper action.'",
-               "Darren: 'If you're serious about going ahead with this, then you should know that the security at the front desk changes over at 1:30 everyday for lunch'",
+               "Darren: 'If you're serious about going ahead with this, then you should know that the security at the front desk changes over at 1:30 everyday for lunch.'",
                "Darren: 'If you come then, you can usually slip past and tailgate somebody.'",
                "Darren: 'I can tell the front desk to expect you and then you'll be able to do whatever you need to do.'"
             ],
@@ -2773,7 +2934,10 @@
                "IsNadineMeanToDarren"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2786,9 +2950,9 @@
             "name":"IsNadineMeanToDarren",
             "content":[
                "What does Nadine think of Darren?",
-               "I don't trust him at all, something doesn't add up here",
+               "I don't trust him at all, something doesn't add up here.",
                "I'm not sure of this guy, I'm gonna be cautious.",
-               "I believe him, he seems pretty trustworthy"
+               "I believe him, he seems pretty trustworthy."
             ],
             "link":[
                "ND-NadineDoesntTrustDarren",
@@ -2796,10 +2960,7 @@
                "ND-NadineTrustsDarren"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -2814,7 +2975,8 @@
                "OOP-NadineAccusedDarren"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine"
@@ -2831,7 +2993,7 @@
                "ND-DarrenKnowsNoTrust"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2849,7 +3011,7 @@
                "ND-NadsTrustsDarren-CHECK"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2867,10 +3029,7 @@
                "ND-DarrenIsMad"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -2886,7 +3045,9 @@
                "ND-DIM-Decision-One"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2900,17 +3061,14 @@
             "content":[
                "What does Nadine say?",
                "Well what else am I meant to think?",
-               "I just don't trust you"
+               "I just don't trust you."
             ],
             "link":[
                "ND-NadineRlyDoesntTrustHim",
                "ND-NadineJustDontTrustYou"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -2927,7 +3085,10 @@
                "ND-DIM-Decision-Two"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2948,7 +3109,10 @@
                "DarrenIsAThreat"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -2966,7 +3130,7 @@
                "NadineLogsOut"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -2980,7 +3144,7 @@
                "OSINT-Circular-SysDecision"
             ],
             "images":[
-
+               "linkedin-home.jpg"
             ],
             "characters":[
 
@@ -2997,7 +3161,7 @@
                "ND-DarrenTriesToRedeem"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "characters":[
 
@@ -3014,7 +3178,7 @@
                "ND-DoesNadineBelieveHim"
             ],
             "images":[
-
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -3027,9 +3191,9 @@
             "name":"ND-DoesNadineBelieveHim",
             "content":[
                "What does Nadine say?",
-               "Don't believe you",
-               "Hmm maybe you are trustworthy",
-               "Still not convinced"
+               "Don't believe you.",
+               "Hmm maybe you are trustworthy.",
+               "Still not convinced."
             ],
             "link":[
                "ND-NadDoesntBeliveDarren",
@@ -3037,10 +3201,7 @@
                "ND-NadIsntConvincedPERIOD"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -3055,7 +3216,8 @@
                "ND-DoesDarrenLikeNad-SysDecision"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -3074,7 +3236,8 @@
                "ND-NadineBeingUnderEst-Two"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -3096,7 +3259,11 @@
                "DarrenIsAThreat"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -3115,10 +3282,7 @@
                "ND-DarrenDoesntMindNad"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
@@ -3133,7 +3297,8 @@
                "DarrenIsAThreat"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -3154,7 +3319,10 @@
                "NadineLogsOut"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -3172,10 +3340,7 @@
                "ND-DarrenAppreciatesThat"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -3191,7 +3356,9 @@
                "NadineLogsOut"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -3209,10 +3376,7 @@
                "ND-PassiveAggressiveNad"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
@@ -3227,7 +3391,8 @@
                "NadineLogsOut"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -3240,8 +3405,8 @@
             "name":"ND-DIM-Decision-Two",
             "content":[
                "What does Nadine say?",
-               "I just don't trust you",
-               "I don't know what to believe",
+               "I just don't trust you.",
+               "I don't know what to believe.",
                "*ghosts Darren*"
             ],
             "link":[
@@ -3250,10 +3415,7 @@
                "ND-NadineGhostsDarren"
             ],
             "images":[
-
-            ],
-            "characters":[
-
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
@@ -3261,8 +3423,8 @@
          {
             "name":"ND-NadineIsConfused",
             "content":[
-               "Nadine: 'I just don't know what to believe with you'",
-               "Nadine: 'It's all a bit too suspicious for me though'",
+               "Nadine: 'I just don't know what to believe with you.'",
+               "Nadine: 'It's all a bit too suspicious for me though.'",
                "Darren: 'Whatever, I was only trying to help but good luck anyway.'",
                "Darren: 'Watch your back Jack.'"
             ],
@@ -3270,7 +3432,10 @@
                "DarrenIsAThreat"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -3289,7 +3454,8 @@
                "DarrenIsAThreat"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "characters":[
                "Nadine",
@@ -3308,7 +3474,8 @@
                "OSINT-Circular-SysDecision"
             ],
             "images":[
-
+               "linkedin-messaging.jpg",
+               "linkedin-messaging.jpg"
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true

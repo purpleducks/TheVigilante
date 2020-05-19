@@ -1,380 +1,942 @@
 {
    "TheHack":{
       "storylines":[
-			{
-				"name":"ServerRoomCages","content":[
-					"Nadine is in the server room cages.",
-					"There are rows upon rows of servers and not a lot of time to go through them before someone notices her and calls Security."
-				],"link":["SRC-Nadine"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-Nadine","content":[
-					"Nadine: 'Uhhh I'm gonna have to find my way through here before they arrest me.'",
-			"Nadine: 'Let's just pick a server and work from there...'"
-				],"link":["SRC-ClosestServer"],"images":[],"characters":["Nadine"],"music":"","dialogue":true
-			},
-			{
-				"name":"SRC-ClosestServer","content":[
-					"Nadine picks the server closest to her. ",
-					"She pulls out her laptop and plugs it into the server. ",
-					"To get a layout of the network and find where everything is, Nadine needs to hack.",
-					"In order to hack, she must interact into the different parts of the network so she can get a full network map.",
-					"Your job is to click on each of the elements and create a complete, connected network map for Nadine."
-				],"link":["SRC-NetworkLayout-Minigame"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-NetworkLayout-Minigame","content":[
-					"Nadine starts to map the HealthCorp network.",
-					"Nadine now has a proper view of the HealthCorp network, and can now choose a server to hack into.",
-					"Nadine has alerted the Technical department to her intrusion, she must now escape."
-				],
-				"link":["SRC-HaveNetworkLayout","HACK FAILED"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"pipes-minigame.html",
-				"minigame-time":"120","minigame-attempts":"2","minigame-grid":"7"
-			},
-			{
-				"name":"SRC-HaveNetworkLayout","content":[
-					"Now that Nadine has a good view of the HealthCorp network..",
-					"...she needs to decide what she wants to expose about HealthCorp or send their money to."
-				],"link":["SRC-AnonPlan-SysDecision"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-AnonPlan-SysDecision","content":["NadineHitsTheJackpot-Anon"],
-				"link":["SRC-HasAnonPlan","SRC-InnerCircle-SysDecision"],"images":[],"music":"","systemDecision":true
-			},
-			{
-				"name":"SRC-HasAnonPlan","content":[
-					"Nadine remembers that she used the Anonymous Sender's plans to get into HealthCorp, but does she have to transfer all that money to them?"
-				],
-				"link":["SRC-HasAnonPlan-SysDecision"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-HasAnonPlan-SysDecision","content":["TakeTheFightToThem-Anon"],
-				"link":["SRC-HAP-250Mill","SRC-HAP-100Mill"],"images":[],"music":"","systemDecision":true
-			},
-			{
-				"name":"SRC-HAP-250Mill","content":[
-					"If she wants to do good on her promise, she would need to transfer $250 million to the Anonymous sender."
-				],"link":["SRC-InnerCircle-SysDecision"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-HAP-100Mill","content":[
-					"If she wants to do good on her promise, she would need to transfer $100 million to the Anonymous sender."
-				],"link":["SRC-InnerCircle-SysDecision"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-InnerCircle-SysDecision","content":["WhoAreTheInnerCircle"],
-				"link":["SRC-ExposeIC","SRC-ExposeExecs"],"images":[],"music":"","systemDecision":true
-			},
-			{
-				"name":"SRC-ExposeIC","content":[
-					"Nadine remembers what Darren told her about the mysterious Inner Circle. ",
-					"If she wants to expose them, then she should hack into the Executive network."
-				],"link":["SRC-HCTargets-SysDecision"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-ExposeExecs","content":[
-					"Nadine could leak some emails from the Executive server. ",
-					"Showing how HealthCorp executives have protected their image could really shake things up. ",
-					"She can expose them through hacking the Executive network."
-				],
-				"link":["SRC-HCTargets-SysDecision"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-HCTargets-SysDecision","content":["R&D-P-HealthCorp"],
-				"link":["SRC-HCTargets-Yes","SRC-HCTargets-SysDecision-2"],"images":[],"music":"","systemDecision":true
-			},
-			{
-				"name":"SRC-HCTargets-SysDecision-2","content":["MAD-Whiteboards"],
-				"link":["SRC-HCTargets-Yes","SRC-HCTargets-SysDecision-3"],"images":[],"music":"","systemDecision":true
-			},
-			{
-				"name":"SRC-HCTargets-SysDecision-3","content":["Tech-C-Intranet"],
-				"link":["SRC-HCTargets-Yes","SRC-WhatchaHackin"],"images":[],"music":"","systemDecision":true
-			},
-			{
-				"name":"SRC-HCTargets-Yes","content":[
-					"Nadine remembers the new techniques HealthCorp are using to target vulnerable people. ",
-					"She should hack into the R&D network."
-				],"link":["SRC-WhatchaHackin"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-WhatchaHackin","content":[
-					"Given everything Nadine knows, which network should Nadine hack?",
-					"the Finance network.",
-					"the Executive network.",
-					"the Research & Development network."
-				],
-				"link":["SRC-FinanceNetwork","SRC-ExecutiveNetwork-SysDecision","SRC-R&DNetwork"],
-				"images":[],"music":"","decision":true
-			},
-			{
-				"name":"SRC-FinanceNetwork","content":[
-					"Nadine decided that she's gonna take HealthCorp's money, so she's going to hack into the Finance network."
-				],
-				"link":["SRC-FN-Decision"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-FN-Decision","content":[
-					"What should Nadine do on the server?",
-					"Transfer the money to the Anon Sender.",
-					"Transfer all the money to Nadine's account.",
-					"Transfer all the money to the wrongfully terminated customers."
-				],
-				"link":["SRC-FN-Anon","SRC-FN-Nadine","SRC-FN-Public"],
-				"images":[],"music":"","decision":true
-			},
-			{
-				"name":"SRC-FN-Anon","content":[
-					"Nadine decides that she is going to transfer the money to the Anonymous sender. "
-				],"link":["SRC-FN-Minigame"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-FN-Nadine","content":[
-					"Nadine decides to keep all the money for herself. ",
-					"She deserves something nice. ",
-					"Maybe a lot of somethings."
-				],"link":["SRC-FN-Minigame"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-FN-Public","content":[
-					"Nadine decides to re-distribute the riches and transfer a sizeable chunk of the money to everyone who had been fucked over by HealthCorp. "
-				],"link":["SRC-FN-Minigame"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-FN-Minigame","content":[
-					"Nadine begins building her view of the Finance Network.",
-					"Nadine manages to hack into the Finance network.",
-					"Nadine couldn't get a view of the Financial network. "
-				],
-				"link":["SRC-FN-WeIn","SRC-FN-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"pipes-minigame.html",
-				"minigame-time":"90","minigame-attempts":"2","minigame-grid":"7"
-			},
-			{
-				"name":"SRC-FN-WeIn","content":[
-					"Now that she has a good view of the network, she quickly spots the server to hack into. "
-				],"link":["SRC-FN-DA-Minigame"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-FN-DA-Minigame","content": [
-					"Nadine launches a dictionary attack.",
-					"Nadine manages to hack into the Finance servers!",
-					"Nadine couldn't hack into the Finance servers...."
-				],
-				"link":["SRC-FN-DA-Success","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"DA-minigame.html","minigame-attempts":"2",
-				"minigame-score":"60",
-            	"minigame-difficulty":"1"
-			},
-			{
-				"name":"SRC-FN-DA-Success","content":[
-					"She now has access to HealthCorp's finances."
-				],"link":["SRC-FN-WhoGetsTheMoney"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-FN-WhoGetsTheMoney","content":["SRC-FN-Anon"],
-				"link":["SRC-FN-WGTM-Anon","SRC-FN-WhoGetsTheMoney-2"],
-				"images":[],"music":"","systemDecision":true
-			},
-			{
-				"name":"SRC-FN-WhoGetsTheMoney-2","content":["SRC-FN-Nadine"],
-				"link":["SRC-FN-WGTM-Nadine","SRC-FN-WGTM-Public"],"images":[],"music":"","systemDecision":true
-			},
-			{
-				"name":"SRC-FN-WGTM-Anon","content":[
-					"Since Nadine decided to give the money to Anon, she puts in their account details. ",
-					"She wires the money to them and encrypts the Finance servers' hard drives so no one can undo it. "
-				],
-				"link":["SRC-FN-WGTM-A-Monologue"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-FN-WGTM-A-Monologue","content":[
-					"Nadine: 'Well, at least HealthCorp are gonna be fucked after this...'",
-"Nadine: '.. and I'm not gonna get exposed because of it.'"
-],"link":["SRC-FN-Done"],"images":[],"characters":["Nadine"],"music":"","dialogue":true
-			},
-			{
-				"name":"SRC-FN-WGTM-Nadine","content":[
-					"Since Nadine decided to keep the money for herself, she puts in her own account. ",
-					"She wires the money, starts the process of laundering her stolen money and encrypts the Finance servers' hard drives so no one can undo it. "
-				],
-				"link":["SRC-FN-WGTM-N-Monologue"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-FN-WGTM-N-Monologue","content":[
-					"Nadine: 'Well that'll show them, I deserve that money, especially after all that shit HealthCorp put my family through.'"
-				],
-				"link":["SRC-FN-Done"],"images":[],"characters":["Nadine"],"music":"","dialogue":true
-			},
-			{
-				"name":"SRC-FN-WGTM-Public","content":[
-					"Since Nadine decided to give the money to the people who were affected by HealthCorp's termination policies, she gathers their account details and plugs it into her script to divide up all of HealthCorp's money between them.",
-					"She wires the money to them and encrypts the Finance servers' hard drives so no one can undo it. "
-				],
-				"link":["SRC-FN-WGTM-P-Monologue"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-FN-WGTM-P-Monologue","content":[
-					"Nadine: 'It's about time someone made HealthCorp pay for what they've done, I'm glad it was me.'"
-				],
-				"link":["SRC-FN-Done"],"images":[],"characters":["Nadine"],"music":"","dialogue":true
-			},
-			{
-				"name":"SRC-FN-Done","content":["Nadine: 'Time to get out of here!'"],
-				"link":["SRC-Done"],"images":[],"characters":["Nadine"],"music":"","dialogue":true
-			},
-			{
-				"name":"SRC-Fail","content":[
-					"Technical have been alerted of her presence in the server room. ",
-					"Guess it's time to go..."
-				],"link":["HACK FAILED"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-ExecutiveNetwork-SysDecision","content":[
-					"WhoAreTheInnerCircle"
-				],
-				"link":["SRC-EN-Yes","SRC-EN-No"],"images":[],"music":"","systemDecision":true
-			},
-			{
-				"name":"SRC-EN-Yes","content":[
-					"Nadine decides to find out more about the elusive Inner Circle and expose them to the world. "				
-				],"link":["SRC-EN-NetworkLayout"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-EN-No","content":[
-					"Nadine decides to expose HealthCorp executives and show their shady business practices to the world. "
-				],"link":["SRC-EN-NetworkLayout"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-EN-NetworkLayout","content":[
-					"Nadine decides to hack into the Executive network.",
-					"Nadine manages to hack into the Executive network!",
-					"Nadine couldn't get a view of the Executive network."
-				],
-				"link":["SRC-EN-WeIn","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"pipes-minigame.html",
-				"minigame-time":"90","minigame-attempts":"2","minigame-grid":"7"
-			},
-			{
-				"name":"SRC-EN-WeIn","content":[
-					"Now that she has a good view of the network, she quickly spots the server to hack into. ",
-					"Nadine launches a dictionary attack."
-				],"link":["SRC-EN-DA-Minigame"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-EN-DA-Minigame","content": [
-					"Nadine launches a dictionary attack.",
-					"Nadine manages to hack into the Finance servers!",
-					"Nadine couldn't hack into the Finance servers...."
-				],
-				"link":["SRC-EN-DA-Success","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"DA-minigame.html","minigame-attempts":"2",
-				"minigame-score":"60",
-            	"minigame-difficulty":"1"
-			},
-			{
-				"name":"SRC-EN-DA-Success","content":[
-					"Nadine has uncovered a wealth of information on the servers she hacked. "
-				],"link":["SRC-EN-IC-SysDecision"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-EN-IC-SysDecision","content":["WhoAreTheInnerCircle"],
-				"link":["SRC-EN-ExposeIC","SRC-EN-NaughtyExecs"],"images":[],"music":"","systemDecision":true
-			},
-			{
-				"name":"SRC-EN-ExposeIC","content":[
-					"Nadine has the names of people in the Inner Circle. ",
-					"Some of them own the biggest media conglomerates in the country, some are governors, big lawyers .... ",
-					" ... and even government officials.",
-					"Nadine has all of their emails sent between each other going back years.",
-					"They showed how they had rigged elections to favour presidents who'll look favourably on HealthCorp. "
-				],"link":["SRC-EN-EIC-Monologue"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-EN-EIC-Monologue","content":[
-					"Nadine: 'I have everything I need to expose the Inner Circle and all the terrible things they've done.'",
-					"Nadine: 'All their back hand deals are finally gonna be exposed for everyone to see!'",
-					"Nadine: 'Right, I better get out of here before they send Security!'"
-				],
-				"link":["SRC-Done"],"images":[],"characters":["Nadine"],"music":"","dialogue":true
-			},
-			{
-				"name":"SRC-EN-NaughtyExecs","content":[
-					"Nadine discovers a trove of corporate emails",
-					"They show HealthCorp executives paying off HealthCorp employees who had been sexually assaulted.",
-					"As well as NDAs they were made to sign with legal threats made to them if they didn't comply.",
-					"Then proceeded to target and block their friends and family from receiving health insurance. ",
-					"It's pretty messed up."
-				],"link":["SRC-EN-NE-Monologue"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-EN-NE-Monologue","content":[
-					"Nadine: 'Jeez, HealthCorp are gonna be over when this leaks.'",
-"Nadine: 'Time to get out of here!'"
-				],
-				"link":["SRC-Done"],"images":[],"characters":["Nadine"],"music":"","dialogue":true
-			},
-			{
-				"name":"SRC-Done","content":[
-					"Nadine finishes up her session and leaves the server room cages."
-				],"link":["HACK SUCCESS"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-R&DNetwork","content":[
-					"Nadine decided that she's going to expose HealthCorp for their exploitative targetting techniques. "
-				],
-				"link":["SRC-RDN-Decision"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-RDN-Minigame","content":[
-					"Nadine begins building her view of the R&D Network.",
-					"Nadine manages to hack into the R&D network.",
-					"Nadine couldn't get a view of the R&D network. "
-				],
-				"link":["SRC-RDN-WeIn","SRC-Fail"],"images":[],"music":"",
-				"minigame":true,"minigame-link":"pipes-minigame.html",
-				"minigame-time":"90","minigame-attempts":"2","minigame-grid":"7"
-			},
-			{
-				"name":"SRC-RDN-WeIn","content":[
-					"Now that she has a good view of the network, she quickly spots the server to hack into."
-				],"link":["SRC-RDN-DA-Minigame"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-RDN-DA-Minigame","content":[
-					"Nadine launches a dictionary attack.",
-					"Nadine manages to hack into the R&D servers!",
-					"Nadine couldn't hack into the R&D servers...."
-				],
-				"link":["SRC-RDN-DA-Success","SRC-Fail"],
-				"images":[],"music":"",
-				"minigame":true,"minigame-link":"DA-minigame.html","minigame-time":"90","minigame-attempts":"2",
-				"minigame-score":"60",
-            	"minigame-difficulty":"1"
-			},
-			{
-				"name":"SRC-RDN-DA-Success","content":[
-					"She starts going through the wealth of information on the server.",
-					"She discovers that HealthCorp are using data illegally gathered by their apps to stalk and target vulnerable people. ",
-					"It was acting like a worm, spreading between phones.",
-					"Nadine copies the source code for the apps to her laptop."
-				],"link":["SRC-RDN-DA-Monologue"],"images":[],"music":"","narration":true
-			},
-			{
-				"name":"SRC-RDN-DA-Monologue","content":[
-					"Nadine: 'They can't be allowed to violate anybody's privacy anymore!'",
-"Nadine: 'Now we'll be able to prove that HealthCorp are targetting the vulnerable.'",
-"Nadine: 'Time to get out of here!'"
-],"link":["SRC-Done"],"images":[],"characters":["Nadine"],"music":"","dialogue":true
-			},
-			{
-				"name":"HACK FAILED","content":["FINISH"],"link":["FINISH"],
-				"images":[],"music":"","narration":true
-			},
-			{
-				"name":"HACK SUCCESS","content":["FINISH"],"link":["FINISH"],"images":[],"music":"","narration":true
-			}
-     	]
-	}
+         {
+            "name":"ServerRoomCages",
+            "content":[
+               "Nadine is in the server room cages.",
+               "There are rows upon rows of servers and not a lot of time to go through them before someone notices her and calls Security...."
+            ],
+            "link":[
+               "SRC-Nadine"
+            ],
+            "images":[
+               "server-room.jpg",
+               "server-room.jpg"
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-Nadine",
+            "content":[
+               "Nadine: 'Uhhh I'm gonna have to find my way through here before they arrest me.'",
+               "Nadine: 'Let's just pick a server and work from there...'"
+            ],
+            "link":[
+               "SRC-ClosestServer"
+            ],
+            "images":[
+               "server-room.jpg",
+               "server-room.jpg"
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"Futuristic-1.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"SRC-ClosestServer",
+            "content":[
+               "Nadine picks the server closest to her. ",
+               "She pulls out her laptop and plugs it into the server. ",
+               "To get a layout of the network and find where everything is, Nadine needs to hack into a server.",
+               "In order to perform her hack, she must interact into the different parts of the network so she can get a full network map.",
+               "Your job is to click on each of the elements and create a complete, connected network map for Nadine."
+            ],
+            "link":[
+               "SRC-NetworkLayout-Minigame"
+            ],
+            "images":[
+               "fibre-cables.jpg",
+               "fibre-cables.jpg",
+               "hacking-in.jpg",
+               "hacking-in.jpg",
+               "hacking-in.jpg"
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-NetworkLayout-Minigame",
+            "content":[
+               "Nadine starts to map the HealthCorp network.",
+               "Nadine now has a proper view of the HealthCorp network, and can now choose a server to hack into.",
+               "Nadine has alerted the Technical department to her intrusion, she must now escape."
+            ],
+            "link":[
+               "SRC-HaveNetworkLayout",
+               "HACK FAILED"
+            ],
+            "images":[
+               "hacking-in.jpg"
+            ],
+            "music":"Futuristic-1.mp3",
+            "minigame":true,
+            "minigame-link":"pipes-minigame.html",
+            "minigame-time":"120",
+            "minigame-attempts":"2",
+            "minigame-grid":"7"
+         },
+         {
+            "name":"SRC-HaveNetworkLayout",
+            "content":[
+               "Now that Nadine has a good view of the HealthCorp network..",
+               "...she needs to decide what she wants to expose about HealthCorp or send their money to."
+            ],
+            "link":[
+               "SRC-AnonPlan-SysDecision"
+            ],
+            "images":[
+               "fibre-cables.jpg",
+               "fibre-cables.jpg"
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-AnonPlan-SysDecision",
+            "content":[
+               "NadineHitsTheJackpot-Anon"
+            ],
+            "link":[
+               "SRC-HasAnonPlan",
+               "SRC-InnerCircle-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"SRC-HasAnonPlan",
+            "content":[
+               "Nadine remembers that she used the Anonymous Sender's plans to get into HealthCorp, but does she have to transfer all that money to them?"
+            ],
+            "link":[
+               "SRC-HasAnonPlan-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-HasAnonPlan-SysDecision",
+            "content":[
+               "TakeTheFightToThem-Anon"
+            ],
+            "link":[
+               "SRC-HAP-250Mill",
+               "SRC-HAP-100Mill"
+            ],
+            "images":[
+
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"SRC-HAP-250Mill",
+            "content":[
+               "If she wants to do good on her promise, she would need to transfer $250 million to the Anonymous sender."
+            ],
+            "link":[
+               "SRC-InnerCircle-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-HAP-100Mill",
+            "content":[
+               "If she wants to do good on her promise, she would need to transfer $100 million to the Anonymous sender."
+            ],
+            "link":[
+               "SRC-InnerCircle-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-InnerCircle-SysDecision",
+            "content":[
+               "WhoAreTheInnerCircle"
+            ],
+            "link":[
+               "SRC-ExposeIC",
+               "SRC-ExposeExecs"
+            ],
+            "images":[
+
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"SRC-ExposeIC",
+            "content":[
+               "Nadine remembers what Darren told her about the mysterious Inner Circle. ",
+               "If she wants to expose them, then she should hack into the Executive network."
+            ],
+            "link":[
+               "SRC-HCTargets-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-ExposeExecs",
+            "content":[
+               "Nadine could leak some emails from the Executive server. ",
+               "Showing how HealthCorp executives have protected their image could really shake things up. ",
+               "She can expose them through hacking the Executive network."
+            ],
+            "link":[
+               "SRC-HCTargets-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-HCTargets-SysDecision",
+            "content":[
+               "R&D-P-HealthCorp"
+            ],
+            "link":[
+               "SRC-HCTargets-Yes",
+               "SRC-HCTargets-SysDecision-2"
+            ],
+            "images":[
+
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"SRC-HCTargets-SysDecision-2",
+            "content":[
+               "MAD-Whiteboards"
+            ],
+            "link":[
+               "SRC-HCTargets-Yes",
+               "SRC-HCTargets-SysDecision-3"
+            ],
+            "images":[
+
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"SRC-HCTargets-SysDecision-3",
+            "content":[
+               "Tech-C-Intranet"
+            ],
+            "link":[
+               "SRC-HCTargets-Yes",
+               "SRC-WhatchaHackin"
+            ],
+            "images":[
+
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"SRC-HCTargets-Yes",
+            "content":[
+               "Nadine remembers the new techniques HealthCorp are using to target vulnerable people. ",
+               "She should hack into the R&D network."
+            ],
+            "link":[
+               "SRC-WhatchaHackin"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-WhatchaHackin",
+            "content":[
+               "Given everything Nadine knows, which network should Nadine hack?",
+               "the Finance network.",
+               "the Executive network.",
+               "the Research & Development network."
+            ],
+            "link":[
+               "SRC-FinanceNetwork",
+               "SRC-ExecutiveNetwork-SysDecision",
+               "SRC-R&DNetwork"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "decision":true
+         },
+         {
+            "name":"SRC-FinanceNetwork",
+            "content":[
+               "Nadine decided that she's gonna take HealthCorp's money, so she's going to hack into the Finance network."
+            ],
+            "link":[
+               "SRC-FN-Decision"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-FN-Decision",
+            "content":[
+               "What should Nadine do on the server?",
+               "Transfer the money to the Anon Sender.",
+               "Transfer all the money to Nadine's account.",
+               "Transfer all the money to the wrongfully terminated customers."
+            ],
+            "link":[
+               "SRC-FN-Anon",
+               "SRC-FN-Nadine",
+               "SRC-FN-Public"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "decision":true
+         },
+         {
+            "name":"SRC-FN-Anon",
+            "content":[
+               "Nadine decides that she is going to transfer the money to the Anonymous sender. "
+            ],
+            "link":[
+               "SRC-FN-Minigame"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-FN-Nadine",
+            "content":[
+               "Nadine decides to keep all the money for herself. ",
+               "She deserves something nice. ",
+               "Maybe a lot of somethings."
+            ],
+            "link":[
+               "SRC-FN-Minigame"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-FN-Public",
+            "content":[
+               "Nadine decides to re-distribute the riches and transfer a sizeable chunk of the money to everyone who had been fucked over by HealthCorp. "
+            ],
+            "link":[
+               "SRC-FN-Minigame"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-FN-Minigame",
+            "content":[
+               "Nadine begins building her view of the Finance Network.",
+               "Nadine manages to hack into the Finance network.",
+               "Nadine couldn't get a view of the Financial network. "
+            ],
+            "link":[
+               "SRC-FN-WeIn",
+               "SRC-FN-Fail"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "minigame":true,
+            "minigame-link":"pipes-minigame.html",
+            "minigame-time":"90",
+            "minigame-attempts":"2",
+            "minigame-grid":"7"
+         },
+         {
+            "name":"SRC-FN-WeIn",
+            "content":[
+               "Now that she has a good view of the network, she quickly spots the server to hack into. "
+            ],
+            "link":[
+               "SRC-FN-DA-Minigame"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-FN-DA-Minigame",
+            "content":[
+               "Nadine launches a dictionary attack.",
+               "Nadine manages to hack into the Finance servers!",
+               "Nadine couldn't hack into the Finance servers...."
+            ],
+            "link":[
+               "SRC-FN-DA-Success",
+               "SRC-Fail"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "minigame":true,
+            "minigame-link":"DA-minigame.html",
+            "minigame-attempts":"2",
+            "minigame-score":"60",
+            "minigame-difficulty":"1"
+         },
+         {
+            "name":"SRC-FN-DA-Success",
+            "content":[
+               "She now has access to HealthCorp's finances."
+            ],
+            "link":[
+               "SRC-FN-WhoGetsTheMoney"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-FN-WhoGetsTheMoney",
+            "content":[
+               "SRC-FN-Anon"
+            ],
+            "link":[
+               "SRC-FN-WGTM-Anon",
+               "SRC-FN-WhoGetsTheMoney-2"
+            ],
+            "images":[
+
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"SRC-FN-WhoGetsTheMoney-2",
+            "content":[
+               "SRC-FN-Nadine"
+            ],
+            "link":[
+               "SRC-FN-WGTM-Nadine",
+               "SRC-FN-WGTM-Public"
+            ],
+            "images":[
+
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"SRC-FN-WGTM-Anon",
+            "content":[
+               "Since Nadine decided to give the money to Anon, she puts in their account details. ",
+               "She wires the money to them and encrypts the Finance servers' hard drives so no one can undo it. "
+            ],
+            "link":[
+               "SRC-FN-WGTM-A-Monologue"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-FN-WGTM-A-Monologue",
+            "content":[
+               "Nadine: 'Well, at least HealthCorp are gonna be fucked after this...'",
+               "Nadine: '.. and I'm not gonna get exposed because of it.'"
+            ],
+            "link":[
+               "SRC-FN-Done"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"Futuristic-1.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"SRC-FN-WGTM-Nadine",
+            "content":[
+               "Since Nadine decided to keep the money for herself, she puts in her own account. ",
+               "She wires the money, starts the process of laundering her stolen money and encrypts the Finance servers' hard drives so no one can undo it. "
+            ],
+            "link":[
+               "SRC-FN-WGTM-N-Monologue"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-FN-WGTM-N-Monologue",
+            "content":[
+               "Nadine: 'Well that'll show them, I deserve that money, especially after all that shit HealthCorp put my family through.'"
+            ],
+            "link":[
+               "SRC-FN-Done"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"Futuristic-1.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"SRC-FN-WGTM-Public",
+            "content":[
+               "Since Nadine decided to give the money to the people who were affected by HealthCorp's termination policies, she gathers their account details and plugs it into her script to divide up all of HealthCorp's money between them.",
+               "She wires the money to them and encrypts the Finance servers' hard drives so no one can undo it. "
+            ],
+            "link":[
+               "SRC-FN-WGTM-P-Monologue"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-FN-WGTM-P-Monologue",
+            "content":[
+               "Nadine: 'It's about time someone made HealthCorp pay for what they've done, I'm glad it was me.'"
+            ],
+            "link":[
+               "SRC-FN-Done"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"Futuristic-1.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"SRC-FN-Done",
+            "content":[
+               "Nadine: 'Time to get out of here!'"
+            ],
+            "link":[
+               "SRC-Done"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"Futuristic-1.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"SRC-Fail",
+            "content":[
+               "Technical have been alerted of her presence in the server room. ",
+               "Guess it's time to go..."
+            ],
+            "link":[
+               "HACK FAILED"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-ExecutiveNetwork-SysDecision",
+            "content":[
+               "WhoAreTheInnerCircle"
+            ],
+            "link":[
+               "SRC-EN-Yes",
+               "SRC-EN-No"
+            ],
+            "images":[
+
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"SRC-EN-Yes",
+            "content":[
+               "Nadine decides to find out more about the elusive Inner Circle and expose them to the world. "
+            ],
+            "link":[
+               "SRC-EN-NetworkLayout"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-EN-No",
+            "content":[
+               "Nadine decides to expose HealthCorp executives and show their shady business practices to the world. "
+            ],
+            "link":[
+               "SRC-EN-NetworkLayout"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-EN-NetworkLayout",
+            "content":[
+               "Nadine decides to hack into the Executive network.",
+               "Nadine manages to hack into the Executive network!",
+               "Nadine couldn't get a view of the Executive network."
+            ],
+            "link":[
+               "SRC-EN-WeIn",
+               "SRC-Fail"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "minigame":true,
+            "minigame-link":"pipes-minigame.html",
+            "minigame-time":"90",
+            "minigame-attempts":"2",
+            "minigame-grid":"7"
+         },
+         {
+            "name":"SRC-EN-WeIn",
+            "content":[
+               "Now that she has a good view of the network, she quickly spots the server to hack into. ",
+               "Nadine launches a dictionary attack."
+            ],
+            "link":[
+               "SRC-EN-DA-Minigame"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-EN-DA-Minigame",
+            "content":[
+               "Nadine launches a dictionary attack.",
+               "Nadine manages to hack into the Finance servers!",
+               "Nadine couldn't hack into the Finance servers...."
+            ],
+            "link":[
+               "SRC-EN-DA-Success",
+               "SRC-Fail"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "minigame":true,
+            "minigame-link":"DA-minigame.html",
+            "minigame-attempts":"2",
+            "minigame-score":"60",
+            "minigame-difficulty":"1"
+         },
+         {
+            "name":"SRC-EN-DA-Success",
+            "content":[
+               "Nadine has uncovered a wealth of information on the servers she hacked. "
+            ],
+            "link":[
+               "SRC-EN-IC-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-EN-IC-SysDecision",
+            "content":[
+               "WhoAreTheInnerCircle"
+            ],
+            "link":[
+               "SRC-EN-ExposeIC",
+               "SRC-EN-NaughtyExecs"
+            ],
+            "images":[
+
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"SRC-EN-ExposeIC",
+            "content":[
+               "Nadine has the names of people in the Inner Circle. ",
+               "Some of them own the biggest media conglomerates in the country, some are governors, big lawyers .... ",
+               " ... and even government officials.",
+               "Nadine has all of their emails sent between each other going back years.",
+               "They showed how they had rigged elections to favour presidents who'll look favourably on HealthCorp. "
+            ],
+            "link":[
+               "SRC-EN-EIC-Monologue"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-EN-EIC-Monologue",
+            "content":[
+               "Nadine: 'I have everything I need to expose the Inner Circle and all the terrible things they've done.'",
+               "Nadine: 'All their back hand deals are finally gonna be exposed for everyone to see!'",
+               "Nadine: 'Right, I better get out of here before they send Security!'"
+            ],
+            "link":[
+               "SRC-Done"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"Futuristic-1.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"SRC-EN-NaughtyExecs",
+            "content":[
+               "Nadine discovers a trove of corporate emails",
+               "They show HealthCorp executives paying off HealthCorp employees who had been sexually assaulted.",
+               "As well as NDAs they were made to sign with legal threats made to them if they didn't comply.",
+               "Then proceeded to target and block their friends and family from receiving health insurance. ",
+               "It's pretty messed up."
+            ],
+            "link":[
+               "SRC-EN-NE-Monologue"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-EN-NE-Monologue",
+            "content":[
+               "Nadine: 'Jeez, HealthCorp are gonna be over when this leaks.'",
+               "Nadine: 'Time to get out of here!'"
+            ],
+            "link":[
+               "SRC-Done"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"Futuristic-1.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"SRC-Done",
+            "content":[
+               "Nadine finishes up her session and leaves the server room cages."
+            ],
+            "link":[
+               "HACK SUCCESS"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-R&DNetwork",
+            "content":[
+               "Nadine decided that she's going to expose HealthCorp for their exploitative targetting techniques. "
+            ],
+            "link":[
+               "SRC-RDN-Decision"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-RDN-Minigame",
+            "content":[
+               "Nadine begins building her view of the R&D Network.",
+               "Nadine manages to hack into the R&D network.",
+               "Nadine couldn't get a view of the R&D network. "
+            ],
+            "link":[
+               "SRC-RDN-WeIn",
+               "SRC-Fail"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "minigame":true,
+            "minigame-link":"pipes-minigame.html",
+            "minigame-time":"90",
+            "minigame-attempts":"2",
+            "minigame-grid":"7"
+         },
+         {
+            "name":"SRC-RDN-WeIn",
+            "content":[
+               "Now that she has a good view of the network, she quickly spots the server to hack into."
+            ],
+            "link":[
+               "SRC-RDN-DA-Minigame"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-RDN-DA-Minigame",
+            "content":[
+               "Nadine launches a dictionary attack.",
+               "Nadine manages to hack into the R&D servers!",
+               "Nadine couldn't hack into the R&D servers...."
+            ],
+            "link":[
+               "SRC-RDN-DA-Success",
+               "SRC-Fail"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "minigame":true,
+            "minigame-link":"DA-minigame.html",
+            "minigame-time":"90",
+            "minigame-attempts":"2",
+            "minigame-score":"60",
+            "minigame-difficulty":"1"
+         },
+         {
+            "name":"SRC-RDN-DA-Success",
+            "content":[
+               "She starts going through the wealth of information on the server.",
+               "She discovers that HealthCorp are using data illegally gathered by their apps to stalk and target vulnerable people. ",
+               "It was acting like a worm, spreading between phones.",
+               "Nadine copies the source code for the apps to her laptop."
+            ],
+            "link":[
+               "SRC-RDN-DA-Monologue"
+            ],
+            "images":[
+
+            ],
+            "music":"Futuristic-1.mp3",
+            "narration":true
+         },
+         {
+            "name":"SRC-RDN-DA-Monologue",
+            "content":[
+               "Nadine: 'They can't be allowed to violate anybody's privacy anymore!'",
+               "Nadine: 'Now we'll be able to prove that HealthCorp are targetting the vulnerable.'",
+               "Nadine: 'Time to get out of here!'"
+            ],
+            "link":[
+               "SRC-Done"
+            ],
+            "images":[
+
+            ],
+            "characters":[
+               "Nadine"
+            ],
+            "music":"Futuristic-1.mp3",
+            "dialogue":true
+         },
+         {
+            "name":"HACK FAILED",
+            "content":[
+               "FINISH"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+
+            ],
+            "systemDecision":true
+         },
+         {
+            "name":"HACK SUCCESS",
+            "content":[
+               "FINISH"
+            ],
+            "link":[
+               "FINISH"
+            ],
+            "images":[
+
+            ],
+            "systemDecision":true
+         }
+      ]
+   }
 }

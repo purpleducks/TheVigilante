@@ -55,7 +55,7 @@ class GameManager {    // singleton class?
         var charctrsObjs = [];
         var conversationFlow = [];  // keeps track on who is speaking when
 
-        this.musicCheck();
+        if (!currentObject.systemDecision) { this.musicCheck(); }
         this.soIndex = 0;
 
         console.log("GAME: Current object being SORTED: " + currentObject.name);
