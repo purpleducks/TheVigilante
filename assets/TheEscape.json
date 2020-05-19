@@ -13,7 +13,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -28,7 +28,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -43,7 +43,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -58,7 +58,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -77,7 +77,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "decision":true
          },
          {
@@ -91,8 +91,8 @@
             ],
             "images":[
 
-            ],
-            "music":"Prelude and Action.mp3",
+            ], 
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -109,7 +109,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -124,7 +124,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -139,7 +139,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -153,7 +153,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -169,7 +169,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -184,7 +184,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -201,10 +201,31 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "minigame":true,
             "minigame-link":"pipes-minigame.html",
             "minigame-time":"100",
+            "minigame-attempts":"2",
+            "minigame-grid":"7"
+         },
+         {
+            "name":"SR-BP-M-LessTime",
+            "content":[
+               "Nadine begins to plug her laptop into the Power Supply Controller network.",
+               "Nadine manages to hack into the Power Supply Controller network!",
+               "Nadine couldn't hack into the network...."
+            ],
+            "link":[
+               "SR-BP-WeIn",
+               "SR-BP-TourGuide-SysDecision"
+            ],
+            "images":[
+
+            ],
+            "music":"Prelude-and-Action.mp3",
+            "minigame":true,
+            "minigame-link":"pipes-minigame.html",
+            "minigame-time":"75",
             "minigame-attempts":"2",
             "minigame-grid":"7"
          },
@@ -220,7 +241,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -235,7 +256,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -249,7 +270,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -338,7 +359,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Pookatori-and-friends.mp3",
             "narration":true
          },
          {
@@ -354,7 +375,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -375,7 +396,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -390,7 +411,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -405,7 +426,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -420,7 +441,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -435,7 +456,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -452,7 +473,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
@@ -467,7 +488,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -482,7 +503,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -497,7 +518,7 @@
             "images":[
 
             ],
-            "music":"Prelude and Action.mp3",
+            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -511,7 +532,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Imagefilm-016.mp3",
             "narration":true
          },
          {
@@ -525,7 +546,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Imagefilm-016.mp3",
             "narration":true
          },
          {
@@ -543,7 +564,7 @@
             "characters":[
                "News-Anchor"
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "dialogue":true
          },
          {
@@ -558,7 +579,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -573,15 +594,15 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
             "name":"H-FailedHack-Darren",
             "content":[
-               "News-Anchor: 'Two suspects were arrested was on charges of attempted burglary, aiding and abetting and corporate espionage.'",
-               "News-Anchor: 'It has been exclusively revealed to us here that their names are Nadine Summers and Darren Anderson.'",
-               "News-Anchor: 'More on that next, stay tuned.'"
+               "News-Anchor: 'Police are looking for a black female in her mid 30s.'",
+"News-Anchor: 'It has been exclusively revealed to us here that they have already arrested a man in connection with the hacker, who is called Darren Anderson.'",
+"News-Anchor: 'Stay tuned to this developing story.'"
             ],
             "link":[
                "LOST GAME"
@@ -592,15 +613,15 @@
             "characters":[
                "News-Anchor"
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "dialogue":true
          },
          {
             "name":"H-FailedHack-Danielle",
             "content":[
-               "News-Anchor: 'Two suspects were arrested was on charges of attempted burglary, aiding and abetting and corporate espionage.'",
-               "News-Anchor: 'It has been exclusively revealed to us here that their names are Nadine Summers and Danielle Winters.'",
-               "News-Anchor: 'More on that next, stay tuned.'"
+               "News-Anchor: 'Police are looking for a black female in her mid 30s.'",
+"News-Anchor: 'It has been exclusively revealed to us here that they have already arrested a woman in connection with the hacker, who is called Danielle Winters.'",
+"News-Anchor: 'Stay tuned to this developing story.'"
             ],
             "link":[
                "LOST GAME"
@@ -611,15 +632,14 @@
             "characters":[
                "News-Anchor"
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "dialogue":true
          },
          {
             "name":"H-FailedHack-Nadine",
             "content":[
-               "News-Anchor: 'One suspect was arrested was on charges of attempted burglary and corporate espionage.'",
-               "News-Anchor: 'It has been exclusively revealed to us here that their name is Nadine Summers, a disgruntled troubled person.'",
-               "News-Anchor: 'More on that next, stay tuned.'"
+               "News-Anchor: 'Police haven't reported any suspects arrested or identified at this time, however they are seeking any information about the hacker and their whereabouts.'",
+"News-Anchor: 'Stay tuned to this developing story.'"
             ],
             "link":[
                "LOST GAME"
@@ -630,7 +650,7 @@
             "characters":[
                "News-Anchor"
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "dialogue":true
          },
          {
@@ -645,7 +665,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Pookatori-and-friends.mp3",
             "narration":true
          },
          {
@@ -660,7 +680,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -675,7 +695,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -689,7 +709,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Imagefilm-016.mp3",
             "narration":true
          },
          {
@@ -703,7 +723,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Imagefilm-016.mp3",
             "narration":true
          },
          {
@@ -717,7 +737,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Imagefilm-016.mp3",
             "narration":true
          },
          {
@@ -737,7 +757,7 @@
             "characters":[
                "News-Anchor"
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "dialogue":true
          },
          {
@@ -752,7 +772,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -767,7 +787,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -782,7 +802,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -797,7 +817,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -817,7 +837,7 @@
             "characters":[
                "News-Anchor"
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "dialogue":true
          },
          {
@@ -837,7 +857,7 @@
             "characters":[
                "News-Anchor"
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "dialogue":true
          },
          {
@@ -858,7 +878,7 @@
             "characters":[
                "News-Anchor"
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "dialogue":true
          },
          {
@@ -879,7 +899,7 @@
             "characters":[
                "News-Anchor"
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "dialogue":true
          },
          {
@@ -899,7 +919,7 @@
             "characters":[
                "News-Anchor"
             ],
-            "music":"",
+            "music":"Breaking-News-4.mp3",
             "dialogue":true
          },
          {
@@ -914,7 +934,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Imagefilm-016.mp3",
             "narration":true
          },
          {
@@ -929,7 +949,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Imagefilm-016.mp3",
             "narration":true
          },
          {
@@ -944,7 +964,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Pookatori-and-friends.mp3",
             "narration":true
          },
          {
@@ -958,7 +978,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Pookatori-and-friends.mp3",
             "narration":true
          },
          {
@@ -972,7 +992,7 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Imagefilm-016.mp3",
             "narration":true
          },
          {
@@ -987,25 +1007,25 @@
             "images":[
 
             ],
-            "music":"",
+            "music":"Imagefilm-016.mp3",
             "narration":true
          },
          {
-            "name":"H-SecurityAreWaiting",
+            "name":"SR-SecurityAreWaiting",
             "content":[
                "When she gets down to the ground floor, she sees Security Guards checking passes as they leave the building."
             ],
             "link":[
-               "H-SAW-Decision"
+               "SR-SAW-Decision"
             ],
             "images":[
 
             ],
-            "music":"",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
-            "name":"H-SAW-Decision",
+            "name":"SR-SAW-Decision",
             "content":[
                "What does Nadine do?",
                "Scream 'he's got a gun!!'",
@@ -1013,37 +1033,37 @@
                "Throw a fire extinguisher at the window."
             ],
             "link":[
-               "H-Gun",
-               "H-AvoidAttention",
-               "H-FireExtinguisher"
+               "SR-Gun",
+               "SR-AvoidAttention",
+               "SR-FireExtinguisher"
             ],
             "images":[
 
             ],
-            "music":"",
+            "music":"Prelude-and-Action.mp3",
             "decision":true
          },
          {
-            "name":"H-Gun",
+            "name":"SR-Gun",
             "content":[
                "Nadine hangs back from the crowd and screams."
             ],
             "link":[
-               "H-Gun-2"
+               "SR-Gun-2"
             ],
             "images":[
 
             ],
-            "music":"",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
-            "name":"H-Gun-2",
+            "name":"SR-Gun-2",
             "content":[
                "Nadine: 'OH MY GOD THAT GUY'S GOT A GUN!!'"
             ],
             "link":[
-               "H-Gun-Panic"
+               "SR-Gun-Panic"
             ],
             "images":[
 
@@ -1051,54 +1071,54 @@
             "characters":[
                "Nadine"
             ],
-            "music":"",
+            "music":"Prelude-and-Action.mp3",
             "dialogue":true
          },
          {
-            "name":"H-Gun-Panic",
+            "name":"SR-Gun-Panic",
             "content":[
                "Panic quickly sweeps over the crowd as they quickly overwhelm the HealthCorp security forces. ",
                "Nadine manages to escape with the stampeding crowd."
             ],
             "link":[
-               "H-NadineCar-Check-1"
+               "SR-NadineCar-Check-1"
             ],
             "images":[
 
             ],
-            "music":"",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
-            "name":"H-AvoidAttention",
+            "name":"SR-AvoidAttention",
             "content":[
                "As Nadine walks past some security, they notice her suspicious behaviour.",
                "A group of security guards begin to surround and approach her. ",
                "Nadine, now completely surrounded by security, is escorted away to an interrogation room."
             ],
             "link":[
-               "H-DevicesSeized"
+               "SR-DevicesSeized"
             ],
             "images":[
 
             ],
-            "music":"",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          },
          {
-            "name":"H-FireExtinguisher",
+            "name":"SR-FireExtinguisher",
             "content":[
                "Nadine notices a fire extinguisher nearby. ",
                "She picks it up and throws it at a window. Glass explodes everywhere, people scatter and the HealthCorp security forces are overwhelmed.",
                "Nadine manages to escape with the stampeding crowd."
             ],
             "link":[
-               "H-NadineCar-Check-1"
+               "SR-NadineCar-Check-1"
             ],
             "images":[
 
             ],
-            "music":"",
+            "music":"Prelude-and-Action.mp3",
             "narration":true
          }
       ]

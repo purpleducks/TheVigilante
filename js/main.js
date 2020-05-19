@@ -24,7 +24,13 @@ function runGame(stageChange) {
         var lastObject = gameMan.dataManager.gameData.find(speechObj => speechObj.name === lastObjName);
         console.log(lastObject);
         document.getElementById("gameContainer").currObj = lastObject;
-        gameMan.sortSpeech(lastObject);
+
+        if (lastObject.content[0] == "FINISH") {
+            startProcessing(gameMan, lastObject);
+        }
+        else {
+            gameMan.sortSpeech(lastObject);
+        }
     }
     else {
         var firstObject = gameMan.dataManager.gameData[0];       // get the start object
@@ -85,18 +91,19 @@ function startProcessing(evt, nextObject) {
         currObj = nextObject;
     }
     // var nextObject = gameMan.dataManager.gameData.find(speechObj => speechObj.name === currObj.link[0]);
-    if (currObj.content[0] != "FINISH") {
+    if (currObj.content[0] == "END GAME") {
+        console.log("MAIN: Ending the game and clearing LocalStorage!");
+        localStorage.clear();
+        window.location.replace("./index.html");
+    }
+    else if (currObj.content[0] != "FINISH") {
          document.getElementById("gameContainer").currObj = currObj;
         // evt.currentTarget.currObj = nextObject;
         // gameMan.allActions.push(nextObject.name);
         console.log("MAIN: We processing the object called: "+ currObj.name);
+        if (currObj.persistent) { currObj.index = 0; }
         gameMan.dataManager.addToAllActions(currObj.name);
         gameMan.sortSpeech(currObj, 0);
-    }
-    else if (currObj.content[0] == "END GAME") {
-        console.log("MAIN: Ending the game and clearing LocalStorage!");
-        localStorage.clear();
-        window.location.replace("./index.html");
     }
     else {
         if (gameMan.dataManager.currentStage == "Introduction") {

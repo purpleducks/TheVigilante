@@ -746,6 +746,7 @@
                "nadine-work-healthcorp-search.jpg"
             ],
             "narration":true,
+            "persistent":true,
             "music":"An-Appearance-Of-Normality.mp3"
          },
          {
@@ -2250,7 +2251,7 @@
                "I think that's everything!"
             ],
             "link":[
-               "TechInTheDept-SysDecision-FIRST",
+               "TITD-SysDecision-Check",
                "WhatTimeDoIStart",
                "WorkingLifeAtHC",
                "NadineFinishesWithRecruiter"
@@ -2260,6 +2261,16 @@
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "decision":true
+         },
+         {
+            "name":"TITD-SysDecision-Check","content":["TechInTheDept-SysDecision-FIRST"],
+            "link":["TITD-AlreadyBeen","TechInTheDept-SysDecision-FIRST"],"images":[],"music":"An-Appearance-Of-Normality.mp3",
+            "systemDecision":true
+         },
+         {
+            "name":"TITD-AlreadyBeen","content":["Nadine has already asked the Recruiter about this, she should ask something else."],
+            "link":["RecruiterCircular"],"images":["linkedin-messaging.jpg"],"music":"An-Appearance-Of-Normality.mp3",
+            "narration":true,"persistent":true
          },
          {
             "name":"TechInTheDept-SysDecision-FIRST",
@@ -2457,7 +2468,7 @@
             "name":"RecruiterCircular-SysDecision",
             "content":[
                "TechInTheDept-SysDecision",
-               "WhatTimeDoIStart",
+               "WTDIS-SysDecision",
                "WorkingLifeAtHC"
             ],
             "link":[
@@ -2469,6 +2480,14 @@
             ],
             "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
+         },
+         {
+            "name":"WTDIS-SysDecision","content":["WhatTimeDoIStart"],
+            "link":["WTDIS-AlreadyBeen","WhatTimeDoIStart"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"WTDIS-AlreadyBeen","content":["Nadine has already asked the Recruiter about this, she should ask something else."],
+            "link":["RecruiterCircular"],"images":["linkedin-messaging.jpg"],"music":"An-Appearance-Of-Normality.mp3","narration":true,"persistent":true
          },
          {
             "name":"NadineFinishesWithRecruiter",
@@ -2519,6 +2538,7 @@
                "linkedin-messaging.jpg",
                "linkedin-messaging.jpg"
             ],
+            "persistent":true,
             "music":"An-Appearance-Of-Normality.mp3",
             "narration":true
          },

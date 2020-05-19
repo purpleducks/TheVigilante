@@ -11,14 +11,15 @@ class GameManager {    // singleton class?
     }
 
     processSpeech(currentObject) {
-        if (currentObject.content.length == 0) {
+        if (currentObject.content.length == 0 || currentObject.index >= currentObject.content.length) {
             var gameContainer = document.getElementById("gameContainer");
             gameContainer.currObj = currentObject;
             gameContainer.gameMan = this;
             var event = new Event("nextObject");
             gameContainer.dispatchEvent(event);
         }
-        else {
+        else { 
+            if (currentObject.persistent) { currentObject.index++; }
             console.log("GAME: Current object being PROCESSED: " + currentObject.name);
             if (currentObject.dialogue) {
                 if (currentObject.conversationFlow[this.soIndex] == 0) {

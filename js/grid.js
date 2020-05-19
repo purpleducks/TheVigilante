@@ -23,6 +23,12 @@ class Grid extends Minigame {	// ADAPTED FROM THE FOLLOWING SOURCE: https://gith
         this.succeedingObj = tempCurrObj.link[0];
 	}
 
+    updateNoOfAttempts() {
+        var tempCurrObj = JSON.parse(localStorage.getItem("currentObject"));
+        tempCurrObj["minigame-attempts"] = this.noOfAttempts;
+        localStorage.setItem("currentObject", JSON.stringify(tempCurrObj));
+    }
+
 	init() {
 		if (this.size % 2 == false) {
             console.log("Cannot create grid with even number of rows/columns");
@@ -307,10 +313,11 @@ class Grid extends Minigame {	// ADAPTED FROM THE FOLLOWING SOURCE: https://gith
 
 function failedGame(grid) {
     document.getElementById("gameResult").style.visibility = "visible";
+    grid.updateNoOfAttempts();
+    
     if (grid.noOfAttempts > 0) {    // if the player has more chances, let them play on.
         document.getElementById("gameResultSpeech").style.color = "darkorange";
         document.getElementById("gameResultSpeech").innerHTML = "YOUR HACK FAILED.. BUT YOU HAVE ANOTHER CHANCE TO TRY AGAIN!";
-        document.cookie = grid.name+"Attempts="+grid.noOfAttempts+";path=/";
         setTimeout(function() {
             window.location.replace("../minigames/pipes-minigame.html");
         }, 2000);
@@ -335,21 +342,21 @@ function failedGame(grid) {
 }
 
 function checkFirstVisit() {
-        if (performance.navigation.type == 1) {
-            console.info( "This page is reloaded" );
-            // not first visit, so alert
-            alert('Refreshing is not allowed.');        // cheating!
-            var allActions = JSON.parse(localStorage.getItem("allActions"));
-            allActions.push(this.failingObj);   // assume fail
-            localStorage.setItem("allActions", JSON.stringify(allActions));
-            window.location.replace("../main.html");    // redirect back to the game
-            return false;
-        } 
-        else {
-            console.info( "This page is not reloaded");
-            return true;
-        }
+    if (performance.navigation.type == 1) {
+        console.info( "This page is reloaded" );
+        // not first visit, so alert
+        alert('Refreshing is not allowed.');        // cheating!
+        var allActions = JSON.parse(localStorage.getItem("allActions"));
+        allActions.push(this.failingObj);   // assume fail
+        localStorage.setItem("allActions", JSON.stringify(allActions));
+        window.location.replace("../main.html");    // redirect back to the game
+        return false;
+    } 
+    else {
+        console.info( "This page is not reloaded");
+        return true;
     }
+}
 
 function initGame(failingObj,succeedingObj) {
     addLabelToggleEL("musicControl");
@@ -367,7 +374,8 @@ function initGame(failingObj,succeedingObj) {
                 clearInterval(timer);
             }
             else {
-                label.innerHTML = parseInt(label.innerHTML) - 1;
+                grid.time--;
+                label.innerHTML = parseInt(grid.time) - 1;
             }
         }, 1000);
     }

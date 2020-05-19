@@ -770,7 +770,7 @@
          {
             "name":"ME-Reception-2",
             "content":[
-               "He types away at his computer for a moment or two.",
+               "She types away at his computer for a moment or two.",
                "Then makes a phone call and pulls out something from a drawer"
             ],
             "link":[
@@ -841,7 +841,7 @@
          {
             "name":"ME-Recep-DarrenPass",
             "content":[
-               "He types away at his computer for a moment or two.",
+               "She types away at his computer for a moment or two.",
                "Then makes a phone call and pulls out something from a drawer"
             ],
             "link":[
@@ -912,7 +912,7 @@
          {
             "name":"ME-Recep-DaniellePass",
             "content":[
-               "He types away at his computer for a moment or two.",
+               "She types away at his computer for a moment or two.",
                "Then makes a phone call and pulls out something from a drawer."
             ],
             "link":[
@@ -1665,7 +1665,8 @@
 
             ],
             "music":"",
-            "narration":true
+            "narration":true,
+            "persistent":true
          },
          {
             "name":"R&D-People",
@@ -2373,6 +2374,7 @@
             "images":[
 
             ],
+            "persistent":true,
             "music":"",
             "narration":true
          },
@@ -2662,6 +2664,14 @@
             "narration":true
          },
          {
+            "name":"MAD-LA-SysDecision","content":["M-A-D-LookAround"],
+            "link":["MAD-LA-DoSomethingElse","M-A-D-LookAround"],"images":[],"music":"","systemDecision":true
+         },
+         {
+            "name":"MAD-LA-DoSomethingElse","content":["Nadine has already had a look around, she should find other ways to get to the server room."],
+            "link":["M-A-D-Circular"],"images":[],"music":"","narration":true,"persistent":true
+         },
+         {
             "name":"M-A-D-LookAround",
             "content":[
                "She notices an empty conference room with several whiteboards. ",
@@ -2933,6 +2943,7 @@
             "images":[
 
             ],
+            "persistent":true,
             "music":"",
             "narration":true
          },
@@ -3528,6 +3539,7 @@
             "images":[
 
             ],
+            "persistent":true,
             "music":"",
             "narration":true
          },
@@ -3611,6 +3623,7 @@
             "images":[
 
             ],
+            "persistent":true,
             "music":"",
             "narration":true
          },
@@ -3869,6 +3882,7 @@
             "images":[
 
             ],
+            "persistent":true,
             "music":"",
             "narration":true
          },

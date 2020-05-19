@@ -2,7 +2,7 @@
     position: absolute;
     left: 27%;
     top: 6%;
-    background-color: rgba(60,60,60,0.6);
+    background-color: rgba(166, 166, 166, 0.45);
     border-radius: 27px;
 }
 
@@ -17,7 +17,7 @@ body {
     background-color: transparent;
     display: inline-block;
 
-    width: 120px;
+    width: 100px;
     box-sizing: content-box;
 
     background-repeat: no-repeat;

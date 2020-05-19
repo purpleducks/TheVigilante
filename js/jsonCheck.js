@@ -1,6 +1,6 @@
 
 function testGameJSON(json) {
-	var gameData = json.TheHack.storylines;
+	var gameData = json.OSINT.storylines;
 	var imagelessObjects = [];
 	var quietObjects = [];
 	console.log("IN TEST NOW");
@@ -105,7 +105,7 @@ function imageExists(image_url){
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'assets/TheHack.json', true);
+    xobj.open('GET', 'assets/OSINT.json', true);
     // Replace 'my_data' with the path to your file
     xobj.onreadystatechange = function() {
         if (xobj.readyState === 4 && xobj.status === 200) {

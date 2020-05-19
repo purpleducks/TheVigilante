@@ -5,7 +5,7 @@ class Narration extends Character {
         var gameMan = document.getElementById("gameContainer").gameMan;
         var currentObject = document.getElementById("gameContainer").currObj;
         var that = this; 
-        var currentString = currentObject.content.shift();
+        var currentString;
         var maxTime;
 
         switch(gameMan.soIndex % 4) {   // decides where the narration is gonna be
@@ -39,6 +39,13 @@ class Narration extends Character {
         });
 
         this.backgroundImgCheck(currentObject); 
+
+        if (currentObject.persistent) {
+            currentString = currentObject.content[currentObject.index];
+        } else {
+            currentString = currentObject.content.shift();
+        }
+
         if (currentString.length <= 50) { maxTime = 1500; }  // variable typing speed based on the length of the speech string
         else if (currentString.length <= 100) { maxTime = 3500; }
         else if (currentString.length <= 150) { maxTime = 6000; }

@@ -37,6 +37,8 @@ class Character {   // factory class
         
         if (currentObject.decision) { 
             this.makeDecisionButtons(gameMan); 
+        }
+        if (currentObject.decision || currentObject.persistent) {
             currentString = currentObject.content[0];
         }
         else {

@@ -100,7 +100,7 @@ function deleteSave() {
     if (localStorage.getItem("allActions") == null) {
         alert("No save game detected!");
     }
-    if (confirm("Are you sure you want to delete your saved game?")) {
+    else if (confirm("Are you sure you want to delete your saved game?")) {
         localStorage.clear();
         alert("Save game deleted!");
     }

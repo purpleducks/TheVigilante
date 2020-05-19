@@ -43,7 +43,8 @@
                "She pulls out her laptop and plugs it into the server. ",
                "To get a layout of the network and find where everything is, Nadine needs to hack into a server.",
                "In order to perform her hack, she must interact into the different parts of the network so she can get a full network map.",
-               "Your job is to click on each of the elements and create a complete, connected network map for Nadine."
+               "Your job is to click on each of the elements and create a complete, connected network map for Nadine.",
+               "You MUST use all of the parts of the network to connect the endpoints together."
             ],
             "link":[
                "SRC-NetworkLayout-Minigame"
@@ -75,9 +76,9 @@
             "music":"Futuristic-1.mp3",
             "minigame":true,
             "minigame-link":"pipes-minigame.html",
-            "minigame-time":"120",
+            "minigame-time":"140",
             "minigame-attempts":"2",
-            "minigame-grid":"7"
+            "minigame-grid":"5"
          },
          {
             "name":"SRC-HaveNetworkLayout",
@@ -380,7 +381,7 @@
             "music":"Futuristic-1.mp3",
             "minigame":true,
             "minigame-link":"pipes-minigame.html",
-            "minigame-time":"90",
+            "minigame-time":"160",
             "minigame-attempts":"2",
             "minigame-grid":"7"
          },
@@ -649,7 +650,7 @@
             "music":"Futuristic-1.mp3",
             "minigame":true,
             "minigame-link":"pipes-minigame.html",
-            "minigame-time":"90",
+            "minigame-time":"160",
             "minigame-attempts":"2",
             "minigame-grid":"7"
          },
@@ -835,7 +836,7 @@
             "music":"Futuristic-1.mp3",
             "minigame":true,
             "minigame-link":"pipes-minigame.html",
-            "minigame-time":"90",
+            "minigame-time":"160",
             "minigame-attempts":"2",
             "minigame-grid":"7"
          },
@@ -870,7 +871,6 @@
             "music":"Futuristic-1.mp3",
             "minigame":true,
             "minigame-link":"DA-minigame.html",
-            "minigame-time":"90",
             "minigame-attempts":"2",
             "minigame-score":"60",
             "minigame-difficulty":"1"
