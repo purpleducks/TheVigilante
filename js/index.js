@@ -1,3 +1,6 @@
+/*
+ *  The main function - checks if its the users first time and if so, shows the info box.
+ */
 function main() {
     if (document.cookie.indexOf('firstTime') == -1) { // if its the first time... 
         setTimeout(animateElemsIn, 7000);
@@ -40,6 +43,9 @@ function main() {
 
 }
 
+/*
+ *  Show the information modal box
+ */
 function showModal() {
     var gameInfo = document.getElementById("gameInfo");
     var closeButton = document.getElementsByClassName("close")[0];
@@ -57,7 +63,9 @@ function showModal() {
     document.getElementById('gameInfo').style.display='block';
 }
 
-
+/*
+ *  Enables the start button so the user can click on it and be navigated to the game page
+ */
 function enableStartButton() {
     var startButton = document.getElementById("startButton");
 
@@ -79,7 +87,9 @@ function enableStartButton() {
     });
 }
 
-
+/*
+ *  Animates the start button into the screen view.
+ */
 function animateElemsIn() {
 	var button = document.getElementById("startButton");
     // var nadineImg = document.getElementById("nadineImg");
@@ -96,6 +106,9 @@ function animateElemsIn() {
     }
 }
 
+/*
+ *  Checks for a saved game and if there is one, then asks the player if they want to delete their saved game.
+ */
 function deleteSave() {
     if (localStorage.getItem("allActions") == null) {
         alert("No save game detected!");
@@ -106,6 +119,9 @@ function deleteSave() {
     }
 }
 
+/*
+ *  Handles toggling the music
+ */
 function playPauseMusic() {
     var musicPlayer = document.getElementById("musicPlayer");
     console.log(musicPlayer);
@@ -118,6 +134,9 @@ function playPauseMusic() {
     }
 }
 
+/*
+ *  Add the labels to the on screen elements.
+ */
 function addLabelToggleEL(labelId) {
     var musicControl = document.getElementById(labelId);
     musicControl.addEventListener('mouseenter', function(){

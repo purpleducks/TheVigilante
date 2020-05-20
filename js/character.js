@@ -7,6 +7,10 @@ class Character {   // factory class
         this.typer = null;
     }
 
+    /*
+     *  Handles all of the Dialogue and Decision speech objects text.
+     *  Changes the background images and adds character images where needed.
+     */
     talk() {
         var gameMan = document.getElementById("gameContainer").gameMan;
         var currentObject = document.getElementById("gameContainer").currObj;
@@ -93,6 +97,9 @@ class Character {   // factory class
         
     }
 
+    /*
+     *  Checks if the background image needs changing and changes it if necessary.
+     */
     backgroundImgCheck(currentObject) {
         var soIndex = document.getElementById("gameContainer").gameMan.soIndex;
         if (currentObject.narration || currentObject.decision || currentObject.minigame) {
@@ -125,6 +132,10 @@ class Character {   // factory class
         
     }
     
+
+    /*
+     *  Handles adding the character images to the main screen
+     */
     enterScene() {
         //make your character image on screen
         if (this.side == "L") {
@@ -138,6 +149,9 @@ class Character {   // factory class
         }
     }
 
+    /*
+     *  Checks if there is a character image to draw on the screen
+     */
     checkForCharacterImg() {
         var characterImgs = document.getElementsByClassName("characterImg");
 
@@ -164,11 +178,18 @@ class Character {   // factory class
         this.speech.push(currentSpeech);
     }
     
+    /*
+     *  Simply shows the already made decision buttons
+     */
     showDecisionButtons() {
         console.log("CHARACTER: Showing the decision buttons.");
         document.getElementById("buttonContainer").style.visibility = "visible";
     }
 
+
+    /*
+     *  For each decision specified in the speech object, this function creates a button for it to be displayed later.
+     */
     makeDecisionButtons() {
         var gameMan = document.getElementById("gameContainer").gameMan;
         var noOfDecisions = this.speech.length;
@@ -193,6 +214,9 @@ class Character {   // factory class
         $('#gameContainer').append("</div>"); // closing DIV tag for all of the buttons
     }
 
+    /*
+     *  Processes the decision the player has made, stores it in the Player Data array in LocalStorage to be accessed later in main.js
+     */
     processDecision(evt) {
         var gameContainer = document.getElementById("gameContainer");
         var gameMan = gameContainer.gameMan;

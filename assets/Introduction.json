@@ -505,10 +505,6 @@
                "NadineReply1",
                "NadineReply1-NoHackOne"   
             ],
-            "images": [
-               "laptop-desk.jpg"
-            ],
-            "music":"Dreamy-Chill.mp3",
             "systemDecision": true
          },
          {
@@ -595,12 +591,8 @@
                "HackTwoSuccess-SD-One",
                "HackTwoFail"
             ],
-            "images":[
-               "laptop-desk.jpg"
-            ],
             "systemDecision":true,
-            "texting":true,
-            "music":"Dreamy-Chill.mp3"
+            "texting":true
          },
          {
             "content":[
@@ -688,10 +680,6 @@
                "MarcusHealthCorp",
                "HackTwoSuccess-SD-Two"
             ],
-            "images": [
-               "laptop-desk.jpg"
-            ],
-            "music": "Dreamy-Chill.mp3",
             "systemDecision":true
          },
          {
@@ -703,10 +691,6 @@
                "MarcusDarren",
                "HackTwoSuccess-SD-Three"
             ],
-            "images": [
-               "laptop-desk.jpg"
-            ],
-            "music": "Dreamy-Chill.mp3",
             "systemDecision":true
          },
          {
@@ -718,10 +702,6 @@
                "MarcusBlog",
                "MarcusHospital"
             ],
-            "images": [
-               "laptop-desk.jpg"
-            ],
-            "music": "Dreamy-Chill.mp3",
             "systemDecision":true
          },
          {

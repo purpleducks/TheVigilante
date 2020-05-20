@@ -108,8 +108,7 @@
             "content":[
                "NadineIsStrong"
             ],
-            "systemDecision":true,
-            "music":"Brand-New-Paradigm.mp3"
+            "systemDecision":true
          },
          {
             "name":"NadineWasNice-2",
@@ -120,8 +119,7 @@
                "MarcusHasTea",
                "MarcusPA"
             ],
-            "systemDecision":true,
-            "music":"Brand-New-Paradigm.mp3"
+            "systemDecision":true
          },
          {
             "name":"MarcusPA",
@@ -456,8 +454,7 @@
                "ReallyOffendedDanielle",
                "OffendedDanielleSpeechTwo"
             ],
-            "systemDecision":true,
-            "music":"An-Appearance-Of-Normality.mp3"
+            "systemDecision":true
          },
          {
             "name":"ReallyOffendedDanielle",
@@ -690,10 +687,6 @@
                "NadineIsDone",
                "IsNadineDone-2"
             ],
-            "images":[
-
-            ],
-            "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
          },
          {
@@ -705,8 +698,7 @@
                "NadineIsDone",
                "IsNadineDone-3"
             ],
-            "systemDecision":true,
-            "music":"An-Appearance-Of-Normality.mp3"
+            "systemDecision":true
          },
          {
             "name":"IsNadineDone-3",
@@ -717,8 +709,7 @@
                "NadineIsDone",
                "NadineIsntDone"
             ],
-            "systemDecision":true,
-            "music":"An-Appearance-Of-Normality.mp3"
+            "systemDecision":true
          },
          {
             "name":"NadineIsDone",
@@ -758,8 +749,7 @@
                "OSINT-BeenThere",
                "CompanyReviewSite"
             ],
-            "systemDecision":true,
-            "music":"An-Appearance-Of-Normality.mp3"
+            "systemDecision":true
          },
          {
             "name":"ImagesOfHQ-SysDecision",
@@ -770,8 +760,7 @@
                "OSINT-BeenThere",
                "ImagesOfHQ"
             ],
-            "systemDecision":true,
-            "music":"An-Appearance-Of-Normality.mp3"
+            "systemDecision":true
          },
          {
             "name":"LinkedIn-SysDecision",
@@ -782,8 +771,7 @@
                "OSINT-BeenThere",
                "LinkedIn"
             ],
-            "systemDecision":true,
-            "music":"An-Appearance-Of-Normality.mp3"
+            "systemDecision":true
          },
          {
             "name":"OSINT-BeenThere",
@@ -810,8 +798,7 @@
                "NoMoreOptions-OSINT",
                "OSINT-Circular"
             ],
-            "systemDecision":true,
-            "music":"An-Appearance-Of-Normality.mp3"
+            "systemDecision":true
          },
          {
             "name":"CompanyReviewSite",
@@ -1013,10 +1000,6 @@
                "HQ-FullyResearched",
                "DoneSearchingYet"
             ],
-            "images":[
-               "undefined.jpg"
-            ],
-            "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
          },
          {
@@ -1107,10 +1090,6 @@
                "BloggersAnonContact",
                "SecondBloggerSysDecision"
             ],
-            "images":[
-               "linkedin-home.jpg"
-            ],
-            "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
          },
          {
@@ -1122,10 +1101,6 @@
                "BloggerAndDarren",
                "ExploitRecruiter"
             ],
-            "images":[
-               "linkedin-home.jpg"
-            ],
-            "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
          },
          {
@@ -2264,7 +2239,7 @@
          },
          {
             "name":"TITD-SysDecision-Check","content":["TechInTheDept-SysDecision-FIRST"],
-            "link":["TITD-AlreadyBeen","TechInTheDept-SysDecision-FIRST"],"images":[],"music":"An-Appearance-Of-Normality.mp3",
+            "link":["TITD-AlreadyBeen","TechInTheDept-SysDecision-FIRST"],
             "systemDecision":true
          },
          {
@@ -2281,13 +2256,6 @@
                "TechInTheDept-Suspicious",
                "TechInTheDept-SysDecision-SECOND"
             ],
-            "images":[
-               "linkedin-messaging.jpg"
-            ],
-            "characters":[
-
-            ],
-            "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
          },
          {
@@ -2373,10 +2341,6 @@
                "TechInTheDept-Suspicious",
                "TechInTheDept-Normal"
             ],
-            "images":[
-               "linkedin-messaging.jpg"
-            ],
-            "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
          },
          {
@@ -2475,15 +2439,11 @@
                "NadineFinishesWithRecruiter",
                "RecruiterCircular"
             ],
-            "images":[
-               "linkedin-messaging.jpg"
-            ],
-            "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
          },
          {
             "name":"WTDIS-SysDecision","content":["WhatTimeDoIStart"],
-            "link":["WTDIS-AlreadyBeen","WhatTimeDoIStart"],"images":[],"music":"","systemDecision":true
+            "link":["WTDIS-AlreadyBeen","WhatTimeDoIStart"],"systemDecision":true
          },
          {
             "name":"WTDIS-AlreadyBeen","content":["Nadine has already asked the Recruiter about this, she should ask something else."],
@@ -3301,10 +3261,6 @@
                "ND-DarrenDoesntLikeNad",
                "ND-DarrenDoesntMindNad"
             ],
-            "images":[
-               "linkedin-messaging.jpg"
-            ],
-            "music":"An-Appearance-Of-Normality.mp3",
             "systemDecision":true
          },
          {

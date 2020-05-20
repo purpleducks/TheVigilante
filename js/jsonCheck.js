@@ -1,6 +1,6 @@
 
 function testGameJSON(json) {
-	var gameData = json.BreakIn.storylines;
+	var gameData = json.TheEscape.storylines;
 	var imagelessObjects = [];
 	var quietObjects = [];
 	console.log("IN TEST NOW");
@@ -105,7 +105,7 @@ function imageExists(image_url){
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'assets/BreakIn.json', true);
+    xobj.open('GET', 'assets/TheEscape.json', true);
     // Replace 'my_data' with the path to your file
     xobj.onreadystatechange = function() {
         if (xobj.readyState === 4 && xobj.status === 200) {

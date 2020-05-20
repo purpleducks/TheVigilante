@@ -1,7 +1,7 @@
 
 /**
  * the Game Loop: Runs the game for the first time and sets the two key Event Listeners
- * @param {GameManager} gameMan the Game Manager object used to access the different UI elements.
+ * @param {Boolean} stageChange a boolean flag used to check if the game stage has changed from the "Introduction" as a result of player data loaded from LocalStorage
  */
 function runGame(stageChange) {
     var gameMan = document.getElementById("gameContainer").gameMan;
@@ -13,10 +13,8 @@ function runGame(stageChange) {
 
         document.getElementById("gameContainer").addEventListener("nextObject", processNextObj, true);
 
-        // document.getElementById("gameContainer").addEventListener("startTexting", startProcessing, true);    TODO: fix texting / remove it at some point        
     }
 
-    // gameMan.dataManager.gameData = gameMan.dataManager.gameData["Introduction"]["storylines"];
     if (localStorage.allActions != null && localStorage.playerDecisions != null && !stageChange) {
         console.log("MAIN: Loading from LocalStorage, getting last Speech Object from AllActions array");
         gameMan.dataManager.loadFromStorage();
@@ -77,7 +75,10 @@ function getDecisionObj(evt) {
     if (evt instanceof Event) { evt.stopPropagation(); }
 }
 
-
+/*
+ *  Checks for ending game objects, and changes the game stages when needed.
+ *  @param {Event} evt allows us to access the game manager and current object
+ */
 function startProcessing(evt, nextObject) {
     var gameMan;
     var currObj;
@@ -98,8 +99,6 @@ function startProcessing(evt, nextObject) {
     }
     else if (currObj.content[0] != "FINISH") {
          document.getElementById("gameContainer").currObj = currObj;
-        // evt.currentTarget.currObj = nextObject;
-        // gameMan.allActions.push(nextObject.name);
         console.log("MAIN: We processing the object called: "+ currObj.name);
         if (currObj.persistent) { currObj.index = 0; }
         gameMan.dataManager.addToAllActions(currObj.name);
@@ -182,7 +181,9 @@ function removeAllElements() {
     }
 }
 
-
+/*
+ *  Handles the scene skipping function, can be a bit problematic...
+ */
 function skipScreen() {
     var gameContainer = document.getElementById("gameContainer");
     var gameMan = gameContainer.gameMan;
@@ -192,23 +193,30 @@ function skipScreen() {
         if (currentObj.content.length == 0) {
             console.log("MAIN: No point skipping here!");
         }
-        else if (currentObj.charctrsObjs[0].typer.is('started')) {
-            console.log("MAIN: Skipping a narration / decision object: "+ currentObj.name);
+        else if (currentObj.charctrsObjs[0].typer == null) {
+            console.log("MAIN: Cannot skip yet!!!");
+        }
+        else if (currentObj.charctrsObjs[0].typer.is('started') && !currentObj.charctrsObjs[0].typer.is('completed')) {
+            console.log("MAIN: Skipping a narration / decision object for Character 1: "+ currentObj.name);
             currentObj.charctrsObjs[0].typer.destroy();
             currentObj.content = [];
             currentObj.charctrsObjs[0].getNextSpeech();
-
         }
-        //else if (currentObj.charctrsObjs[0].typer.is('completed'))
+        else if (currentObj.charctrsObjs[1].typer.is('started') && !currentObj.charctrsObjs[1].typer.is('completed')) {
+            console.log("MAIN: Skipping a narration / decision object for Character 2: "+ currentObj.name);
+            currentObj.charctrsObjs[1].typer.destroy();
+            currentObj.content = [];
+            currentObj.charctrsObjs[1].getNextSpeech();
+        }
     }
     else if (currentObj.decision) {
         alert("You cannot skip this scene, you need to make a decision here!");
     }
-
-    //var event = new Event('nextObject');
-    //gameContainer.dispatchEvent(event);
 }
 
+/*
+ *  Add the labels to the on screen elements.
+ */
 function addLabelToggleEL(labelId) {
     var elemWithLabel = document.getElementById(labelId);
     elemWithLabel.addEventListener('mouseenter', function(){
@@ -223,6 +231,9 @@ function addLabelToggleEL(labelId) {
     });
 }
 
+/*
+ *  Handles the save game function
+ */
 function saveGame() {
     var gameMan = document.getElementById("gameContainer").gameMan;
     gameMan.dataManager.saveToStorage();
@@ -230,6 +241,9 @@ function saveGame() {
     alert("Saved your game successfully!");
 }
 
+/*
+ *  Handles the pause game function
+ */
 function pauseGame() {
     var musicPlayer = document.getElementById("musicPlayer");
     var gameMan = document.getElementById("gameContainer").gameMan;
@@ -240,6 +254,9 @@ function pauseGame() {
     musicPlayer.play();
 }
 
+/*
+ *  Handles toggling the music
+ */
 function playPauseMusic() {
     var musicPlayer = document.getElementById("musicPlayer");
     console.log(musicPlayer);
@@ -251,50 +268,11 @@ function playPauseMusic() {
         musicPlayer.pause();
     }
 }
+
+
 /*
-// SOURCE: https://stackoverflow.com/a/52349344
-async function fetchHtmlAsText(url) {
-    return await (await fetch(url)).text();
-}
-// SOURCE: https://stackoverflow.com/a/52349344
-async function showTextingView() {
-    const contentDiv = document.getElementById("textingContainer");
-    contentDiv.innerHTML = await fetchHtmlAsText("texting.html");
-}*/
-
-function showTextView() {
-    $("#textingContainer").load("texting.html", function(){
-        console.log("MAIN: Texting container has loaded successfully!");
-        var mpLabel = document.getElementById("musicControlLabel");
-        var mpSymbol = document.getElementById("musicControl");
-        var skipSymbol = document.getElementById("skipScreen");
-        var skipLabel = document.getElementById("skipScreenLabel");
-
-        mpLabel.style.color = "black";
-        mpSymbol.style.filter = "brightness(0%)";
-        skipSymbol.style.filter = "brightness(0%)";
-        skipLabel.style.color = "black";
-        var gameContainer = document.getElementById("gameContainer");
-        var event = new Event('startTexting');
-        gameContainer.dispatchEvent(event);
-    });
-}
-
-function removeTextingView() {
-    var textingView = document.getElementById("texting-view");
-    textingView.remove();
-
-    var mpLabel = document.getElementById("musicControlLabel");
-    var mpSymbol = document.getElementById("musicControl");
-    var skipSymbol = document.getElementById("skipScreen");
-    var skipLabel = document.getElementById("skipScreenLabel");
-
-    mpLabel.style.color = "white";
-    mpSymbol.style.filter = "brightness(100%)";
-    skipSymbol.style.filter = "brightness(100%)";
-    skipLabel.style.color = "white";
-}
-
+ *  The main function which starts the game loop
+ */
 function main() {
     addLabelToggleEL("musicControl");
     addLabelToggleEL("skipScreen");

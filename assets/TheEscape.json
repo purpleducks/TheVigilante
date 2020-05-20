@@ -10,10 +10,6 @@
                "NadineHackWorked",
                "NadineHackFailed"
             ],
-            "images":[
-
-            ],
-            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -26,7 +22,7 @@
                "ServerRoom-Surroundings"
             ],
             "images":[
-
+"off-to-the-server-room.jpg","off-to-the-server-room.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -41,7 +37,7 @@
                "ServerRoom-Surroundings"
             ],
             "images":[
-
+"off-to-the-server-room.jpg","off-to-the-server-room.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -50,13 +46,13 @@
             "name":"ServerRoom-Surroundings",
             "content":[
                "Nadine sees a fire escape and the corridor which she came down from before.",
-               " She also sees a fire alarm button."
+               "She also sees a fire alarm button."
             ],
             "link":[
                "SR-Escape-Decision"
             ],
             "images":[
-
+"fire-escape.jpg","fire-alarm-button.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -75,7 +71,7 @@
                "SR-BuildingPower-SysDecision"
             ],
             "images":[
-
+"off-to-the-server-room.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "decision":true
@@ -90,7 +86,7 @@
                "SR-FireEscape"
             ],
             "images":[
-
+"fire-alarm-button.jpg","fire-escape.jpg"
             ], 
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -107,7 +103,7 @@
                "SR-DevicesSeized"
             ],
             "images":[
-
+"server-room.jpg","off-to-the-server-room.jpg","off-to-the-server-room.jpg","nadine-being-arrested.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -122,7 +118,7 @@
                "SR-FireEscape-People"
             ],
             "images":[
-
+               "fire-escape.jpg","fire-escape-stairwell.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -136,10 +132,6 @@
                "SR-BuildingPower-BeenThere",
                "SR-BuildingPower"
             ],
-            "images":[
-
-            ],
-            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -151,7 +143,7 @@
                "SR-Escape-Decision"
             ],
             "images":[
-
+"off-to-the-server-room.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -167,7 +159,7 @@
                "SR-BP-Minigame-SysDecision"
             ],
             "images":[
-
+"server-room.jpg","fibre-cables.jpg","hacking-in.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -181,10 +173,6 @@
                "SR-BP-M-MoreTime",
                "SR-BP-M-LessTime"
             ],
-            "images":[
-
-            ],
-            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -199,7 +187,7 @@
                "SR-BP-TourGuide-SysDecision"
             ],
             "images":[
-
+"hacking-in.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "minigame":true,
@@ -220,7 +208,7 @@
                "SR-BP-TourGuide-SysDecision"
             ],
             "images":[
-
+"hacking-in.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "minigame":true,
@@ -238,10 +226,6 @@
                "SR-BP-FuckedIt",
                "SR-BP-NotMuchTime"
             ],
-            "images":[
-
-            ],
-            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -254,7 +238,7 @@
                "SR-DevicesSeized"
             ],
             "images":[
-
+"hacking-in.jpg","server-room.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -268,7 +252,7 @@
                "SR-Danielle-SysDecision"
             ],
             "images":[
-
+"interrogation-room.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -282,10 +266,6 @@
                "SR-DanielleGotGot",
                "SR-Darren-SysDecision"
             ],
-            "images":[
-
-            ],
-            "music":"Doomsday-Clock.mp3",
             "systemDecision":true
          },
          {
@@ -297,10 +277,6 @@
                "SR-DarrenGotGot",
                "SR-NadineAlone"
             ],
-            "images":[
-
-            ],
-            "music":"Doomsday-Clock.mp3",
             "systemDecision":true
          },
          {
@@ -312,7 +288,7 @@
                "GAME OVER"
             ],
             "images":[
-
+"police-arrest-nadine.jpg"
             ],
             "music":"Doomsday-Clock.mp3",
             "narration":true
@@ -327,7 +303,7 @@
                "GAME OVER"
             ],
             "images":[
-
+"interrogation-room.jpg","police-arrest-nadine.jpg"
             ],
             "music":"Doomsday-Clock.mp3",
             "narration":true
@@ -342,7 +318,7 @@
                "GAME OVER"
             ],
             "images":[
-
+"interrogation-room.jpg","police-arrest-nadine.jpg"
             ],
             "music":"Doomsday-Clock.mp3",
             "narration":true
@@ -357,7 +333,7 @@
                "END GAME"
             ],
             "images":[
-
+"thanks-for-playing.jpg","thanks-for-playing.jpg"
             ],
             "music":"Pookatori-and-friends.mp3",
             "narration":true
@@ -373,7 +349,7 @@
                "SR-Escape-Decision"
             ],
             "images":[
-
+"fibre-cables.jpg","server-room.jpg","server-room.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -394,7 +370,7 @@
                "SR-FireEscape-People"
             ],
             "images":[
-
+"fibre-cables.jpg","hacking-in.jpg","hacking-in.jpg","hacking-in.jpg","fibre-cables.jpg","server-room.jpg","server-room.jpg","server-room.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -409,7 +385,7 @@
                "SR-FireAlarmCheck-SysDecision"
             ],
             "images":[
-
+"fire-escape-stairwell.jpg","fire-escape-stairwell.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -423,10 +399,6 @@
                "SR-NadineCar-Check-1",
                "SR-SecurityAreWaiting"
             ],
-            "images":[
-
-            ],
-            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -438,10 +410,6 @@
                "SR-NC-Yes",
                "SR-NadineCar-Check-2"
             ],
-            "images":[
-
-            ],
-            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -453,10 +421,6 @@
                "SR-NC-Yes",
                "SR-NC-No"
             ],
-            "images":[
-
-            ],
-            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -471,7 +435,7 @@
                "SR-NadineHackCheck-SysDecision"
             ],
             "images":[
-
+"burning-skyscraper.jpg","burning-skyscraper.jpg","burning-skyscraper.jpg","nadine-metro-station.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -485,10 +449,6 @@
                "SR-TimeCheck-SysDecision-1",
                "H-TimeCheck-SysDecision-2"
             ],
-            "images":[
-
-            ],
-            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -500,10 +460,6 @@
                "H-HCHQ-6PM-SysDecision",
                "H-HCHQ-11AM-SysDecision"
             ],
-            "images":[
-
-            ],
-            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -515,10 +471,6 @@
                "H-FailedHack-6PM",
                "H-FailedHack-11AM"
             ],
-            "images":[
-
-            ],
-            "music":"Prelude-and-Action.mp3",
             "systemDecision":true
          },
          {
@@ -530,7 +482,7 @@
                "H-FailedHack-News"
             ],
             "images":[
-
+               "nadine-living-room.jpg"
             ],
             "music":"Imagefilm-016.mp3",
             "narration":true
@@ -544,7 +496,7 @@
                "H-FailedHack-News"
             ],
             "images":[
-
+"nadine-living-room.jpg"
             ],
             "music":"Imagefilm-016.mp3",
             "narration":true
@@ -552,20 +504,17 @@
          {
             "name":"H-FailedHack-News",
             "content":[
-               "News-Anchor: 'Breaking news today from HealthCorp Inc.'",
-               "News-Anchor: 'An malicious hacker has broken into the downtown HQ for HealthCorp Inc.'"
+               "Breaking news today from HealthCorp Inc.",
+               "An malicious hacker has broken into the downtown HQ for HealthCorp Inc."
             ],
             "link":[
                "H-FailedHack-SysDecision-1"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "News-Anchor"
+               "news-healthcorp.img","news-healthcorp.img"
             ],
             "music":"Breaking-News-4.mp3",
-            "dialogue":true
+            "narration":true
          },
          {
             "name":"H-FailedHack-SysDecision-1",
@@ -576,10 +525,6 @@
                "H-FailedHack-Darren",
                "H-FailedHack-SysDecision-2"
             ],
-            "images":[
-
-            ],
-            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -591,67 +536,54 @@
                "H-FailedHack-Danielle",
                "H-FailedHack-Nadine"
             ],
-            "images":[
-
-            ],
-            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
             "name":"H-FailedHack-Darren",
             "content":[
-               "News-Anchor: 'Police are looking for a black female in her mid 30s.'",
-"News-Anchor: 'It has been exclusively revealed to us here that they have already arrested a man in connection with the hacker, who is called Darren Anderson.'",
-"News-Anchor: 'Stay tuned to this developing story.'"
+               "Police are looking for a black female in her mid 30s.",
+"It has been exclusively revealed to us here that they have already arrested a man in connection with the hacker, who is called Darren Anderson.",
+"Stay tuned to this developing story."
             ],
             "link":[
                "LOST GAME"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "News-Anchor"
+"news-nadine.jpg","news-nadine-darren.jpg","news-nadine-darren.jpg"
             ],
             "music":"Breaking-News-4.mp3",
-            "dialogue":true
+            "narration":true
          },
          {
             "name":"H-FailedHack-Danielle",
             "content":[
-               "News-Anchor: 'Police are looking for a black female in her mid 30s.'",
-"News-Anchor: 'It has been exclusively revealed to us here that they have already arrested a woman in connection with the hacker, who is called Danielle Winters.'",
-"News-Anchor: 'Stay tuned to this developing story.'"
+               "Police are looking for a black female in her mid 30s.",
+"It has been exclusively revealed to us here that they have already arrested a woman in connection with the hacker, who is called Danielle Winters.",
+"Stay tuned to this developing story."
             ],
             "link":[
                "LOST GAME"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "News-Anchor"
+"news-nadine.jpg","news-nadine-danielle.jpg","news-nadine-danielle.jpg"
             ],
             "music":"Breaking-News-4.mp3",
-            "dialogue":true
+            "narration":true
          },
          {
             "name":"H-FailedHack-Nadine",
             "content":[
-               "News-Anchor: 'Police haven't reported any suspects arrested or identified at this time, however they are seeking any information about the hacker and their whereabouts.'",
-"News-Anchor: 'Stay tuned to this developing story.'"
+               "Police haven't reported any suspects arrested or identified at this time, however they are seeking any information about the hacker and their whereabouts.",
+"Stay tuned to this developing story."
             ],
             "link":[
                "LOST GAME"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "News-Anchor"
+"news-healthcorp.jpg","news-healthcorp.jpg"
             ],
             "music":"Breaking-News-4.mp3",
-            "dialogue":true
+            "narration":true
          },
          {
             "name":"LOST GAME",
@@ -663,7 +595,7 @@
                "END GAME"
             ],
             "images":[
-
+"thanks-for-playing.jpg","thanks-for-playing.jpg"
             ],
             "music":"Pookatori-and-friends.mp3",
             "narration":true
@@ -677,10 +609,6 @@
                "H-HCHQ-6PM-Yes",
                "H-HCHQ-6PM-No"
             ],
-            "images":[
-
-            ],
-            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -692,10 +620,6 @@
                "H-HCHQ-11AM-Yes",
                "H-HCHQ-11AM-No"
             ],
-            "images":[
-
-            ],
-            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -707,7 +631,7 @@
                "H-HCHQ-Destroyed"
             ],
             "images":[
-
+"nadine-hc-burning-tv.jpg"
             ],
             "music":"Imagefilm-016.mp3",
             "narration":true
@@ -721,7 +645,7 @@
                "H-HealthCorpRuin-SysDecision-1"
             ],
             "images":[
-
+"nadine-living-room.jpg"
             ],
             "music":"Imagefilm-016.mp3",
             "narration":true
@@ -735,7 +659,7 @@
                "H-HCHQ-Destroyed"
             ],
             "images":[
-
+"nadine-hc-burning-tv.jpg"
             ],
             "music":"Imagefilm-016.mp3",
             "narration":true
@@ -743,22 +667,17 @@
          {
             "name":"H-HCHQ-Destroyed",
             "content":[
-               "News-Anchor: 'Breaking news today, a large explosion at HealthCorp Inc's downtown headquarters destroys much of the building, killing and injuring dozens of employees and passerbys.'",
-               "News-Anchor: 'Initial reports show that the cause of the explosion was a faulty power supply controller, which created a huge power surge for the building's power.'",
-               "News-Anchor: 'It has been alleged that they worked to rig several presidential elections to elect favour presidents who looked favourably on the company.'",
-               "News-Anchor: 'Since this damning news broke, many employees are now speaking out about the company's toxic work culture and the lengths they go to protect the company's image, expect more on this story next.'"
+               "Breaking news today, a large explosion at HealthCorp Inc's downtown headquarters destroys much of the building, killing and injuring dozens of employees and passerbys.",
+               "Initial reports show that the cause of the explosion was a faulty power supply controller, which created a huge power surge for the building's power."
             ],
             "link":[
                "H-HealthCorpRuin-SysDecision-1"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "News-Anchor"
+               "news-fire.jpg","news-fire.jpg"
             ],
             "music":"Breaking-News-4.mp3",
-            "dialogue":true
+            "narration":true
          },
          {
             "name":"H-HealthCorpRuin-SysDecision-1",
@@ -769,10 +688,6 @@
                "H-HCR-Finance-SysDecision",
                "H-HealthCorpRuin-SysDecision-2"
             ],
-            "images":[
-
-            ],
-            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -784,10 +699,6 @@
                "H-HCR-InnerCircle",
                "H-HealthCorpRuin-SysDecision-3"
             ],
-            "images":[
-
-            ],
-            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -799,10 +710,6 @@
                "H-HCR-SexAssaultCases",
                "H-HCR-Targetting"
             ],
-            "images":[
-
-            ],
-            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
@@ -814,113 +721,94 @@
                "H-HCR-Finance-Public",
                "H-HCR-Finance-Selfish"
             ],
-            "images":[
-
-            ],
-            "music":"Breaking-News-4.mp3",
             "systemDecision":true
          },
          {
             "name":"H-HCR-Finance-Public",
             "content":[
-               "News-Anchor: 'This just in, an unkown vigilante has broken into the downtown HealthCorp HQ. '",
-               "News-Anchor: 'The vigilante managed to break into the heart of the health insurance giant and distribute their money to the public.'",
-               "News-Anchor: 'The money was sent to people who, some believe, were left high and dry, with their insurance terminated unexpectedly before they could claim.'",
-               "News-Anchor: 'Since the severe breach, many employees are now speaking out and blowing the whistle on the company, so expect more on this story next.'"
+               "This just in, an unkown vigilante has broken into the downtown HealthCorp HQ. ",
+               "The vigilante managed to break into the heart of the health insurance giant and distribute their money to the public.",
+               "The money was sent to people who, some believe, were left high and dry, with their insurance terminated unexpectedly before they could claim.",
+               "Since the severe breach, many employees are now speaking out and blowing the whistle on the company, so expect more on this story next."
             ],
             "link":[
                "H-HC-Lawsuits"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "News-Anchor"
+"news-healthcorp.jpg","news-healthcorp.jpg","news-healthcorp.jpg","news-healthcorp.jpg"
             ],
             "music":"Breaking-News-4.mp3",
-            "dialogue":true
+            "narration":true
          },
          {
             "name":"H-HCR-Finance-Selfish",
             "content":[
-               "News-Anchor: 'This just in, an unkown vigilante has broken into the downtown HealthCorp HQ. '",
-               "News-Anchor: 'The vigilante managed to break into the heart of the health insurance giant and rob them of every penny in their corporate accounts'",
-               "News-Anchor: 'Initial reports are showing that the money was sent to several anonymous accounts.'",
-               "News-Anchor: 'Since the severe breach, many employees are now speaking out and blowing the whistle on the company, so expect more on this story next.'"
+               "This just in, an unkown vigilante has broken into the downtown HealthCorp HQ. ",
+               "The vigilante managed to break into the heart of the health insurance giant and rob them of every penny in their corporate accounts.",
+               "Initial reports are showing that the money was sent to several anonymous accounts.",
+               "Since the severe breach, many employees are now speaking out and blowing the whistle on the company, so expect more on this story next."
             ],
             "link":[
                "H-HC-Lawsuits"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "News-Anchor"
+"news-healthcorp.jpg","news-healthcorp.jpg","news-healthcorp.jpg","news-healthcorp.jpg"
             ],
             "music":"Breaking-News-4.mp3",
-            "dialogue":true
+            "narration":true
          },
          {
             "name":"H-HCR-InnerCircle",
             "content":[
-               "News-Anchor: 'This just in, a damning news report from HealthCorp Inc.'",
-               "News-Anchor: 'It has been exclusively revealed that an elusive group known as the Inner Circle are controlling the health insurance giant, as well as maintaining its monopoly in the industry.'",
-               "News-Anchor: 'A trove of emails between the members of this secretive group show how they abused their positions of power to further their own gain, as well as HealthCorp.'",
-               "News-Anchor: 'It has been alleged that they worked to rig several presidential elections to elect favour presidents who looked favourably on the company.'",
-               "News-Anchor: 'Since this damning news broke, many employees are now speaking out about the company's toxic work culture and the lengths they go to protect the company's image, expect more on this story next.'"
+               "This just in, a damning news report from HealthCorp Inc.'",
+               "It has been exclusively revealed that an elusive group known as the Inner Circle are controlling the health insurance giant, as well as maintaining its monopoly in the industry.'",
+               "A trove of emails between the members of this secretive group show how they abused their positions of power to further their own gain, as well as HealthCorp.'",
+               "It has been alleged that they worked to rig several presidential elections to elect favour presidents who looked favourably on the company.'",
+               "Since this damning news broke, many employees are now speaking out about the company's toxic work culture and the lengths they go to protect the company's image, expect more on this story next.'"
             ],
             "link":[
                "H-HC-InnerCircle-Exposed"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "News-Anchor"
+"news-healthcorp.jpg","news-inner-circle.jpg","news-inner-circle.jpg","news-inner-circle.jpg","news-inner-circle.jpg"
             ],
             "music":"Breaking-News-4.mp3",
-            "dialogue":true
+            "narration":true
          },
          {
             "name":"H-HCR-SexAssaultCases",
             "content":[
-               "News-Anchor: 'This just in, a damning news report from HealthCorp Inc.'",
-               "News-Anchor: 'It has been exclusively revealed that several top HealthCorp executives have been involved in a coverup of a string of sexual assault cases.'",
-               "News-Anchor: 'Victims were allegedly paid off by the company and made to sign Non-Disclosure Agreements.'",
-               "News-Anchor: 'Lawyers for the firm had also made threats of legal action to victims.'",
-               "News-Anchor: 'Since the severe breach, many employees are now speaking out about the company's toxic work culture and the lengths they go to protect the company's image, expect more on this story next.'"
+               "This just in, a damning news report from HealthCorp Inc.'",
+               "It has been exclusively revealed that several top HealthCorp executives have been involved in a coverup of a string of sexual assault cases.'",
+               "Victims were allegedly paid off by the company and made to sign Non-Disclosure Agreements.'",
+               "Lawyers for the firm had also made threats of legal action to victims.'",
+               "Since the severe breach, many employees are now speaking out about the company's toxic work culture and the lengths they go to protect the company's image, expect more on this story next.'"
             ],
             "link":[
                "H-HC-Lawsuits"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "News-Anchor"
+"news-healthcorp.jpg","news-healthcorp.jpg","news-healthcorp.jpg","news-healthcorp.jpg","news-healthcorp.jpg"
             ],
             "music":"Breaking-News-4.mp3",
-            "dialogue":true
+            "narration":true
          },
          {
             "name":"H-HCR-Targetting",
             "content":[
-               "News-Anchor: 'This just in, a damning news report from HealthCorp Inc.'",
-               "News-Anchor: 'It has been exclusively revealed that HealthCorp Inc. has been illegally harvesting customer data to target their family members'",
-               "News-Anchor: 'Leaked source code for the company's apps shows how the health insurance giant gather the data so that they can allegedly target more vulnerable people.'",
-               "News-Anchor: 'Since this damning news broke, many employees are now speaking out about the company's questionable ethics and sales tactics, expect more on this story next.'"
+               "This just in, a damning news report from HealthCorp Inc.'",
+               "It has been exclusively revealed that HealthCorp Inc. has been illegally harvesting customer data to target their family members'",
+               "Leaked source code for the company's apps shows how the health insurance giant gather the data so that they can allegedly target more vulnerable people.'",
+               "Since this damning news broke, many employees are now speaking out about the company's questionable ethics and sales tactics, expect more on this story next.'"
             ],
             "link":[
                "H-HC-Lawsuits"
             ],
             "images":[
-
-            ],
-            "characters":[
-               "News-Anchor"
+"news-healthcorp.jpg","news-healthcorp.jpg","news-healthcorp.jpg","news-healthcorp.jpg"
             ],
             "music":"Breaking-News-4.mp3",
-            "dialogue":true
+            "narration":true
          },
          {
             "name":"H-HC-Lawsuits",
@@ -932,7 +820,7 @@
                "OKBYE"
             ],
             "images":[
-
+"hc-lawsuits.jpg","hc-lawsuits.jpg"
             ],
             "music":"Imagefilm-016.mp3",
             "narration":true
@@ -947,7 +835,7 @@
                "OKBYE"
             ],
             "images":[
-
+"hc-lawsuits.jpg","hc-lawsuits.jpg"
             ],
             "music":"Imagefilm-016.mp3",
             "narration":true
@@ -962,7 +850,7 @@
                "END GAME"
             ],
             "images":[
-
+"thanks-for-playing.jpg","thanks-for-playing.jpg"
             ],
             "music":"Pookatori-and-friends.mp3",
             "narration":true
@@ -990,7 +878,7 @@
                "H-HealthCorpRuin-SysDecision"
             ],
             "images":[
-
+"nadine-living-room.jpg"
             ],
             "music":"Imagefilm-016.mp3",
             "narration":true
@@ -1005,7 +893,7 @@
                "H-NC-Yes"
             ],
             "images":[
-
+"burning-skyscraper.jpg","burning-skyscraper.jpg"
             ],
             "music":"Imagefilm-016.mp3",
             "narration":true
@@ -1019,7 +907,7 @@
                "SR-SAW-Decision"
             ],
             "images":[
-
+"security-check-crowd.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -1038,7 +926,7 @@
                "SR-FireExtinguisher"
             ],
             "images":[
-
+"security-check-crowd.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "decision":true
@@ -1052,7 +940,7 @@
                "SR-Gun-2"
             ],
             "images":[
-
+"security-check-crowd.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -1066,7 +954,7 @@
                "SR-Gun-Panic"
             ],
             "images":[
-
+"security-check-crowd.jpg"
             ],
             "characters":[
                "Nadine"
@@ -1084,7 +972,7 @@
                "SR-NadineCar-Check-1"
             ],
             "images":[
-
+               "fast-moving-crowd.jpg","evac.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -1100,7 +988,7 @@
                "SR-DevicesSeized"
             ],
             "images":[
-
+"security-check-crowd.jpg","fast-moving-crowd.jpg","led-away-security.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true
@@ -1116,7 +1004,7 @@
                "SR-NadineCar-Check-1"
             ],
             "images":[
-
+"fire-extinguisher.jpg","broken-window-fe.jpg","fast-moving-crowd.jpg"
             ],
             "music":"Prelude-and-Action.mp3",
             "narration":true

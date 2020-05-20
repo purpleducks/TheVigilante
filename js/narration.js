@@ -1,6 +1,8 @@
 class Narration extends Character {
 
-
+    /*
+     *  Creates a narration speech box in either corner of the screen and essentially the same function as the talk() function in character.js
+     */
 	startNarration() {
         var gameMan = document.getElementById("gameContainer").gameMan;
         var currentObject = document.getElementById("gameContainer").currObj;
@@ -86,6 +88,11 @@ class Narration extends Character {
 
     }
 
+    /*
+     *  Animates the narration speech boxes out of the screen
+     * @param {String} the element ID of the element we wish to animate out
+     * @param {Boolean} a flag that checks if the element is leaving or not.
+     */
     animateSpeech(elemId, leavingFlag) {
         var elem = document.getElementById(elemId);
         var pos = 0;
